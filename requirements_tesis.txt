@@ -1,0 +1,117 @@
+# ============================================================
+# Thesis environment - Transformers / SLICES / CGCNN / MLIPs
+# Python 3.10
+# Linux/MSI compatible (no macOS-only PyObjC packages)
+# ============================================================
+
+# ----------------------------
+# Core scientific stack
+# ----------------------------
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+scikit-learn==1.7.2
+matplotlib==3.10.9
+plotly==7.0.0
+h5py==3.16.0
+networkx==3.4.2
+tqdm==4.70.0
+joblib==1.6.0
+PyYAML==6.0.3
+tabulate==0.10.0
+uncertainties==3.2.3
+
+# ----------------------------
+# PyTorch / graph neural networks
+# ----------------------------
+torch==2.8.0
+torch-geometric==2.8.0.post1
+torchdata==0.11.0
+torchmetrics==1.9.0
+pytorch-lightning==2.6.5
+lightning==2.6.0
+
+# ----------------------------
+# MLIP / equivariant models
+# ----------------------------
+nequix==0.4.5
+e3nn==0.6.0
+openequivariance==0.6.8
+lmdb==2.3.0
+ninja==1.13.2
+pybind11==3.1.0
+
+# ----------------------------
+# Materials science / atomistic modelling
+# ----------------------------
+ase==3.29.0
+ase_db_backends==0.11.0
+pymatgen==2025.10.7
+pymatgen-io-validation==0.1.2
+mp-api==0.45.13
+matgl==2.0.6
+matcalc==0.4.5
+matscipy==1.2.0
+spglib==2.7.0
+phonopy==4.4.0
+phono3py==4.4.0
+phonors==0.3.0
+symfc==1.7.3
+
+# ----------------------------
+# JAX stack retained from the original environment
+# ----------------------------
+jax==0.6.2
+jaxlib==0.6.2
+e3nn-jax==0.21.0
+equinox==0.13.8
+optax==0.2.8
+jraph==0.0.6.dev0
+jaxtyping==0.3.7
+ml_dtypes==0.6.0
+
+# ----------------------------
+# Hugging Face / Transformer baselines
+# ----------------------------
+transformers==5.17.0
+huggingface_hub==1.26.0
+datasets==5.0.1
+accelerate==1.15.0
+evaluate==0.4.6
+safetensors==0.8.0
+sentencepiece==0.2.2
+
+# ----------------------------
+# Hyperparameter optimization / experiment tracking
+# ----------------------------
+optuna==4.9.0
+wandb==0.29.0
+wandb_osh==1.2.2
+
+# ----------------------------
+# Notebooks / interactive work
+# ----------------------------
+jupyterlab==4.6.3
+notebook==7.6.2
+ipykernel==7.3.0
+ipywidgets==8.1.9
+
+# ----------------------------
+# Development / utilities
+# ----------------------------
+black==26.5.1
+pylint==4.0.8
+requests==2.34.2
+python-dotenv==1.2.3
+pydantic==2.13.5
+pydantic-settings==2.15.0
+orjson==3.12.0
+#fsspec==2026.7.0
+filelock==3.32.5
+packaging==26.3
+
+# ----------------------------
+# Build tools
+# ----------------------------
+setuptools==84.0.0
+wheel==0.48.0

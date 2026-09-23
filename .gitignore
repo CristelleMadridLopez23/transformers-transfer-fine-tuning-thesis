@@ -1,0 +1,12 @@
+.cache/
+.venv/
+.venv-*/
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Generated embeddings and evaluation outputs can be recreated.
+artifacts/
+
+# Local source dataset exceeds GitHub's 100 MB per-file limit.
+data/results_no_meta.json

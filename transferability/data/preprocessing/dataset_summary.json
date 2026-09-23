@@ -1,0 +1,46 @@
+{
+  "source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/data/results_no_meta.json",
+  "records_table": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/transferability/data/preprocessing/records.csv",
+  "records": 480,
+  "converged": 480,
+  "unique_formulas": 80,
+  "records_per_formula": {
+    "6": 80
+  },
+  "calculations": {
+    "gga-relax": 240,
+    "gga-static": 240
+  },
+  "prototypes": {
+    "dist_perovskite": 160,
+    "hexagonal": 160,
+    "needle": 160
+  },
+  "magnetic_orders": {
+    "fm": 198,
+    "nm": 282
+  },
+  "n_sites": {
+    "20": 480
+  },
+  "targets": {
+    "energy_per_atom": {
+      "min": -6.6839963835,
+      "mean": -5.196744251479166,
+      "median": -5.323547975,
+      "max": -3.2907868825
+    },
+    "relaxed_energy_per_atom": {
+      "min": -6.6839433679999996,
+      "mean": -5.196386834260417,
+      "median": -5.3230928330000005,
+      "max": -3.307797132
+    },
+    "bandgap": {
+      "min": 0.0,
+      "mean": 0.6965589583333334,
+      "median": 0.5819000000000001,
+      "max": 3.0312
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "formula_tested": "Ba1Ge1S3",
+  "transformations": {
+    "atom_permutation": "reverse site order",
+    "origin_shift_fractional": [
+      0.137,
+      0.271,
+      0.389
+    ],
+    "axis_permutation": "(a,b,c) -> (b,c,a)",
+    "supercell": "2x1x1; not encoded because the node count necessarily doubles"
+  },
+  "results": [
+    {
+      "record_id": "Ba1Ge1S3--Ba1Ge1S3_dist_perovskite--nm--gga-static",
+      "prototype": "dist_perovskite",
+      "original_sites": 20,
+      "original_edges": 56,
+      "atom_permutation_invariant": true,
+      "origin_shift_invariant": true,
+      "cyclic_axis_permutation_invariant": true,
+      "supercell_sites": 40,
+      "supercell_invariant_by_construction": false
+    },
+    {
+      "record_id": "Ba1Ge1S3--Ba1Ge1S3_hexagonal--nm--gga-static",
+      "prototype": "hexagonal",
+      "original_sites": 20,
+      "original_edges": 41,
+      "atom_permutation_invariant": true,
+      "origin_shift_invariant": true,
+      "cyclic_axis_permutation_invariant": true,
+      "supercell_sites": 40,
+      "supercell_invariant_by_construction": false
+    },
+    {
+      "record_id": "Ba1Ge1S3--Ba1Ge1S3_needle--nm--gga-static",
+      "prototype": "needle",
+      "original_sites": 20,
+      "original_edges": 40,
+      "atom_permutation_invariant": true,
+      "origin_shift_invariant": true,
+      "cyclic_axis_permutation_invariant": true,
+      "supercell_sites": 40,
+      "supercell_invariant_by_construction": false
+    }
+  ],
+  "warning": "This is a sanity check on one formula and three prototypes, not a proof of invariance for every possible equivalent cell transformation."
+}
