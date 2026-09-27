@@ -1,0 +1,26 @@
+check,passed,value,tolerance,detail
+hashes del checkpoint,True,4,4,
+forma de embeddings,True,"(899, 768)","(899, 768)",
+longitud del tokenizer,True,899,899,
+weight tying,True,,,
+bias MLM redimensionado,True,899,899,
+filas 0–766 intactas,True,0.0,0.0,
+IDs token↔tabla,True,,,
+132 IDs nuevos únicos,True,132,132,
+conteos por familia,True,"{'elemento': 84, 'marcador': 1, 'nodo': 20, 'traslación': 27}","{'marcador': 1, 'elemento': 84, 'nodo': 20, 'traslación': 27}",
+17 elementos transferidos,True,17,17,
+transferencia química exacta,True,0.0,0.0,
+67 elementos fallback,True,67,67,
+fórmula fallback,True,0.0,1e-06,
+offsets fallback ortonormales,True,9.5367431640625e-07,1e-05,
+fórmula de nodos,True,0.0,1e-06,
+offsets de nodos ortonormales,True,3.5762786865234375e-07,1e-05,
+distancias de nodos uniformes,True,4.470348358154297e-08,1e-05,
+sin cercanía ordinal,True,3.725290298461914e-09,1e-05,"adyacentes=0.03912323, no adyacentes=0.03912323"
+fórmula de 27 traslaciones,True,0.0,1e-06,
+tres ejes ortonormales,True,1.1920928955078125e-07,1e-05,
+13 parejas opuestas,True,1.862645149230957e-09,1e-06,parejas=13
+composición ++o,True,7.450580596923828e-09,1e-06,
+fórmula [SLICES],True,0.0,1e-06,
+centros derivados del checkpoint,True,0.0,1e-07,
+normas nuevas dentro de q01–q99,True,132/132,132/132,"intervalo=[0.521993, 0.583841]"

@@ -1,0 +1,47 @@
+{
+  "schema_version": "SLICES-typed-v1",
+  "base_tokenizer": {
+    "name": "seyonec/ChemBERTa-zinc-base-v1",
+    "revision": "761d6a18cf99db371e0b43baf3e2d21b3e865a20",
+    "size": 767
+  },
+  "extended_tokenizer_size": 899,
+  "slices_marker": "[SLICES]",
+  "vocabulary": {
+    "total_added": 132,
+    "elements": 84,
+    "nodes": 20,
+    "translations": 27
+  },
+  "split_sources": {
+    "train": {
+      "path": "data/splits/train.csv",
+      "sha256": "7448c04a7b4cff55753a8919c0831393cd498eb818385582c9787d4070e5f615",
+      "rows": 1628
+    },
+    "val": {
+      "path": "data/splits/val.csv",
+      "sha256": "14b1663c35f371b1c442999ad2f2faffacf87e93e8520c6e24cb629bb3533556",
+      "rows": 204
+    },
+    "test": {
+      "path": "data/splits/test.csv",
+      "sha256": "7847ff40c346539fe2982a075d3aa55b3a522f5672e84deb5bc74c0d9fa7de0c",
+      "rows": 204
+    }
+  },
+  "validation": {
+    "grammar_errors": 0,
+    "round_trip_errors": 0,
+    "val_test_types_outside_train": 0,
+    "typed_fragmentation": 0,
+    "typed_unknown_tokens": 0
+  },
+  "lengths": {
+    "original_mean_expansion": 2.7030441142723025,
+    "typed_mean_expansion_over_original": 1.0159225722454155,
+    "original_sequences_over_512": 143,
+    "typed_sequences_over_512": 0,
+    "typed_max_with_special_tokens": 311
+  }
+}

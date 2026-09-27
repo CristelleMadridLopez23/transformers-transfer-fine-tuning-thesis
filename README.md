@@ -1,16 +1,16 @@
 # Transformers transfer & fine-tuning thesis
 
-Repositorio de tesis para evaluar representaciones moleculares y cristalinas en
-materiales inorgánicos.
+Repositorio de tesis para investigar representaciones de materiales
+inorgánicos y su utilidad en la predicción de propiedades.
 
-El primer bracket experimental está autocontenido en
-[`transferability/`](transferability/README.md). La caché de Hugging Face, el
-entorno virtual y los artefactos reproducibles permanecen en la raíz:
+El repositorio se encuentra en una etapa inicial. Se conservan los datasets
+fuente y el flujo general de auditoría y preprocesamiento como punto de partida
+para diseñar una nueva representación.
 
 ```text
-.cache/          # checkpoints descargados
-.venv/           # entorno local
-artifacts/       # embeddings y métricas generadas
-data/            # dataset fuente compartido
-transferability/ # código, notebooks y datos derivados del primer bracket
+data/            # datasets fuente compartidos
+transferability/ # auditoría y preprocesamiento independientes del modelo
 ```
+
+Consulta [`transferability/`](transferability/README.md) para ejecutar la
+auditoría reproducible del dataset.

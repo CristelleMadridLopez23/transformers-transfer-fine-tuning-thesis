@@ -1,0 +1,133 @@
+familia,token_original,token_tipado,significado,train_apariciones,val_apariciones,test_apariciones,token_id,piezas_modelo
+marcador,,[SLICES],inicio de una secuencia en lenguaje SLICES,1628,204,204,767,1
+elemento,H,<EL_H>,elemento H; número atómico 1,99,15,12,768,1
+elemento,Li,<EL_Li>,elemento Li; número atómico 3,553,70,44,769,1
+elemento,Be,<EL_Be>,elemento Be; número atómico 4,21,0,0,770,1
+elemento,B,<EL_B>,elemento B; número atómico 5,39,9,2,771,1
+elemento,C,<EL_C>,elemento C; número atómico 6,128,9,9,772,1
+elemento,N,<EL_N>,elemento N; número atómico 7,458,36,49,773,1
+elemento,O,<EL_O>,elemento O; número atómico 8,6476,623,722,774,1
+elemento,F,<EL_F>,elemento F; número atómico 9,1175,121,141,775,1
+elemento,Na,<EL_Na>,elemento Na; número atómico 11,248,38,27,776,1
+elemento,Mg,<EL_Mg>,elemento Mg; número atómico 12,597,72,76,777,1
+elemento,Al,<EL_Al>,elemento Al; número atómico 13,66,7,9,778,1
+elemento,Si,<EL_Si>,elemento Si; número atómico 14,105,21,26,779,1
+elemento,P,<EL_P>,elemento P; número atómico 15,205,22,30,780,1
+elemento,S,<EL_S>,elemento S; número atómico 16,907,145,90,781,1
+elemento,Cl,<EL_Cl>,elemento Cl; número atómico 17,381,62,37,782,1
+elemento,K,<EL_K>,elemento K; número atómico 19,253,14,26,783,1
+elemento,Ca,<EL_Ca>,elemento Ca; número atómico 20,206,24,26,784,1
+elemento,Sc,<EL_Sc>,elemento Sc; número atómico 21,39,2,2,785,1
+elemento,Ti,<EL_Ti>,elemento Ti; número atómico 22,90,7,2,786,1
+elemento,V,<EL_V>,elemento V; número atómico 23,270,32,30,787,1
+elemento,Cr,<EL_Cr>,elemento Cr; número atómico 24,190,26,16,788,1
+elemento,Mn,<EL_Mn>,elemento Mn; número atómico 25,667,45,31,789,1
+elemento,Fe,<EL_Fe>,elemento Fe; número atómico 26,321,30,15,790,1
+elemento,Co,<EL_Co>,elemento Co; número atómico 27,435,52,54,791,1
+elemento,Ni,<EL_Ni>,elemento Ni; número atómico 28,170,16,24,792,1
+elemento,Cu,<EL_Cu>,elemento Cu; número atómico 29,350,48,50,793,1
+elemento,Zn,<EL_Zn>,elemento Zn; número atómico 30,187,11,18,794,1
+elemento,Ga,<EL_Ga>,elemento Ga; número atómico 31,94,13,6,795,1
+elemento,Ge,<EL_Ge>,elemento Ge; número atómico 32,84,18,11,796,1
+elemento,As,<EL_As>,elemento As; número atómico 33,143,40,16,797,1
+elemento,Se,<EL_Se>,elemento Se; número atómico 34,721,112,97,798,1
+elemento,Br,<EL_Br>,elemento Br; número atómico 35,233,13,44,799,1
+elemento,Rb,<EL_Rb>,elemento Rb; número atómico 37,115,30,30,800,1
+elemento,Sr,<EL_Sr>,elemento Sr; número atómico 38,259,30,42,801,1
+elemento,Y,<EL_Y>,elemento Y; número atómico 39,63,10,37,802,1
+elemento,Zr,<EL_Zr>,elemento Zr; número atómico 40,55,10,7,803,1
+elemento,Nb,<EL_Nb>,elemento Nb; número atómico 41,67,13,5,804,1
+elemento,Mo,<EL_Mo>,elemento Mo; número atómico 42,181,37,23,805,1
+elemento,Tc,<EL_Tc>,elemento Tc; número atómico 43,11,7,2,806,1
+elemento,Ru,<EL_Ru>,elemento Ru; número atómico 44,63,8,6,807,1
+elemento,Rh,<EL_Rh>,elemento Rh; número atómico 45,53,5,4,808,1
+elemento,Pd,<EL_Pd>,elemento Pd; número atómico 46,59,14,10,809,1
+elemento,Ag,<EL_Ag>,elemento Ag; número atómico 47,225,15,24,810,1
+elemento,Cd,<EL_Cd>,elemento Cd; número atómico 48,106,7,16,811,1
+elemento,In,<EL_In>,elemento In; número atómico 49,101,11,11,812,1
+elemento,Sn,<EL_Sn>,elemento Sn; número atómico 50,152,12,17,813,1
+elemento,Sb,<EL_Sb>,elemento Sb; número atómico 51,208,39,34,814,1
+elemento,Te,<EL_Te>,elemento Te; número atómico 52,502,76,77,815,1
+elemento,I,<EL_I>,elemento I; número atómico 53,207,40,41,816,1
+elemento,Xe,<EL_Xe>,elemento Xe; número atómico 54,2,0,0,817,1
+elemento,Cs,<EL_Cs>,elemento Cs; número atómico 55,124,16,20,818,1
+elemento,Ba,<EL_Ba>,elemento Ba; número atómico 56,158,34,35,819,1
+elemento,La,<EL_La>,elemento La; número atómico 57,95,9,16,820,1
+elemento,Ce,<EL_Ce>,elemento Ce; número atómico 58,55,12,13,821,1
+elemento,Pr,<EL_Pr>,elemento Pr; número atómico 59,45,11,7,822,1
+elemento,Nd,<EL_Nd>,elemento Nd; número atómico 60,66,10,1,823,1
+elemento,Pm,<EL_Pm>,elemento Pm; número atómico 61,12,0,0,824,1
+elemento,Sm,<EL_Sm>,elemento Sm; número atómico 62,37,5,0,825,1
+elemento,Eu,<EL_Eu>,elemento Eu; número atómico 63,88,17,8,826,1
+elemento,Gd,<EL_Gd>,elemento Gd; número atómico 64,18,9,20,827,1
+elemento,Tb,<EL_Tb>,elemento Tb; número atómico 65,33,4,1,828,1
+elemento,Dy,<EL_Dy>,elemento Dy; número atómico 66,61,0,1,829,1
+elemento,Ho,<EL_Ho>,elemento Ho; número atómico 67,21,10,5,830,1
+elemento,Er,<EL_Er>,elemento Er; número atómico 68,48,4,10,831,1
+elemento,Tm,<EL_Tm>,elemento Tm; número atómico 69,12,0,0,832,1
+elemento,Yb,<EL_Yb>,elemento Yb; número atómico 70,2,0,7,833,1
+elemento,Lu,<EL_Lu>,elemento Lu; número atómico 71,5,9,0,834,1
+elemento,Hf,<EL_Hf>,elemento Hf; número atómico 72,44,5,6,835,1
+elemento,Ta,<EL_Ta>,elemento Ta; número atómico 73,37,6,4,836,1
+elemento,W,<EL_W>,elemento W; número atómico 74,173,21,13,837,1
+elemento,Re,<EL_Re>,elemento Re; número atómico 75,9,3,4,838,1
+elemento,Os,<EL_Os>,elemento Os; número atómico 76,25,5,6,839,1
+elemento,Ir,<EL_Ir>,elemento Ir; número atómico 77,34,10,10,840,1
+elemento,Pt,<EL_Pt>,elemento Pt; número atómico 78,29,2,3,841,1
+elemento,Au,<EL_Au>,elemento Au; número atómico 79,85,9,12,842,1
+elemento,Hg,<EL_Hg>,elemento Hg; número atómico 80,66,8,17,843,1
+elemento,Tl,<EL_Tl>,elemento Tl; número atómico 81,83,12,4,844,1
+elemento,Pb,<EL_Pb>,elemento Pb; número atómico 82,88,1,12,845,1
+elemento,Bi,<EL_Bi>,elemento Bi; número atómico 83,253,25,14,846,1
+elemento,Ac,<EL_Ac>,elemento Ac; número atómico 89,2,0,0,847,1
+elemento,Th,<EL_Th>,elemento Th; número atómico 90,4,5,0,848,1
+elemento,U,<EL_U>,elemento U; número atómico 92,34,3,2,849,1
+elemento,Np,<EL_Np>,elemento Np; número atómico 93,2,0,0,850,1
+elemento,Pu,<EL_Pu>,elemento Pu; número atómico 94,11,1,0,851,1
+nodo,0,<N_0>,identificador del nodo 0 en el grafo cociente,9986,1250,1224,852,1
+nodo,1,<N_1>,identificador del nodo 1 en el grafo cociente,9515,1191,1154,853,1
+nodo,2,<N_2>,identificador del nodo 2 en el grafo cociente,8597,1061,1087,854,1
+nodo,3,<N_3>,identificador del nodo 3 en el grafo cociente,8074,1025,991,855,1
+nodo,4,<N_4>,identificador del nodo 4 en el grafo cociente,6822,865,824,856,1
+nodo,5,<N_5>,identificador del nodo 5 en el grafo cociente,6462,821,789,857,1
+nodo,6,<N_6>,identificador del nodo 6 en el grafo cociente,5874,777,760,858,1
+nodo,7,<N_7>,identificador del nodo 7 en el grafo cociente,5547,727,713,859,1
+nodo,8,<N_8>,identificador del nodo 8 en el grafo cociente,5050,661,625,860,1
+nodo,9,<N_9>,identificador del nodo 9 en el grafo cociente,4863,614,577,861,1
+nodo,10,<N_10>,identificador del nodo 10 en el grafo cociente,3983,457,454,862,1
+nodo,11,<N_11>,identificador del nodo 11 en el grafo cociente,3890,453,446,863,1
+nodo,12,<N_12>,identificador del nodo 12 en el grafo cociente,3381,385,360,864,1
+nodo,13,<N_13>,identificador del nodo 13 en el grafo cociente,3192,347,306,865,1
+nodo,14,<N_14>,identificador del nodo 14 en el grafo cociente,2558,259,267,866,1
+nodo,15,<N_15>,identificador del nodo 15 en el grafo cociente,2293,227,227,867,1
+nodo,16,<N_16>,identificador del nodo 16 en el grafo cociente,1593,145,154,868,1
+nodo,17,<N_17>,identificador del nodo 17 en el grafo cociente,1514,122,144,869,1
+nodo,18,<N_18>,identificador del nodo 18 en el grafo cociente,1205,98,117,870,1
+nodo,19,<N_19>,identificador del nodo 19 en el grafo cociente,823,65,91,871,1
+traslación,---,<T_--->,"vector periódico (-1, -1, -1)",259,38,39,872,1
+traslación,--o,<T_--o>,"vector periódico (-1, -1, 0)",1114,146,144,873,1
+traslación,--+,<T_--+>,"vector periódico (-1, -1, 1)",45,9,5,874,1
+traslación,-o-,<T_-o->,"vector periódico (-1, 0, -1)",739,90,106,875,1
+traslación,-oo,<T_-oo>,"vector periódico (-1, 0, 0)",4136,503,503,876,1
+traslación,-o+,<T_-o+>,"vector periódico (-1, 0, 1)",236,36,30,877,1
+traslación,-+-,<T_-+->,"vector periódico (-1, 1, -1)",34,1,1,878,1
+traslación,-+o,<T_-+o>,"vector periódico (-1, 1, 0)",267,24,25,879,1
+traslación,-++,<T_-++>,"vector periódico (-1, 1, 1)",27,2,0,880,1
+traslación,o--,<T_o-->,"vector periódico (0, -1, -1)",730,91,99,881,1
+traslación,o-o,<T_o-o>,"vector periódico (0, -1, 0)",4097,504,519,882,1
+traslación,o-+,<T_o-+>,"vector periódico (0, -1, 1)",187,27,23,883,1
+traslación,oo-,<T_oo->,"vector periódico (0, 0, -1)",3323,374,395,884,1
+traslación,ooo,<T_ooo>,"vector periódico (0, 0, 0)",21114,2476,2495,885,1
+traslación,oo+,<T_oo+>,"vector periódico (0, 0, 1)",2388,320,275,886,1
+traslación,o+-,<T_o+->,"vector periódico (0, 1, -1)",221,21,21,887,1
+traslación,o+o,<T_o+o>,"vector periódico (0, 1, 0)",3203,403,358,888,1
+traslación,o++,<T_o++>,"vector periódico (0, 1, 1)",314,60,42,889,1
+traslación,+--,<T_+-->,"vector periódico (1, -1, -1)",37,2,1,890,1
+traslación,+-o,<T_+-o>,"vector periódico (1, -1, 0)",298,27,30,891,1
+traslación,+-+,<T_+-+>,"vector periódico (1, -1, 1)",24,0,1,892,1
+traslación,+o-,<T_+o->,"vector periódico (1, 0, -1)",268,28,22,893,1
+traslación,+oo,<T_+oo>,"vector periódico (1, 0, 0)",3446,437,392,894,1
+traslación,+o+,<T_+o+>,"vector periódico (1, 0, 1)",350,47,41,895,1
+traslación,++-,<T_++->,"vector periódico (1, 1, -1)",32,2,5,896,1
+traslación,++o,<T_++o>,"vector periódico (1, 1, 0)",640,95,71,897,1
+traslación,+++,<T_+++>,"vector periódico (1, 1, 1)",82,12,12,898,1
