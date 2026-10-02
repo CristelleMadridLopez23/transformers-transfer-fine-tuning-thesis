@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/.venv/bin/python",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "display_name": "Transformers project (.venv)",
+  "language": "python",
+  "metadata": {
+    "debugger": true
+  }
+}

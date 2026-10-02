@@ -9,4 +9,4 @@ __pycache__/
 artifacts/
 
 # Local source dataset exceeds GitHub's 100 MB per-file limit.
-data/results_no_meta.json
+data/raw_data/alexandria_00000.json
