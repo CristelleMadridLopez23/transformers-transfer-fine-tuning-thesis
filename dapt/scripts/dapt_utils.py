@@ -398,8 +398,19 @@ def grammar_aware_chunk(parsed: dict[str, Any], tokenizer,
     expected_edges = [tuple(x) for x in triples]
     actual_edges = []
     for chunk_id, tokens in enumerate(chunks):
-        ids = _encode_content(tokens, tokenizer)
-        full_ids = [int(x) for x in tokenizer.build_inputs_with_special_tokens(ids)]
+        # Transformers 5.x's slow RobertaTokenizer no longer exposes
+        # build_inputs_with_special_tokens. Calling the tokenizer is the
+        # supported, model-aware route for applying its post-processor.
+        encoded = tokenizer(" ".join(tokens), add_special_tokens=True,
+                            return_special_tokens_mask=True, truncation=False)
+        full_ids = [int(x) for x in encoded["input_ids"]]
+        special_mask = [int(x) for x in encoded["special_tokens_mask"]]
+        if len(full_ids) != len(special_mask):
+            raise RuntimeError("Tokenizer special-token mask does not align with encoded IDs.")
+        ids = [token_id for token_id, is_special in zip(full_ids, special_mask) if not is_special]
+        decoded_content = tokenizer.convert_ids_to_tokens(ids)
+        if len(ids) != len(tokens) or list(decoded_content) != tokens:
+            raise RuntimeError("Tokenization changed the SLICES lexical tokens while adding model special tokens.")
         if len(ids) > max_content_length:
             raise AssertionError("Chunk exceeds configured content-token limit.")
         categories = []
@@ -412,9 +423,19 @@ def grammar_aware_chunk(parsed: dict[str, Any], tokenizer,
         offset = len(prefix) + len(atoms)
         chunk_edges = [tuple(tokens[i:i+3]) for i in range(offset,len(tokens),3)]
         actual_edges.extend(chunk_edges)
+        aligned_categories = []
+        lexical_index = 0
+        for is_special in special_mask:
+            if is_special:
+                aligned_categories.append("other")
+            else:
+                aligned_categories.append(categories[lexical_index])
+                lexical_index += 1
+        if lexical_index != len(categories):
+            raise AssertionError("Special-token mask did not align with parsed SLICES token categories.")
         records.append({"chunk_id": chunk_id, "slices_chunk": " ".join(tokens),
                         "input_ids": full_ids, "content_ids": ids,
-                        "token_categories": ["other"] + categories + ["other"],
+                        "token_categories": aligned_categories,
                         "n_content_tokens": len(ids), "n_edge_triples": len(chunk_edges)})
     if actual_edges != expected_edges:
         return [], {"prefix_atoms_too_long": False, "reason": "edge_preservation_check_failed",
@@ -645,8 +666,8 @@ def metrics_from_predictions(predictions: pd.DataFrame) -> dict[str,Any]:
     loss=float(predictions["loss"].mean())
     return {"loss":loss,"perplexity":float(math.exp(min(loss,80))),
             "top1_accuracy":float((predictions["rank"]==1).mean()),
-            "top3_accuracy":float(predictions["rank"]<=3).mean(),
-            "top5_accuracy":float(predictions["rank"]<=5).mean(),
+            "top3_accuracy":float((predictions["rank"]<=3).mean()),
+            "top5_accuracy":float((predictions["rank"]<=5).mean()),
             "mrr":float((1/predictions["rank"]).mean()),
             "mean_true_probability":float(predictions["true_probability"].mean()),
             "masked_count":int(len(predictions))}
@@ -908,7 +929,9 @@ def _make_examples(pre: pd.DataFrame, post: pd.DataFrame, fixed_examples: dict[s
         examples["masked_slices_context"]=""
         lookup={(x["split"],x["mat_id"],x["chunk_id"]):x for split,items in fixed_examples.items() for x in items}
         for idx,row in examples.iterrows():
-            ex=lookup[(row["split"],row["mat_id"],int(row["chunk_id"]))]
+            # mat_id is suffixed by the PRE/POST merge; sequence_id is the
+            # shared key and preserves the material identifier unambiguously.
+            ex=lookup[(row["split"],row["sequence_id"],int(row["chunk_id"]))]
             ids=ex["masked_input_ids"]
             examples.loc[idx,"masked_slices_context"]=" ".join(str(t) for t in tokenizer.convert_ids_to_tokens(ids))
     examples.to_csv(out/"masked_prediction_examples.csv",index=False)
@@ -1305,13 +1328,13 @@ def run_dapt_pipeline(config: dict[str,Any], project_root: str | Path, run_dir: 
 
 
 def _category_top1(predictions: pd.DataFrame, split: str, category: str) -> float:
-    g=predictions.loc[(predictions.split==split)&(predictions.token_category==category)]
-    return float((g.rank==1).mean()) if len(g) else float("nan")
+    g=predictions.loc[(predictions["split"]==split)&(predictions["token_category"]==category)]
+    return float((g["rank"]==1).mean()) if len(g) else float("nan")
 
 
 def _group_top1(predictions: pd.DataFrame, group: str) -> float:
-    g=predictions.loc[predictions.original_or_added==group]
-    return float((g.rank==1).mean()) if len(g) else float("nan")
+    g=predictions.loc[predictions["original_or_added"]==group]
+    return float((g["rank"]==1).mean()) if len(g) else float("nan")
 
 
 def create_timestamped_run(root: str | Path, prefix: str) -> Path:
