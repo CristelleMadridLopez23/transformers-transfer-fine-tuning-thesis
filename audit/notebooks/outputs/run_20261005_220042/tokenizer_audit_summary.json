@@ -1,0 +1,73 @@
+{
+  "dataset": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/data/notebooks_processing/outputs/alexandria_clean_all.csv",
+  "n_sequences": 99998,
+  "n_input_rows": 99998,
+  "model_name": "seyonec/ChemBERTa-zinc-base-v1",
+  "model_revision_requested": null,
+  "tokenizer_revision_resolved": null,
+  "tokenizer_class": "RobertaTokenizer",
+  "vocab_size": 767,
+  "special_tokens": {
+    "pad_token": {
+      "token": "<pad>",
+      "token_id": 1
+    },
+    "unk_token": {
+      "token": "<unk>",
+      "token_id": 3
+    },
+    "mask_token": {
+      "token": "<mask>",
+      "token_id": 4
+    },
+    "cls_token": {
+      "token": "<s>",
+      "token_id": 0
+    },
+    "sep_token": {
+      "token": "</s>",
+      "token_id": 2
+    },
+    "bos_token": {
+      "token": "<s>",
+      "token_id": 0
+    },
+    "eos_token": {
+      "token": "</s>",
+      "token_id": 2
+    }
+  },
+  "tokenizer_model_max_length": 512,
+  "config_max_position_embeddings": 514,
+  "effective_context_limit": 512,
+  "mean_hf_tokens": 406.4723394467889,
+  "median_hf_tokens": 296.0,
+  "p95_hf_tokens": 1004.0,
+  "p99_hf_tokens": 1807.0599999999977,
+  "max_hf_tokens": 9463,
+  "global_fertility": 2.758055991235085,
+  "mean_per_sequence_fertility": 2.705353041198079,
+  "median_fertility": 2.676470588235294,
+  "p95_fertility": 2.8952618453865338,
+  "total_unk": 0,
+  "unk_token_id_available": true,
+  "sequences_with_unk": 0,
+  "percent_sequences_with_unk": 0.0,
+  "percent_over_128": 96.82993659873198,
+  "percent_over_256": 61.578231564631295,
+  "percent_over_512": 22.34544690893818,
+  "percent_over_1024": 4.6010920218404365,
+  "percent_over_effective_context": 22.34544690893818,
+  "n_unique_slices_tokens": 320,
+  "n_unique_chemberta_tokens_used": 82,
+  "vocabulary_observed_percent": 10.691003911342895,
+  "python_version": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+  "transformers_version": "5.17.0",
+  "pandas_version": "2.3.3",
+  "numpy_version": "2.2.6",
+  "random_seed": 42,
+  "batch_size": 512,
+  "truncation": false,
+  "padding": false,
+  "energy_targets_loaded": false
+}

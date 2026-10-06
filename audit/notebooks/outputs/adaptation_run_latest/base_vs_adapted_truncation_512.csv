@@ -1,0 +1,3 @@
+tokenizer,n_affected,percent_affected,mean_tokens_lost,median_tokens_lost,P95_tokens_lost,mean_fraction_retained,median_fraction_retained
+BASE,22345,22.34544690893818,76.26446528930579,0.0,492.0,0.9311463720050047,1.0
+ADAPTED,1682,1.6820336406728136,2.8484069681393627,0.0,0.0,0.9964261706248306,1.0

@@ -1,0 +1,6 @@
+flag,rows_flagged
+invalid_nsites,0
+invalid_volume,0
+invalid_volume_per_atom,0
+invalid_spg,0
+invalid_n_elements,0

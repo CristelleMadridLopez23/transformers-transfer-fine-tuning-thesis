@@ -1,0 +1,4 @@
+integer_magnitude_group,frequency,mean_chemberta_subtokens,median_chemberta_subtokens,p95_chemberta_subtokens,max_chemberta_subtokens,n_unique_integer_tokens
+0-9,6586966.0,1.0,1.0,1.0,1.0,10.0
+10-99,1905360.0,1.7487902548599739,2.0,2.0,2.0,90.0
+100-999,4316.0,2.6302131603336423,2.5,3.0,3.0,52.0

@@ -1,0 +1,8 @@
+threshold,row_count,composition_count
+<= 1 meV/atom,3171,3081
+<= 5 meV/atom,3356,3081
+<= 10 meV/atom,3510,3081
+<= 25 meV/atom,3861,3081
+<= 50 meV/atom,4233,3081
+<= 100 meV/atom,4799,3081
+> 100 meV/atom,1692,1586

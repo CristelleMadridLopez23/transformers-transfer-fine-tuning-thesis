@@ -1,0 +1,16 @@
+criterion,category,baseline,adapted,target,passed,comment,target_score,critical_pass
+C1_original_vocab_ids_preserved,CRITICAL,0.0,0.0,0 changed original token IDs,True,Tokenizer integrity invariant.,1.0,True
+C2_special_ids_preserved,CRITICAL,0.0,0.0,0 changed special token IDs,True,Tokenizer integrity invariant.,1.0,True
+C3_unk_rate_no_worse,CRITICAL,0.0,0.0,adapted UNK rate <= baseline,True,Tokenizer integrity invariant.,1.0,True
+C4_save_reload_100_percent,CRITICAL,,100.0,100% exact sequence encoding agreement,True,Tokenizer integrity invariant.,1.0,True
+C5_no_sequence_loss,CRITICAL,99998.0,99998.0,same number of sequences,True,Tokenizer integrity invariant.,1.0,True
+T1_global_fertility_le_1_20,TARGET,2.758055991235085,1.0,<= 1.20,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+T2_median_fertility_le_1_15,TARGET,2.676470588235294,1.0,<= 1.15,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+T3_P95_fertility_le_1_25,TARGET,2.8952618453865338,1.0,<= 1.25,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+T4_periodic_alignment_ge_95_percent,TARGET,0.0,100.0,>= 95%,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+T5_element_alignment_ge_95_percent,TARGET,0.0,100.0,>= 95%,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+T6_integer_alignment_ge_95_percent,TARGET,0.0,100.0,>= 95%,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+T7_relative_over512_reduction_ge_70_percent,TARGET,22.34544690893818,1.6820336406728136,>= 70% relative reduction,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+D1_global_lexical_alignment_ge_95_percent,DESIRABLE,0.6818898901732996,100.0,>= 95%,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+D2_median_length_approaches_110_to_130,DESIRABLE,296.0,112.0,110-130 tokens,True,"Targets are project-specific review criteria, not universal standards.",1.0,True
+D3_P95_length_below_450,DESIRABLE,1004.0,351.0,< 450 tokens,True,"Targets are project-specific review criteria, not universal standards.",1.0,True

@@ -1,0 +1,22 @@
+{
+  "base_model": "seyonec/ChemBERTa-zinc-base-v1",
+  "base_vocab_size": 767,
+  "adapted_vocab_size": 1021,
+  "n_added_tokens": 254,
+  "strategy": "B_lstrip_true",
+  "lstrip": true,
+  "dataset_sequences": 99998,
+  "unique_slices_tokens": 320,
+  "base_global_fertility": 2.758055991235085,
+  "adapted_global_fertility": 1.0,
+  "base_percent_over_512": 22.34544690893818,
+  "adapted_percent_over_512": 1.6820336406728136,
+  "original_token_ids_preserved": true,
+  "special_token_ids_preserved": true,
+  "reload_reproducible": true,
+  "accepted_for_dapt": true,
+  "final_recommendation": "ACCEPT FOR DAPT",
+  "creation_timestamp": "2026-10-05T22:40:13",
+  "transformers_version": "5.17.0",
+  "run_summary": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/audit/notebooks/outputs/adaptation_run_latest/tokenizer_adaptation_summary.json"
+}

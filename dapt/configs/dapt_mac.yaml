@@ -1,0 +1,25 @@
+# 03A: functional smoke test only; never a thesis model run.
+run_name: mac_smoke_test
+mode: debug
+base_model_name: seyonec/ChemBERTa-zinc-base-v1
+tokenizer_path: audit/tokenizers/chemberta_zinc_slices_adapted
+dataset_path: null
+split_path: dapt/configs/dapt_split_assignments.csv
+max_structures: 3000
+epochs: 1
+train_batch_size: 2
+eval_batch_size: 4
+gradient_accumulation_steps: 8
+learning_rate: 5.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.10
+mlm_probability: 0.15
+max_length: 512
+seed: 42
+diagnostic_seed: 12345
+num_workers: 0
+max_grad_norm: 1.0
+early_stopping_patience: 2
+save_total_limit: 2
+checkpoint_every_steps: 200
+minimum_grammar_fidelity: 0.995

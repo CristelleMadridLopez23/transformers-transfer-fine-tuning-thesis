@@ -1,0 +1,25 @@
+# 03B: full-corpus DAPT; submit explicitly through SLURM on MSI.
+run_name: msi_full_dapt
+mode: full
+base_model_name: seyonec/ChemBERTa-zinc-base-v1
+tokenizer_path: audit/tokenizers/chemberta_zinc_slices_adapted
+dataset_path: null
+split_path: dapt/configs/dapt_split_assignments.csv
+max_structures: null
+epochs: 8
+train_batch_size: 16
+eval_batch_size: 32
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.10
+mlm_probability: 0.15
+max_length: 512
+seed: 42
+diagnostic_seed: 12345
+num_workers: 4
+max_grad_norm: 1.0
+early_stopping_patience: 2
+save_total_limit: 2
+checkpoint_every_steps: 500
+minimum_grammar_fidelity: 0.995

@@ -1,0 +1,8 @@
+# DAPT runs and SLURM logs can contain large, reproducible artifacts.
+mac/*
+!mac/.gitkeep
+msi/*
+!msi/.gitkeep
+!msi/logs/
+msi/logs/*
+!msi/logs/.gitkeep

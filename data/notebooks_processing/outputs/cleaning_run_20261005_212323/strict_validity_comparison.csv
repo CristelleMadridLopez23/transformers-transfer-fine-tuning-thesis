@@ -1,0 +1,5 @@
+,nsites,nsites,nsites,n_elements,n_elements,n_elements,spg,spg,spg,energy_corrected_per_atom,energy_corrected_per_atom,energy_corrected_per_atom,slices_n_tokens,slices_n_tokens,slices_n_tokens,composition_count,composition_count,composition_count
+,count,median,mean,count,median,mean,count,median,mean,count,median,mean,count,median,mean,count,median,mean
+strict_valid_group,,,,,,,,,,,,,,,,,,
+not_strict_or_missing,1604,6.0,8.135910224438902,1604,3.0,3.03927680798005,1604,63.0,72.82107231920199,1604,-4.48423285,-4.668868121036137,1604,53.0,65.13279301745636,1604,1.0,1.1776807980049875
+strict_valid,98394,8.0,10.281277313657338,98394,3.0,3.2891538101916784,98394,123.0,112.44027074821635,98394,-5.020109166666667,-5.250209164817266,98394,112.0,147.98014106551213,98394,1.0,1.076600199199138
