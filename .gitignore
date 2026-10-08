@@ -21,4 +21,4 @@ data/notebooks_processing/outputs/**/alexandria_singleton_compositions.csv
 data/notebooks_processing/outputs/**/alexandria_00000_slices_all.csv
 data/notebooks_processing/outputs/**/alexandria_00000_slices_energy.csv
 data/notebooks_processing/outputs/**/alexandria_00000_slices_valid.csv
-/users/0/cmadridl/projects/transformers-transfer-fine-tuning-thesis/data/alexandria_clean_all.csv
+/users/0/cmadridl/projects/transformers-transfer-fine-tuning-thesis/data/alexandria_clean_all.csvalexandria_clean_all.csv
