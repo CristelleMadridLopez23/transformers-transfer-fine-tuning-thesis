@@ -1,0 +1,40 @@
+{
+  "mattext": {
+    "strict_load": true,
+    "parameters": 32962048,
+    "output_shape": [
+      1,
+      3,
+      512
+    ],
+    "finite": true,
+    "tokenizer_validated": false
+  },
+  "unconditional": {
+    "strict_load": true,
+    "parameters": 114026668,
+    "output_shape": [
+      1,
+      3,
+      172
+    ],
+    "finite": true,
+    "block_size": 442,
+    "vocab_size": 172,
+    "weights": "matgpt/checkpoints/unconditional/mat-uncond/weights/transformer_property_0.pth"
+  },
+  "formation-bandgap": {
+    "strict_load": true,
+    "parameters": 114028204,
+    "output_shape": [
+      1,
+      3,
+      172
+    ],
+    "finite": true,
+    "block_size": 444,
+    "vocab_size": 172,
+    "weights": "matgpt/checkpoints/formation-bandgap/mat-multi/weights/transformer_property_2.pth"
+  },
+  "note": "CPU, tokens sintéticos. MatGPT: nn.Module original aislado por AST; rearrange de escala sustituido por unsqueeze equivalente. No valida calidad científica ni correspondencia del tokenizador MatText."
+}

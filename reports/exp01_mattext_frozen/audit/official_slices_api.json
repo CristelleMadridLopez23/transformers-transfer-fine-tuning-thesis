@@ -1,0 +1,21 @@
+{
+  "version": "2.0.12",
+  "samples": [
+    {
+      "structure_id": "Ba1Ge1S3--Ba1Ge1S3_dist_perovskite--nm--gga-static",
+      "graph_equivalent": true,
+      "basic_valid": true
+    },
+    {
+      "structure_id": "Ba1Ge1S3--Ba1Ge1S3_hexagonal--nm--gga-static",
+      "graph_equivalent": true,
+      "basic_valid": true
+    },
+    {
+      "structure_id": "Ba1Ge1S3--Ba1Ge1S3_needle--nm--gga-static",
+      "graph_equivalent": true,
+      "basic_valid": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,4 @@
+split,target_fraction,formulas,formula_fraction,configurations,configuration_fraction,configuration_deviation_pp,trajectories,static
+train,0.8,64,0.8,7106,0.7986064284108788,-0.1393571589121234,192,192
+val,0.1,8,0.1,932,0.10474263879523489,0.47426387952348853,24,24
+test,0.1,8,0.1,860,0.09665093279388627,-0.33490672061137344,24,24

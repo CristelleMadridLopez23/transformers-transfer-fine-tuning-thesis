@@ -1,0 +1,18 @@
+{
+  "experiment_id": "only_hex_new_csv_slices",
+  "source": "data/only_hex_new/configurations_only_hex_new.extxyz",
+  "source_manifest": "data/only_hex_new/manifest.json",
+  "split_manifest": "data/only_hex_new/formula_split/manifest.json",
+  "configuration_index": "data/only_hex_new/formula_split/configuration_index.csv",
+  "formula_assignment": "data/only_hex_new/formula_split/formula_assignment.csv",
+  "processed": "data/processed/only_hex_new_csv_slices",
+  "reports": "reports/only_hex_new_csv_slices",
+  "expected_frames": 8898,
+  "expected_formulas": 80,
+  "energy_tolerance_ev_atom": 1e-8,
+  "graph_method": "econnn",
+  "slices_version": "2.0.12",
+  "workers": 4,
+  "frame_timeout_seconds": 120,
+  "logging_level": "INFO"
+}

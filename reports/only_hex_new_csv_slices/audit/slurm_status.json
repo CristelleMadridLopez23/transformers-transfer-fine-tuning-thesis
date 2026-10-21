@@ -1,0 +1,13 @@
+{
+  "job_id": "4310202",
+  "queried_at_utc": "2026-10-21T18:05:45.937971+00:00",
+  "sacct": "JobID|State|ExitCode|Elapsed|MaxRSS\n4310202|COMPLETED|0:0|00:07:23|\n4310202.batch|COMPLETED|0:0|00:07:23|2539624K\n4310202.extern|COMPLETED|0:0|00:07:23|\n",
+  "status": "COMPLETED",
+  "exit_code": "0:0",
+  "output_counts": {
+    "configurations.csv": 8898,
+    "configurations_slices.csv": 8898,
+    "slices_valid.csv": 8712,
+    "slices_rejected.csv": 186
+  }
+}

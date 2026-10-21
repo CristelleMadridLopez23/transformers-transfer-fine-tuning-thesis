@@ -1,0 +1,71 @@
+{
+  "experiment_id": "exp01_mattext_frozen",
+  "status": "blocked",
+  "fingerprint": {
+    "config": "05bf99355ed84b0572a0a965aa8693e346f45c11e166f32339e9562e1514436f",
+    "source": "c10c8c5378beaea03a33978da772329ff31e765b6c4a6da7d0c20bc588a92012",
+    "checkpoint": "6bef5652d758190e6e6eaf85ccf2a2f584b69255f1be3bb7bdd72cb1f12a74bd",
+    "checkpoint_config": "ddd1b4cf361b4fe3a2724563d840e5424bfe05c62aa1ff922a1cc7d7a5da40c0",
+    "dataset": "80d4c80443e35ff56c2404b8760d35db17bcce81cb48c3d2bb5506aa1f293f61",
+    "splits": "87c673cf3dc5e63d7bd8e40c9a28d3cbfa653424ef58525410e37ce0db9f5d66",
+    "slices": "edeb7c600d6ae835ea1eaa13df801bd3642fd7d1a10e2847f90c0275f9be45dd",
+    "slices_summary": "a1c9d394fb3f034495ea04f6d73964f622e65f79e235f0ad13d932e068d688b6",
+    "vocab": "754a9679b524c31c1a674023616152c2e44049e9bc145ad5f135b950a1cd0966",
+    "experiment_code": "8abf4909a1f7f2fe3124e0078f2baf290779d912f5db87610844e57a7ae69fba"
+  },
+  "environment": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.17.0",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.9",
+    "safetensors": "0.8.0",
+    "PyYAML": "6.0.3",
+    "pymatgen": "2025.10.7",
+    "slices": "2.0.12",
+    "xtal2txt": null
+  },
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "git_revision": {
+    "command": [
+      "git",
+      "-C",
+      "/users/0/cmadridl/projects/transformers-transfer-fine-tuning-thesis",
+      "rev-parse",
+      "HEAD"
+    ],
+    "returncode": 0,
+    "stdout": "9197a333057e876417e5575a7f8c21a81189a4e7\n",
+    "stderr": ""
+  },
+  "seed": 42,
+  "blockers": [
+    "Ambiguous static energy/structure associations; inspect energy_ambiguities.csv",
+    "No checkpoint-specific original tokenizer artifact proves vocabulary IDs and CLS/SEP wrapping"
+  ],
+  "embeddings_produced": false,
+  "scientific_metrics_produced": false,
+  "figures": [
+    "reports/exp01_mattext_frozen/figures/01_energy_distribution.png",
+    "reports/exp01_mattext_frozen/figures/02_slices_sequence_lengths.png",
+    "reports/exp01_mattext_frozen/figures/03_tokenizer_coverage.png"
+  ],
+  "code_sha256": {
+    "model-pretrained/scripts/exp01_mattext_frozen/00_inventory.py": "a5d262628277ca303a6db9d75d5bcba509b85384b1a39b97fb66f0ad780e1f28",
+    "model-pretrained/scripts/exp01_mattext_frozen/01_prepare_dataset.py": "d1fdf6a993e19bc0f90193742233d1332074489e2e2b6e6a9608a5d771fcc2d8",
+    "model-pretrained/scripts/exp01_mattext_frozen/02_audit_slices.py": "81bdbd46f8413a0c748e7be4d76c4084fc416504d954b049103abd76aba4c873",
+    "model-pretrained/scripts/exp01_mattext_frozen/03_extract_embeddings.py": "d37a22f9791baa75911010ed037193a69108539313396f6bb8eb5b96831dc216",
+    "model-pretrained/scripts/exp01_mattext_frozen/04_train_regressors.py": "8fe290222c6a4470db6b94415eb403f3734be42f472e76bc61fac4964d0315a5",
+    "model-pretrained/scripts/exp01_mattext_frozen/05_evaluate_models.py": "f742c0525a2411e422b6ddf42c86d1a5ce858399c2c3ef1c1090a2b9da4ae385",
+    "model-pretrained/scripts/exp01_mattext_frozen/06_generate_reports.py": "5e9fbf06d3dcff44c10b359b6db8e9d5e682472a8245638c17eef49912621b95",
+    "model-pretrained/scripts/exp01_mattext_frozen/run_experiment.py": "725d49de6012378a95f61819abd0135a840f368a3dce9fe4e7eae37088dc85f0",
+    "model-pretrained/scripts/exp01_mattext_frozen/slurm_control.py": "8bb0107436810b5ca7fb37da6835152ff9f13c3074b19016efc27ccdc6cc834c",
+    "model-pretrained/scripts/exp01_mattext_frozen/test_exp01.py": "439df262cad0ed7af4b570b05be5fae5818983a7cae471b4eedf903868477f98",
+    "model-pretrained/scripts/exp01_mattext_frozen/utils.py": "05a5e222d2be65988bbf6f01bb461302fdbb599a77f09415b697cc7c3d515756"
+  },
+  "slurm": {
+    "submitted": false,
+    "job_ids": []
+  }
+}

@@ -1,0 +1,8 @@
+# logging files
+log/*
+
+# checkpoints and tensorboard logging
+runs/*
+
+# cache
+*.pyc

@@ -1,0 +1,13 @@
+polymorph,trajectory_region,before,after,retention_fraction
+dist_perovskite,early,590,590,1.0
+dist_perovskite,middle,1635,1635,1.0
+dist_perovskite,late,576,576,1.0
+dist_perovskite,static,80,80,1.0
+hexagonal,early,1634,772,0.4724602203182375
+hexagonal,middle,4772,1559,0.32669740150880133
+hexagonal,late,1623,722,0.4448552064078866
+hexagonal,static,80,80,1.0
+needle,early,593,593,1.0
+needle,middle,1637,1637,1.0
+needle,late,574,574,1.0
+needle,static,80,80,1.0

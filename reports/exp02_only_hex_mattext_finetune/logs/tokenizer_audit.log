@@ -1,0 +1,10 @@
+2026-10-21 13:04:54,502 level=INFO logger=exp02 message="tokenizer_audit_progress frames=1000 compatible=1000"
+2026-10-21 13:04:55,849 level=INFO logger=exp02 message="tokenizer_audit_progress frames=2000 compatible=2000"
+2026-10-21 13:04:57,029 level=INFO logger=exp02 message="tokenizer_audit_progress frames=3000 compatible=3000"
+2026-10-21 13:04:58,162 level=INFO logger=exp02 message="tokenizer_audit_progress frames=4000 compatible=3968"
+2026-10-21 13:04:59,296 level=INFO logger=exp02 message="tokenizer_audit_progress frames=5000 compatible=4968"
+2026-10-21 13:05:00,389 level=INFO logger=exp02 message="tokenizer_audit_progress frames=6000 compatible=5861"
+2026-10-21 13:05:01,642 level=INFO logger=exp02 message="tokenizer_audit_progress frames=7000 compatible=6861"
+2026-10-21 13:05:02,886 level=INFO logger=exp02 message="tokenizer_audit_progress frames=8000 compatible=7824"
+2026-10-21 13:05:05,767 level=INFO logger=exp02 message="tokenizer_audit_complete global=failed official=passed checkpoint_proof=False"
+AUDIT BLOCKED: inspect tokenizer_compatibility.md; no training was submitted

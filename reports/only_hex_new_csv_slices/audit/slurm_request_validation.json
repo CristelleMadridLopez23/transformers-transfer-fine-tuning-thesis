@@ -1,0 +1,13 @@
+{
+  "command": [
+    "sbatch",
+    "--test-only",
+    "--account=cbartel",
+    "sh_files/only_hex_new_csv_slices/convert.sbatch"
+  ],
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "sbatch: Job 4310101 to start at 2026-11-09T02:17:04 a using 4 processors on nodes acn05 in partition msismall\n",
+  "conda_base": "/common/software/install/manual/miniforge3/26.3.2.3",
+  "env_prefix": "/users/0/cmadridl/.conda/envs/dmc"
+}

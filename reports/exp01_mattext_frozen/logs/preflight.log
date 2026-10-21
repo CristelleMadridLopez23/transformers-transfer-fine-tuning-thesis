@@ -1,0 +1,6 @@
+2026-10-21 00:37:43,517 level=INFO logger=exp01 message="inventory files=125 checkpoint_integrity=True"
+2026-10-21 00:37:50,784 level=INFO logger=exp01 message="dataset samples=225 compositions=75 blockers=1"
+2026-10-21 00:38:15,005 level=INFO logger=exp01 message="tokenizer samples=225 candidate_valid=225 blockers=['No checkpoint-specific original tokenizer artifact proves vocabulary IDs and CLS/SEP wrapping']"
+2026-10-21 00:38:38,029 level=INFO logger=exp01 message="report_saved figures=3 scientific_results=False"
+2026-10-21 00:38:38,029 level=INFO logger=exp01 message="preflight_complete status=failed blockers=2"
+PREFLIGHT BLOCKED: scientific jobs were not submitted; inspect audit/preflight.json

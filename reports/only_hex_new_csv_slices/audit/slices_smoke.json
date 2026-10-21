@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "samples": [
+    {
+      "config_id": "Ba1Ge1S3--Ba1Ge1S3_dist_perovskite--nm--gga-relax::trajectory::0000",
+      "data_origin": "relax_trajectory",
+      "polymorph_family": "dist_perovskite",
+      "status": "accepted",
+      "strategy3_graph_equivalent": true,
+      "error": ""
+    },
+    {
+      "config_id": "Ba1Ge1S3--Ba1Ge1S3_dist_perovskite--nm--gga-static::static",
+      "data_origin": "static",
+      "polymorph_family": "dist_perovskite",
+      "status": "accepted",
+      "strategy3_graph_equivalent": true,
+      "error": ""
+    },
+    {
+      "config_id": "Ba1Ge1S3--Ba1Ge1S3_hexagonal--nm--gga-relax::trajectory::0000",
+      "data_origin": "relax_trajectory",
+      "polymorph_family": "hexagonal",
+      "status": "accepted",
+      "strategy3_graph_equivalent": true,
+      "error": ""
+    },
+    {
+      "config_id": "Ba1Ge1S3--Ba1Ge1S3_hexagonal--nm--gga-static::static",
+      "data_origin": "static",
+      "polymorph_family": "hexagonal",
+      "status": "accepted",
+      "strategy3_graph_equivalent": true,
+      "error": ""
+    },
+    {
+      "config_id": "Ba1Ge1S3--Ba1Ge1S3_needle--nm--gga-relax::trajectory::0000",
+      "data_origin": "relax_trajectory",
+      "polymorph_family": "needle",
+      "status": "accepted",
+      "strategy3_graph_equivalent": true,
+      "error": ""
+    },
+    {
+      "config_id": "Ba1Ge1S3--Ba1Ge1S3_needle--nm--gga-static::static",
+      "data_origin": "static",
+      "polymorph_family": "needle",
+      "status": "accepted",
+      "strategy3_graph_equivalent": true,
+      "error": ""
+    }
+  ]
+}

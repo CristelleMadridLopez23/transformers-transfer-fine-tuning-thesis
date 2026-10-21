@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "original_inputs": [
+    {
+      "path": "model-pretrained/mattext-slices-2m/model.safetensors",
+      "sha256": "6bef5652d758190e6e6eaf85ccf2a2f584b69255f1be3bb7bdd72cb1f12a74bd",
+      "matches_preexisting_manifest": true
+    },
+    {
+      "path": "model-pretrained/mattext-slices-2m/config.json",
+      "sha256": "ddd1b4cf361b4fe3a2724563d840e5424bfe05c62aa1ff922a1cc7d7a5da40c0",
+      "matches_preexisting_manifest": true
+    },
+    {
+      "path": "data/only_hex_new/configurations_only_hex_new.extxyz",
+      "sha256": "a31f436fd6f44be4f85c5110f8d5ebe37718a5b28eec5453425d6a9724271de4",
+      "matches_preexisting_manifest": true
+    }
+  ],
+  "prior_audit_artifacts_unchanged": true,
+  "prior_code_inventory_aggregate": "b1f500230ce55035105696c0494615661100c2edd9089ce9f09ffc4eb25d425c",
+  "prior_experiment_code_unchanged": true,
+  "prior_code_fingerprint_from_audit": "b1f500230ce55035105696c0494615661100c2edd9089ce9f09ffc4eb25d425c",
+  "zenodo_published_md5_verified": "3304d9a20704cd9a2538082d01aaaf63",
+  "unit_tests_passed": 7,
+  "new_python_syntax": "passed",
+  "training": false,
+  "slurm_submissions": 0
+}

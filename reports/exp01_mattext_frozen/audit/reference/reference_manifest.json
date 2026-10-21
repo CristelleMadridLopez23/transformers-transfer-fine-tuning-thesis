@@ -1,0 +1,22 @@
+[
+  {
+    "file": "slice_vocab.txt",
+    "url": "https://zenodo.org/records/11484062/files/slice_vocab.txt?download=1",
+    "sha256": "53e2641804ff63c8b1f48b7311a74fd64dafe858d5935e89cb3e50a5c67c60ea"
+  },
+  {
+    "file": "xtal2txt_tokenizer_source.txt",
+    "url": "https://raw.githubusercontent.com/lamalab-org/xtal2txt/c6cf9593596ce99f054f1ebbdc4346d7dbec99fb/src/xtal2txt/tokenizer.py",
+    "sha256": "50e505f3ae9b2ebba9152cebde951146960e7945660455776c0e6c8f73752eb6"
+  },
+  {
+    "file": "mattext_pretrain_template.yaml",
+    "url": "https://raw.githubusercontent.com/lamalab-org/MatText/2a594a4c69237da2daccab04e0515cf8cdcd715d/conf/model/archived_base/pretrain_template.yaml",
+    "sha256": "047ae0a2f5d391f8ab0bf4c6881e6ead10e571309f2de229dffba64d5092700b"
+  },
+  {
+    "file": "mattext_tokenizers.md",
+    "url": "https://raw.githubusercontent.com/lamalab-org/MatText/2a594a4c69237da2daccab04e0515cf8cdcd715d/docs/tokenizers.md",
+    "sha256": "41ed33d20683c7e9f501317d653a69ff28cb1cabe8e2537e7ec5204c5dec41d9"
+  }
+]

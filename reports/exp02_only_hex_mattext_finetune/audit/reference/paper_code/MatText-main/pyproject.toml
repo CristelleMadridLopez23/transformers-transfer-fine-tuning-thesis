@@ -1,0 +1,149 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "mattext"
+description = "A framework for text-based materials modeling"
+version = "0.0.2"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Nawaf Alampara", email = "nawaf.pvt@gmail.com" },
+  { name = "Kevin Jablonka", email = "mail@kjablonka.com" },
+]
+keywords = ["LLM", "Inverse-Design"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: Unix",
+  "Operating System :: MacOS",
+]
+requires-python = ">=3.10,<3.12"
+dependencies = [
+  "matbench @ git+https://github.com/materialsproject/matbench.git", # https://github.com/materialsproject/matbench/issues/269
+  "xtal2txt @ git+https://github.com/lamalab-org/xtal2txt.git@c6cf9593596ce99f054f1ebbdc4346d7dbec99fb",
+  "tensorflow==2.14.0",
+  "keras==2.14.0",
+  "transformers",
+  "tokenizers",
+  "datasets",
+  "hydra-core",
+  "torch",
+  "accelerate",
+  "hydra-submitit-launcher",
+  "python-dotenv",
+  "pystow",
+  "wandb",
+  "fire",
+  "peft",
+  "trl",
+  "bitsandbytes",
+  "loguru",
+  "numpy<2.0",
+  "protobuf<4.0,>=3.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyter",
+  "docformatter",
+  "pytest",
+  "pytest-cov",
+  "ruff",
+  "bump-my-version",
+  "pre-commit",
+]
+
+docs = [
+  "mkdocs-material>=9.4.0",
+  "mkdocstrings[python]>=0.22.0",
+  "mkdocs-gen-files>=0.5.0",
+  "mkdocs-literate-nav>=0.6.0",
+]
+
+decoder = ["pyxtal", "numpy<2.0"]
+
+[tool.setuptools.package-data]
+template = ["py.typed"]
+
+[tool.pyright]
+include = ["template"]
+exclude = ["**/__pycache__"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = ["-p no:warnings", "--import-mode=importlib"]
+xfail_strict = true
+log_cli_level = "warn"
+testpaths = ["tests"]
+
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_also = [
+  "if TYPE_CHECKING:",
+  "if __name__ == .__main__.:",
+  "except ImportError",
+]
+
+[tool.ruff]
+src = ["src"]
+extend-exclude = ["tests", "scripts", "revision-scripts", "notebooks"]
+
+[tool.ruff.lint]
+select = [
+  "E",
+  "F",
+  "W",   # flake8
+  "B",   # flake8-bugbear
+  "I",   # isort
+  "C4",  # flake8-comprehensions
+  "UP",  # pyupgrade
+  "RUF", # Ruff-specific
+]
+extend-ignore = [
+  "E501",  # Line too long
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["mattext"]
+
+[tool.docformatter]
+pre-summary-newline = true
+black = true
+
+
+[tool.bumpversion]
+current_version = "0.0.2-dev"
+commit = true
+commit_args = "--no-verify --allow-empty"
+tag = true
+tag_name = "{new_version}"
+allow_dirty = true
+parse = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)(\\.(?P<dev>post)\\d+\\.dev\\d+)?"
+serialize = [
+  "{major}.{minor}.{patch}.{dev}{$PR_NUMBER}.dev{distance_to_latest_tag}",
+  "{major}.{minor}.{patch}",
+]
+message = "Version updated from {current_version} to {new_version}"
+
+
+[tool.bumpversion.parts.dev]
+values = ["release", "post", "dev"]
+
+[dependency-groups]
+dev = [
+    "lama-aesthetics @ git+https://github.com/lamalab-org/lama-aesthetics.git",
+    "snakemake>=7.32.0,<8.0.0",
+    "pulp<2.8.0",
+]

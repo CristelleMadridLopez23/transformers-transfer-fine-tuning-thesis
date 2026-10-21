@@ -1,0 +1,176 @@
+import traceback
+from abc import ABC, abstractmethod
+from pathlib import Path
+
+import wandb
+from accelerate import PartialState
+from loguru import logger
+from matbench.bench import MatbenchBenchmark
+from omegaconf import DictConfig
+
+from mattext.models.finetune import FinetuneClassificationModel, FinetuneModel
+from mattext.models.predict import Inference, InferenceClassification
+from mattext.models.score import (
+    MATTEXT_MATBENCH,
+    MatTextTask,
+)
+from mattext.models.utils import fold_key_namer
+
+
+class BaseBenchmark(ABC):
+    def __init__(self, task_cfg: DictConfig):
+        self.task_cfg = task_cfg
+        self.representation = self.task_cfg.model.representation
+        self.task = self.task_cfg.model.dataset
+        self.task_type = self.task_cfg.model.dataset_type
+        self.benchmark = self.task_cfg.model.inference.benchmark_dataset
+        self.exp_names = self.task_cfg.model.finetune.exp_name
+        self.test_exp_names = self.task_cfg.model.inference.exp_name
+        self.train_data = self.task_cfg.model.finetune.dataset_name
+        self.test_data = self.task_cfg.model.inference.benchmark_dataset
+        self.benchmark_save_path = self.task_cfg.model.inference.benchmark_save_file
+        self.wandb_project = self.task_cfg.model.logging.wandb_project
+
+    @abstractmethod
+    def run_benchmarking(self, local_rank=None) -> None:
+        pass
+
+    def _initialize_task(self):
+        if self.task_type == "matbench":
+            mb = MatbenchBenchmark(autoload=False)
+            task = getattr(mb, MATTEXT_MATBENCH[self.task])
+            task.load()
+        else:
+            task = MatTextTask(task_name=self.task)
+        return task
+
+    def _run_experiment(self, task, i, exp_name, test_name, local_rank):
+        state = PartialState()
+        fold_name = fold_key_namer(i)
+        logger.info(
+            f"Running training on {self.train_data}, and testing on {self.test_data} for fold {i}"
+        )
+        logger.info(f"Fold Name: {fold_name}")
+
+        exp_cfg = self.task_cfg.copy()
+        exp_cfg.model.finetune.exp_name = exp_name
+        exp_cfg.model.finetune.path.finetune_traindata = self.train_data
+
+        finetuner = self._get_finetuner(exp_cfg, local_rank, fold_name)
+        ckpt = finetuner.finetune()
+        logger.info(f"Checkpoint: {ckpt}")
+
+        # Only rank 0 runs inference
+        if state.is_main_process:
+            wandb.init(
+                config=dict(self.task_cfg.model.inference),
+                project=self.task_cfg.model.logging.wandb_project,
+                name=test_name,
+            )
+
+            exp_cfg.model.inference.path.test_data = self.test_data
+            exp_cfg.model.inference.path.pretrained_checkpoint = ckpt
+
+            try:
+                predict = self._get_inference(exp_cfg, fold_name)
+                predictions, prediction_ids = predict.predict()
+                self._record_predictions(task, i, predictions, prediction_ids)
+            except Exception as e:
+                logger.error(
+                    f"Error occurred during inference for finetuned checkpoint '{exp_name}': {e!s}"
+                )
+                if isinstance(e, ValueError | TypeError):
+                    raise
+                logger.error(traceback.format_exc())
+
+        # All ranks sync after inference before next fold
+        state.wait_for_everyone()
+
+    @abstractmethod
+    def _get_finetuner(self, exp_cfg, local_rank, fold_name):
+        pass
+
+    @abstractmethod
+    def _get_inference(self, exp_cfg, fold_name):
+        pass
+
+    @abstractmethod
+    def _record_predictions(self, task, fold, predictions, prediction_ids):
+        pass
+
+    def _save_results(self, task):
+        save_path = Path(self.benchmark_save_path)
+        save_path.mkdir(parents=True, exist_ok=True)
+
+        file_name = (
+            save_path / f"mattext_benchmark_{self.representation}_{self.benchmark}.json"
+        )
+        task.to_file(str(file_name))
+
+
+class Matbenchmark(BaseBenchmark):
+    def run_benchmarking(self, local_rank=None) -> None:
+        state = PartialState()
+        task = self._initialize_task()
+
+        for i, (exp_name, test_name) in enumerate(
+            zip(self.exp_names, self.test_exp_names, strict=False)
+        ):
+            if state.is_main_process:
+                wandb.init(
+                    config=dict(self.task_cfg.model.finetune),
+                    project=self.task_cfg.model.logging.wandb_project,
+                    name=exp_name,
+                )
+            self._run_experiment(task, i, exp_name, test_name, local_rank)
+
+        if state.is_main_process:
+            self._save_results(task)
+
+    def _get_finetuner(self, exp_cfg, local_rank, fold_name):
+        return FinetuneModel(exp_cfg, local_rank, fold=fold_name)
+
+    def _get_inference(self, exp_cfg, fold_name):
+        return Inference(exp_cfg, fold=fold_name)
+
+    def _record_predictions(self, task, fold, predictions, prediction_ids):
+        if self.task_type == "matbench":
+            task.record(fold, predictions)
+        else:
+            task.record_fold(
+                fold=fold, prediction_ids=prediction_ids, predictions=predictions
+            )
+
+
+class MatbenchmarkClassification(BaseBenchmark):
+    def run_benchmarking(self, local_rank=None) -> None:
+        state = PartialState()
+        task = self._initialize_task()
+
+        for i, (exp_name, test_name) in enumerate(
+            zip(self.exp_names, self.test_exp_names, strict=False)
+        ):
+            if state.is_main_process:
+                wandb.init(
+                    config=dict(self.task_cfg.model.finetune),
+                    project=self.task_cfg.model.logging.wandb_project,
+                    name=exp_name,
+                )
+            self._run_experiment(task, i, exp_name, test_name, local_rank)
+
+        if state.is_main_process:
+            self._save_results(task)
+
+    def _initialize_task(self):
+        return MatTextTask(task_name=self.task, is_classification=True)
+
+    def _get_finetuner(self, exp_cfg, local_rank, fold_name):
+        return FinetuneClassificationModel(exp_cfg, local_rank, fold=fold_name)
+
+    def _get_inference(self, exp_cfg, fold_name):
+        return InferenceClassification(exp_cfg, fold=fold_name)
+
+    def _record_predictions(self, task, fold, predictions, prediction_ids):
+        task.record_fold(
+            fold=fold, prediction_ids=prediction_ids, predictions=predictions.values
+        )

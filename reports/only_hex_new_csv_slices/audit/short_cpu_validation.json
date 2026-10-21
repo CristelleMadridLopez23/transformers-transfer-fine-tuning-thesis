@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "sbatch",
+      "--test-only",
+      "--account=cbartel",
+      "--partition=msismall",
+      "--time=00:30:00",
+      "sh_files/only_hex_new_csv_slices/convert.sbatch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "sbatch: Job 4310943 to start at 2026-11-09T10:37:40 a using 4 processors on nodes acn01 in partition msismall\n"
+  },
+  {
+    "command": [
+      "sbatch",
+      "--test-only",
+      "--account=cbartel",
+      "--partition=interactive",
+      "--time=00:30:00",
+      "sh_files/only_hex_new_csv_slices/convert.sbatch"
+    ],
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "sbatch: Job 4310945 to start at 2026-10-21T13:01:40 a using 8 processors on nodes acn[65,180] in partition interactive\n"
+  }
+]

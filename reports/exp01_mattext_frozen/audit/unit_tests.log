@@ -1,0 +1,21 @@
+test_adapter_preserves_structural_units (__main__.ExperimentTests)
+Synthetic strategy-4 graph must retain species, edge order and image vectors. ... ok
+test_energy_units (__main__.ExperimentTests)
+Synthetic known total must yield the exact per-atom unit conversion. ... ok
+test_grouped_splits (__main__.ExperimentTests)
+Synthetic polymorphs of one composition must share split and validation fold. ... ok
+test_head_training_synthetic_only (__main__.ExperimentTests)
+Tiny synthetic development-only fits check all heads and feature-scaler isolation. ... ok
+test_masked_pooling (__main__.ExperimentTests)
+Artificial large special/pad states must never contaminate structural mean. ... ok
+test_real_encoder_frozen_shape_determinism (__main__.ExperimentTests)
+Real MatText weights with explicitly synthetic IDs verify strict load and determinism. ... ok
+test_relative_energy_and_minimum (__main__.ExperimentTests)
+Synthetic within-composition deltas, near ties and regret must use eV/atom. ... ok
+test_tokenization_coverage_and_truncation (__main__.ExperimentTests)
+Candidate scanner must reject omissions/truncation and preserve multi-digit indices. ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.878s
+
+OK

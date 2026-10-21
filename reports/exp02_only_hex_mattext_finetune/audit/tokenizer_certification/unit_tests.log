@@ -1,0 +1,19 @@
+test_contradiction_blocks_even_with_link (__main__.CertificationTests)
+Unresolved material protocol contradictions override favorable evidence. ... ok
+test_full_evidence_required (__main__.CertificationTests)
+All evidence conditions allow certification; failed identity blocks it. ... ok
+test_invalid_tensor_header_rejected (__main__.CertificationTests)
+Malformed safetensors cannot be accepted as checkpoint identity proof. ... ok
+test_missing_link_is_partial (__main__.CertificationTests)
+Successful software alone cannot certify a run with missing provenance. ... ok
+test_official_historical_references (__main__.CertificationTests)
+Pre-upload source must match independent published IDs and original test tokens. ... ok
+test_real_samples_preserve_prior_ids (__main__.CertificationTests)
+New historical probes must agree exactly with persisted real project encodings. ... ok
+test_structural_zero_remains_attended (__main__.CertificationTests)
+Actual historical masks attend vector0 while inserted PAD150 is masked. ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.022s
+
+OK

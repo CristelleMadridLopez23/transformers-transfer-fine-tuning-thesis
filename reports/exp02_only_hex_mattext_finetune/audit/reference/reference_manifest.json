@@ -1,0 +1,37 @@
+[
+  {
+    "file": "zenodo_record.json",
+    "url": "https://zenodo.org/api/records/21151839",
+    "sha256": "9567726a3c06dcc5dc8e564774c404a80ff1470f01a74227673cbfe9757a1313"
+  },
+  {
+    "file": "MatText-main.zip",
+    "url": "https://zenodo.org/api/records/21151839/files/MatText-main.zip/content",
+    "sha256": "9b7f70ace1329a83c99258ff987d8eb2410d0fee875ef5c59f6e1b7818de2ef2"
+  },
+  {
+    "file": "xtal2txt_tokenizer_2024.py",
+    "url": "https://raw.githubusercontent.com/lamalab-org/xtal2txt/1d9d0c6f8675efea885ef7c9c87b3195cd79aaed/src/xtal2txt/tokenizer.py",
+    "sha256": "316e9c5b0241b3968e4e22f4e0559a6d64dc2e7e623ab09ab05b9eaf43a1a48d"
+  },
+  {
+    "file": "xtal2txt_tokenizer_history.json",
+    "url": "https://api.github.com/repos/lamalab-org/xtal2txt/commits?path=src/xtal2txt/tokenizer.py&per_page=100",
+    "sha256": "86f9f145172b924604b5d85c91017e5eaa25279500c5ab6b56e0674f204f5418"
+  },
+  {
+    "file": "hf_checkpoint_api.json",
+    "url": "https://huggingface.co/api/models/n0w0f/MatText-slices-2m",
+    "sha256": "4e56713cbefdabb73b8b3e012033d6646e8d9c21e7d9189b975cd6874746dc92"
+  },
+  {
+    "file": "paper.html",
+    "url": "https://www.nature.com/articles/s43588-026-01045-2",
+    "sha256": "bdbfe871d858438905e249073e47acbf45212e5cfd57bee627ee3b904ae0cdb9"
+  },
+  {
+    "file": "github_tree.json",
+    "url": "https://api.github.com/repos/lamalab-org/MatText/git/trees/2a594a4c69237da2daccab04e0515cf8cdcd715d?recursive=1",
+    "sha256": "0bf848bc00058b28a2fb0d687f3b09b2fb7b822acd7bbee703be13e8cbb56f10"
+  }
+]

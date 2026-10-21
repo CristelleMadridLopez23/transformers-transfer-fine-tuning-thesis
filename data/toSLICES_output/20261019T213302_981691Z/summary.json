@@ -1,0 +1,58 @@
+{
+  "source": {
+    "input": "/users/0/cmadridl/projects/transformers-transfer-fine-tuning-thesis/data/results(1).json",
+    "input_bytes": 195161095,
+    "sha256": "c10c8c5378beaea03a33978da772329ff31e765b6c4a6da7d0c20bc588a92012",
+    "complete_records": 480,
+    "partial_input": false,
+    "parse_error": null
+  },
+  "run_id": "20261019T213302_981691Z",
+  "versions": {
+    "slices": "2.0.12",
+    "pymatgen": "2025.10.7",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3"
+  },
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:42:31) [GCC 14.4.0]",
+  "platform": "Linux-4.18.0-553.168.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "settings": {
+    "graph_method": "econnn",
+    "relax_model": null,
+    "require_convergence": true,
+    "max_records": null,
+    "allow_partial_json": false,
+    "primitive_reduction": false,
+    "canonicalize": true
+  },
+  "attempted": 480,
+  "accepted": 472,
+  "rejected": 8,
+  "limited_run": false,
+  "complete_corpus": true,
+  "exports": {
+    "mattext_pending_tokenizer": 472,
+    "matgpt_unconditional": 472,
+    "matgpt_formation_bandgap": 472
+  },
+  "mattext_tokenizer_verified": false,
+  "checkpoints": {
+    "unconditional": {
+      "block_size": 442,
+      "nprops": 0,
+      "path": "/users/0/cmadridl/projects/transformers-transfer-fine-tuning-thesis/model-pretrained/matgpt/checkpoints/unconditional/mat-uncond/weights/model_info_property_0.json",
+      "sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee"
+    },
+    "formation_bandgap": {
+      "block_size": 444,
+      "nprops": 2,
+      "path": "/users/0/cmadridl/projects/transformers-transfer-fine-tuning-thesis/model-pretrained/matgpt/checkpoints/formation-bandgap/mat-multi/weights/model_info_property_2.json",
+      "sha256": "94b17f3f339869203a0fa45cebe4aedd6c9d921c65e077ec6023b280ea2b0ec0"
+    }
+  },
+  "notes": [
+    "E_per_at no es energía de formación",
+    "No se reconstruyen estructuras",
+    "No se certifica equivalencia geométrica ni calidad científica"
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "c21d7e29ccc7759b40fe2f3f0fe32a65f51b734e",
+    "title": "update citation block",
+    "message": "",
+    "authors": [
+      {
+        "user": "n0w0f",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/651dbb2f56b71e7dbc9a95c4/hD4OJnyEruOJF_2KaiF1D.png"
+      }
+    ],
+    "date": "2024-06-28T15:14:30.000Z"
+  },
+  {
+    "id": "a5962c2785ead285aca72c2789b6623e8e378145",
+    "title": "Update README.md",
+    "message": "",
+    "authors": [
+      {
+        "user": "n0w0f",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/651dbb2f56b71e7dbc9a95c4/hD4OJnyEruOJF_2KaiF1D.png"
+      }
+    ],
+    "date": "2024-06-05T06:07:55.000Z"
+  },
+  {
+    "id": "542373215febcc74332563527122e1b03d780b78",
+    "title": "Update README.md",
+    "message": "\n\nupdate model card",
+    "authors": [
+      {
+        "user": "n0w0f",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/651dbb2f56b71e7dbc9a95c4/hD4OJnyEruOJF_2KaiF1D.png"
+      }
+    ],
+    "date": "2024-06-05T06:02:28.000Z"
+  },
+  {
+    "id": "a7ae83dbd06845f9d03e120a155174f3f81454da",
+    "title": "Upload model",
+    "message": "",
+    "authors": [
+      {
+        "user": "n0w0f",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/651dbb2f56b71e7dbc9a95c4/hD4OJnyEruOJF_2KaiF1D.png"
+      }
+    ],
+    "date": "2024-06-05T03:40:59.000Z"
+  },
+  {
+    "id": "e48562167b5369644e679c10b7f990553a1e6d43",
+    "title": "initial commit",
+    "message": "",
+    "authors": [
+      {
+        "user": "n0w0f",
+        "avatar": "https://cdn-avatars.huggingface.co/v1/production/uploads/651dbb2f56b71e7dbc9a95c4/hD4OJnyEruOJF_2KaiF1D.png"
+      }
+    ],
+    "date": "2024-06-05T03:40:52.000Z"
+  }
+]

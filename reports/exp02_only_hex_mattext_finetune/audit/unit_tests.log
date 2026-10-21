@@ -1,0 +1,15 @@
+test_compact_syntax_omission_is_detected (__main__.WorkflowTests)
+Synthetic compact image labels must be explicitly adapted before original-vocab tokenization. ... ok
+test_failed_provenance_stops_training (__main__.WorkflowTests)
+Synthetic failed gate must stop before reading model weights or selecting an optimizer. ... ok
+test_grouped_cv_and_reserved_test (__main__.WorkflowTests)
+Synthetic polymorph/frame groups must remain together in every train-only CV fold. ... ok
+test_no_silent_truncation (__main__.WorkflowTests)
+Synthetic sequence above context length must raise rather than lose structural units. ... ok
+test_structural_zero_is_not_padding (__main__.WorkflowTests)
+Synthetic structural ID zero must retain attention while inserted ID 150 has mask zero. ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 3.977s
+
+OK

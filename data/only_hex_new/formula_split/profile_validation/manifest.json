@@ -1,0 +1,28 @@
+{
+  "source": "/users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/Preprocess notebooks/outputs/only_hex_new/formula_split/val.extxyz",
+  "source_sha256": "a5cc29ab98f2333cce83c5dc41f38c48d2b4201a7d3ab7a6434ce3c5362c5eac",
+  "region_source": "/users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/Preprocess notebooks/outputs/only_hex_new/reports/frame_decisions.csv",
+  "region_source_sha256": "d0c6dd6504637dbffc8c98f82cc22d3ffbaec943df0f0ac17af2f082a0640953",
+  "split_manifest_sha256": "810f7d2155715490908f162a97ecffc47761f0dd19480f97894b7027d1af41c3",
+  "role": "only_hex_new_checkpoint_selection_validation",
+  "n_configurations": 932,
+  "n_formulas": 8,
+  "formulas": [
+    "BaS3Si",
+    "CaGeS3",
+    "CaPbS3",
+    "CaS3Sn",
+    "CdNbS3",
+    "CdS3Sn",
+    "CdS3Ti",
+    "S3VZn"
+  ],
+  "held_out_test": false,
+  "records_copied_byte_for_byte": true,
+  "region_definition": "original endpoint-cleaned trajectory ranks: early<=0.2; middle<=0.8; late>0.8; static separate",
+  "output_sha256": {
+    "benchmark.extxyz": "a5cc29ab98f2333cce83c5dc41f38c48d2b4201a7d3ab7a6434ce3c5362c5eac",
+    "coverage.csv": "b6f087345b07eab088698a24f9c0ac4b4d846a24315ebed65489797877b0a4c8",
+    "metadata.csv": "c7d0bdd4beaf0629e8c93b64c94f178d81a246d22c10ef2435f57380d8eecdc4"
+  }
+}

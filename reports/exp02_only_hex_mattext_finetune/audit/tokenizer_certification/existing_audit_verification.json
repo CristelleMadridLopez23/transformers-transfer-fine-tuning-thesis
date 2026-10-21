@@ -1,0 +1,56 @@
+{
+  "locally_verified": {
+    "source_rows": 8898,
+    "status_counts": {
+      "compatible_with_official_code": 8712,
+      "conversion_rejected": 186
+    },
+    "valid_rows": 8712,
+    "max_length": 401,
+    "omissions": 0,
+    "unknown_tokens": 0,
+    "truncations": 0,
+    "unique_inputs": 2853,
+    "collision_groups": 1119,
+    "tokenizer_induced_collision_groups": 0,
+    "exact_official_ids_recorded_all": true,
+    "graph_equivalence_recorded_all": true
+  },
+  "integrity": {
+    "slices": {
+      "path": "data/processed/only_hex_new_csv_slices/configurations_slices.csv",
+      "sha256": "0821404f6285e4033d22bff35299344feb8088e34de59393016952180ee6e834",
+      "matches_prior_fingerprint": true
+    },
+    "source": {
+      "path": "data/processed/only_hex_new_csv_slices/configurations.csv",
+      "sha256": "3119d1288b31afa3b2c0f90a95fb9184b314eb72e6b598b2bf32bc61f0e7507a",
+      "matches_prior_fingerprint": true
+    },
+    "conversion_manifest": {
+      "path": "reports/only_hex_new_csv_slices/audit/slices_manifest.json",
+      "sha256": "6843ee194d5fcd7a3323be5e65cbf9fded2356ce1f0a6cdd52bc42767562d2d7",
+      "matches_prior_fingerprint": true
+    },
+    "reference_tokenizer": {
+      "path": "reports/exp02_only_hex_mattext_finetune/audit/reference_tokenizer.json",
+      "sha256": "148b595ad3a7b82a7e903e5ca09ed694d104f7fc8a84fd92bb835233fae57928",
+      "matches_prior_fingerprint": true
+    },
+    "candidate_tokens": {
+      "path": "data/processed/exp02_only_hex_mattext_finetune/tokenized_candidate.jsonl",
+      "sha256": "ba17a5fcb7b0cff114f5cf3447b8048d80d7205ee949cc1b72825e36166e1b4c",
+      "matches_prior_fingerprint": true
+    }
+  },
+  "prior_test_log": {
+    "sha256": "6da789cc737513ab36eafc6ae301ee81b687bdcce6284871b7a76bfce4bf751b",
+    "five_tests_success_log_present": true,
+    "rerun_this_audit": false
+  },
+  "limits": [
+    "Per-row historical token/graph checks are persisted prior results, not recomputed here",
+    "Counts, ID/string collision groups and fingerprints rechecked locally; five-test log inspected",
+    "No energy metric used for certification or selecting token IDs"
+  ]
+}
