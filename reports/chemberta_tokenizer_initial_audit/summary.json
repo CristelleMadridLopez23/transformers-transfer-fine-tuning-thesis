@@ -1,0 +1,40 @@
+{
+  "fast": {
+    "all_samples": {
+      "samples": 8,
+      "unique_input_strings": 7,
+      "total_raw_tokens": 62,
+      "unknown_tokens": 0,
+      "unknown_fraction": 0.0,
+      "samples_with_unknown": 0,
+      "exact_roundtrip_failures": 8,
+      "roundtrip_failures_ignoring_whitespace": 8,
+      "length_min": 8,
+      "length_median": 8.5,
+      "length_p95": 16,
+      "length_max": 16,
+      "evaluation_limit_including_special_tokens": 512,
+      "samples_exceeding_limit": 0
+    },
+    "user_corpus": null
+  },
+  "slow": {
+    "all_samples": {
+      "samples": 8,
+      "unique_input_strings": 7,
+      "total_raw_tokens": 62,
+      "unknown_tokens": 0,
+      "unknown_fraction": 0.0,
+      "samples_with_unknown": 0,
+      "exact_roundtrip_failures": 8,
+      "roundtrip_failures_ignoring_whitespace": 8,
+      "length_min": 8,
+      "length_median": 8.5,
+      "length_p95": 16,
+      "length_max": 16,
+      "evaluation_limit_including_special_tokens": 512,
+      "samples_exceeding_limit": 0
+    },
+    "user_corpus": null
+  }
+}

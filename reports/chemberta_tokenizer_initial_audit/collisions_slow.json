@@ -1,0 +1,17 @@
+[
+  {
+    "ids": [
+      54,
+      34,
+      20,
+      44,
+      44,
+      44
+    ],
+    "texts": [
+      "Ba  S  0  1  o  o  o",
+      "Ba S 0 1 o o o"
+    ],
+    "whitespace_only_difference": true
+  }
+]
