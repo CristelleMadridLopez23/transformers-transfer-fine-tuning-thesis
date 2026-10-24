@@ -17,6 +17,7 @@ results/**/*.jsonl
 
 # Pesos de modelos y checkpoints descargados o generados.
 *.pt
+*.PT
 *.pth
 *.ckpt
 *.safetensors
@@ -41,6 +42,10 @@ checkpoint-*/
 *.arrow
 *.pkl
 *.pickle
+
+# Tablas de resultados y datos CSV locales.
+*.csv
+*.CSV
 
 # Embeddings y resultados de evaluacion regenerables.
 artifacts/
