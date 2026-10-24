@@ -1,0 +1,12 @@
+{
+  "status": "SLICES_EXACT_MATCH_ONLY",
+  "development_structures": 210,
+  "exact_sequence_matches_full_corpus": 0,
+  "exact_sequence_matches_train_candidate": 0,
+  "exact_sequence_matches_validation_candidate": 0,
+  "duplicate_full_corpus_slices": 0,
+  "corpus_sha256": "16ae6aae2c3d44a003dab8ca309cbe87ade42f9afa83ddc1da8a437542e116a4",
+  "target_dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "test_structures_read": false,
+  "limitation": "Exact token sequence is an encoded-structure match; no CIF or canonical geometric StructureMatcher comparison is available in the pretraining CSV."
+}

@@ -1,0 +1,252 @@
+{
+  "status": "LOCKED_BEFORE_TEST_LABELS",
+  "created_utc": "2026-10-24T01:26:57.785610+00:00",
+  "model_primary": "H3-A",
+  "model_comparison": "H2",
+  "checkpoint": {
+    "path": "Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth",
+    "sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+    "expected_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414"
+  },
+  "matgpt_source_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e",
+  "project_git_head": "1d643c9b0b3eacf922e93f99576420d38ada68ef",
+  "tokenizer_vocabulary": {
+    "path": "Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/model_info_property_0.json",
+    "sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+    "source_manifest_sha256": "dc0e65e59ff55b71d130c3bb9376109157e2b5c932b4301cb0cb10cec88ca490",
+    "resolved_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e"
+  },
+  "dataset_hash_from_pretest_audit": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "fold_manifest": {
+    "path": "Alternative2/reports/MatGPT_frozen_2/v1/fold_assignments.csv",
+    "sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+    "test_ids_in_manifest": 0
+  },
+  "test_inputs": {
+    "path": "Alternative2/reports/MatGPT_frozen_3/H3_test/predictions/test_inputs.csv",
+    "sha256": "56cc4101fa449128008d8eecc57185a3854b2539a7f7fb0507658ee10b4e904b",
+    "structures": 24,
+    "compositions": 8,
+    "columns": [
+      "structure_id",
+      "composition_id",
+      "polymorph_family",
+      "split",
+      "matgpt_slices"
+    ],
+    "no_label_columns": true
+  },
+  "features": {
+    "R4": "L03_MEAN: raw decoder block 3 mean over SLICES tokens, pre-ln_f",
+    "H2_composition": "FINAL_MEAN: post-ln_f masked mean over SLICES tokens",
+    "H2_residual": "FINAL_END: post-ln_f hidden state at true <end> token"
+  },
+  "R4_historical_models": [
+    {
+      "fold": 0,
+      "path": "Alternative2/reports/MatGPT_frozen_3/H3_test/locked_models/ridge_by_fold/ridge_fold_0.joblib",
+      "sha256": "c0de3ce42b470950ac15be335b5cc4ed0c75fd8f7855ab76f1b4055d959e387e",
+      "alpha": 10.0,
+      "feature": "L03_MEAN",
+      "training_rows": 135
+    },
+    {
+      "fold": 1,
+      "path": "Alternative2/reports/MatGPT_frozen_3/H3_test/locked_models/ridge_by_fold/ridge_fold_1.joblib",
+      "sha256": "b0b1ee84bd4d3c646377d5b1d1263bfa4a71a991f3e474915963eec0d6b85f9d",
+      "alpha": 0.1,
+      "feature": "L03_MEAN",
+      "training_rows": 135
+    },
+    {
+      "fold": 2,
+      "path": "Alternative2/reports/MatGPT_frozen_3/H3_test/locked_models/ridge_by_fold/ridge_fold_2.joblib",
+      "sha256": "e9f35223c98d6e11cfa3c4b3ba001f0f9331b4b71a3ee733f621e2c346575a1d",
+      "alpha": 10.0,
+      "feature": "L03_MEAN",
+      "training_rows": 135
+    },
+    {
+      "fold": 3,
+      "path": "Alternative2/reports/MatGPT_frozen_3/H3_test/locked_models/ridge_by_fold/ridge_fold_3.joblib",
+      "sha256": "b354d43290bfc1b1293aca36a9a949fc7dbd6c25287960789cb77df7a49bc50f",
+      "alpha": 10.0,
+      "feature": "L03_MEAN",
+      "training_rows": 135
+    },
+    {
+      "fold": 4,
+      "path": "Alternative2/reports/MatGPT_frozen_3/H3_test/locked_models/ridge_by_fold/ridge_fold_4.joblib",
+      "sha256": "b7daf5775a7c9145e3edc4d3b604298ff9503cf37c6a7efe261694be40cd8d40",
+      "alpha": 10.0,
+      "feature": "L03_MEAN",
+      "training_rows": 135
+    }
+  ],
+  "H2_historical_models": [
+    {
+      "fold": 0,
+      "seed": 42,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_0_seed_42/head.pt",
+      "sha256": "1c702be56ba4aee097bd32832de0bfeb548774486008ff1e92e616ffeda2b1d6",
+      "best_epoch": 22,
+      "checkpoint_metadata_sha256": "e767ee0ac7de122d4131394dcac8cb57a402ab0c6c34eaf2339f47a21ef7739c"
+    },
+    {
+      "fold": 0,
+      "seed": 123,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_0_seed_123/head.pt",
+      "sha256": "92e6950ccbf2396386f0b5fd8c47160a56f76f2cf24ac32e036479de63a39192",
+      "best_epoch": 32,
+      "checkpoint_metadata_sha256": "af7fbe7131d2c10489803a5d756b3abb3d083732c0fd57ae96bf53e7013a0468"
+    },
+    {
+      "fold": 0,
+      "seed": 2026,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_0_seed_2026/head.pt",
+      "sha256": "875b6a6f6d0bd37ae98356c74ab216f1d960b47f2a47f549e98a81a9ccac5b69",
+      "best_epoch": 34,
+      "checkpoint_metadata_sha256": "d0e8e703e7e806d248c11693ea6c7cca9ec01309242a4b7b75c59ad822f5ab8f"
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_1_seed_42/head.pt",
+      "sha256": "d62cbaeea7b0fb868caaab5c12f99cacf2d81c0a0f4b28d0ffff39ee6d1eb19c",
+      "best_epoch": 137,
+      "checkpoint_metadata_sha256": "12fae3f6382bfad48c3184a195f9f33d7d3d3d23cebc48e32fb050ca4e212899"
+    },
+    {
+      "fold": 1,
+      "seed": 123,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_1_seed_123/head.pt",
+      "sha256": "87c2e6a4687b373e1c198567e2dca36d4fc5956c69f68dfdf2960802ca4babb6",
+      "best_epoch": 199,
+      "checkpoint_metadata_sha256": "4b70bd55355479da622efd72b018d3df83d92e168a0f5e6cbee8eb9dcf26da56"
+    },
+    {
+      "fold": 1,
+      "seed": 2026,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_1_seed_2026/head.pt",
+      "sha256": "1f0cc6406022da45ee5c8b87ac591c85fb3c9512830510919f088f617fb2df6c",
+      "best_epoch": 165,
+      "checkpoint_metadata_sha256": "410113bd60177e8f3bf37fb8c9a1ed33a1ef830b0ebccc7f19bd24034312494d"
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_2_seed_42/head.pt",
+      "sha256": "b10141c6d631a73cc210849ca61c923e8c0c8ba8e236d209d6f98dc5abbb5b72",
+      "best_epoch": 56,
+      "checkpoint_metadata_sha256": "10c91322656c7e2b003d88b5ee18f20b8515e93291b610765c404604d15ba7da"
+    },
+    {
+      "fold": 2,
+      "seed": 123,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_2_seed_123/head.pt",
+      "sha256": "6286107f216cdabd1e32c02cf0511dc6e15b4d450bf61c8fc56ecf6788016fef",
+      "best_epoch": 32,
+      "checkpoint_metadata_sha256": "67708c76e0a8a96ba660f65ef6deb4e7f988932e09c49b4bea7b6dbffb462bfe"
+    },
+    {
+      "fold": 2,
+      "seed": 2026,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_2_seed_2026/head.pt",
+      "sha256": "7478214b794cd647f9167b18e0c8e6c006d0e1e2825f1428267d651fa6dc2794",
+      "best_epoch": 42,
+      "checkpoint_metadata_sha256": "dde7985724726ac94ed8541b5a7f1b166c9005bdd9a0f5162491deec0b6bc430"
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_3_seed_42/head.pt",
+      "sha256": "322332b5a8a4be700b7be283d7753fce55a90d1971ac7d26828c83dac376ceb7",
+      "best_epoch": 25,
+      "checkpoint_metadata_sha256": "2e38d280a517aaea5a3b13a6eaffcbdd6839bc4ffc109128a435f5defb558fa9"
+    },
+    {
+      "fold": 3,
+      "seed": 123,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_3_seed_123/head.pt",
+      "sha256": "d79ec6b9466d7fe5b7950952ede5c36954c6d2aa26a852535a72356e374607c1",
+      "best_epoch": 28,
+      "checkpoint_metadata_sha256": "9dbc56236a74cdab302c068610b0ef388ea13a0d405582326f186d752756f00a"
+    },
+    {
+      "fold": 3,
+      "seed": 2026,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_3_seed_2026/head.pt",
+      "sha256": "591bce54f38887a12cfc41f1e016d461dcb9919b6233d634584c39e3fa9e38c9",
+      "best_epoch": 28,
+      "checkpoint_metadata_sha256": "ddeb978f52b83b7c3d46555aeb1dca52d0c7dbf3f13533af2321f06140985083"
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_4_seed_42/head.pt",
+      "sha256": "0a712882ac742375228f5831f0c11ecaac93d0f2210e86f46b1a7ba1eaeff2c3",
+      "best_epoch": 96,
+      "checkpoint_metadata_sha256": "6e79b88ee1cbadffd6201f1e4222d720eba374ce2215b656c44d348347a597ab"
+    },
+    {
+      "fold": 4,
+      "seed": 123,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_4_seed_123/head.pt",
+      "sha256": "232f09fcd8eb6c661908cedc9f990894c522f0953a24281e9346d2284706fcd7",
+      "best_epoch": 105,
+      "checkpoint_metadata_sha256": "b376d6a5010c231a00125cfb5e182554bfe30751a0565d390158c93592694b65"
+    },
+    {
+      "fold": 4,
+      "seed": 2026,
+      "path": "Alternative2/reports/MatGPT_frozen_2/v1/runs/H2/fold_4_seed_2026/head.pt",
+      "sha256": "caa52e8abccb17df742338a55f4fd4d6432905ed0a27ff18654410fb16922491",
+      "best_epoch": 60,
+      "checkpoint_metadata_sha256": "5b5271f8218f08e35c29baa8077be5727184fc768a3f10b9de0b88fd122d64bc"
+    }
+  ],
+  "ensemble_rule": {
+    "H2": "mean of energies from the same 5 folds x 3 seeds",
+    "H3-A": "mean over folds/seeds of (per-fold R4 mean of its 3 energy predictions + H2 energy centered within each composition)",
+    "no_fold_or_seed_selection_on_test": true
+  },
+  "metrics_locked": [
+    "absolute MAE/RMSE/bias/R2 prediction/R2 OLS",
+    "composition-mean MAE",
+    "centered residual MAE",
+    "DFT-GS-anchored and own-min delta MAE",
+    "GS with DFT gap >1 meV/atom",
+    "pair ordering with DFT ties excluded at 1 meV/atom",
+    "composition-level paired bootstrap and exact binomial intervals"
+  ],
+  "tie_rules": {
+    "GS_DFT_gap_exclusion_mev_atom": 1.0,
+    "predicted_GS_abstention_tolerance_mev_atom": 1.0,
+    "pairwise_DFT_tie_tolerance_mev_atom": 1.0,
+    "pairwise_predicted_ties_are_incorrect": true
+  },
+  "bootstrap": {
+    "replicates": 20000,
+    "seed": 13072026,
+    "sampling_unit": "composition triplet"
+  },
+  "config_sha256": "f4c84f7ee1172b64d67d1cc53d98858d18893d11ddd8acc181b15e8c53b50392",
+  "script_sha256_at_lock": {
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/audit_final_models.py": "3fe16c060b50ec5160f785df118ddb16ebb65b25f1a2bbe30efd22f96d7835db",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/common.py": "2de70b1b024a5a45dc074e53fd4830bc3a54204b2fcbfcf2e7e249340a333dc7",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/compare_with_development.py": "69179a608f9cc6963a5b2c1d6c193d6be896be9e546eec370a93cc05805caa69",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/evaluate_test.py": "95d74f6bbb8ad7c3b5d57915b39557ff9a36d88e2bed5c5242adca0d1e084387",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/feature_extractor.py": "d866de90771581f0e7a64c3acb62bd67d6e8730bdd3dd5f885d47af9ae57745c",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/generate_figures.py": "f60b1decee0e5b9928248bd78bdea683485276f6b8b72be976b339ac784d34f1",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/load_frozen_ensemble.py": "16caaceb339d53bd1450dfe7b1c4b918c480846a46845bcdd70a90e40114a3f7",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/metrics.py": "3f06d1866c4fdecee3a5fd9efdd86f0e7526d92e63d7f950e8d4c0a22447cc79",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/predict_test.py": "1c9567be7645e9354596c3a55707d42ffe67ed72fd669cfa6500ee383f5148d7",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/prepare_test_inputs.py": "a6096ee5e0863043b62e4296cf2262dc7e76654e7dff6ce8a6aed0e7284574cb",
+    "Alternative2/scripts/MatGPT_frozen_3/H3_test/tests/test_metrics_math.py": "b80bbe13a71212a99c9f261c3410822902219c7e231d41be78a7f490fcf99e89"
+  },
+  "reconstruction_audit_sha256": "d00b4fc600913930ff7fb3c1e57fca3c64c367af3608dbcb33b7193393410b1b",
+  "supersedes_previous_lock_sha256": "18fd5796fa584c987a1c923e99009cacbcd1b594a09934b1f0e8df23aed93744",
+  "lock_revision_reason": "Corrección de ejecución/tolerancia de precisión numérica antes de leer etiquetas; mismos datos, pesos, predicciones y métricas bloqueadas.",
+  "test_label_columns_read": [],
+  "strategy_locked": true
+}

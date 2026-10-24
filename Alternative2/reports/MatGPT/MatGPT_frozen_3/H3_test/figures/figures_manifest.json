@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "files": [
+    "01_absolute_energy_parity.png",
+    "02_composition_mean_parity.png",
+    "03_structural_residual_parity.png",
+    "04_dft_gs_anchored_delta_parity.png",
+    "05_own_min_delta_parity.png",
+    "06_ground_state_confusion.png",
+    "07_pairwise_confusion.png",
+    "08_energy_triplets_by_composition.png",
+    "09_development_test_absolute_mae.png",
+    "10_development_test_anchored_delta_mae.png",
+    "11_absolute_error_by_composition.png",
+    "12_relative_error_by_composition.png",
+    "13_dft_vs_predicted_energy_ranges.png",
+    "14_mse_mean_residual_decomposition.png",
+    "15_paired_absolute_error_difference.png",
+    "16_absolute_error_distribution.png",
+    "17_fold_seed_variability.png",
+    "18_test_energy_ranking_scorecard.png"
+  ],
+  "figure_count": 18,
+  "format": "PNG only",
+  "test_labels_used_for_scoring_only": true,
+  "regression_statistics_csv": "metrics/figure_regression_statistics.csv",
+  "figure_generator_sha256": "1b64f562fc8373f8e8d12500036cb695885686e9821fdaf7853b4e25d2748c38",
+  "figure_generator_revised_after_scoring": true,
+  "revision_scope": "Render-only: corrected eV-to-meV display, parity-statistics title spacing, Spanish scorecard and clear development/test legend; predictions/metrics unchanged."
+}

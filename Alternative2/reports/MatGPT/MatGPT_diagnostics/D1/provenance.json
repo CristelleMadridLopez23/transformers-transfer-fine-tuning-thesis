@@ -1,0 +1,62 @@
+{
+  "data_path": "Alternative2/reports/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+  "data_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "features": [
+    "fraction_Ba",
+    "fraction_Ca",
+    "fraction_Cd",
+    "fraction_Cu",
+    "fraction_Ge",
+    "fraction_Hf",
+    "fraction_Mg",
+    "fraction_Nb",
+    "fraction_Pb",
+    "fraction_S",
+    "fraction_Si",
+    "fraction_Sn",
+    "fraction_Sr",
+    "fraction_Ti",
+    "fraction_V",
+    "fraction_Zn",
+    "fraction_Zr",
+    "n_elements",
+    "n_atoms_reduced",
+    "mean_atomic_number",
+    "std_atomic_number",
+    "min_atomic_number",
+    "max_atomic_number",
+    "mean_electronegativity",
+    "std_electronegativity",
+    "min_electronegativity",
+    "max_electronegativity"
+  ],
+  "folds_path": "Alternative2/reports/MatGPT_frozen/matgpt_e1_3/fold_assignments.csv",
+  "folds_sha256": "0b1b0c2c7584729377fb39c54b9ff14ae17ccf73b731c26cf267037b592519c9",
+  "historical_test_used": false,
+  "n_compositions_development": 70,
+  "n_polymorphs_per_composition": {
+    "3": 70
+  },
+  "n_structures_development": 210,
+  "no_composition_id_or_energy_features": true,
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "random_forest_fixed": {
+    "depth": 4,
+    "min_leaf": 3,
+    "trees": 200
+  },
+  "ridge_alphas_inner_validation_only": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "script_sha256": "1a4aeb3a20804479f666cac76eda46ed2b5dcf9ae44952d78008b13aab576bc0"
+}

@@ -1,0 +1,4 @@
+structures,unique_units,pct_train_unique_units_covered,pct_train_token_occurrences_covered_by_seen_types,units_missing_vs_full_train,units_with_1_to_threshold_minus_1_occurrences,units_with_at_least_threshold_occurrences,total_lexical_occurrences
+15000,267,97.0909,99.9997,8,45,222,2078118
+45000,273,99.2727,99.9999,2,40,233,6255969
+77372,275,100.0,100.0,0,35,240,10734634

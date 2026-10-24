@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "test_labels_loaded": false,
+  "lock_sha256": "0302b0d738ba36b5b31e0de05103dcbe4c20663b42e0a416d6fd21cd9fcfe732",
+  "test_predictions_prelabels_sha256": "0433d2523defcaa6729796db8231ad46d0b80609215ef2b975b0eb1b41e2b9d1",
+  "ensemble_predictions_prelabels_sha256": "5b33acfb5415bd328ec6afbefac452478e8fa6560b2c993bf7ece001ee8a175e",
+  "rows_fold_seed": 360,
+  "rows_ensemble": 24,
+  "models_used": {
+    "Ridge": 5,
+    "H2_MLP8": 15
+  },
+  "H2_OOF_replay_rows": 630,
+  "H2_OOF_replay_max_abs_error_ev_atom": 7.040798664093018e-07,
+  "algebraic_checks": {
+    "H3A_delta_centered": true,
+    "ridge_mean_same_for_triplet": true,
+    "H3A_H2_pairwise_delta_identical": true,
+    "H3A_H2_GS_identical": true
+  },
+  "no_dft_label_columns": true,
+  "input_has_no_geometry": true,
+  "prediction_script_sha256": "1c9567be7645e9354596c3a55707d42ffe67ed72fd669cfa6500ee383f5148d7",
+  "feature_archive_sha256": "0029799b6eeceb7bda686163118fb318e4083b3b69868ccedeee0a261f226d16",
+  "model_load_audit_sha256": "d9e8cdced4c8bbfe2e0e322765ad361cfa2e0afa86b305508765eed1fb73748a"
+}

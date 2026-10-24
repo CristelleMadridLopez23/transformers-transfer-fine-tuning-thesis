@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "experiment": "E2-T2",
+  "fold": 0,
+  "seed": 42,
+  "epochs_completed": 3,
+  "test_historical_used": false,
+  "checks": [
+    "last decoder block and MLP receive finite nonzero gradients",
+    "frozen backbone parameters receive no gradients",
+    "last decoder block and MLP update after optimizer step",
+    "<end> pooling and right-padding invariance pass",
+    "finite training and inner-validation losses",
+    "outer validation predictions are nonconstant",
+    "T2: L_inv y L_traj propagan gradientes finitos no nulos"
+  ]
+}

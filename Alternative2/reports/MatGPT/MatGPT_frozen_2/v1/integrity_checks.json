@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256_match": true,
+  "commit_match": true,
+  "strict_load": true,
+  "backbone_trainable_parameters": 0,
+  "unique_development_ids": 210,
+  "development_compositions": 70,
+  "fold_rows_without_test": 1050,
+  "outer_folds": 5,
+  "fold_summary": {
+    "0": {
+      "outer_validation_compositions": 14,
+      "inner_train_compositions": 45,
+      "inner_validation_compositions": 11
+    },
+    "1": {
+      "outer_validation_compositions": 14,
+      "inner_train_compositions": 45,
+      "inner_validation_compositions": 11
+    },
+    "2": {
+      "outer_validation_compositions": 14,
+      "inner_train_compositions": 45,
+      "inner_validation_compositions": 11
+    },
+    "3": {
+      "outer_validation_compositions": 14,
+      "inner_train_compositions": 45,
+      "inner_validation_compositions": 11
+    },
+    "4": {
+      "outer_validation_compositions": 14,
+      "inner_train_compositions": 45,
+      "inner_validation_compositions": 11
+    }
+  },
+  "per_composition_three_families": true,
+  "historical_test_used": false,
+  "training_started": false
+}

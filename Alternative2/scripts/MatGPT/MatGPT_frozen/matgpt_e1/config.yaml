@@ -1,0 +1,36 @@
+experiment: matgpt_e1_frozen
+dataset:
+  input_csv: Alternative2/01_data/processed/only_hex_new_csv_slices/configurations_slices.csv
+  target: energy_per_atom_ev
+  target_units: eV/atom
+  required_calculation_type: static
+  required_data_origin: static_ground_truth
+  reuse_existing_formula_split: true
+backbone:
+  checkpoint: Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth
+  model_info: Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/model_info_property_0.json
+  source_dir: Alternative2/models/MatGPT-source/mat-concat
+  expected_checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+  expected_source_commit: a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e
+  frozen: true
+  pooling: last_end_token
+regressor:
+  hidden_dim: 32
+  dropout: 0.1
+training:
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  batch_size: 32
+  max_epochs: 200
+  early_stopping_patience: 20
+  loss: smooth_l1
+  seed: 42
+  linear_probe_max_epochs: 200
+  linear_probe_patience: 20
+evaluation:
+  selection_metric: val_mae_ev_per_atom
+  near_tie_tolerance_ev_per_atom: 0.001
+paths:
+  report_dir: Alternative2/reports/matgpt_e1_v2
+  embeddings_dir: Alternative2/data/embeddings/matgpt_e1_v2

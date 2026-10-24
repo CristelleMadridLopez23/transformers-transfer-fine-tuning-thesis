@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "MAE_absolute_mev_atom": 59.29257225274887,
+  "same_210_development_ids": true,
+  "composition_constant_prediction": true,
+  "ranking": "indeterminate/abstention",
+  "used_inside_R1_R4": false
+}

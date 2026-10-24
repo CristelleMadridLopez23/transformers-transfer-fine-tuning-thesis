@@ -1,0 +1,16 @@
+experiment,fold,seed,checkpoint,status
+E2-Aug2,0,42,runs/fold_0_seed_42/checkpoints/fold_0_seed_42.pt,completed
+E2-Aug2,0,123,,pending
+E2-Aug2,0,2026,,pending
+E2-Aug2,1,42,,pending
+E2-Aug2,1,123,,pending
+E2-Aug2,1,2026,,pending
+E2-Aug2,2,42,,pending
+E2-Aug2,2,123,,pending
+E2-Aug2,2,2026,,pending
+E2-Aug2,3,42,,pending
+E2-Aug2,3,123,,pending
+E2-Aug2,3,2026,,pending
+E2-Aug2,4,42,,pending
+E2-Aug2,4,123,,pending
+E2-Aug2,4,2026,,pending

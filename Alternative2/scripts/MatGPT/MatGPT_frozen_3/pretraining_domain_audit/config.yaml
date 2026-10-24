@@ -1,0 +1,10 @@
+experiment: matgpt_pretraining_domain_audit
+corpus_filename: Training_dataset_alex20_with_encoding.csv
+expected_source_commit: a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e
+expected_checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+training_seed: 20260910
+split: torch.randperm 90:10, only reconstruct when corpus identity and row order are established
+target_dataset: Alternative2/01_data/abs3/processed/only_hex_new_csv_slices/configurations_slices.csv
+development_only: true
+historical_test_labels_allowed: false
+figures_format: png

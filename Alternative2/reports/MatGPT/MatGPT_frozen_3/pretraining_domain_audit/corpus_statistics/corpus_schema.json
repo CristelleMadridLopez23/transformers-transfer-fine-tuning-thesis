@@ -1,0 +1,116 @@
+{
+  "source_path": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/01_data/matgpt y matter/Training_dataset_alex20_with_encoding.csv",
+  "sha256": "16ae6aae2c3d44a003dab8ca309cbe87ade42f9afa83ddc1da8a437542e116a4",
+  "size_bytes": 116746131,
+  "rows": 306533,
+  "columns": [
+    "mat_id",
+    "SLICES",
+    "nsites",
+    "e_above_hull",
+    "band_gap_ind",
+    "band_gap_dir",
+    "e_form",
+    "crystal_system",
+    "space_group",
+    "crystal_system_encoded"
+  ],
+  "nulls_by_column": {
+    "mat_id": 0,
+    "SLICES": 0,
+    "nsites": 0,
+    "e_above_hull": 0,
+    "band_gap_ind": 0,
+    "band_gap_dir": 0,
+    "e_form": 0,
+    "crystal_system": 0,
+    "space_group": 0,
+    "crystal_system_encoded": 0
+  },
+  "slices_column": "SLICES",
+  "valid_slices": 306533,
+  "invalid_slices": 0,
+  "unique_reduced_formula_keys": 239189,
+  "formula_row_frequencies_top_20": [
+    [
+      "LaP8Ru",
+      53
+    ],
+    [
+      "SiO2",
+      50
+    ],
+    [
+      "BC",
+      38
+    ],
+    [
+      "CsSrI3",
+      34
+    ],
+    [
+      "FeOF",
+      32
+    ],
+    [
+      "YMoN3",
+      32
+    ],
+    [
+      "TlSnCl3",
+      32
+    ],
+    [
+      "InSnCl3",
+      31
+    ],
+    [
+      "CsBaI3",
+      31
+    ],
+    [
+      "RbZnCl3",
+      31
+    ],
+    [
+      "KGeCl3",
+      31
+    ],
+    [
+      "Ca3SbP",
+      30
+    ],
+    [
+      "RbPbCl3",
+      30
+    ],
+    [
+      "KScSe2",
+      29
+    ],
+    [
+      "BaWN3",
+      29
+    ],
+    [
+      "Li3MnCoO5",
+      28
+    ],
+    [
+      "KGeBr3",
+      28
+    ],
+    [
+      "RbCaBr3",
+      28
+    ],
+    [
+      "LiMnF3",
+      27
+    ],
+    [
+      "LaMoN3",
+      27
+    ]
+  ]
+}

@@ -1,0 +1,195 @@
+header,occurrences
++ w b OOO g OOO c OOO o,13256
++ x a DDO c OOO o,9668
++ w a ECC n OOO e OOO o,6846
+o t a ODD a DOD b OOO c OOO d OOO l OOO o,5220
++ v b OOO c OOO d OOO e OOO o,4833
++ v a DDD b OOO g OOO c OOO o,3583
++ t a ODD a DOD b OOO c OOO d OOO e OOO o,3354
++ w a DDO b OOO c OOO o,2441
++ w a DDD b OOO c OOO o,2064
++ z o,2041
++ w a DDO b OOD c OOD o,2003
++ y c OOO o,1912
+o v a DDD b OOO m OOO c DOF o,1901
+o z o,1899
++ x n OOO e OOO o,1818
++ w b OOO g OOO c DDO o,1771
+o w a ECC n OOO k OOO o,1747
++ x a DDO c OOD o,1570
+o x a DDO j OOO o,1495
++ y c ODO o,1482
++ w n OOO b OOO e OOO o,1317
++ x b OOO c OOO o,1152
++ x a ECC n OOO o,1131
+o w b OOO g OOO j OOO o,1042
+o v a DDD b OOO m OOO j OOO o,979
++ x b DOD c ODO o,951
+o w a DDD b OOO j OOO o,933
++ y c ODD o,932
+o w a ODD b OOO j OOO o,931
++ w n OOO b OOD e OOO o,893
+o v a DDD b OOO g OOO j OOO o,758
+o x n OOO k OOO o,749
+o y j OOO o,749
+o w n OOO i OOO e OOO o,712
+o w b OOO m OOO j OOO o,702
+o w n OOO i OOO k OOO o,677
++ w a DDD b ODO c ODO o,642
+o x b OOO j OOO o,578
+o v b OOO g DDO c DDO h DDO + YBO,550
+o w a DDO b OOD j OOD o,542
+o v b DOD c ODD d OOO e BFF o,431
++ x n OOO f OOD o,395
+o w b OOO c DDO h DDO + BBO,376
+o x a DDO c OOO o,363
++ v a DDD b OOO g OOO c OOD o,316
+o x a ECC n OOO o,300
++ w a DDD b OOO g OOO o,293
+o u a DDD b DDD g ODB c DOF h ODB + OBZ,285
++ u a DDD b DOD c ODD d OOO e FBB o,268
++ u a DDD b OOO c OOO d OOO e OOO o,264
++ x b OOO c DDO o,260
+o x n OOO f OOO o,259
++ w a DDD b OOO c DDO o,258
+o s a ODD a DOD b ODD c DDO d OOO e FBF h BBB + ZZZ,236
+o w a DDD b OOO m OOO o,236
++ v a ODD a DOD b OOO c OOO o,231
++ y n OOO o,225
++ x b DOO c OOO o,224
++ w a DDO b ODD c ODD o,222
+o v a DDD b OOO m OOO c OOO o,216
+o x b DOD j DOD o,212
+o x b OOD j OOD o,200
+o u a ODD a DOD b OOO c OOO h BBB + ZZZ,196
+o w a DDO b OOO j OOO o,187
++ x n OOO f OOO o,181
++ w n OOO b OOD e OOD o,177
++ y c OOD o,176
++ v b OOO c OOO d OOO e DDD o,175
++ w b OOO g DDD c DDD o,167
++ v a DDD b OOO c OOO d OOO o,152
+o v a ODD a DOD b OOO j OOO o,140
+o y c ODO o,140
+o u a DDD b OOO c OOO d OOO l OOO o,130
+o w a ECC n OOO e OOO o,118
++ x n OOO b OOD o,116
+o x a DDO j OOD o,114
++ w a ECC n OOO e OOD o,112
+o w n OOO b OOD k OOO o,111
++ w b OOO c OOO d OOO o,107
++ x b OOO c DDD o,95
+o x n OOO i OOO o,84
+o w a DDD b OOO j DOO o,81
+o w b DOD c ODD d OOO o,78
+o w b OOO g DDD j DDD o,69
+o w b OOO g DDD h DDD + YYY,67
+o v a ODD a DOD b OOO j BBB o,63
+o x b OOD j DDO o,61
+o x b DOD c ODD o,58
+o w a DDD b OOO g OOO o,58
+o y j OOD o,56
++ x b OOD c ODD o,55
+o y c OOO o,54
++ w a DDO b ODO c ODO o,46
+o u a DDD b DOD c ODD d OOO l BBB o,45
+o w a DDD b OOO c OOO o,44
++ w b DOD c ODD d OOO o,43
+o w a ECC n OOO k OOD o,40
+o v b OOO g OOO c OOO h DDO + YYO,39
+o v b OOO g DDD c DDD h DDD + YBY,37
+o y n OOO o,37
+o v a DDD b DDD g ODB j OOO o,35
++ x b OOO g OOO o,35
+o w n OOO b OOD e OOO o,33
++ w b OOO g OOO c DDD o,31
++ w b OOO g OOD c OOO o,28
++ x b DOD c ODD o,28
+o v a DDD b OOO c OOO d OOO o,25
+o v b OOO c OOO d OOO l OOO o,23
+o v a DDD b DOD c ODD d OOO o,22
+o w a ODD b OOO j DOO o,21
++ x b DDD c OOD o,20
+o x n OOO b OOD o,20
++ x n OOO e OOD o,20
+o v a DDD b OOO g OOO c OOO o,19
+o x n OOO e OOO o,19
+o x b OOO m OOO o,18
+o u a DDD b DOD c ODD d OOO e FBB o,16
++ w b OOO g OOO c OOD o,16
+o w b OOO m OOO c DDO o,16
+o v a DDD b DDD g ODB h ODB + OYZ,15
++ x b DOO c DDD o,15
+o w a DDO b OOD c OOD o,13
+o x b OOD j DOO o,13
+o w a DDO b OOO c OOO o,12
++ x b DOD c DOD o,11
++ w a DDO b OOO c OOD o,11
+o x n OOC e OOO o,9
+o w b OOD g DDB c DDB o,9
+o w b OOO g DDO h DDO + YBO,9
+o w n OOO b OOO k OOO o,9
++ t a ODD a DOD b OOO c OOO d OOO e DDD o,9
+o w n OOO i OOD k OOD o,8
+o w b OOD g OOB c OOO o,8
+o w b OOO m OOO c OOO o,8
+o u b OOO c OOO d OOO e DDD h DDD + YYY,8
+o v b OOO c OOO d OOO h DDD + YYY,7
+o x n OOE e OOO o,7
+o v b DOD c ODD d OOO e FBB o,7
+o u a DDD b DDD g ODB c DOB h ODB + OBZ,7
+o w n OOE b OOO e OOE o,7
+o w b OOD g DDF c DDF o,7
++ x b OOO g OOD o,7
+o v a DDD b OOO g OOO j OOD o,6
+o x b OOO c DDO o,6
+o x b OOO c OOO o,5
+o x b OOD g OOB o,5
+o v a ODD a DOD b OOO c OOO o,5
+o x b OOO j DDD o,5
+o w n OOO b OOD k OOD o,4
+o w b OOO m OOO c OOD o,4
+o w n OOC b OOO e OOC o,4
+o v b OOO c OOO d OOO l DDD o,4
+o w a ODD b OOO j DDO o,4
+o v a DDO b DDO c OOO h ODD + OBB,4
++ w a DDD b DOD c ODD o,4
+o w a DDD b DOD c ODD o,4
+o w b OOO m OOO c DDD o,4
+o y n OOC o,3
+o x n OOO l OOO o,3
+o v a DDD b DDD g ODB c DOF o,3
+o x b OOO j DOO o,3
++ w n OOO b OOO e OOD o,3
++ x b OOO c OOD o,3
++ x n OOO b OOO o,2
++ v a DDD b DOD c ODD d OOO o,2
+o t a ODD a DOD b OOO c OOO d OOO e OOO o,2
+o w n OOO i OOD e OOO o,2
++ x b DDO c ODD o,2
+o x n OOO l OOD o,2
+o w n OOO b OOO k OOD o,2
+o x b OOO g OOO o,2
+o y n OOE o,2
++ u a ODD a DOD b OOO c OOO d OOO o,2
+o x n OOE f OOC o,2
+o v b OOO g DDO c DDD h DDO + YBO,2
+o w b OOO g OOO j DDO o,2
+o w a ODD b OOO j ODO o,1
+o w b OOO g DDO c DDO o,1
++ x b DOO c OOD o,1
+o x n OOE b OOO o,1
+o v a DDD b OOO m OOO j OOD o,1
+o w b OOO g OOO c OOO o,1
+o x n OOO k OOD o,1
+o x b OOO j DDO o,1
++ w b OOO g OOD c DDO o,1
+o x b OOO j ODD o,1
+o w a DDD b OOO j DDO o,1
++ w b OOO g OOD c OOD o,1
+o w b OOD g OOF c OOO o,1
+o w b OOO c OOO h DDD + BBB,1
+o x b OOD c OOD o,1
+o x n OOC b OOD o,1
+o w b OOO m OOO j DDD o,1
+o w b OOO c OOO h DDO + BBO,1

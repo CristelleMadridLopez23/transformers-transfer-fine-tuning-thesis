@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "rows": 630,
+  "max_abs_error_ev_atom": 7.040798664093018e-07,
+  "tolerance_ev_atom": 1e-06,
+  "test_labels_loaded": false
+}

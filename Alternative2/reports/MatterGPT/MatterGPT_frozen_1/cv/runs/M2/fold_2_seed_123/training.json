@@ -1,0 +1,8 @@
+{
+  "best_epoch": 41,
+  "inner_val_absolute_mae_ev_atom": 0.2062530219554901,
+  "mean_center_ev_atom": -5.222520798162963,
+  "mean_scale_ev_atom": 0.845316926530174,
+  "residual_scale_ev_atom": 0.05335597573326402,
+  "seed": 123
+}

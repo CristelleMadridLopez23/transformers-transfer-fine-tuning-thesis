@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "folds": 5,
+  "development_structures": 210,
+  "historical_test_excluded": 24,
+  "source_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e",
+  "parameters_total": 114026668,
+  "parameters_last_block": 9451776,
+  "trainable_tensor_names": [
+    "transformer_decoder.layers.11.self_attn.in_proj_weight",
+    "transformer_decoder.layers.11.self_attn.in_proj_bias",
+    "transformer_decoder.layers.11.self_attn.out_proj.weight",
+    "transformer_decoder.layers.11.self_attn.out_proj.bias",
+    "transformer_decoder.layers.11.multihead_attn.in_proj_weight",
+    "transformer_decoder.layers.11.multihead_attn.in_proj_bias",
+    "transformer_decoder.layers.11.multihead_attn.out_proj.weight",
+    "transformer_decoder.layers.11.multihead_attn.out_proj.bias",
+    "transformer_decoder.layers.11.linear1.weight",
+    "transformer_decoder.layers.11.linear1.bias",
+    "transformer_decoder.layers.11.linear2.weight",
+    "transformer_decoder.layers.11.linear2.bias",
+    "transformer_decoder.layers.11.norm1.weight",
+    "transformer_decoder.layers.11.norm1.bias",
+    "transformer_decoder.layers.11.norm2.weight",
+    "transformer_decoder.layers.11.norm2.bias",
+    "transformer_decoder.layers.11.norm3.weight",
+    "transformer_decoder.layers.11.norm3.bias"
+  ]
+}

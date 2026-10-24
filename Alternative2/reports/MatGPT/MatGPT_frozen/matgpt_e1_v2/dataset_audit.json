@@ -1,0 +1,76 @@
+{
+  "experiment": "matgpt_e1_frozen",
+  "status": "DATA_READY_WITH_METHOD_PROVENANCE_LIMITATION",
+  "input_csv": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/01_data/processed/only_hex_new_csv_slices/configurations_slices.csv",
+  "input_sha256": "0821404f6285e4033d22bff35299344feb8088e34de59393016952180ee6e834",
+  "source_file_values": [
+    "data/only_hex_new/configurations_only_hex_new.extxyz"
+  ],
+  "source_rows": 8898,
+  "static_abs3_candidates": 234,
+  "accepted_rows": 234,
+  "rejected_candidate_rows_by_reason": {},
+  "excluded_non_abs3_rows": 94,
+  "excluded_abs3_trajectory_rows": 8570,
+  "target": "energy_per_atom_ev",
+  "target_units": "eV/atom",
+  "target_definition": "static DFT total energy divided by atom count; not formation energy",
+  "energy_provenance": [
+    "extxyz frame: calculator.energy and info.energy_per_atom_eV"
+  ],
+  "functional_source_label": [
+    "gga-static"
+  ],
+  "functional_method_limit": "Local files identify gga-static but do not specify the exact exchange-correlation functional or corrections; verify the upstream calculation provenance before interpreting absolute energies physically.",
+  "composition_split_reused": true,
+  "split_counts": {
+    "test": {
+      "rows": 24,
+      "compositions": 8,
+      "families": {
+        "dist_perovskite": 8,
+        "hexagonal": 8,
+        "needle": 8
+      },
+      "compositions_with_at_least_two_polymorphs": 8
+    },
+    "train": {
+      "rows": 186,
+      "compositions": 62,
+      "families": {
+        "dist_perovskite": 62,
+        "hexagonal": 62,
+        "needle": 62
+      },
+      "compositions_with_at_least_two_polymorphs": 62
+    },
+    "val": {
+      "rows": 24,
+      "compositions": 8,
+      "families": {
+        "dist_perovskite": 8,
+        "hexagonal": 8,
+        "needle": 8
+      },
+      "compositions_with_at_least_two_polymorphs": 8
+    }
+  },
+  "split_overlap": {
+    "structure_id": [],
+    "matgpt_slices": []
+  },
+  "slices_representation_collisions": [],
+  "slices_collision_count": 0,
+  "ranking_test_compositions": 8,
+  "checkpoint_hashes": {
+    "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+    "model_info_sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+    "config_sha256": "9eabe7a1d8e33636fcdfb2548d844aee16610edef8ea8312779375f6b7f1c5b1",
+    "source_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e"
+  },
+  "vocabulary_size": 172,
+  "block_size": 442,
+  "max_energy_consistency_error_ev_atom": 0.0,
+  "slices_column_used_for_matgpt": "SLICES (canonical whitespace tokenization; direction vectors remain whole tokens)",
+  "note": "No structures were removed based on representation collisions; all collisions are reported."
+}

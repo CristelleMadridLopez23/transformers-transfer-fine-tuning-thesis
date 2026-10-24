@@ -1,0 +1,289 @@
+model,true_class,predicted_class,count,row_denominator,row_percent,primary_GS_row
+H0,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+H0,dist_perovskite,hexagonal,3,12,25.0,True
+H0,dist_perovskite,needle,7,12,58.333333333333336,True
+H0,dist_perovskite,tie/abstain,0,12,0.0,True
+H0,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+H0,hexagonal,hexagonal,7,18,38.888888888888886,True
+H0,hexagonal,needle,8,18,44.44444444444444,True
+H0,hexagonal,tie/abstain,1,18,5.555555555555555,True
+H0,needle,dist_perovskite,3,37,8.108108108108109,True
+H0,needle,hexagonal,4,37,10.81081081081081,True
+H0,needle,needle,29,37,78.37837837837837,True
+H0,needle,tie/abstain,1,37,2.7027027027027026,True
+H0,DFT near-tie,dist_perovskite,1,3,33.333333333333336,False
+H0,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+H0,DFT near-tie,needle,1,3,33.333333333333336,False
+H0,DFT near-tie,tie/abstain,0,3,0.0,False
+H1,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+H1,dist_perovskite,hexagonal,3,12,25.0,True
+H1,dist_perovskite,needle,7,12,58.333333333333336,True
+H1,dist_perovskite,tie/abstain,0,12,0.0,True
+H1,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+H1,hexagonal,hexagonal,8,18,44.44444444444444,True
+H1,hexagonal,needle,8,18,44.44444444444444,True
+H1,hexagonal,tie/abstain,0,18,0.0,True
+H1,needle,dist_perovskite,3,37,8.108108108108109,True
+H1,needle,hexagonal,2,37,5.405405405405405,True
+H1,needle,needle,29,37,78.37837837837837,True
+H1,needle,tie/abstain,3,37,8.108108108108109,True
+H1,DFT near-tie,dist_perovskite,0,3,0.0,False
+H1,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+H1,DFT near-tie,needle,2,3,66.66666666666667,False
+H1,DFT near-tie,tie/abstain,0,3,0.0,False
+H2,dist_perovskite,dist_perovskite,3,12,25.0,True
+H2,dist_perovskite,hexagonal,3,12,25.0,True
+H2,dist_perovskite,needle,6,12,50.0,True
+H2,dist_perovskite,tie/abstain,0,12,0.0,True
+H2,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+H2,hexagonal,hexagonal,7,18,38.888888888888886,True
+H2,hexagonal,needle,8,18,44.44444444444444,True
+H2,hexagonal,tie/abstain,1,18,5.555555555555555,True
+H2,needle,dist_perovskite,3,37,8.108108108108109,True
+H2,needle,hexagonal,3,37,8.108108108108109,True
+H2,needle,needle,30,37,81.08108108108108,True
+H2,needle,tie/abstain,1,37,2.7027027027027026,True
+H2,DFT near-tie,dist_perovskite,0,3,0.0,False
+H2,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+H2,DFT near-tie,needle,2,3,66.66666666666667,False
+H2,DFT near-tie,tie/abstain,0,3,0.0,False
+R1-A-ABS,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+R1-A-ABS,dist_perovskite,hexagonal,6,12,50.0,True
+R1-A-ABS,dist_perovskite,needle,4,12,33.333333333333336,True
+R1-A-ABS,dist_perovskite,tie/abstain,0,12,0.0,True
+R1-A-ABS,hexagonal,dist_perovskite,4,18,22.22222222222222,True
+R1-A-ABS,hexagonal,hexagonal,9,18,50.0,True
+R1-A-ABS,hexagonal,needle,5,18,27.77777777777778,True
+R1-A-ABS,hexagonal,tie/abstain,0,18,0.0,True
+R1-A-ABS,needle,dist_perovskite,10,37,27.027027027027028,True
+R1-A-ABS,needle,hexagonal,10,37,27.027027027027028,True
+R1-A-ABS,needle,needle,17,37,45.945945945945944,True
+R1-A-ABS,needle,tie/abstain,0,37,0.0,True
+R1-A-ABS,DFT near-tie,dist_perovskite,2,3,66.66666666666667,False
+R1-A-ABS,DFT near-tie,hexagonal,0,3,0.0,False
+R1-A-ABS,DFT near-tie,needle,1,3,33.333333333333336,False
+R1-A-ABS,DFT near-tie,tie/abstain,0,3,0.0,False
+R1-B-MU,dist_perovskite,dist_perovskite,0,12,0.0,True
+R1-B-MU,dist_perovskite,hexagonal,0,12,0.0,True
+R1-B-MU,dist_perovskite,needle,0,12,0.0,True
+R1-B-MU,dist_perovskite,tie/abstain,12,12,100.0,True
+R1-B-MU,hexagonal,dist_perovskite,0,18,0.0,True
+R1-B-MU,hexagonal,hexagonal,0,18,0.0,True
+R1-B-MU,hexagonal,needle,0,18,0.0,True
+R1-B-MU,hexagonal,tie/abstain,18,18,100.0,True
+R1-B-MU,needle,dist_perovskite,0,37,0.0,True
+R1-B-MU,needle,hexagonal,0,37,0.0,True
+R1-B-MU,needle,needle,0,37,0.0,True
+R1-B-MU,needle,tie/abstain,37,37,100.0,True
+R1-B-MU,DFT near-tie,dist_perovskite,0,3,0.0,False
+R1-B-MU,DFT near-tie,hexagonal,0,3,0.0,False
+R1-B-MU,DFT near-tie,needle,0,3,0.0,False
+R1-B-MU,DFT near-tie,tie/abstain,3,3,100.0,False
+R1-C-DELTA,dist_perovskite,dist_perovskite,3,12,25.0,True
+R1-C-DELTA,dist_perovskite,hexagonal,4,12,33.333333333333336,True
+R1-C-DELTA,dist_perovskite,needle,5,12,41.666666666666664,True
+R1-C-DELTA,dist_perovskite,tie/abstain,0,12,0.0,True
+R1-C-DELTA,hexagonal,dist_perovskite,3,18,16.666666666666668,True
+R1-C-DELTA,hexagonal,hexagonal,5,18,27.77777777777778,True
+R1-C-DELTA,hexagonal,needle,9,18,50.0,True
+R1-C-DELTA,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R1-C-DELTA,needle,dist_perovskite,2,37,5.405405405405405,True
+R1-C-DELTA,needle,hexagonal,4,37,10.81081081081081,True
+R1-C-DELTA,needle,needle,30,37,81.08108108108108,True
+R1-C-DELTA,needle,tie/abstain,1,37,2.7027027027027026,True
+R1-C-DELTA,DFT near-tie,dist_perovskite,0,3,0.0,False
+R1-C-DELTA,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R1-C-DELTA,DFT near-tie,needle,1,3,33.333333333333336,False
+R1-C-DELTA,DFT near-tie,tie/abstain,1,3,33.333333333333336,False
+R1-D-COMBINED,dist_perovskite,dist_perovskite,3,12,25.0,True
+R1-D-COMBINED,dist_perovskite,hexagonal,4,12,33.333333333333336,True
+R1-D-COMBINED,dist_perovskite,needle,5,12,41.666666666666664,True
+R1-D-COMBINED,dist_perovskite,tie/abstain,0,12,0.0,True
+R1-D-COMBINED,hexagonal,dist_perovskite,3,18,16.666666666666668,True
+R1-D-COMBINED,hexagonal,hexagonal,5,18,27.77777777777778,True
+R1-D-COMBINED,hexagonal,needle,9,18,50.0,True
+R1-D-COMBINED,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R1-D-COMBINED,needle,dist_perovskite,2,37,5.405405405405405,True
+R1-D-COMBINED,needle,hexagonal,4,37,10.81081081081081,True
+R1-D-COMBINED,needle,needle,30,37,81.08108108108108,True
+R1-D-COMBINED,needle,tie/abstain,1,37,2.7027027027027026,True
+R1-D-COMBINED,DFT near-tie,dist_perovskite,0,3,0.0,False
+R1-D-COMBINED,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R1-D-COMBINED,DFT near-tie,needle,1,3,33.333333333333336,False
+R1-D-COMBINED,DFT near-tie,tie/abstain,1,3,33.333333333333336,False
+R2-REF8,dist_perovskite,dist_perovskite,3,12,25.0,True
+R2-REF8,dist_perovskite,hexagonal,3,12,25.0,True
+R2-REF8,dist_perovskite,needle,6,12,50.0,True
+R2-REF8,dist_perovskite,tie/abstain,0,12,0.0,True
+R2-REF8,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+R2-REF8,hexagonal,hexagonal,7,18,38.888888888888886,True
+R2-REF8,hexagonal,needle,8,18,44.44444444444444,True
+R2-REF8,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R2-REF8,needle,dist_perovskite,3,37,8.108108108108109,True
+R2-REF8,needle,hexagonal,3,37,8.108108108108109,True
+R2-REF8,needle,needle,30,37,81.08108108108108,True
+R2-REF8,needle,tie/abstain,1,37,2.7027027027027026,True
+R2-REF8,DFT near-tie,dist_perovskite,0,3,0.0,False
+R2-REF8,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R2-REF8,DFT near-tie,needle,2,3,66.66666666666667,False
+R2-REF8,DFT near-tie,tie/abstain,0,3,0.0,False
+R2-SMALL4,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+R2-SMALL4,dist_perovskite,hexagonal,4,12,33.333333333333336,True
+R2-SMALL4,dist_perovskite,needle,5,12,41.666666666666664,True
+R2-SMALL4,dist_perovskite,tie/abstain,1,12,8.333333333333334,True
+R2-SMALL4,hexagonal,dist_perovskite,3,18,16.666666666666668,True
+R2-SMALL4,hexagonal,hexagonal,7,18,38.888888888888886,True
+R2-SMALL4,hexagonal,needle,8,18,44.44444444444444,True
+R2-SMALL4,hexagonal,tie/abstain,0,18,0.0,True
+R2-SMALL4,needle,dist_perovskite,3,37,8.108108108108109,True
+R2-SMALL4,needle,hexagonal,4,37,10.81081081081081,True
+R2-SMALL4,needle,needle,30,37,81.08108108108108,True
+R2-SMALL4,needle,tie/abstain,0,37,0.0,True
+R2-SMALL4,DFT near-tie,dist_perovskite,0,3,0.0,False
+R2-SMALL4,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R2-SMALL4,DFT near-tie,needle,2,3,66.66666666666667,False
+R2-SMALL4,DFT near-tie,tie/abstain,0,3,0.0,False
+R3-DROP30,dist_perovskite,dist_perovskite,3,12,25.0,True
+R3-DROP30,dist_perovskite,hexagonal,3,12,25.0,True
+R3-DROP30,dist_perovskite,needle,6,12,50.0,True
+R3-DROP30,dist_perovskite,tie/abstain,0,12,0.0,True
+R3-DROP30,hexagonal,dist_perovskite,3,18,16.666666666666668,True
+R3-DROP30,hexagonal,hexagonal,7,18,38.888888888888886,True
+R3-DROP30,hexagonal,needle,8,18,44.44444444444444,True
+R3-DROP30,hexagonal,tie/abstain,0,18,0.0,True
+R3-DROP30,needle,dist_perovskite,3,37,8.108108108108109,True
+R3-DROP30,needle,hexagonal,2,37,5.405405405405405,True
+R3-DROP30,needle,needle,32,37,86.48648648648648,True
+R3-DROP30,needle,tie/abstain,0,37,0.0,True
+R3-DROP30,DFT near-tie,dist_perovskite,0,3,0.0,False
+R3-DROP30,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R3-DROP30,DFT near-tie,needle,2,3,66.66666666666667,False
+R3-DROP30,DFT near-tie,tie/abstain,0,3,0.0,False
+R3-EARLY8,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+R3-EARLY8,dist_perovskite,hexagonal,3,12,25.0,True
+R3-EARLY8,dist_perovskite,needle,7,12,58.333333333333336,True
+R3-EARLY8,dist_perovskite,tie/abstain,0,12,0.0,True
+R3-EARLY8,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+R3-EARLY8,hexagonal,hexagonal,7,18,38.888888888888886,True
+R3-EARLY8,hexagonal,needle,8,18,44.44444444444444,True
+R3-EARLY8,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R3-EARLY8,needle,dist_perovskite,3,37,8.108108108108109,True
+R3-EARLY8,needle,hexagonal,3,37,8.108108108108109,True
+R3-EARLY8,needle,needle,31,37,83.78378378378379,True
+R3-EARLY8,needle,tie/abstain,0,37,0.0,True
+R3-EARLY8,DFT near-tie,dist_perovskite,0,3,0.0,False
+R3-EARLY8,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R3-EARLY8,DFT near-tie,needle,2,3,66.66666666666667,False
+R3-EARLY8,DFT near-tie,tie/abstain,0,3,0.0,False
+R3-WD1E2,dist_perovskite,dist_perovskite,3,12,25.0,True
+R3-WD1E2,dist_perovskite,hexagonal,3,12,25.0,True
+R3-WD1E2,dist_perovskite,needle,6,12,50.0,True
+R3-WD1E2,dist_perovskite,tie/abstain,0,12,0.0,True
+R3-WD1E2,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+R3-WD1E2,hexagonal,hexagonal,7,18,38.888888888888886,True
+R3-WD1E2,hexagonal,needle,8,18,44.44444444444444,True
+R3-WD1E2,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R3-WD1E2,needle,dist_perovskite,3,37,8.108108108108109,True
+R3-WD1E2,needle,hexagonal,3,37,8.108108108108109,True
+R3-WD1E2,needle,needle,30,37,81.08108108108108,True
+R3-WD1E2,needle,tie/abstain,1,37,2.7027027027027026,True
+R3-WD1E2,DFT near-tie,dist_perovskite,0,3,0.0,False
+R3-WD1E2,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R3-WD1E2,DFT near-tie,needle,2,3,66.66666666666667,False
+R3-WD1E2,DFT near-tie,tie/abstain,0,3,0.0,False
+R4-FIXED-FINAL_END,dist_perovskite,dist_perovskite,3,12,25.0,True
+R4-FIXED-FINAL_END,dist_perovskite,hexagonal,4,12,33.333333333333336,True
+R4-FIXED-FINAL_END,dist_perovskite,needle,5,12,41.666666666666664,True
+R4-FIXED-FINAL_END,dist_perovskite,tie/abstain,0,12,0.0,True
+R4-FIXED-FINAL_END,hexagonal,dist_perovskite,3,18,16.666666666666668,True
+R4-FIXED-FINAL_END,hexagonal,hexagonal,5,18,27.77777777777778,True
+R4-FIXED-FINAL_END,hexagonal,needle,9,18,50.0,True
+R4-FIXED-FINAL_END,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R4-FIXED-FINAL_END,needle,dist_perovskite,2,37,5.405405405405405,True
+R4-FIXED-FINAL_END,needle,hexagonal,4,37,10.81081081081081,True
+R4-FIXED-FINAL_END,needle,needle,30,37,81.08108108108108,True
+R4-FIXED-FINAL_END,needle,tie/abstain,1,37,2.7027027027027026,True
+R4-FIXED-FINAL_END,DFT near-tie,dist_perovskite,0,3,0.0,False
+R4-FIXED-FINAL_END,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R4-FIXED-FINAL_END,DFT near-tie,needle,1,3,33.333333333333336,False
+R4-FIXED-FINAL_END,DFT near-tie,tie/abstain,1,3,33.333333333333336,False
+R4-FIXED-FINAL_MEAN,dist_perovskite,dist_perovskite,1,12,8.333333333333334,True
+R4-FIXED-FINAL_MEAN,dist_perovskite,hexagonal,1,12,8.333333333333334,True
+R4-FIXED-FINAL_MEAN,dist_perovskite,needle,9,12,75.0,True
+R4-FIXED-FINAL_MEAN,dist_perovskite,tie/abstain,1,12,8.333333333333334,True
+R4-FIXED-FINAL_MEAN,hexagonal,dist_perovskite,2,18,11.11111111111111,True
+R4-FIXED-FINAL_MEAN,hexagonal,hexagonal,7,18,38.888888888888886,True
+R4-FIXED-FINAL_MEAN,hexagonal,needle,8,18,44.44444444444444,True
+R4-FIXED-FINAL_MEAN,hexagonal,tie/abstain,1,18,5.555555555555555,True
+R4-FIXED-FINAL_MEAN,needle,dist_perovskite,3,37,8.108108108108109,True
+R4-FIXED-FINAL_MEAN,needle,hexagonal,3,37,8.108108108108109,True
+R4-FIXED-FINAL_MEAN,needle,needle,29,37,78.37837837837837,True
+R4-FIXED-FINAL_MEAN,needle,tie/abstain,2,37,5.405405405405405,True
+R4-FIXED-FINAL_MEAN,DFT near-tie,dist_perovskite,0,3,0.0,False
+R4-FIXED-FINAL_MEAN,DFT near-tie,hexagonal,0,3,0.0,False
+R4-FIXED-FINAL_MEAN,DFT near-tie,needle,3,3,100.0,False
+R4-FIXED-FINAL_MEAN,DFT near-tie,tie/abstain,0,3,0.0,False
+R4-SELECTED-2COMP,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+R4-SELECTED-2COMP,dist_perovskite,hexagonal,2,12,16.666666666666668,True
+R4-SELECTED-2COMP,dist_perovskite,needle,7,12,58.333333333333336,True
+R4-SELECTED-2COMP,dist_perovskite,tie/abstain,1,12,8.333333333333334,True
+R4-SELECTED-2COMP,hexagonal,dist_perovskite,4,18,22.22222222222222,True
+R4-SELECTED-2COMP,hexagonal,hexagonal,7,18,38.888888888888886,True
+R4-SELECTED-2COMP,hexagonal,needle,7,18,38.888888888888886,True
+R4-SELECTED-2COMP,hexagonal,tie/abstain,0,18,0.0,True
+R4-SELECTED-2COMP,needle,dist_perovskite,5,37,13.513513513513514,True
+R4-SELECTED-2COMP,needle,hexagonal,5,37,13.513513513513514,True
+R4-SELECTED-2COMP,needle,needle,25,37,67.56756756756756,True
+R4-SELECTED-2COMP,needle,tie/abstain,2,37,5.405405405405405,True
+R4-SELECTED-2COMP,DFT near-tie,dist_perovskite,0,3,0.0,False
+R4-SELECTED-2COMP,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R4-SELECTED-2COMP,DFT near-tie,needle,2,3,66.66666666666667,False
+R4-SELECTED-2COMP,DFT near-tie,tie/abstain,0,3,0.0,False
+R4-SELECTED-ABSOLUTE,dist_perovskite,dist_perovskite,1,12,8.333333333333334,True
+R4-SELECTED-ABSOLUTE,dist_perovskite,hexagonal,5,12,41.666666666666664,True
+R4-SELECTED-ABSOLUTE,dist_perovskite,needle,6,12,50.0,True
+R4-SELECTED-ABSOLUTE,dist_perovskite,tie/abstain,0,12,0.0,True
+R4-SELECTED-ABSOLUTE,hexagonal,dist_perovskite,9,18,50.0,True
+R4-SELECTED-ABSOLUTE,hexagonal,hexagonal,3,18,16.666666666666668,True
+R4-SELECTED-ABSOLUTE,hexagonal,needle,6,18,33.333333333333336,True
+R4-SELECTED-ABSOLUTE,hexagonal,tie/abstain,0,18,0.0,True
+R4-SELECTED-ABSOLUTE,needle,dist_perovskite,9,37,24.324324324324323,True
+R4-SELECTED-ABSOLUTE,needle,hexagonal,8,37,21.62162162162162,True
+R4-SELECTED-ABSOLUTE,needle,needle,20,37,54.054054054054056,True
+R4-SELECTED-ABSOLUTE,needle,tie/abstain,0,37,0.0,True
+R4-SELECTED-ABSOLUTE,DFT near-tie,dist_perovskite,1,3,33.333333333333336,False
+R4-SELECTED-ABSOLUTE,DFT near-tie,hexagonal,0,3,0.0,False
+R4-SELECTED-ABSOLUTE,DFT near-tie,needle,2,3,66.66666666666667,False
+R4-SELECTED-ABSOLUTE,DFT near-tie,tie/abstain,0,3,0.0,False
+R4-SELECTED-DELTA,dist_perovskite,dist_perovskite,2,12,16.666666666666668,True
+R4-SELECTED-DELTA,dist_perovskite,hexagonal,2,12,16.666666666666668,True
+R4-SELECTED-DELTA,dist_perovskite,needle,7,12,58.333333333333336,True
+R4-SELECTED-DELTA,dist_perovskite,tie/abstain,1,12,8.333333333333334,True
+R4-SELECTED-DELTA,hexagonal,dist_perovskite,4,18,22.22222222222222,True
+R4-SELECTED-DELTA,hexagonal,hexagonal,7,18,38.888888888888886,True
+R4-SELECTED-DELTA,hexagonal,needle,7,18,38.888888888888886,True
+R4-SELECTED-DELTA,hexagonal,tie/abstain,0,18,0.0,True
+R4-SELECTED-DELTA,needle,dist_perovskite,5,37,13.513513513513514,True
+R4-SELECTED-DELTA,needle,hexagonal,5,37,13.513513513513514,True
+R4-SELECTED-DELTA,needle,needle,25,37,67.56756756756756,True
+R4-SELECTED-DELTA,needle,tie/abstain,2,37,5.405405405405405,True
+R4-SELECTED-DELTA,DFT near-tie,dist_perovskite,0,3,0.0,False
+R4-SELECTED-DELTA,DFT near-tie,hexagonal,1,3,33.333333333333336,False
+R4-SELECTED-DELTA,DFT near-tie,needle,2,3,66.66666666666667,False
+R4-SELECTED-DELTA,DFT near-tie,tie/abstain,0,3,0.0,False
+R4-SELECTED-MU,dist_perovskite,dist_perovskite,0,12,0.0,True
+R4-SELECTED-MU,dist_perovskite,hexagonal,0,12,0.0,True
+R4-SELECTED-MU,dist_perovskite,needle,0,12,0.0,True
+R4-SELECTED-MU,dist_perovskite,tie/abstain,12,12,100.0,True
+R4-SELECTED-MU,hexagonal,dist_perovskite,0,18,0.0,True
+R4-SELECTED-MU,hexagonal,hexagonal,0,18,0.0,True
+R4-SELECTED-MU,hexagonal,needle,0,18,0.0,True
+R4-SELECTED-MU,hexagonal,tie/abstain,18,18,100.0,True
+R4-SELECTED-MU,needle,dist_perovskite,0,37,0.0,True
+R4-SELECTED-MU,needle,hexagonal,0,37,0.0,True
+R4-SELECTED-MU,needle,needle,0,37,0.0,True
+R4-SELECTED-MU,needle,tie/abstain,37,37,100.0,True
+R4-SELECTED-MU,DFT near-tie,dist_perovskite,0,3,0.0,False
+R4-SELECTED-MU,DFT near-tie,hexagonal,0,3,0.0,False
+R4-SELECTED-MU,DFT near-tie,needle,0,3,0.0,False
+R4-SELECTED-MU,DFT near-tie,tie/abstain,3,3,100.0,False

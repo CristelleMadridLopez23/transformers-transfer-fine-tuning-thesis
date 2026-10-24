@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "completed_runs": 45,
+  "expected_runs": 45,
+  "models": [
+    "H0",
+    "H1",
+    "H2"
+  ],
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "predictions": 1890,
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "test_used": false,
+  "source_code_sha256": "900bf2c93c0c2602f5ecc3c60bc030431296cd021018856232395c2ded1ecac7"
+}

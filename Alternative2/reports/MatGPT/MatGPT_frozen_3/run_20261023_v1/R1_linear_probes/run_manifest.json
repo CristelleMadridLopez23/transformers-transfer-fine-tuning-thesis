@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "experiment": "R1",
+  "models": [
+    "R1-A-ABS",
+    "R1-B-MU",
+    "R1-C-DELTA",
+    "R1-D-COMBINED"
+  ],
+  "selection": "inner-validation only; StandardScaler fitted on inner-train",
+  "folds": 5,
+  "alphas": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "test_used": false,
+  "ridge_deterministic_not_seed_duplicated": true,
+  "code_sha256": "d6a10fd4bf048d170d78e068dfb258961f3fdf27e43a915f4df8617cc1bc77ea",
+  "prediction_rows": 840
+}

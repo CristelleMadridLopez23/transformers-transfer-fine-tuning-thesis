@@ -1,0 +1,222 @@
+{
+  "caveat": "Vendored public sample supports > prefix and < termination; config BOS/EOS ids disagree with SimpleTokenizer ordering. Treat the special-token IDs from actual tokenizer, not config metadata.",
+  "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+  "condition": [
+    -1.0,
+    2.0
+  ],
+  "condition_feature_change_norm": 3.793313980102539,
+  "condition_sensitivity": {
+    "BLOCK03_MEAN": {
+      "cosine": 0.9736535549163818,
+      "l2_change": 1.2688329219818115
+    },
+    "FINAL_END": {
+      "cosine": 0.9963380694389343,
+      "l2_change": 3.793313980102539
+    },
+    "FINAL_MEAN": {
+      "cosine": 0.942019522190094,
+      "l2_change": 4.917539596557617
+    }
+  },
+  "condition_source": "public model-card example; constant, independent of DFT labels",
+  "data": {
+    "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+    "development_compositions": 70,
+    "development_structures": 210,
+    "element_token_counts": {
+      "Ba": 108,
+      "Cu": 108,
+      "Ge": 108,
+      "Hf": 108,
+      "Mg": 108,
+      "Nb": 108,
+      "Pb": 180,
+      "S": 2808,
+      "Se": 0,
+      "Sn": 180,
+      "Sr": 108,
+      "Te": 0,
+      "V": 108,
+      "Zn": 108
+    },
+    "folds": 5,
+    "folds_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+    "numeric_index_token_count": 22304,
+    "oov_structures": 0,
+    "periodic_edge_token_count": 11152,
+    "slice_tokens_max": 254,
+    "slice_tokens_median": 164.0,
+    "slice_tokens_min": 110,
+    "test_compositions_inputs_only": 8,
+    "test_inputs_sha256": "56cc4101fa449128008d8eecc57185a3854b2539a7f7fb0507658ee10b4e904b",
+    "test_structures_inputs_only": 24
+  },
+  "device": "cpu",
+  "environment": {
+    "device": "cpu",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.10.21",
+    "sklearn": "1.7.2",
+    "torch": "2.8.0"
+  },
+  "files": {
+    "Alternative2/models/MatterGPT/Voc_prior": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+    "Alternative2/models/MatterGPT/config.json": "d2d1e9a0bdcf6a8769afa263dc1cde56407a357616514cb9030b2405a1f240ad",
+    "Alternative2/models/MatterGPT/mattergpt_wrapper.py": "7e50a733509740c346b1478576ff5dfba2c71b99acbde2eda82f1c1de7872c81",
+    "Alternative2/models/MatterGPT/model.py": "eb32aa1721c24ac4b09f9b55028c8eb82c809aa2010ec67fd664afacba09ed8e",
+    "Alternative2/models/MatterGPT/pytorch_model.pt": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21"
+  },
+  "logits_hook_parity_max_abs_error": 0.0,
+  "model_config": {
+    "activation_function": "gelu_new",
+    "architectures": [
+      "GPT"
+    ],
+    "attn_pdrop": 0.1,
+    "block_size": 397,
+    "bos_token_id": 130,
+    "embd_pdrop": 0.1,
+    "eos_token_id": 131,
+    "initializer_range": 0.02,
+    "layer_norm_epsilon": 1e-05,
+    "lstm": false,
+    "lstm_layers": 0,
+    "model_type": "gpt",
+    "n_embd": 768,
+    "n_head": 12,
+    "n_layer": 12,
+    "num_props": 2,
+    "resid_pdrop": 0.1,
+    "scale_attn_weights": true,
+    "summary_activation": null,
+    "summary_first_dropout": 0.1,
+    "summary_proj_to_labels": true,
+    "summary_type": "cls_index",
+    "summary_use_proj": true,
+    "use_cache": true,
+    "vocab_size": 132
+  },
+  "model_revision": "ee83624d85e5e60e6a8f48bc72bf2663f87273cd",
+  "parameters_total": 85567488,
+  "parameters_trainable": 0,
+  "right_padding_checks": [
+    {
+      "batch_size": 1,
+      "max_logit_abs_error": 0.0,
+      "mechanism": "right suffix is ignored for prior causal positions; cache itself uses unpadded sequences"
+    },
+    {
+      "batch_size": 2,
+      "max_logit_abs_error": 0.0,
+      "mechanism": "right suffix is ignored for prior causal positions; cache itself uses unpadded sequences"
+    },
+    {
+      "batch_size": 5,
+      "max_logit_abs_error": 0.0,
+      "mechanism": "right suffix is ignored for prior causal positions; cache itself uses unpadded sequences"
+    }
+  ],
+  "status": "PASS",
+  "strict_load": true,
+  "vocabulary_audit": {
+    "bos_config_id": 130,
+    "config_special_ids_match_tokenizer": false,
+    "eos_config_id": 131,
+    "public_prefix_id": 39,
+    "public_prefix_text": ">",
+    "roundtrip_15": [
+      {
+        "input": "S",
+        "pass": true,
+        "token_count": 1
+      },
+      {
+        "input": "Se",
+        "pass": true,
+        "token_count": 1
+      },
+      {
+        "input": "Te",
+        "pass": true,
+        "token_count": 1
+      },
+      {
+        "input": "Cu Nb S",
+        "pass": true,
+        "token_count": 3
+      },
+      {
+        "input": "0 1 ooo",
+        "pass": true,
+        "token_count": 3
+      },
+      {
+        "input": "0 13 ooo",
+        "pass": true,
+        "token_count": 3
+      },
+      {
+        "input": "S S S S",
+        "pass": true,
+        "token_count": 4
+      },
+      {
+        "input": "Mg Pb S 0 12 ooo",
+        "pass": true,
+        "token_count": 6
+      },
+      {
+        "input": "Ba Ge S 1 14 oo+",
+        "pass": true,
+        "token_count": 6
+      },
+      {
+        "input": "Hf Sr S 2 19 o-o",
+        "pass": true,
+        "token_count": 6
+      },
+      {
+        "input": "Nb Zn S 3 18 -o+",
+        "pass": true,
+        "token_count": 6
+      },
+      {
+        "input": "Pb V S 4 16 o++",
+        "pass": true,
+        "token_count": 6
+      },
+      {
+        "input": "S Se 0 0 ooo",
+        "pass": true,
+        "token_count": 5
+      },
+      {
+        "input": "o--",
+        "pass": true,
+        "token_count": 1
+      },
+      {
+        "input": "0 13 ooo 1 17 oo-",
+        "pass": true,
+        "token_count": 6
+      }
+    ],
+    "roundtrip_examples": [
+      "S",
+      "S Se Te",
+      "0 1 ooo",
+      "Cu Nb S",
+      "0 13 ooo",
+      "> S <"
+    ],
+    "sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+    "terminator_id": 38,
+    "terminator_text": "<",
+    "vocab_size": 132
+  },
+  "weights_l2_norm": 243.16009521484375
+}

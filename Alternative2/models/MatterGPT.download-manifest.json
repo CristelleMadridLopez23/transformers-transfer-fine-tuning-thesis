@@ -1,0 +1,58 @@
+{
+  "model": "MatterGPT",
+  "repo_id": "xiaohang07/MatterGPT",
+  "requested_revision": "ee83624d85e5e60e6a8f48bc72bf2663f87273cd",
+  "resolved_commit": "ee83624d85e5e60e6a8f48bc72bf2663f87273cd",
+  "downloaded_at_utc": "2026-10-22T02:39:26.092815+00:00",
+  "huggingface_hub_version": "1.26.0",
+  "file_count": 9,
+  "total_bytes": 349974976,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5477,
+      "sha256": "1510601f02cd4ead6d2cc07f16d4c05614cc874f248ef2a7295886905c818e4f"
+    },
+    {
+      "path": "Voc_prior",
+      "size_bytes": 393,
+      "sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9"
+    },
+    {
+      "path": "config.json",
+      "size_bytes": 676,
+      "sha256": "d2d1e9a0bdcf6a8769afa263dc1cde56407a357616514cb9030b2405a1f240ad"
+    },
+    {
+      "path": "mattergpt_pipeline.py",
+      "size_bytes": 1555,
+      "sha256": "dab63dc974753c0f451c709e2dffea7e91635b9537cd660f6641e93005ed67c3"
+    },
+    {
+      "path": "mattergpt_wrapper.py",
+      "size_bytes": 2473,
+      "sha256": "7e50a733509740c346b1478576ff5dfba2c71b99acbde2eda82f1c1de7872c81"
+    },
+    {
+      "path": "model.py",
+      "size_bytes": 14089,
+      "sha256": "eb32aa1721c24ac4b09f9b55028c8eb82c809aa2010ec67fd664afacba09ed8e"
+    },
+    {
+      "path": "pytorch_model.pt",
+      "size_bytes": 349946009,
+      "sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21"
+    },
+    {
+      "path": "usage_example.py",
+      "size_bytes": 2785,
+      "sha256": "1f213e507f6edd74b054e900b1b9ce9738bdfd906179c6112a104210a19aee84"
+    }
+  ],
+  "validation_scope": "Pinned Hugging Face snapshot; repository files present and local SHA-256 inventory verified. No model execution performed."
+}

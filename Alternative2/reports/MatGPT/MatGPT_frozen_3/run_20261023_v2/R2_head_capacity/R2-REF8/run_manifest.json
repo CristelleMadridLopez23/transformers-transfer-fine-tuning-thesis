@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "model": "R2-REF8",
+  "completed_runs": 15,
+  "expected_runs": 15,
+  "folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "prediction_rows": 630,
+  "test_used": false,
+  "trainer_sha256": "cbf102c62b6b56c69a6ea1af7052642e657f681da6d13f96fd3c088a2d34b154"
+}

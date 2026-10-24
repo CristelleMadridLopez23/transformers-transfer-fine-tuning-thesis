@@ -1,0 +1,64 @@
+{
+  "experiment": "e1_2",
+  "pooling": "masked_mean",
+  "selection_uses_test": false,
+  "test_labels_read_for_metrics": false,
+  "device": "cpu",
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "embedding_sha256": "8a9e4529452746a55a293c8ec39974a8bfa1c029f8b9a5de965d4c9837191503",
+  "backbone_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "split_counts": {
+    "test": {
+      "rows": 24,
+      "compositions": 8
+    },
+    "train": {
+      "rows": 186,
+      "compositions": 62
+    },
+    "val": {
+      "rows": 24,
+      "compositions": 8
+    }
+  },
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "loss_scales": "target std and RMS within-composition DFT pair differences calculated from train only; floor 0.001 eV/atom",
+  "early_stopping": "minimum validation normalized training objective; validation labels only",
+  "pareto_selection": "review absolute MAE, relative-energy MAE, ground-state accuracy, pairwise accuracy, and predicted ranges jointly; no scalar composite score",
+  "embedding_audit": "Alternative2/data/embeddings/matgpt_e1_2_masked_mean_v1/embedding_audit.json",
+  "configured_hyperparameters": {
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 200,
+    "early_stopping_patience": 20,
+    "compositions_per_batch": 8,
+    "ridge_alphas": "0.1,1,10,100",
+    "mlp_hidden_units": [
+      8
+    ],
+    "pairwise_lambda_grid": [
+      1.0
+    ],
+    "dropout": 0.1,
+    "seeds": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "software_versions": {
+    "python": "3.10.21",
+    "pytorch": "2.8.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2"
+  },
+  "script_sha256": "f53762020b9d86cfaecc93ac97b929bcc878a4619446943aaebe178ca0bcc217",
+  "common_helpers_sha256": "21a466f0b8ef28b651a8fcdc2f7656115b1d4fac1f38441367fcd9946fcbf375",
+  "config_sha256": "d0aab94f0236dd35091ed999886fa9bad02f0e8a308735572a5d23acd7b86de4"
+}

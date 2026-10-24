@@ -1,0 +1,9 @@
+composition,n_polymorphs,ground_state_correct,prediction_ground_state_tied_within_tolerance,dft_minimum_structure_ids,predicted_minimum_structure_ids,relative_energy_mae_mev_atom,spearman_rho
+CuNbS3,3,False,False,['Cu1Nb1S3--Cu1Nb1S3_needle--fm--gga-static::static'],['Cu1Nb1S3--Cu1Nb1S3_hexagonal--fm--gga-static::static'],231.41518665055352,0.5
+CuS3Sn,3,False,False,['Cu1S3Sn1--Cu1S3Sn1_needle--fm--gga-static::static'],['Cu1S3Sn1--Cu1S3Sn1_hexagonal--fm--gga-static::static'],828.3344499820965,-0.5
+GePbS3,3,False,False,['Ge1Pb1S3--Ge1Pb1S3_dist_perovskite--nm--gga-static::static'],['Ge1Pb1S3--Ge1Pb1S3_needle--nm--gga-static::static'],416.4006536640625,-0.5
+GeS3Zn,3,True,False,['Ge1S3Zn1--Ge1S3Zn1_dist_perovskite--nm--gga-static::static'],['Ge1S3Zn1--Ge1S3Zn1_dist_perovskite--nm--gga-static::static'],183.10572424112945,0.5
+HfS3Sr,3,True,False,['Hf1S3Sr1--Hf1S3Sr1_needle--nm--gga-static::static'],['Hf1S3Sr1--Hf1S3Sr1_needle--nm--gga-static::static'],505.3506595584315,1.0
+MgPbS3,3,False,False,['Mg1Pb1S3--Mg1Pb1S3_dist_perovskite--nm--gga-static::static'],['Mg1Pb1S3--Mg1Pb1S3_needle--nm--gga-static::static'],421.244278767985,-1.0
+NbS3Zn,3,False,False,['Nb1S3Zn1--Nb1S3Zn1_needle--fm--gga-static::static'],['Nb1S3Zn1--Nb1S3Zn1_hexagonal--fm--gga-static::static'],297.87839588444035,-0.5
+PbS3V,3,True,False,['Pb1S3V1--Pb1S3V1_needle--fm--gga-static::static'],['Pb1S3V1--Pb1S3V1_needle--fm--gga-static::static'],305.55536098299166,0.5

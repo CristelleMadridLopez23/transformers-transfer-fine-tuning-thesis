@@ -1,0 +1,33 @@
+{
+  "model": "MatText-2M-SLICES",
+  "repo_id": "n0w0f/MatText-slices-2m",
+  "requested_revision": "c21d7e29ccc7759b40fe2f3f0fe32a65f51b734e",
+  "resolved_commit": "c21d7e29ccc7759b40fe2f3f0fe32a65f51b734e",
+  "downloaded_at_utc": "2026-10-22T02:39:16.590641+00:00",
+  "huggingface_hub_version": "1.26.0",
+  "file_count": 4,
+  "total_bytes": 131862503,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 1519,
+      "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4228,
+      "sha256": "9f63f15ca2f767ee122abeb0fe6ea5d88931f26dc9a2da65d520b9f9bda25b86"
+    },
+    {
+      "path": "config.json",
+      "size_bytes": 724,
+      "sha256": "ddd1b4cf361b4fe3a2724563d840e5424bfe05c62aa1ff922a1cc7d7a5da40c0"
+    },
+    {
+      "path": "model.safetensors",
+      "size_bytes": 131856032,
+      "sha256": "6bef5652d758190e6e6eaf85ccf2a2f584b69255f1be3bb7bdd72cb1f12a74bd"
+    }
+  ],
+  "validation_scope": "Pinned Hugging Face snapshot; repository files present and local SHA-256 inventory verified. No model execution performed."
+}

@@ -1,0 +1,43 @@
+{
+  "D1_script_sha256": "a6cb9679c7bc065940094a414df24a5a0bcd37b9e1a97e91546bfccf5ee0667d",
+  "D2_audit_script_sha256": "ec3823d3782c79570c80d973e9c67360b041eaf6ace2fbf5ca81b360c686f864",
+  "D2_exact_trainer_source_hash_captured_at_run_start": false,
+  "D2_fits_completed": 30,
+  "D2_integrity_sha256": "d7c106a5c0720c1ef16e259b0ea83148bc68f3f1b508c1c7e6eac74ec85b889d",
+  "D2_oof_sha256": "12e865df9a10606f935a8f599f0f9077e0f1d7beb3499c9bd8b54a25778efed8",
+  "D2_script_sha256": "f8a55829abcd84f7c211e6a74dcff7145f3de375cc4153b115c5a2758fe5a8cf",
+  "D2_summary_script_sha256": "b30faba2859b679c820bf3d8ce565441c23e755436e9d732789f1f6aa185b06e",
+  "D2_test_used": false,
+  "D2_training_wall_seconds": 6080.3537876664195,
+  "D3_script_sha256": "637d8b719dd0800938403b7dbb2124c3436998c98f50aed5e6917d5526ff922a",
+  "E2A_oof_sha256": "e3555cd74ea55357d8c2d8e29c545930521382d092739112d6b408d8e14f3de5",
+  "bootstrap": {
+    "ci95_percentile": [
+      -763.4610440039338,
+      -574.8104979666766
+    ],
+    "comparison": "D1-B Ridge formula minus E2-A partial_ft mean prediction",
+    "mean_difference": -668.5687658289971,
+    "median_difference": -592.4913839247921,
+    "metric": "difference in composition-macro absolute MAE (meV/atom); negative favors Ridge",
+    "n_compositions": 70,
+    "note": "Each composition contributes its three polymorphs together; exploratory paired interval.",
+    "resamples": 2000,
+    "seed": 17042026
+  },
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "folds_sha256": "0b1b0c2c7584729377fb39c54b9ff14ae17ccf73b731c26cf267037b592519c9",
+  "historical_test_used": false,
+  "matgpt_model_source_sha256": "26590839b818a3996cc7f22b11fe060eb7dfc636c6e61fca001a368972ce2d90",
+  "model_info_sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+  "python_version": "3.10.21",
+  "sklearn_version": "1.7.2",
+  "source_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e",
+  "status": {
+    "D1": "PASS",
+    "D2": "PASS científico; PARTIAL de procedencia: hash de trainer no capturado al inicio",
+    "D3": "PASS"
+  },
+  "torch_version": "2.8.0"
+}

@@ -1,0 +1,11 @@
+{
+  "experiment": "E2-T2",
+  "phase": "pilot",
+  "device": "cpu",
+  "requested_runs": 1,
+  "runs_completed_this_invocation": 1,
+  "runs_completed_total": 1,
+  "training_wall_seconds": 1296.3589286250062,
+  "test_historical_used": false,
+  "t1_gate": "LIMITED"
+}

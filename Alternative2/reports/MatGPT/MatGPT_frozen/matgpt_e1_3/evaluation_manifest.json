@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "test_historical_rows_used": 0,
+  "oof_rows": 1890,
+  "fold_seed_rows": 45,
+  "oof_seed_rows": 9,
+  "composition_metric_rows": 630,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 13072026,
+  "tie_tolerance_ev_atom": 0.001,
+  "oof_sha256": "a3585bddab904d0041f86e8285edb239bcde8b9b2b98f5d6828f9fdb71c550db",
+  "evaluator_script_sha256": "502c559f476b2f1ebdd119a2be79933bdd2a5fd9271bfa4c77febfbd3ee8a680",
+  "figures": [
+    "01_metricas_por_fold.png",
+    "02_heatmap_deltae_pareado.png",
+    "03_rangos_dft_predichos.png",
+    "04_paridad_deltae_oof.png",
+    "05_sensibilidad_semilla.png",
+    "06_colapso_empates.png",
+    "07_resumen_particiones_separadas.png"
+  ],
+  "formats": [
+    "PNG"
+  ]
+}

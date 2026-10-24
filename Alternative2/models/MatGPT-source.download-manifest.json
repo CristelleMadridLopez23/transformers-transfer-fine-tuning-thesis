@@ -1,0 +1,165 @@
+{
+  "repository": "https://github.com/devalab/matgpt",
+  "branch": "main",
+  "resolved_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e",
+  "tree_sha": "de765e56401727014f567343c04c84a76555b290",
+  "downloaded_at_utc": "2026-10-22T03:07:12.536887+00:00",
+  "contents": [
+    "README.md",
+    "LICENSE",
+    "mat/ source and configs excluding datasets and weights",
+    "mat-concat/ source and configs excluding datasets and weights"
+  ],
+  "weight_mapping": {
+    "mat.zip": "mat/config/form.yaml",
+    "mat-uncond.zip": "mat-concat/config/uncond.yaml"
+  },
+  "files": [
+    {
+      "path": "LICENSE",
+      "size_bytes": 1146,
+      "sha256": "5ceb4234640716f8a2d20b1c2ab526ec6a242f88e3b41a9530e01df909b5236c"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5685,
+      "sha256": "459f7496635272f40f59c3512124ab9a622b4f824d397d30d22869736cd473b1"
+    },
+    {
+      "path": "mat-concat/conda-linux-64.lock",
+      "size_bytes": 2891,
+      "sha256": "d515c8e58de5a012a933b507fa1e854ef2d178b7c2d1884a0f3c1f02eca8af5f"
+    },
+    {
+      "path": "mat-concat/config/form.yaml",
+      "size_bytes": 2845,
+      "sha256": "91ceca86e564988eb91614ca39d8ae627d74739a9fe13b214154c38111215325"
+    },
+    {
+      "path": "mat-concat/config/uncond.yaml",
+      "size_bytes": 2885,
+      "sha256": "9eabe7a1d8e33636fcdfb2548d844aee16610edef8ea8312779375f6b7f1c5b1"
+    },
+    {
+      "path": "mat-concat/environment.yml",
+      "size_bytes": 1135,
+      "sha256": "0b9d8dae1f0d73246ab615f914df827766c38ba5f7bcee4ca7a2b43631246838"
+    },
+    {
+      "path": "mat-concat/form_proxy.py",
+      "size_bytes": 12414,
+      "sha256": "3f8d3d898f9b589b7c655beefbbc23deccd36022d9d448ade98cff2ed7b5acd0"
+    },
+    {
+      "path": "mat-concat/metrics.py",
+      "size_bytes": 6263,
+      "sha256": "9f22e892b399981aae5b0019d5f44678b49f34e7b8bac5012957a74a57246983"
+    },
+    {
+      "path": "mat-concat/requirements.txt",
+      "size_bytes": 2878,
+      "sha256": "6c4f1e11c96814251cec2e532ba964ede7d8504f907e7262f574c603b673e59f"
+    },
+    {
+      "path": "mat-concat/sample_property.py",
+      "size_bytes": 10437,
+      "sha256": "1243209d362b98f1248a15f311c8c982b95440f54317867c658035a7ca5612eb"
+    },
+    {
+      "path": "mat-concat/sli_to_cif.py",
+      "size_bytes": 4224,
+      "sha256": "1d5d03c86786e8648aa4499e60e1140a23abebd36086eab16f00caabee1736be"
+    },
+    {
+      "path": "mat-concat/train.py",
+      "size_bytes": 8262,
+      "sha256": "a106a0288d8e25571a1c07fef65dc62c2fce656348736611a49f0f7adeaced37"
+    },
+    {
+      "path": "mat-concat/utils/dataset.py",
+      "size_bytes": 1980,
+      "sha256": "a3500869316bfa30f6bbe8a7a77d9ad7d52d0cbc036f7439d0b2c7e0cee89ec1"
+    },
+    {
+      "path": "mat-concat/utils/models.py",
+      "size_bytes": 8481,
+      "sha256": "26590839b818a3996cc7f22b11fe060eb7dfc636c6e61fca001a368972ce2d90"
+    },
+    {
+      "path": "mat/band_proxy.py",
+      "size_bytes": 7301,
+      "sha256": "78e1ebb4e71d477ee1a78e0a10b0ad54022c8b185884b4c0349d262ebd636c3d"
+    },
+    {
+      "path": "mat/bulk_proxy.py",
+      "size_bytes": 12320,
+      "sha256": "44c9d1c9c37249e86fed8fd950f27335a4345920cd9e44d0afc51090c2756663"
+    },
+    {
+      "path": "mat/conda-linux-64.lock",
+      "size_bytes": 2891,
+      "sha256": "d515c8e58de5a012a933b507fa1e854ef2d178b7c2d1884a0f3c1f02eca8af5f"
+    },
+    {
+      "path": "mat/config/band.yaml",
+      "size_bytes": 2843,
+      "sha256": "f95b773e593c9793de1051a9e548b0d1e0e0c767cf25f121631d877676cc9625"
+    },
+    {
+      "path": "mat/config/bulk.yaml",
+      "size_bytes": 2849,
+      "sha256": "f6675884560adee2eafe4046bbf42c2c5c27c9006c3b4586cb3dc0200c087c52"
+    },
+    {
+      "path": "mat/config/form.yaml",
+      "size_bytes": 2875,
+      "sha256": "24f3008336302a546e49e027a2d8f7b51dec0be724d24b2a7b95c94606c14184"
+    },
+    {
+      "path": "mat/environment.yml",
+      "size_bytes": 1135,
+      "sha256": "0b9d8dae1f0d73246ab615f914df827766c38ba5f7bcee4ca7a2b43631246838"
+    },
+    {
+      "path": "mat/form_proxy.py",
+      "size_bytes": 12414,
+      "sha256": "3f8d3d898f9b589b7c655beefbbc23deccd36022d9d448ade98cff2ed7b5acd0"
+    },
+    {
+      "path": "mat/metrics.py",
+      "size_bytes": 6263,
+      "sha256": "9f22e892b399981aae5b0019d5f44678b49f34e7b8bac5012957a74a57246983"
+    },
+    {
+      "path": "mat/requirements.txt",
+      "size_bytes": 2878,
+      "sha256": "6c4f1e11c96814251cec2e532ba964ede7d8504f907e7262f574c603b673e59f"
+    },
+    {
+      "path": "mat/sample_property.py",
+      "size_bytes": 10114,
+      "sha256": "7d7757fc5e29ca7b984d25ec6828d857a6e683abd0255e2a40c03bd772eba9e9"
+    },
+    {
+      "path": "mat/sli_to_cif.py",
+      "size_bytes": 4224,
+      "sha256": "1d5d03c86786e8648aa4499e60e1140a23abebd36086eab16f00caabee1736be"
+    },
+    {
+      "path": "mat/train.py",
+      "size_bytes": 7737,
+      "sha256": "390b03054af135f31915a50474f0e8040e70b0b4500d926e1a5dc3f9e5be160a"
+    },
+    {
+      "path": "mat/utils/dataset.py",
+      "size_bytes": 1912,
+      "sha256": "f23d3c78d21b815b81f5be57609748804e687e1f088579fccb0b69a9461edca4"
+    },
+    {
+      "path": "mat/utils/models.py",
+      "size_bytes": 8222,
+      "sha256": "5c199b78c4d4e5bd6a8085198f53319f38529ae6c6b6e78b1c22c2ad8e3652f1"
+    }
+  ],
+  "validation_scope": "Pinned official GitHub source archive; archive integrity checked; training code and requested YAML configs present; per-file SHA-256 recorded. No source files executed."
+}

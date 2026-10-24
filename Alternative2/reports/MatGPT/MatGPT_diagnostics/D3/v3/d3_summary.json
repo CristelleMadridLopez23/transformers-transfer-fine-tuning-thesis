@@ -1,0 +1,82 @@
+{
+  "dataset": {
+    "data_path": "Alternative2/reports/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+    "data_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+    "folds_path": "Alternative2/reports/MatGPT_frozen/matgpt_e1_3/fold_assignments.csv",
+    "folds_sha256": "0b1b0c2c7584729377fb39c54b9ff14ae17ccf73b731c26cf267037b592519c9",
+    "historical_test_compositions_excluded": 8,
+    "historical_test_structures_excluded": 24,
+    "historical_test_used": false,
+    "n_compositions_development": 70,
+    "n_polymorphs_per_composition": {
+      "3": 70
+    },
+    "n_structures_development": 210,
+    "outer_folds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "embedding_audit": {
+    "backbone_trainable_parameters": 0,
+    "block_size": 442,
+    "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+    "device": "cpu",
+    "embedding_dimension": 768,
+    "padding_end_max_abs_error": 1.1920928955078125e-06,
+    "poolings": [
+      "end",
+      "masked_mean"
+    ],
+    "strict_load": true
+  },
+  "geometric_cutoffs_angstrom": [
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    6.0
+  ],
+  "historical_test_used": false,
+  "input_ids_distinct_counts": {
+    "3": 70
+  },
+  "n_compositions": 70,
+  "n_pairs": 210,
+  "same_input_ids_but_dft_range_ge_1mev": 0,
+  "same_slices_but_dft_range_ge_1mev": 0,
+  "slices_distinct_counts": {
+    "3": 70
+  },
+  "spearman_vs_abs_dft_pair_gap": {
+    "end_embedding_cosine": {
+      "n_pairs": 210,
+      "p_value_exploratory": 0.4908954376796534,
+      "spearman_rho": -0.04779570641381566
+    },
+    "end_embedding_euclidean": {
+      "n_pairs": 210,
+      "p_value_exploratory": 0.3232422542515908,
+      "spearman_rho": 0.06849458847463337
+    },
+    "geometry_descriptor_l1": {
+      "n_pairs": 210,
+      "p_value_exploratory": NaN,
+      "spearman_rho": NaN
+    },
+    "mean_embedding_cosine": {
+      "n_pairs": 210,
+      "p_value_exploratory": 4.417094204911606e-05,
+      "spearman_rho": -0.27794281049456904
+    },
+    "mean_embedding_euclidean": {
+      "n_pairs": 210,
+      "p_value_exploratory": 3.212249192047664e-05,
+      "spearman_rho": 0.2827320347400168
+    }
+  },
+  "static_topology_claim": "topology_sha256 is reported as provided by the dataset; no independent graph-isomorphism proof was run"
+}

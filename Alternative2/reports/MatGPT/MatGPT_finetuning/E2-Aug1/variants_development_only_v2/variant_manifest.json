@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "data_rows": 210,
+  "structures_with_historical_view": 210,
+  "structures_with_at_least_two_views": 210,
+  "structures_with_at_least_four_views": 210,
+  "total_accepted_views": 840,
+  "total_rejected_candidates": 0,
+  "strategy": 4,
+  "reason_for_optional_prefix_omission": "The executed E2-A data uses strategy-4 compact edge labels without the optional space-group prefix; that preserves the pinned input vocabulary and historical token format.",
+  "test_partition_used_for_generation": false,
+  "historical_test_rows_excluded_before_structure_reconstruction": 24,
+  "seed_rule": "first 32 bits of SHA-256(structure_id)"
+}

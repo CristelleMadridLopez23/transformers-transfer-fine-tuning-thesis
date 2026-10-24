@@ -1,0 +1,21 @@
+{
+  "phase": "pilot",
+  "device": "cpu",
+  "fit_count": 2,
+  "phase_wall_seconds": 331.0719351659063,
+  "phase_wall_minutes": 5.517865586098439,
+  "per_fit_training_seconds": [
+    {
+      "configuration": "frozen",
+      "fold": 0,
+      "seed": 42,
+      "training_wall_seconds": 103.55729150003754
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 0,
+      "seed": 42,
+      "training_wall_seconds": 223.78562941681594
+    }
+  ]
+}

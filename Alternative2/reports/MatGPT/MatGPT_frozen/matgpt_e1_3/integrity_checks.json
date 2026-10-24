@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "phase": "results",
+  "completed_fits": 45,
+  "folds": 5,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "oof_rows": 1890,
+  "oof_structures_per_candidate_seed": 210,
+  "historical_test_rows_in_oof": 0,
+  "historical_test_groups_excluded": 8,
+  "checkpoint_count": 45,
+  "all_head_only_state_dicts": true,
+  "figures_png": [
+    "01_metricas_por_fold.png",
+    "02_heatmap_deltae_pareado.png",
+    "03_rangos_dft_predichos.png",
+    "04_paridad_deltae_oof.png",
+    "05_sensibilidad_semilla.png",
+    "06_colapso_empates.png",
+    "07_resumen_particiones_separadas.png"
+  ],
+  "test_read_for_metrics_or_selection": false,
+  "integrity_manifest_checked": true
+}

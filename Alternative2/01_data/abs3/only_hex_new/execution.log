@@ -1,0 +1,21 @@
+EXECUTING /users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/Preprocess notebooks/outputs/only_hex_new/preprocessing_hexagonals_only_hex_new.ipynb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+preprocessing_hexagonals_only_hex_new.ipynb: cell 1
+preprocessing_hexagonals_only_hex_new.ipynb: cell 3
+preprocessing_hexagonals_only_hex_new.ipynb: cell 5
+preprocessing_hexagonals_only_hex_new.ipynb: cell 7
+preprocessing_hexagonals_only_hex_new.ipynb: cell 9
+preprocessing_hexagonals_only_hex_new.ipynb: cell 11
+preprocessing_hexagonals_only_hex_new.ipynb: cell 12
+COMPLETED /users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/Preprocess notebooks/outputs/only_hex_new/preprocessing_hexagonals_only_hex_new.ipynb
+EXECUTING /users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/stratification_split.ipynb
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+stratification_split.ipynb: cell 3
+stratification_split.ipynb: cell 5
+stratification_split.ipynb: cell 7
+stratification_split.ipynb: cell 9
+stratification_split.ipynb: cell 11
+stratification_split.ipynb: cell 13
+stratification_split.ipynb: cell 15
+stratification_split.ipynb: cell 17
+COMPLETED /users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/stratification_split.ipynb

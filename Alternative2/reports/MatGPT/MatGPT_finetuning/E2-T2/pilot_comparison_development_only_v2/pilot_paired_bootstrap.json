@@ -1,0 +1,63 @@
+{
+  "status": "PILOT_ONLY",
+  "fold": 0,
+  "seed": 42,
+  "n_compositions": 14,
+  "bootstrap_seed": 13072026,
+  "bootstrap_replicates": 2000,
+  "historical_test_used": false,
+  "confidence_intervals": {
+    "comparison": "E2-T2-pilot - E2-Aug2",
+    "n_compositions": 14,
+    "bootstrap_replicates": 2000,
+    "seed": 13072026,
+    "intervals": {
+      "absolute_mae_mev_atom": {
+        "difference_left_minus_right_mean": 11.64110000000008,
+        "ci95_percentile": [
+          -11.692814226190423,
+          32.04069291666672
+        ],
+        "includes_zero": true,
+        "n_compositions": 14
+      },
+      "delta_e_mae_mev_atom": {
+        "difference_left_minus_right_mean": -1.1380760952381512,
+        "ci95_percentile": [
+          -6.485342472023944,
+          4.449604433333331
+        ],
+        "includes_zero": true,
+        "n_compositions": 14
+      },
+      "ground_state_accuracy": {
+        "difference_left_minus_right_mean": 0.15384615384615385,
+        "ci95_percentile": [
+          0.0,
+          0.38461538461538464
+        ],
+        "includes_zero": true,
+        "n_compositions": 13
+      },
+      "pairwise_accuracy": {
+        "difference_left_minus_right_mean": 0.08333333333333334,
+        "ci95_percentile": [
+          -0.024107142857142848,
+          0.21428571428571433
+        ],
+        "includes_zero": true,
+        "n_compositions": 14
+      },
+      "range_error_mev_atom": {
+        "difference_left_minus_right_mean": 1.8456528571427597,
+        "ci95_percentile": [
+          -7.049991682142894,
+          11.22108017499987
+        ],
+        "includes_zero": true,
+        "n_compositions": 14
+      }
+    }
+  },
+  "interpretation": "Exploratorio; un \u00fanico fold y semilla no permite concluir una mejora ni justifica E2 full."
+}

@@ -1,0 +1,9 @@
+split_candidate,measure,material_rows,unique_formula_keys
+train_candidate,contains_S,28466,22764
+train_candidate,contains_Se,27667,21024
+train_candidate,contains_Te,21069,16377
+train_candidate,contains_any_S_Se_Te,74188,57718
+validation,contains_S,3109,2951
+validation,contains_Se,3095,2900
+validation,contains_Te,2319,2210
+validation,contains_any_S_Se_Te,8187,7737

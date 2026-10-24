@@ -1,0 +1,72 @@
+# Unconditional model: no property input (Section 3.3, ESI Section S9, Fig. 11)
+# Run any script with this file:  python <script>.py --config-name uncond
+# Order: train.py -> sample_property.py -> sli_to_cif.py -> form_proxy.py -> metrics.py
+
+data_path:
+  fname: "./dataset/Training_dataset_alex20_with_encoding.csv"
+
+model:
+  n_embd: 768
+  n_head: 12
+  n_layer: 12
+  dropout: 0.1
+
+training:
+  experiment_name: "uncond"
+  conditioning_mode: "unconditional"
+  learning_rate: 3e-4
+  warmup_steps: 500
+  batch_size: 16
+  max_epochs: 50
+  seed: 20260910                   # shuffled 90:10 split and sampling seed (ESI Section S2)
+  selected_properties: []          # no property input
+  num_properties: 0
+  slices: "SLICES"                 # SLICES column in the training CSV
+
+paths:
+  out_root: "./outputs/${training.experiment_name}"
+  log_dir: "${paths.out_root}/logs"
+  checkpoint_dir: "${paths.out_root}/checkpoints"
+  checkpoint_path: "${paths.out_root}/weights/transformer_property_${training.num_properties}.pth"
+  vocab_and_model: "${paths.out_root}/weights/model_info_property_${training.num_properties}.json"
+  resume_from_checkpoint: ""       # path to a Lightning .ckpt to resume training
+
+sample:
+  checkpoint_path: ${paths.checkpoint_path}
+  vocab_and_model: ${paths.vocab_and_model}
+  properties: [[]]                 # one unconditional sample set
+  initial_tokens: []
+  max_new_tokens: 2000
+  number_sequences: 500            # samples per target
+  max_attempts: 10                 # attempts per sample until the SLICES check and reconstruction pass
+  timeout: 300                     # seconds per sample (checked between attempts)
+  temperature: 1.2
+  top_p: 0.9
+  save_path: "${paths.out_root}/sample/generated_with_property_${training.num_properties}.csv"
+
+back_to_cif:
+  output_folder: "${paths.out_root}/sample/output_structures"
+  file_path: ${sample.save_path}
+  reconstructed: "reconstructed_sequences_with_properties_${training.num_properties}.csv"
+  plot_name: "conversion_counts_plot_${training.num_properties}.png"
+
+proxy_model:
+  model_bulk_modulus: "logK_MP_2019"
+  model_eform: "MEGNet-MP-2018.6.1-Eform"
+  model_band: "MEGNet-MP-2019.4.1-BandGap-mfi"
+  csv_path: "${back_to_cif.output_folder}/${back_to_cif.reconstructed}"
+  training_cifs: ${data_path.fname}             # novelty is checked against the training set itself
+  training_cif_column: "CIF"                    # column with the CIF text
+  show_count: True
+  plot_path: "${back_to_cif.output_folder}"
+
+metrics:
+  prediction_column: "Predicted_Formation_Energy"
+  novelty_relative_to: "reconstructed"   # as for Table 2
+  hit_tolerance: 0.2                     # eV/atom, hit rate as in Section 3.3
+  reference_targets: [-4.0, -3.5, -3.0, -2.5, -2.0, -1.5, -1.0, -0.5]   # eV/atom; the samples are evaluated against each
+  output_csv: "${paths.out_root}/metrics.csv"
+
+hydra:
+  run:
+    dir: .

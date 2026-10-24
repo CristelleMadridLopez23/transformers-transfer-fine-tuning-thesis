@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "figure_count": 19,
+  "figures_png": [
+    "absolute_energy_parity_with_D1_ridge.png",
+    "composition_mu_parity.png",
+    "energy_decomposition.png",
+    "fold_seed_stability.png",
+    "gs_confusion_matrices.png",
+    "paired_composition_differences.png",
+    "pairwise_confusion_matrices.png",
+    "parity_delta_own_min_legacy.png",
+    "parity_dft_gs_anchored.png",
+    "ranges_collapses_ties.png",
+    "scorecard_energy.png",
+    "structural_residual_parity.png",
+    "training_curves.png",
+    "R1_ridge_alpha_sensitivity.png",
+    "R2_head_width_comparison.png",
+    "R3_regularization_gap.png",
+    "R4_layer_pooling_heatmap.png",
+    "R4_features_stability.png",
+    "ranking_balanced_metrics.png"
+  ],
+  "forbidden_figure_formats_found": [],
+  "test_used": false
+}

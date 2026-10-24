@@ -1,0 +1,24 @@
+experiment: matgpt_e1_3_grouped_cross_validation
+dataset: Alternative2/reports/matgpt_e1_v2/dataset.csv
+historical_split_manifest: Alternative2/reports/matgpt_e1_v2/split_manifest.json
+checkpoint: Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth
+checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+matgpt_source_commit: a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e
+development: {structures: 210, compositions: 70}
+historical_test_excluded: {structures: 24, compositions: 8}
+outer_cv: {method: GroupKFold, folds: 5, group: canonical_full_chemical_composition}
+inner_validation: {fraction_groups: 0.2, seed_base: 13072026, deterministic_per_fold: true}
+seeds: [42, 123, 2026]
+candidates:
+  matgpt_e13_mlp8_mean_pair1: {pooling: masked_mean, hidden_dim: 8, dropout: 0.1, pairwise_lambda: 1.0}
+  matgpt_e13_mlp8_last_pair1: {pooling: last_token, hidden_dim: 8, dropout: 0.1, pairwise_lambda: 1.0}
+  matgpt_e13_mlp32_mean_abs: {pooling: masked_mean, hidden_dim: 32, dropout: 0.1, pairwise_lambda: 0.0}
+optimizer: {name: AdamW, learning_rate: 0.001, weight_decay: 0.0001}
+training: {maximum_epochs: 200, patience: 20, compositions_per_batch: 8, absolute_huber_beta: 1.0, pairwise_huber_beta: 1.0}
+scales: {target: inner_train_mean_and_std, pairwise: inner_train_RMS_with_0.001_eV_atom_floor, clipping: none}
+selection: minimum_inner_validation_objective
+backbone: {frozen: true, trainable_parameters: 0}
+bootstrap: {paired_composition_resamples: 2000, seed: 13072026}
+tie_tolerance_ev_atom: 0.001
+test_metrics_or_selection: forbidden
+figures: PNG

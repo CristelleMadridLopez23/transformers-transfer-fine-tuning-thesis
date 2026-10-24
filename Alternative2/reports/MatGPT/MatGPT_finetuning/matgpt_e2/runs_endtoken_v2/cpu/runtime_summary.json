@@ -1,0 +1,189 @@
+{
+  "phase": "cv",
+  "device": "cpu",
+  "fit_count": 30,
+  "phase_wall_seconds": 4768.217922041891,
+  "phase_wall_minutes": 79.47029870069818,
+  "per_fit_training_seconds": [
+    {
+      "configuration": "frozen",
+      "fold": 0,
+      "seed": 42,
+      "training_wall_seconds": 107.73338275006972
+    },
+    {
+      "configuration": "frozen",
+      "fold": 0,
+      "seed": 123,
+      "training_wall_seconds": 112.0558384580072
+    },
+    {
+      "configuration": "frozen",
+      "fold": 0,
+      "seed": 2026,
+      "training_wall_seconds": 123.52105637500063
+    },
+    {
+      "configuration": "frozen",
+      "fold": 1,
+      "seed": 42,
+      "training_wall_seconds": 113.14951616688631
+    },
+    {
+      "configuration": "frozen",
+      "fold": 1,
+      "seed": 123,
+      "training_wall_seconds": 113.19366958294995
+    },
+    {
+      "configuration": "frozen",
+      "fold": 1,
+      "seed": 2026,
+      "training_wall_seconds": 124.33962812507525
+    },
+    {
+      "configuration": "frozen",
+      "fold": 2,
+      "seed": 42,
+      "training_wall_seconds": 119.31948279193603
+    },
+    {
+      "configuration": "frozen",
+      "fold": 2,
+      "seed": 123,
+      "training_wall_seconds": 124.76164116617292
+    },
+    {
+      "configuration": "frozen",
+      "fold": 2,
+      "seed": 2026,
+      "training_wall_seconds": 289.79080970794894
+    },
+    {
+      "configuration": "frozen",
+      "fold": 3,
+      "seed": 42,
+      "training_wall_seconds": 116.79996837489307
+    },
+    {
+      "configuration": "frozen",
+      "fold": 3,
+      "seed": 123,
+      "training_wall_seconds": 114.81079575000331
+    },
+    {
+      "configuration": "frozen",
+      "fold": 3,
+      "seed": 2026,
+      "training_wall_seconds": 113.91888983384706
+    },
+    {
+      "configuration": "frozen",
+      "fold": 4,
+      "seed": 42,
+      "training_wall_seconds": 187.67055770894513
+    },
+    {
+      "configuration": "frozen",
+      "fold": 4,
+      "seed": 123,
+      "training_wall_seconds": 122.2514397080522
+    },
+    {
+      "configuration": "frozen",
+      "fold": 4,
+      "seed": 2026,
+      "training_wall_seconds": 129.45699437498115
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 0,
+      "seed": 42,
+      "training_wall_seconds": 229.5507164588198
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 0,
+      "seed": 123,
+      "training_wall_seconds": 161.0970903330017
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 0,
+      "seed": 2026,
+      "training_wall_seconds": 170.90392183419317
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 1,
+      "seed": 42,
+      "training_wall_seconds": 158.89917891588993
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 1,
+      "seed": 123,
+      "training_wall_seconds": 173.302700500004
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 1,
+      "seed": 2026,
+      "training_wall_seconds": 150.29716120893136
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 2,
+      "seed": 42,
+      "training_wall_seconds": 176.97785050002858
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 2,
+      "seed": 123,
+      "training_wall_seconds": 240.40995629201643
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 2,
+      "seed": 2026,
+      "training_wall_seconds": 180.34950250014663
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 3,
+      "seed": 42,
+      "training_wall_seconds": 157.25312958308496
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 3,
+      "seed": 123,
+      "training_wall_seconds": 203.51330487499945
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 3,
+      "seed": 2026,
+      "training_wall_seconds": 182.22819354198873
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 4,
+      "seed": 42,
+      "training_wall_seconds": 172.17868320900016
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 4,
+      "seed": 123,
+      "training_wall_seconds": 152.31993866688572
+    },
+    {
+      "configuration": "partial_ft",
+      "fold": 4,
+      "seed": 2026,
+      "training_wall_seconds": 188.65412770886905
+    }
+  ]
+}

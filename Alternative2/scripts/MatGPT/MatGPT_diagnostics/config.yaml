@@ -1,0 +1,44 @@
+experiment: MatGPT_diagnostics_D1_D2_D3
+source_commit: a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e
+checkpoint: Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth
+checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+dataset: Alternative2/reports/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+dataset_sha256: 0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8
+fold_manifest: Alternative2/reports/MatGPT_frozen/matgpt_e1_3/fold_assignments.csv
+folds: 5
+development: {structures: 210, compositions: 70, polymorphs_per_composition: 3}
+historical_test: {structures: 24, compositions: 8, used: false}
+seeds: [42, 123, 2026]
+d1:
+  train_mean: true
+  composition_ridge:
+    alpha_grid: [0.01, 0.1, 1.0, 10.0, 100.0]
+    selection: inner_validation
+    features: [elemental_fractions, n_elements, reduced_atom_count, atomic_number_stats, pauling_electronegativity_stats]
+  random_forest: {n_estimators: 200, max_depth: 4, min_samples_leaf: 3, random_state: 421_plus_fold}
+d2:
+  architecture: "MatGPT unconditional; last decoder block trainable; <end> pooling; MLP 768-8-1 GELU dropout 0.1"
+  optimizer: {name: AdamW, backbone_lr: 0.00001, head_lr: 0.001, weight_decay: 0.0001}
+  batch_compositions: 4
+  grad_clip_norm: 1.0
+  epochs_max: 100
+  patience: 20
+  selection: minimum_inner_validation_objective
+  losses:
+    D2-CENTER: "normalized absolute SmoothL1 beta=1 + normalized within-composition centered SmoothL1 beta=1"
+    D2-CENTER-ONLY: "normalized within-composition centered SmoothL1 beta=1; absolute offset anchored to inner-train mean only for reporting"
+  centered_scale: "RMS of centered targets in inner-train only, floor 0.001 eV/atom"
+  absolute_scale: "inner-train target standard deviation, floor 1e-6 eV/atom"
+d3:
+  pooling: [end, masked_mean]
+  embeddings_dimension: 768
+  geometry_distances_angstrom: [2.5, 3.0, 3.5, 4.0, 6.0]
+  historical_test_used: false
+references:
+  matgpt: https://github.com/devalab/matgpt
+  slices: https://doi.org/10.1038/s41467-023-42870-7
+  matfold: https://doi.org/10.1039/D4DD00250D
+  soap: https://singroup.github.io/dscribe/latest/tutorials/descriptors/soap.html
+  mptrj: https://docs.materialsproject.org/services/ml-and-ai-applications/mptrj
+  chgnet: https://doi.org/10.1038/s42256-023-00716-3
+  pytorch_autograd: https://docs.pytorch.org/docs/stable/notes/autograd.html

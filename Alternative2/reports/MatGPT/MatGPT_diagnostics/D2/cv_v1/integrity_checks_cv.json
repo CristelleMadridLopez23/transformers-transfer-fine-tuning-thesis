@@ -1,0 +1,33 @@
+{
+  "all_composition_groups_stay_in_one_outer_fold": true,
+  "all_oof_finite": true,
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "current_trainer_source_sha256": "f8a55829abcd84f7c211e6a74dcff7145f3de375cc4153b115c5a2758fe5a8cf",
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "exact_trainer_source_hash_captured_at_run_start": false,
+  "fold_compositions": {
+    "0": 14,
+    "1": 14,
+    "2": 14,
+    "3": 14,
+    "4": 14
+  },
+  "fold_manifest_sha256": "0b1b0c2c7584729377fb39c54b9ff14ae17ccf73b731c26cf267037b592519c9",
+  "historical_test_used": false,
+  "mean_fit_wall_seconds": 202.67845958888066,
+  "n_checkpoints": 30,
+  "n_compositions_per_configuration_seed": 70,
+  "n_fits_completed": 30,
+  "n_folds": 5,
+  "n_oof_rows": 1260,
+  "n_structures_per_configuration_seed": 210,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "source_provenance_note": "El proceso CV ya estaba iniciado cuando se añadieron al archivo del trainer campos de tiempo y una guarda de salida. La función objetivo, los folds, las semillas, el optimizador y la selección de checkpoint no cambiaron; el hash registrado identifica el archivo actual y no prueba el bytecode cargado al inicio.",
+  "status": "PASS",
+  "sum_fit_wall_seconds": 6080.3537876664195,
+  "test_ids_and_formulas_excluded": true
+}

@@ -1,0 +1,11 @@
+model,metric,development_OOF,development_N_compositions,test_ensemble,test_N_compositions,descriptive_test_minus_dev,estimators_identical,interpretation
+H2,"MAE absoluto, macro (meV/átomo)",352.5250317785827,70,330.4076715999643,8,-22.117360178618355,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H2,MAE ΔE anclada a DFT-GS (meV/átomo),39.27657483038892,70,24.207883376508793,8,-15.068691453880124,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H2,MAE ΔE own-min (meV/átomo),36.48821521698946,70,21.929655721937294,8,-14.558559495052165,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H2,Ground-state accuracy,0.5970149253731343,70,0.625,8,0.027985074626865725,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H2,Pairwise accuracy pooled,0.6747572815533981,70,0.7083333333333334,8,0.03357605177993528,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H3-A,"MAE absoluto, macro (meV/átomo)",129.10214912022855,70,133.5452397400174,8,4.443090619788848,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H3-A,MAE ΔE anclada a DFT-GS (meV/átomo),39.27657483038893,70,24.207883376508924,8,-15.068691453880007,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H3-A,MAE ΔE own-min (meV/átomo),36.48821521698948,70,21.92965572193735,8,-14.55855949505213,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H3-A,Ground-state accuracy,0.5970149253731343,70,0.625,8,0.027985074626865725,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.
+H3-A,Pairwise accuracy pooled,0.6747572815533981,70,0.7083333333333334,8,0.03357605177993528,False,Descriptive only: development is outer OOF; test averages five fold models and three H2 seeds.

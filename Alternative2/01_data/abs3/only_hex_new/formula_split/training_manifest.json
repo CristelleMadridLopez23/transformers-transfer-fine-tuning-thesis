@@ -1,0 +1,17 @@
+{
+  "source_split_manifest": "/users/0/cmadridl/projects/dmc_cristelle-madrid-lopez/projects/ABS3-fine-tuning/dev/data/cml/data/Preprocess notebooks/outputs/only_hex_new/formula_split/manifest.json",
+  "source_split_manifest_sha256": "810f7d2155715490908f162a97ecffc47761f0dd19480f97894b7027d1af41c3",
+  "source_extxyz_sha256": {
+    "train.extxyz": "4e7fe3d1ea4b334295231706a2e3c7fae2370241832f7d6abec5c980ed466c7d",
+    "val.extxyz": "a5cc29ab98f2333cce83c5dc41f38c48d2b4201a7d3ab7a6434ce3c5362c5eac"
+  },
+  "output_sha256": {
+    "train/data_0000.aselmdb": "10b2c20fd779256e270588999da01700f4e3ae65c9a5ab3a3ba6d43e940b7a5f",
+    "val/data_0000.aselmdb": "e83d957e3c94020f1168be5f4a40467f691904a5c312509b29d509f9568c1b34"
+  },
+  "counts": {
+    "train": 7106,
+    "val": 932
+  },
+  "disk_verified": true
+}

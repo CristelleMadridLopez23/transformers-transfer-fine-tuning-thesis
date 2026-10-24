@@ -1,0 +1,179 @@
+{
+  "status": "LIMITED",
+  "source_raw": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/01_data/raw_data/results(1).json",
+  "source_cache": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/MatGPT_finetuning/matgpt_e2_t0/frame_tokenization.csv",
+  "n_raw_records": 480,
+  "n_relax_tasks": 210,
+  "n_raw_relax_frames_all_partitions": 13874,
+  "n_development_relax_frames_audited": 12486,
+  "n_historical_test_relax_frames_excluded_before_structure_conversion": 1388,
+  "n_cached_relax_frames": 12486,
+  "n_cached_frames_matched_to_raw": 7734,
+  "n_development_frames_missing_from_previous_thinned_cache": 4752,
+  "raw_cache_max_abs_energy_diff_ev_atom": 8.881784197001252e-16,
+  "n_unique_token_sequences": 4033,
+  "unique_token_ratio": 0.32300176197341024,
+  "n_collision_groups": 1677,
+  "n_collision_groups_range_ge_1mev_atom": 1148,
+  "max_collision_range_mev_atom": 213.5074999999995,
+  "mean_collision_min_mae_mev_atom": 2.1037035917831584,
+  "graph_reencode_checked": 12486,
+  "graph_reencode_equivalent": 12486,
+  "graph_reencode_failed_ids": [],
+  "all_frames_reencoded": true,
+  "pbe_metadata": {
+    "n_relax_tasks": 210,
+    "missing_incar_or_potcar": 0,
+    "incar_unique_values": {
+      "GGA": [
+        "Pe"
+      ],
+      "LDAU": [
+        "False"
+      ],
+      "ENCUT": [
+        "520.0"
+      ],
+      "EDIFF": [
+        "1e-06"
+      ],
+      "EDIFFG": [
+        "-0.03"
+      ],
+      "ISIF": [
+        "3"
+      ],
+      "ISPIN": [
+        "1",
+        "2"
+      ],
+      "ISMEAR": [
+        "-1",
+        "0"
+      ],
+      "SIGMA": [
+        "0.05"
+      ],
+      "KSPACING": [
+        "0.22"
+      ],
+      "NSW": [
+        "199",
+        "299",
+        "399"
+      ]
+    },
+    "potcar_identifiers": [
+      "PAW_PBE:Ba_sv",
+      "PAW_PBE:Ca_sv",
+      "PAW_PBE:Cd",
+      "PAW_PBE:Cu_pv",
+      "PAW_PBE:Ge_d",
+      "PAW_PBE:Hf_pv",
+      "PAW_PBE:Mg_pv",
+      "PAW_PBE:Nb_pv",
+      "PAW_PBE:Pb_d",
+      "PAW_PBE:S",
+      "PAW_PBE:Si",
+      "PAW_PBE:Sn_d",
+      "PAW_PBE:Sr_sv",
+      "PAW_PBE:Ti_pv",
+      "PAW_PBE:V_pv",
+      "PAW_PBE:Zn",
+      "PAW_PBE:Zr_sv"
+    ],
+    "all_pbe_without_u": true,
+    "reference_check": "Metadatos solo de las 210 tareas relax enlazadas a train+validation; las tareas de test se excluyeron antes de inspección detallada."
+  },
+  "development_trajectory_candidates": 4033,
+  "development_compositions_with_candidates_by_fold": {
+    "0": 45,
+    "1": 45,
+    "2": 45,
+    "3": 45,
+    "4": 45
+  },
+  "selected_frames_rows_by_fold": 20165,
+  "test_historical_used_for_training_or_model_selection": false,
+  "t2_training_gate": "LIMITED",
+  "limitations": [
+    "T1 is a data/provenance audit, not a supervised performance comparison.",
+    "The DFT source stores trajectory frames as total energy per atom; frame differences stay within one calculation.",
+    "Frames sharing identical input IDs are represented once per trajectory in the candidate list; contradictory labels are not paired in T2."
+  ],
+  "static_relax_metadata_compatibility": {
+    "status": "PASS",
+    "development_static_relax_pairs": 210,
+    "expected_development_structures": 210,
+    "metadata_missing_ids": [],
+    "mismatch_ids": [],
+    "shared_settings_checked": [
+      "GGA",
+      "LDAU",
+      "ENCUT",
+      "EDIFF",
+      "ISPIN"
+    ],
+    "all_shared_settings_equal": true,
+    "relax_task_setting_value_counts": {
+      "GGA": {
+        "Pe": 210
+      },
+      "LDAU": {
+        "False": 210
+      },
+      "ENCUT": {
+        "520.0": 210
+      },
+      "EDIFF": {
+        "1e-06": 210
+      },
+      "ISPIN": {
+        "1": 123,
+        "2": 87
+      },
+      "ISMEAR": {
+        "0": 202,
+        "-1": 8
+      },
+      "SIGMA": {
+        "0.05": 210
+      },
+      "KSPACING": {
+        "0.22": 210
+      },
+      "ISIF": {
+        "3": 210
+      },
+      "NSW": {
+        "199": 193,
+        "399": 9,
+        "299": 8
+      }
+    },
+    "static_relax_ismear_differences": 153,
+    "static_relax_ismear_values": [
+      "{\"relax\": -1, \"same\": false, \"static\": -5}",
+      "{\"relax\": -1, \"same\": false, \"static\": 0}",
+      "{\"relax\": -1, \"same\": false, \"static\": 2}",
+      "{\"relax\": 0, \"same\": false, \"static\": -5}",
+      "{\"relax\": 0, \"same\": false, \"static\": 2}",
+      "{\"relax\": 0, \"same\": true, \"static\": 0}"
+    ],
+    "all_static_relax_potcars_match": true,
+    "all_potcars_are_PAW_PBE": true,
+    "max_static_label_abs_diff_ev_atom": 4.440892098500626e-16,
+    "raw_result_exports_expose_energy_fields": [
+      "E_per_at",
+      "E_relax",
+      "convergence",
+      "formula",
+      "sg"
+    ],
+    "correction_metadata_note": "Los pares static/relax se cotejan en PBE, LDAU, ENCUT, EDIFF, ISPIN y PAW_PBE. ISMEAR/KSPACING y otros ajustes pueden diferir entre cálculos separados y se reportan por tarea; no se combinan energías absolutas. L_traj usa diferencias dentro de una única relajación, cuyos ajustes permanecen constantes por tarea. El export no expone una descomposición independiente de otras correcciones energéticas.",
+    "historical_test_used": false
+  },
+  "collision_groups_range_ge_1mev_fraction": 0.6845557543231962,
+  "operational_gate_note": "Gate LIMITED if >50% of repeated-ID groups span >=1 meV/atom or global unique-ID ratio <0.5; this is a conservative project rule, not a physical threshold. LIMITED permits pilot only.",
+  "n_development_relax_tasks": 210
+}

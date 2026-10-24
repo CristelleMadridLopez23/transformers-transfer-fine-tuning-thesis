@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED",
+  "reason": "No hay CSV fuente para validar esquema o calcular frecuencias.",
+  "corpus_substitute_used": false
+}

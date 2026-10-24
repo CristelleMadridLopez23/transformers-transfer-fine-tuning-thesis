@@ -1,0 +1,17 @@
+experiment: matgpt_e2_partial_ft
+source_commit: a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e
+checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+data: Alternative2/reports/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+folds: Alternative2/reports/MatGPT_frozen/matgpt_e1_3/fold_assignments.csv
+development: 210 structures / 70 compositions
+historical_test: excluded, 24 structures / 8 compositions
+outer_folds: reuse E1.3 GroupKFold 5 folds
+seeds: [42, 123, 2026]
+models: [frozen, partial_ft]
+trainable_backbone: transformer_decoder.layers[-1] only for partial_ft
+head: {type: MLP, dimensions: [768, 8, 1], activation: GELU, dropout: 0.1}
+optimizer: {name: AdamW, backbone_lr: 0.00001, head_lr: 0.001, weight_decay: 0.0001}
+loss: {absolute: normalized_Huber_beta_1, pairwise: normalized_Huber_beta_1, lambda: 1.0}
+normalization: inner_train_mean_std_and_pair_RMS_floor_0.001_eV_atom
+training: {epochs: 200, patience: 20, compositions_per_batch: 4, grad_clip_norm: 1.0}
+selection: minimum_inner_validation_objective

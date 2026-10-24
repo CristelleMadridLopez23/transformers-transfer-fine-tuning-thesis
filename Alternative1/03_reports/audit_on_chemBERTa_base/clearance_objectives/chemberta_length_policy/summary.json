@@ -1,0 +1,39 @@
+{
+  "status": "LENGTH_POLICY_FROZEN",
+  "scope": "Length-only policy. NOT a DAPT-ready train split or final downstream cohort.",
+  "source_manifest": "03_reports/chemberta_length_clearance/length_manifest.csv",
+  "source_sha256": "94ad6b66744551c677a5337edf15759bd83e904f78514ccd58ea9973ae358a2c",
+  "limit_including_special_tokens": 512,
+  "total": 98394,
+  "fit": 96719,
+  "over_limit": 1675,
+  "over_limit_pct": 1.7023,
+  "composition_groups": 95183,
+  "polymorph_groups_before_length": 2908,
+  "polymorph_groups_after_length": 2884,
+  "polymorph_groups_lost_by_length": 24,
+  "preliminary_downstream_candidate_structures": 6065,
+  "entirely_excluded_composition_groups": 1645,
+  "partially_excluded_composition_groups": 22,
+  "policy": {
+    "mlm_candidate": "Complete SLICES, <= 512 tokens including special tokens; never truncate.",
+    "long_sequences": "Quarantine as out-of-scope for original checkpoint; preserve intact for sensitivity analyses.",
+    "downstream_candidate": "At least 2 eligible structures per composition after length filter; not yet a valid supervised set.",
+    "split": "Must assign composition-disjoint train/val/test BEFORE MLM. DAPT on train only; test excluded for inductive evaluation."
+  },
+  "known_remaining_gates": [
+    "Validate official SLICES strategy=4 parser/checks against installed version",
+    "Verify structural equivalence and canonical composition grouping",
+    "Verify energy targets and 0-K polymorph definitions; freeze composition-disjoint split",
+    "Audit MLM masking/random replacement & initialize new embeddings"
+  ],
+  "issues": [],
+  "issues_total": 0,
+  "files": [
+    "dapt_candidate_manifest_UNSPLIT.csv",
+    "over_512_exclusion_manifest.csv",
+    "downstream_polymorph_candidates_UNSPLIT.csv",
+    "composition_retention.csv",
+    "polymorph_groups_lost_by_limit.csv"
+  ]
+}

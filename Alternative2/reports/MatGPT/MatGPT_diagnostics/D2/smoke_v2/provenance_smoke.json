@@ -1,0 +1,43 @@
+{
+  "architecture": "last decoder block + end pooling + MLP 768-8-1",
+  "data_path": "Alternative2/reports/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+  "data_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "device": "cpu",
+  "epochs_max": 3,
+  "folds": [
+    0
+  ],
+  "folds_path": "Alternative2/reports/MatGPT_frozen/matgpt_e1_3/fold_assignments.csv",
+  "folds_sha256": "0b1b0c2c7584729377fb39c54b9ff14ae17ccf73b731c26cf267037b592519c9",
+  "historical_test_compositions_excluded": 8,
+  "historical_test_structures_excluded": 24,
+  "historical_test_used": false,
+  "n_compositions_development": 70,
+  "n_polymorphs_per_composition": {
+    "3": 70
+  },
+  "n_structures_development": 210,
+  "optimizer": {
+    "backbone_lr": 1e-05,
+    "head_lr": 0.001,
+    "name": "AdamW",
+    "weight_decay": 0.0001
+  },
+  "outer_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "patience": 3,
+  "phase": "smoke",
+  "seeds": [
+    42
+  ],
+  "source_e2_script_sha256": "4799bb8bbf52b0b9791ccc3eb30b236a316ac3baae01eb02d05d78aab2880770",
+  "variants": [
+    "D2-CENTER",
+    "D2-CENTER-ONLY"
+  ]
+}

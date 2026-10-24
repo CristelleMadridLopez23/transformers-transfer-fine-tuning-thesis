@@ -1,0 +1,7 @@
+{
+  "best_epoch": 200,
+  "inner_val_mae_normalized": 0.5793911814689636,
+  "seed": 42,
+  "target_mean": -5.299740277970371,
+  "target_scale": 0.765996285098386
+}

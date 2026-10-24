@@ -1,0 +1,27 @@
+{
+  "caveat": "FINAL_END denotes the actual closing '<' token following the SLICES string; it is not a MatGPT </end> token.",
+  "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+  "condition": [
+    -1.0,
+    2.0
+  ],
+  "development_cache_sha256": "d9d0765ec32dd5ca1b105830a028826421ae39d01a94969ee5b0cb581780344a",
+  "development_rows": 210,
+  "dimension": 768,
+  "feature_extractor_script_sha256": "1629c3d1f2ec144c555aa962746125d22d952f70d4551989506f38c1a8dabbec",
+  "features": [
+    "BLOCK03_MEAN",
+    "BLOCK03_LAST",
+    "BLOCK06_MEAN",
+    "BLOCK06_LAST",
+    "BLOCK09_MEAN",
+    "BLOCK09_LAST",
+    "BLOCK12_MEAN",
+    "BLOCK12_LAST",
+    "FINAL_MEAN",
+    "FINAL_END"
+  ],
+  "status": "PASS",
+  "test_cache_sha256": "402949242b09d3ea236eb23258425b980d2474260294aa4a5ad0a7ecd23223bc",
+  "test_rows_without_labels": 24
+}

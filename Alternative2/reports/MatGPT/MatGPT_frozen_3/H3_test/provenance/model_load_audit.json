@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "ridge_estimators_strictly_loaded": 5,
+  "h2_heads_strictly_loaded": 15,
+  "h2_loads": [
+    {
+      "fold": 0,
+      "seed": 42,
+      "strict_load": true,
+      "best_epoch": 22,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 0,
+      "seed": 123,
+      "strict_load": true,
+      "best_epoch": 32,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 0,
+      "seed": 2026,
+      "strict_load": true,
+      "best_epoch": 34,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 1,
+      "seed": 42,
+      "strict_load": true,
+      "best_epoch": 137,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 1,
+      "seed": 123,
+      "strict_load": true,
+      "best_epoch": 199,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 1,
+      "seed": 2026,
+      "strict_load": true,
+      "best_epoch": 165,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "strict_load": true,
+      "best_epoch": 56,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 2,
+      "seed": 123,
+      "strict_load": true,
+      "best_epoch": 32,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 2,
+      "seed": 2026,
+      "strict_load": true,
+      "best_epoch": 42,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "strict_load": true,
+      "best_epoch": 25,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 3,
+      "seed": 123,
+      "strict_load": true,
+      "best_epoch": 28,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 3,
+      "seed": 2026,
+      "strict_load": true,
+      "best_epoch": 28,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "strict_load": true,
+      "best_epoch": 96,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 4,
+      "seed": 123,
+      "strict_load": true,
+      "best_epoch": 105,
+      "trainable_parameters": 0
+    },
+    {
+      "fold": 4,
+      "seed": 2026,
+      "strict_load": true,
+      "best_epoch": 60,
+      "trainable_parameters": 0
+    }
+  ],
+  "backbone_loaded_here": false,
+  "test_labels_loaded": false
+}

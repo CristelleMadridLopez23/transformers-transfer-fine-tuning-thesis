@@ -1,0 +1,84 @@
+{
+  "intervals": {
+    "M3-A_minus_M2": {
+      "gs_accuracy": {
+        "ci95_percentile": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": 0.0,
+        "n_valid": 2000
+      },
+      "mae_absolute_mev_atom": {
+        "ci95_percentile": [
+          -124.20496399451854,
+          -49.16386528182102
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": -87.31090365055981,
+        "n_valid": 2000
+      },
+      "mae_delta_dft_gs_anchored_mev_atom": {
+        "ci95_percentile": [
+          -4.263256414560601e-14,
+          8.535394613318155e-14
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": 2.2879476091475227e-14,
+        "n_valid": 2000
+      },
+      "pairwise_accuracy": {
+        "ci95_percentile": [
+          0.0,
+          0.0
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": 0.0,
+        "n_valid": 2000
+      }
+    },
+    "M3-A_minus_M4": {
+      "gs_accuracy": {
+        "ci95_percentile": [
+          0.02898550724637683,
+          0.328363539445629
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": 0.17986227310207753,
+        "n_valid": 2000
+      },
+      "mae_absolute_mev_atom": {
+        "ci95_percentile": [
+          -39.16541823071244,
+          -15.041221415540043
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": -26.64546914150221,
+        "n_valid": 2000
+      },
+      "mae_delta_dft_gs_anchored_mev_atom": {
+        "ci95_percentile": [
+          -93.96515738758337,
+          -56.10683271069299
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": -74.63034750288777,
+        "n_valid": 2000
+      },
+      "pairwise_accuracy": {
+        "ci95_percentile": [
+          0.05882352941176472,
+          0.2560416220461198
+        ],
+        "interpretation": "exploratory; small number of chemical groups and prior model selection",
+        "mean_difference": 0.1612922399199383,
+        "n_valid": 2000
+      }
+    }
+  },
+  "replicates": 2000,
+  "sampling_unit": "composition triplet; all three polymorphs stay together",
+  "seed": 13072026,
+  "status": "PASS"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "rows": 210,
+  "compositions": 70,
+  "dimension": 768,
+  "historical_test_used_or_extracted": false,
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "model_info_sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "extractor_sha256": "da0d8794b3ca079c627e9d096449603e99d88b535adc2ce9eea662b48d76702a",
+  "model_source_sha256": "26590839b818a3996cc7f22b11fe060eb7dfc636c6e61fca001a368972ce2d90",
+  "features": {
+    "L03_END": "raw decoder block output at actual <end> token before ln_f",
+    "L03_MEAN": "raw decoder block mean over valid SLICES tokens before ln_f",
+    "L06_END": "raw decoder block output at actual <end> token before ln_f",
+    "L06_MEAN": "raw decoder block mean over valid SLICES tokens before ln_f",
+    "L09_END": "raw decoder block output at actual <end> token before ln_f",
+    "L09_MEAN": "raw decoder block mean over valid SLICES tokens before ln_f",
+    "L12_END": "raw decoder block output at actual <end> token before ln_f",
+    "L12_MEAN": "raw decoder block mean over valid SLICES tokens before ln_f"
+  },
+  "final_controls": {
+    "FINAL_END": "post-ln_f actual <end>, before lm_head",
+    "FINAL_MEAN": "post-ln_f mean of SLICES positions"
+  },
+  "layer_output_space": {
+    "3": "raw decoder block output before ln_f",
+    "6": "raw decoder block output before ln_f",
+    "9": "raw decoder block output before ln_f",
+    "12": "raw decoder block output before ln_f"
+  },
+  "end_id": 156,
+  "start_id": 155,
+  "pad_id": 157,
+  "strict_load": true,
+  "model_eval": true,
+  "backbone_requires_grad": false,
+  "final_end_max_difference_vs_h2_cache": 5.7220458984375e-06,
+  "final_mean_max_difference_vs_h2_cache": 3.5762786865234375e-07,
+  "right_padding_max_abs_error": 1.430511474609375e-06,
+  "all_features_finite": true,
+  "deterministic": true,
+  "device": "cpu",
+  "torch_version": "2.8.0",
+  "numpy_version": "2.2.6",
+  "cache_sha256": "2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62",
+  "ids_sha256": "5985335892707769765ee0e54aa63e81bde58a169ae6128c52e2f5b6534b5c33",
+  "positions_sha256": "4e2abef0f9223671dfd67ac1e13e26ee7c52640211cfc7d3f6e0953adbe4cc6f",
+  "input_has_energy_tokens": false
+}

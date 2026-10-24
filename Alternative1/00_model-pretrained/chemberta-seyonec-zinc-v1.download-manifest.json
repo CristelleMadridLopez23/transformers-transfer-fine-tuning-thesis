@@ -1,0 +1,47 @@
+{
+  "repo_id": "seyonec/ChemBERTa-zinc-base-v1",
+  "requested_revision": "b884812ed7082f59b95562e00378b92634d5c624",
+  "resolved_commit": "b884812ed7082f59b95562e00378b92634d5c624",
+  "downloaded_at_utc": "2026-10-22T01:28:53.691346+00:00",
+  "huggingface_hub_version": "1.26.0",
+  "file_count": 7,
+  "total_bytes": 178826679,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 345,
+      "sha256": "9e5095cca6b09f837c602a130decaba2b5a2c824b36871ba5532046f34f10ffe"
+    },
+    {
+      "path": "config.json",
+      "size_bytes": 1232,
+      "sha256": "315c06c5d7d94f7de25d3c41cc6e8cacf3441b24a82b8e7d6f1d4456eece4a4c"
+    },
+    {
+      "path": "merges.txt",
+      "size_bytes": 3213,
+      "sha256": "f8c368d3b2f44cf4eec62aa576b69945302fcfa8eba065048d3725259671f2bb"
+    },
+    {
+      "path": "pytorch_model.bin",
+      "size_bytes": 178812144,
+      "sha256": "bf8a23d93cca196c3712c94ec379494a74be64c83d86a63b08f03e26db547267"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "size_bytes": 150,
+      "sha256": "7638f5bbbe86ef6d604ef28ad3647dc690d6d117c81c0d63e885416be8da1150"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "size_bytes": 166,
+      "sha256": "36557a021e64d222c7ff0fef5369bc87ae6e0780264af0f35d8c6461cf106577"
+    },
+    {
+      "path": "vocab.json",
+      "size_bytes": 9429,
+      "sha256": "791f9dd0e7dacb628c2f3155671a702044b1da537784eaa5663fb36ee7b8d42f"
+    }
+  ],
+  "validation_scope": "Pinned Hugging Face snapshot, required checkpoint/tokenizer files present, local SHA-256 inventory. No model execution performed."
+}

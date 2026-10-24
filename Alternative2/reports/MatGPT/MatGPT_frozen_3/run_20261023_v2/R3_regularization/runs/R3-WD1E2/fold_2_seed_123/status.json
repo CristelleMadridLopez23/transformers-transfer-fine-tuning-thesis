@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "best_epoch": 32,
+  "epochs_run": 52,
+  "training_seconds": 0.28920454205945134,
+  "test_evaluated": false
+}

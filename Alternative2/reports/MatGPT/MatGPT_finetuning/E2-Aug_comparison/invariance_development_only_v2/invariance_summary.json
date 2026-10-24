@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "models": [
+    "E2-A-partial_ft",
+    "E2-Aug1",
+    "E2-Aug2"
+  ],
+  "n_oof_structure_seed_rows_per_model": 630,
+  "views_per_structure": 4,
+  "test_historical_used": false,
+  "definition": "sigma_inv = population standard deviation across four fixed graph-equivalent SLICES views, meV/atom",
+  "note": "630 rows include each development structure once per seed; seeds are not independent structures."
+}

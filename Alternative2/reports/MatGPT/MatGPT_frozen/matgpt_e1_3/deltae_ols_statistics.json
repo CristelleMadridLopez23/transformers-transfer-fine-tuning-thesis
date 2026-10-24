@@ -1,0 +1,23 @@
+{
+  "matgpt_e13_mlp8_mean_pair1": {
+    "N_structures": 210,
+    "slope_dimensionless": 0.16797335401335084,
+    "intercept_mev_atom": 15.867273235344637,
+    "r2_ols": 0.16095955402176798,
+    "mae_vs_dft_mev_atom": 37.41239215925485
+  },
+  "matgpt_e13_mlp8_last_pair1": {
+    "N_structures": 210,
+    "slope_dimensionless": 0.25437999589343196,
+    "intercept_mev_atom": 20.57942439025939,
+    "r2_ols": 0.20757835682618597,
+    "mae_vs_dft_mev_atom": 35.328653297243896
+  },
+  "matgpt_e13_mlp32_mean_abs": {
+    "N_structures": 210,
+    "slope_dimensionless": 0.0005202500772436878,
+    "intercept_mev_atom": 146.74666808703054,
+    "r2_ols": 3.440951057420705e-08,
+    "mae_vs_dft_mev_atom": 137.44776849711522
+  }
+}

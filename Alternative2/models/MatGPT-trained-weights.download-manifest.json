@@ -1,0 +1,74 @@
+{
+  "model": "MatGPT trained weights",
+  "source_repository": "https://github.com/devalab/matgpt",
+  "source_data_record": "https://doi.org/10.6084/m9.figshare.34330655.v1",
+  "figshare_record_id": 34330655,
+  "downloaded_at_utc": "2026-10-22T03:01:55.073200+00:00",
+  "files": [
+    {
+      "path": "mat.zip",
+      "download_url": "https://ndownloader.figshare.com/files/69893196",
+      "size_bytes": 422996149,
+      "md5_figshare": "0103e5036332e759e721cd5258f4b90f",
+      "sha256": "bcf5c2bd2bdadc1964cc30f6a75c2d786e26a4939ad8d5b6ea8c68b8690ac9a3",
+      "model_weights": "mat/weights/transformer_property_1.pth",
+      "model_metadata": "mat/weights/model_info_property_1.json",
+      "archive_files": [
+        {
+          "path": "mat/weights/model_info_property_1.json",
+          "size_bytes": 6171
+        },
+        {
+          "path": "mat/weights/transformer_property_1.pth",
+          "size_bytes": 456198708
+        }
+      ]
+    },
+    {
+      "path": "mat-uncond.zip",
+      "download_url": "https://ndownloader.figshare.com/files/69892493",
+      "size_bytes": 422746420,
+      "md5_figshare": "72f25b5230fa51585a8244eed9b4bcbb",
+      "sha256": "84912e3ffa25a2974f7a6756df4d3c95753a9e267dee543c2c771ff0c6227caf",
+      "model_weights": "mat-uncond/weights/transformer_property_0.pth",
+      "model_metadata": "mat-uncond/weights/model_info_property_0.json",
+      "archive_files": [
+        {
+          "path": "mat-uncond/weights/model_info_property_0.json",
+          "size_bytes": 6171
+        },
+        {
+          "path": "mat-uncond/weights/transformer_property_0.pth",
+          "size_bytes": 456195636
+        }
+      ]
+    }
+  ],
+  "validation_scope": "Downloaded archives match Figshare-published MD5 checksums; ZIP central directories readable; expected .pth and model metadata JSON entries present. No extraction or model execution performed. Extracted .pth and model_info JSON SHA-256 values match their corresponding ZIP members; model_info JSON contains vocab/stoi/itos and block_size.",
+  "extracted_artifacts": [
+    {
+      "path": "mat/weights/transformer_property_1.pth",
+      "size_bytes": 456198708,
+      "sha256": "f85e04897b6f39ef3b56be594789c05c6b1372b9629b095890a7510fa1c5284a",
+      "source_archive": "mat.zip"
+    },
+    {
+      "path": "mat/weights/model_info_property_1.json",
+      "size_bytes": 6171,
+      "sha256": "d4ff30cfcb3537667eba8b7faee6d902b0af7aa7bf2782c46e3a8ab9613f20af",
+      "source_archive": "mat.zip"
+    },
+    {
+      "path": "mat-uncond/weights/transformer_property_0.pth",
+      "size_bytes": 456195636,
+      "sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+      "source_archive": "mat-uncond.zip"
+    },
+    {
+      "path": "mat-uncond/weights/model_info_property_0.json",
+      "size_bytes": 6171,
+      "sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+      "source_archive": "mat-uncond.zip"
+    }
+  ]
+}

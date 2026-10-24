@@ -1,0 +1,16 @@
+experiment,fold,seed,checkpoint,status
+E2-Aug1,0,42,runs/fold_0_seed_42/checkpoints/fold_0_seed_42.pt,completed
+E2-Aug1,0,123,runs/fold_0_seed_123/checkpoints/fold_0_seed_123.pt,completed
+E2-Aug1,0,2026,runs/fold_0_seed_2026/checkpoints/fold_0_seed_2026.pt,completed
+E2-Aug1,1,42,runs/fold_1_seed_42/checkpoints/fold_1_seed_42.pt,completed
+E2-Aug1,1,123,runs/fold_1_seed_123/checkpoints/fold_1_seed_123.pt,completed
+E2-Aug1,1,2026,runs/fold_1_seed_2026/checkpoints/fold_1_seed_2026.pt,completed
+E2-Aug1,2,42,runs/fold_2_seed_42/checkpoints/fold_2_seed_42.pt,completed
+E2-Aug1,2,123,runs/fold_2_seed_123/checkpoints/fold_2_seed_123.pt,completed
+E2-Aug1,2,2026,runs/fold_2_seed_2026/checkpoints/fold_2_seed_2026.pt,completed
+E2-Aug1,3,42,runs/fold_3_seed_42/checkpoints/fold_3_seed_42.pt,completed
+E2-Aug1,3,123,runs/fold_3_seed_123/checkpoints/fold_3_seed_123.pt,completed
+E2-Aug1,3,2026,runs/fold_3_seed_2026/checkpoints/fold_3_seed_2026.pt,completed
+E2-Aug1,4,42,runs/fold_4_seed_42/checkpoints/fold_4_seed_42.pt,completed
+E2-Aug1,4,123,runs/fold_4_seed_123/checkpoints/fold_4_seed_123.pt,completed
+E2-Aug1,4,2026,runs/fold_4_seed_2026/checkpoints/fold_4_seed_2026.pt,completed

@@ -1,0 +1,10 @@
+{
+  "experiment": "E2-Aug1",
+  "phase": "cv",
+  "device": "cpu",
+  "requested_runs": 15,
+  "runs_completed_this_invocation": 15,
+  "training_wall_seconds": 4023.1656097900122,
+  "test_historical_used": false,
+  "t1_gate": "NOT_APPLICABLE"
+}

@@ -1,0 +1,3 @@
+pooling,split,n_structures,n_compositions,seed_aggregation,ols_slope_dimensionless,ols_intercept_mev_atom,ols_r2,mae_vs_dft_mev_atom
+last_token,val,24,8,media por structure_id,1.2248741227751638,207.28240801371513,0.04253609746866327,235.88097608489645
+masked_mean,val,24,8,media por structure_id,0.10048076711960023,143.93998749374055,0.0010965216438124648,137.45445035284425

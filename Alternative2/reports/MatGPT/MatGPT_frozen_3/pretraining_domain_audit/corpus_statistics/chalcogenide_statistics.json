@@ -1,0 +1,12 @@
+{
+  "status": "CORPUS_COUNTS_ONLY",
+  "scope": "full provided corpus; effective historical train exposure not established",
+  "valid_material_rows": 306533,
+  "rows_with_S": 31575,
+  "rows_with_Se": 30762,
+  "rows_with_Te": 23388,
+  "rows_with_any_S_Se_Te": 82375,
+  "fraction_with_any_S_Se_Te": 0.2687312622132038,
+  "unique_slices": 306533,
+  "note": "Estas son frecuencias del CSV completo; aún no representan exposición efectiva del modelo."
+}

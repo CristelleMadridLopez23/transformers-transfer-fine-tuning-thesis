@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checkpoint_sha256": "9033e95d4d4d4fa930a2be4482fce7320bc5f41ea638966f656fc2507c2e6141",
+  "embedding_cache_sha256": "254bd30b788547e78baa75e6d8be2402cb457c4f70eefb3f5d274fcddc304c98",
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "historical_predictions_sha256": "fdfa65278b1b3a6c225ef659d40d718f8876cb6c5d41b807aaaa714f04921691",
+  "n_structures": 234,
+  "max_abs_error_ev_atom": 2.3471069354741303e-07,
+  "mean_abs_error_ev_atom": 7.167911368349016e-08,
+  "tolerance_ev_atom": 1e-05,
+  "test_labels_used_for_selection": false,
+  "checkpoint_path": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/matgpt_e1_v2/best_mlp.pt",
+  "historical_predictions_path": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/matgpt_e1_v2_eval_v2/predictions.csv"
+}

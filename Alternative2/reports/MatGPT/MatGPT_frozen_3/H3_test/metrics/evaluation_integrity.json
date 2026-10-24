@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "test_labels_loaded_after_lock": true,
+  "lock_sha256": "0302b0d738ba36b5b31e0de05103dcbe4c20663b42e0a416d6fd21cd9fcfe732",
+  "prelabel_predictions_sha256": "0433d2523defcaa6729796db8231ad46d0b80609215ef2b975b0eb1b41e2b9d1",
+  "prelabel_ensemble_sha256": "5b33acfb5415bd328ec6afbefac452478e8fa6560b2c993bf7ece001ee8a175e",
+  "dataset_sha256_checked_after_lock": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "N_structures": 24,
+  "N_compositions": 8,
+  "all_triplets_complete": true,
+  "test_used_for_selection": false,
+  "H3A_H2_relative_and_ranking_metric_differences": {
+    "MAE_delta_DFT_GS_anchored_mev_atom_macro": 1.3145040611561853e-13,
+    "MAE_delta_own_min_mev_atom_macro": 5.3290705182007514e-14,
+    "GS_accuracy": 0.0,
+    "pairwise_accuracy": 0.0,
+    "SignedPairwiseMAE_mev_atom": 1.8474111129762605e-13
+  },
+  "MSE_decomposition_max_abs_error": 6.565414878423326e-10,
+  "bootstrap_replicates": 20000,
+  "test_predictions_regenerated_after_labels": false
+}

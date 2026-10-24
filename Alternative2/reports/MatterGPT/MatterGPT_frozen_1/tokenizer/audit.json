@@ -1,0 +1,128 @@
+{
+  "bos_config_id": 130,
+  "config_special_ids_match_tokenizer": false,
+  "coverage": {
+    "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+    "development_compositions": 70,
+    "development_structures": 210,
+    "element_token_counts": {
+      "Ba": 108,
+      "Cu": 108,
+      "Ge": 108,
+      "Hf": 108,
+      "Mg": 108,
+      "Nb": 108,
+      "Pb": 180,
+      "S": 2808,
+      "Se": 0,
+      "Sn": 180,
+      "Sr": 108,
+      "Te": 0,
+      "V": 108,
+      "Zn": 108
+    },
+    "folds": 5,
+    "folds_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+    "numeric_index_token_count": 22304,
+    "oov_structures": 0,
+    "periodic_edge_token_count": 11152,
+    "slice_tokens_max": 254,
+    "slice_tokens_median": 164.0,
+    "slice_tokens_min": 110,
+    "test_compositions_inputs_only": 8,
+    "test_inputs_sha256": "56cc4101fa449128008d8eecc57185a3854b2539a7f7fb0507658ee10b4e904b",
+    "test_structures_inputs_only": 24
+  },
+  "eos_config_id": 131,
+  "public_prefix_id": 39,
+  "public_prefix_text": ">",
+  "roundtrip_15": [
+    {
+      "input": "S",
+      "pass": true,
+      "token_count": 1
+    },
+    {
+      "input": "Se",
+      "pass": true,
+      "token_count": 1
+    },
+    {
+      "input": "Te",
+      "pass": true,
+      "token_count": 1
+    },
+    {
+      "input": "Cu Nb S",
+      "pass": true,
+      "token_count": 3
+    },
+    {
+      "input": "0 1 ooo",
+      "pass": true,
+      "token_count": 3
+    },
+    {
+      "input": "0 13 ooo",
+      "pass": true,
+      "token_count": 3
+    },
+    {
+      "input": "S S S S",
+      "pass": true,
+      "token_count": 4
+    },
+    {
+      "input": "Mg Pb S 0 12 ooo",
+      "pass": true,
+      "token_count": 6
+    },
+    {
+      "input": "Ba Ge S 1 14 oo+",
+      "pass": true,
+      "token_count": 6
+    },
+    {
+      "input": "Hf Sr S 2 19 o-o",
+      "pass": true,
+      "token_count": 6
+    },
+    {
+      "input": "Nb Zn S 3 18 -o+",
+      "pass": true,
+      "token_count": 6
+    },
+    {
+      "input": "Pb V S 4 16 o++",
+      "pass": true,
+      "token_count": 6
+    },
+    {
+      "input": "S Se 0 0 ooo",
+      "pass": true,
+      "token_count": 5
+    },
+    {
+      "input": "o--",
+      "pass": true,
+      "token_count": 1
+    },
+    {
+      "input": "0 13 ooo 1 17 oo-",
+      "pass": true,
+      "token_count": 6
+    }
+  ],
+  "roundtrip_examples": [
+    "S",
+    "S Se Te",
+    "0 1 ooo",
+    "Cu Nb S",
+    "0 13 ooo",
+    "> S <"
+  ],
+  "sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+  "terminator_id": 38,
+  "terminator_text": "<",
+  "vocab_size": 132
+}

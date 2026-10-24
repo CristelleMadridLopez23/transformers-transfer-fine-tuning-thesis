@@ -1,0 +1,19 @@
+experiment: MatterGPT_frozen_1
+condition_mode: fixed_public_example
+prop_constant: [-1.0, 2.0]
+feature_layers: [3, 6, 9, 12]
+primary_feature: BLOCK03_MEAN
+ridge_alphas: [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+seeds: [42, 123, 2026]
+group_folds: 5
+inner_validation_fraction: 0.2
+bootstrap_replicates: 2000
+bootstrap_seed: 13072026
+tie_tolerance_mev_atom: 1.0
+expected_checkpoint_sha256: 8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21
+expected_model_revision: ee83624d85e5e60e6a8f48bc72bf2663f87273cd
+dataset_path: Alternative2/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+folds_path: Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv
+test_inputs_path: Alternative2/reports/MatGPT/MatGPT_frozen_3/H3_test/predictions/test_inputs.csv
+model_dir: Alternative2/models/MatterGPT
+report_dir: Alternative2/reports/MatterGPT/MatterGPT_frozen_1

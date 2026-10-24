@@ -1,0 +1,893 @@
+{
+  "method": "paired bootstrap by physical composition; predictions averaged across seeds per structure before metrics",
+  "groups": 70,
+  "replicates": 2000,
+  "seed": 13072026,
+  "interpretation": "exploratory; not an independent confirmation because historical validation informed prior selection",
+  "comparisons_vs": "H2",
+  "comparisons": {
+    "H0_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 376.55781644191353,
+        "ci95_low": 275.7779354681653,
+        "ci95_high": 476.5514867270614,
+        "candidate_mean": 729.0828482204962,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.2905777263145026,
+        "ci95_low": -4.103792192512551,
+        "ci95_high": 1.4944744710557438,
+        "candidate_mean": 37.98599710407443,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.24177801349051,
+        "ci95_low": -3.678362552786018,
+        "ci95_high": 1.230879970177674,
+        "candidate_mean": 35.24643720349894,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 377.78980488808867,
+        "ci95_low": 280.3415980604769,
+        "ci95_high": 472.41249369321616,
+        "candidate_mean": 729.0828482204962,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.3797759385904662,
+        "ci95_low": -3.3237821143555233,
+        "ci95_high": 0.6101726916173803,
+        "candidate_mean": 30.625444423164158,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.02985074626865669,
+        "ci95_low": -0.10447761194029853,
+        "ci95_high": 0.04349424552429667,
+        "candidate_mean": 0.5671641791044776,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.0,
+        "ci95_low": -0.043689320388349495,
+        "ci95_high": 0.044334975369458074,
+        "candidate_mean": 0.6747572815533981,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "H1_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 195.9429762904469,
+        "ci95_low": 124.59860674768316,
+        "ci95_high": 269.2868938335829,
+        "candidate_mean": 548.4680080690296,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.17580526298477395,
+        "ci95_low": -1.708801861551214,
+        "ci95_high": 2.125345105996978,
+        "candidate_mean": 39.452380093373705,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.5849157794863729,
+        "ci95_low": -1.4087703059090437,
+        "ci95_high": 2.72896911086268,
+        "candidate_mean": 37.073130996475825,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 196.816451001007,
+        "ci95_low": 127.0027551670493,
+        "ci95_high": 272.62172797965945,
+        "candidate_mean": 548.1094943334145,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.15411263687758847,
+        "ci95_low": -1.7608319501902585,
+        "ci95_high": 1.581955915159597,
+        "candidate_mean": 31.851107724877036,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.01492537313432829,
+        "ci95_low": -0.07936507936507942,
+        "ci95_high": 0.04617187499999985,
+        "candidate_mean": 0.582089552238806,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.009708737864077666,
+        "ci95_low": -0.028989024905023232,
+        "ci95_high": 0.044631070249881756,
+        "candidate_mean": 0.6844660194174758,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R1-A-ABS_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 177.96243999548807,
+        "ci95_low": 110.4287792980082,
+        "ci95_high": 253.1444626576194,
+        "candidate_mean": 530.4874717740707,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 314.06150911241923,
+        "ci95_low": 256.5647174614483,
+        "ci95_high": 372.6292484757047,
+        "candidate_mean": 353.33808394280817,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 350.10900959338966,
+        "ci95_low": 287.234339255155,
+        "ci95_high": 418.8423085309369,
+        "candidate_mean": 386.5972248103791,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 88.55700097586168,
+        "ci95_low": 23.32267077170462,
+        "ci95_high": 154.23755704185902,
+        "candidate_mean": 439.8500443082692,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 269.5738831811399,
+        "ci95_low": 227.99554477489323,
+        "ci95_high": 314.83287844141154,
+        "candidate_mean": 301.57910354289453,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.17910447761194026,
+        "ci95_low": -0.33333333333333337,
+        "ci95_high": -0.02898550724637683,
+        "candidate_mean": 0.417910447761194,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.12621359223300976,
+        "ci95_low": -0.22389333818711324,
+        "ci95_high": -0.03837064676616963,
+        "candidate_mean": 0.5485436893203883,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R1-B-MU_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 156.02569772440518,
+        "ci95_low": 84.46820088789309,
+        "ci95_high": 230.6199388688727,
+        "candidate_mean": 507.3187410568127,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_no_polymorph_discrimination"
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_no_polymorph_discrimination"
+      }
+    },
+    "R1-C-DELTA_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.2099635025663602,
+        "ci95_low": -4.148865099720703,
+        "ci95_high": 1.8687114774418356,
+        "candidate_mean": 38.06661132782257,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.8625461615382761,
+        "ci95_low": -3.6283679218144433,
+        "ci95_high": 2.058600631568046,
+        "candidate_mean": 35.625669055451176,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.5666077365775628,
+        "ci95_low": -4.164775490792625,
+        "ci95_high": 1.1578900094930908,
+        "candidate_mean": 30.43861262517706,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.02985074626865669,
+        "ci95_low": -0.10447761194029848,
+        "ci95_high": 0.042857142857142816,
+        "candidate_mean": 0.5671641791044776,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.009708737864077666,
+        "ci95_low": -0.038461538461538436,
+        "ci95_high": 0.05339805825242716,
+        "candidate_mean": 0.6844660194174758,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R1-D-COMBINED_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 155.2555970957958,
+        "ci95_low": 83.16576766855786,
+        "ci95_high": 231.41979630254522,
+        "candidate_mean": 507.78062887437846,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.2099635025663886,
+        "ci95_low": -4.089396408742056,
+        "ci95_high": 1.7837689623194801,
+        "candidate_mean": 38.06661132782254,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.8625461615383045,
+        "ci95_low": -3.7595043828464143,
+        "ci95_high": 1.8548360931908667,
+        "candidate_mean": 35.62566905545115,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 156.02569772440518,
+        "ci95_low": 81.34911499815509,
+        "ci95_high": 231.11333542838108,
+        "candidate_mean": 507.3187410568127,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.566607736577577,
+        "ci95_low": -4.10259174568915,
+        "ci95_high": 1.1436178635564405,
+        "candidate_mean": 30.438612625177047,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.02985074626865669,
+        "ci95_low": -0.10148657289002563,
+        "ci95_high": 0.04349424552429667,
+        "candidate_mean": 0.5671641791044776,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.009708737864077666,
+        "ci95_low": -0.033984726497750396,
+        "ci95_high": 0.05340457021075059,
+        "candidate_mean": 0.6844660194174758,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R2-REF8_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 2.0354453340587497e-05,
+        "ci95_low": -5.458312597284021e-06,
+        "ci95_high": 4.6192148072066165e-05,
+        "candidate_mean": 352.525052133036,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 7.912113403563126e-06,
+        "ci95_low": -8.676867101620189e-06,
+        "ci95_high": 2.4145175877698923e-05,
+        "candidate_mean": 39.276582742502335,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 7.980263291074152e-06,
+        "ci95_low": -5.075247647567949e-06,
+        "ci95_high": 2.154298372616381e-05,
+        "candidate_mean": 36.48822319725274,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 2.546722384977329e-05,
+        "ci95_low": -7.376726344432426e-07,
+        "ci95_high": 5.103350464850109e-05,
+        "candidate_mean": 351.2930687996314,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 3.8091778264970344e-06,
+        "ci95_low": -6.722552700377804e-06,
+        "ci95_high": 1.5092830414431543e-05,
+        "candidate_mean": 32.00522417093245,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "candidate_mean": 0.5970149253731343,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "candidate_mean": 0.6747572815533981,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R2-SMALL4_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": -15.018278536792991,
+        "ci95_low": -34.660862083204876,
+        "ci95_high": 7.042870035366038,
+        "candidate_mean": 337.5067532417897,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 1.0849376673562645,
+        "ci95_low": -0.007379749664124083,
+        "ci95_high": 2.177904302848464,
+        "candidate_mean": 40.361512497745196,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.39784917345235016,
+        "ci95_low": -0.8388022831499857,
+        "ci95_high": 1.4655046512578038,
+        "candidate_mean": 36.8860643904418,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": -14.74624264594371,
+        "ci95_low": -36.84305046017202,
+        "ci95_high": 8.152220988248812,
+        "candidate_mean": 336.5468006864638,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.5736228331004867,
+        "ci95_low": -0.3285966481651948,
+        "ci95_high": 1.421201552178887,
+        "candidate_mean": 32.57884319485511,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.01492537313432829,
+        "ci95_low": -0.04615384615384621,
+        "ci95_high": 0.0,
+        "candidate_mean": 0.582089552238806,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.004854368932038833,
+        "ci95_low": -0.025000000000000022,
+        "ci95_high": 0.014707693422196511,
+        "candidate_mean": 0.6699029126213593,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R3-DROP30_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 15.43993245031669,
+        "ci95_low": -2.806305512017415,
+        "ci95_high": 34.48286603533522,
+        "candidate_mean": 367.96496422889936,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.7710993949597267,
+        "ci95_low": -3.202721997380166,
+        "ci95_high": -0.43469723462780124,
+        "candidate_mean": 37.505475435429204,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.563308596803843,
+        "ci95_low": -2.7067097018170823,
+        "ci95_high": -0.32984996367697456,
+        "candidate_mean": 34.92490662018561,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 15.278968861877615,
+        "ci95_low": -4.220505171160194,
+        "ci95_high": 34.84589361938607,
+        "candidate_mean": 366.57201219428515,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.775448872569541,
+        "ci95_low": -2.7587383985753187,
+        "ci95_high": -0.8313641949937584,
+        "candidate_mean": 30.229771489185083,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.029850746268656803,
+        "ci95_low": 0.0,
+        "ci95_high": 0.07465513342379008,
+        "candidate_mean": 0.6268656716417911,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.03398058252427183,
+        "ci95_low": 0.014354066985645897,
+        "ci95_high": 0.05882352941176472,
+        "candidate_mean": 0.7087378640776699,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R3-EARLY8_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 66.84253514298007,
+        "ci95_low": 40.61346770419746,
+        "ci95_high": 93.2191664214596,
+        "candidate_mean": 419.36756692156274,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.2301712318874536,
+        "ci95_low": -1.0102643642872011,
+        "ci95_high": 1.6970284258820125,
+        "candidate_mean": 39.506746062276385,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.4882810479891333,
+        "ci95_low": -0.6238068905222945,
+        "ci95_high": 1.6550265379341744,
+        "candidate_mean": 36.976496264978586,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 66.49746464124411,
+        "ci95_low": 40.08969693379948,
+        "ci95_high": 94.144178120379,
+        "candidate_mean": 417.79050797365164,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.05831680704436337,
+        "ci95_low": -0.922866269226766,
+        "ci95_high": 1.0783250881333224,
+        "candidate_mean": 32.06353716879899,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.0,
+        "ci95_low": -0.044117647058823595,
+        "ci95_high": 0.04477611940298498,
+        "candidate_mean": 0.5970149253731343,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.01941747572815533,
+        "ci95_low": -0.009708737864077666,
+        "ci95_high": 0.04878048780487798,
+        "candidate_mean": 0.6941747572815534,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R3-WD1E2_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.2533359357568088,
+        "ci95_low": 0.10004762400574663,
+        "ci95_high": 0.40846288533899416,
+        "candidate_mean": 352.7783677143395,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.0026450786992313624,
+        "ci95_low": -0.008488067597428105,
+        "ci95_high": 0.012734901130547626,
+        "candidate_mean": 39.27921990908816,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.00032969193111398454,
+        "ci95_low": -0.010252138572291259,
+        "ci95_high": 0.008428666307872134,
+        "candidate_mean": 36.48788552505834,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.2722554407042139,
+        "ci95_low": 0.11159402296361805,
+        "ci95_high": 0.4210664625952643,
+        "candidate_mean": 351.56529877311175,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.0014153551545916798,
+        "ci95_low": -0.008903441856925908,
+        "ci95_high": 0.005540656968794444,
+        "candidate_mean": 32.00380500660003,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "candidate_mean": 0.5970149253731343,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "candidate_mean": 0.6747572815533981,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R4-FIXED-FINAL_END_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": 155.2555970957958,
+        "ci95_low": 82.42227929202481,
+        "ci95_high": 232.7654497399479,
+        "candidate_mean": 507.78062887437846,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.2099635025663886,
+        "ci95_low": -4.237125435967626,
+        "ci95_high": 1.8404726621565084,
+        "candidate_mean": 38.06661132782254,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.8625461615383045,
+        "ci95_low": -3.624933756330229,
+        "ci95_high": 2.0015410941877625,
+        "candidate_mean": 35.62566905545115,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": 156.02569772440518,
+        "ci95_low": 83.50180234002474,
+        "ci95_high": 232.64013190734417,
+        "candidate_mean": 507.3187410568127,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.566607736577577,
+        "ci95_low": -4.23237586191558,
+        "ci95_high": 1.0384114728108347,
+        "candidate_mean": 30.438612625177047,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.02985074626865669,
+        "ci95_low": -0.10294117647058831,
+        "ci95_high": 0.04347826086956519,
+        "candidate_mean": 0.5671641791044776,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": 0.009708737864077666,
+        "ci95_low": -0.03431372549019607,
+        "ci95_high": 0.05392156862745101,
+        "candidate_mean": 0.6844660194174758,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R4-FIXED-FINAL_MEAN_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": -122.46368426935621,
+        "ci95_low": -160.88704528296307,
+        "ci95_high": -80.3585987047545,
+        "candidate_mean": 230.06134750922647,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.1681292412709467,
+        "ci95_low": -5.378123756571468,
+        "ci95_high": 3.055461175836631,
+        "candidate_mean": 38.108445589117984,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": -0.7997944117277598,
+        "ci95_low": -4.372427813339801,
+        "ci95_high": 2.889921836384086,
+        "candidate_mean": 35.68842080526169,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": -123.58989110146766,
+        "ci95_low": -166.18991460412536,
+        "ci95_high": -80.86467169547834,
+        "candidate_mean": 227.70315223093988,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": -1.1920314667045915,
+        "ci95_low": -4.301880004214819,
+        "ci95_high": 2.0513809430341094,
+        "candidate_mean": 30.813188895050033,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.04477611940298498,
+        "ci95_low": -0.1667307692307693,
+        "ci95_high": 0.0795238095238087,
+        "candidate_mean": 0.5522388059701493,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.043689320388349495,
+        "ci95_low": -0.1188320147804254,
+        "ci95_high": 0.02912976556950032,
+        "candidate_mean": 0.6310679611650486,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R4-SELECTED-2COMP_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": -134.98290520882549,
+        "ci95_low": -196.03164217638007,
+        "ci95_high": -74.79038123004892,
+        "candidate_mean": 217.5421265697572,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 1.7797516018960522,
+        "ci95_low": -2.6941671631866715,
+        "ci95_high": 6.144836059561836,
+        "candidate_mean": 41.05632643228498,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 1.3210114170197684,
+        "ci95_low": -2.369081148152983,
+        "ci95_high": 5.017072388501126,
+        "candidate_mean": 37.80922663400922,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": -137.68137147197146,
+        "ci95_low": -198.3615727309371,
+        "ci95_high": -72.50581732398486,
+        "candidate_mean": 213.61167186043608,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.8725042789963169,
+        "ci95_low": -2.718693320008274,
+        "ci95_high": 4.42482994522225,
+        "candidate_mean": 32.87772464075094,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.08955223880597007,
+        "ci95_low": -0.208955223880597,
+        "ci95_high": 0.02941176470588236,
+        "candidate_mean": 0.5074626865671642,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.06310679611650494,
+        "ci95_low": -0.13235294117647056,
+        "ci95_high": 0.004854368932038833,
+        "candidate_mean": 0.6116504854368932,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R4-SELECTED-ABSOLUTE_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": -199.25685647355184,
+        "ci95_low": -262.308100391516,
+        "ci95_high": -132.37094346263913,
+        "candidate_mean": 153.26817530503084,
+        "reference_mean": 352.5250317785827
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 60.20992238860784,
+        "ci95_low": 44.822945435822156,
+        "ci95_high": 75.65229368385774,
+        "candidate_mean": 99.48649721899677,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 64.59490275209953,
+        "ci95_low": 49.573968223485394,
+        "ci95_high": 78.51235817554526,
+        "candidate_mean": 101.08311796908899,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": -225.74248022706675,
+        "ci95_low": -294.4650600547659,
+        "ci95_high": -158.1784201417052,
+        "candidate_mean": 125.55056310534079,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 55.91174885311844,
+        "ci95_low": 43.96349955822576,
+        "ci95_high": 67.2100837109141,
+        "candidate_mean": 87.91696921487306,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.2388059701492537,
+        "ci95_low": -0.3880597014925373,
+        "ci95_high": -0.09227272727272746,
+        "candidate_mean": 0.3582089552238806,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.14077669902912626,
+        "ci95_low": -0.22966507177033485,
+        "ci95_high": -0.04797794117647107,
+        "candidate_mean": 0.5339805825242718,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R4-SELECTED-DELTA_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": 1.7797516018960735,
+        "ci95_low": -2.5264196721473686,
+        "ci95_high": 6.128866117139735,
+        "candidate_mean": 41.056326432285005,
+        "reference_mean": 39.27657483038893
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": 1.321011417019804,
+        "ci95_low": -2.294858744365251,
+        "ci95_high": 4.779774210060827,
+        "candidate_mean": 37.809226634009256,
+        "reference_mean": 36.48821521698945
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": 0.8725042789963524,
+        "ci95_low": -2.5724465631683295,
+        "ci95_high": 4.340337581025501,
+        "candidate_mean": 32.87772464075098,
+        "reference_mean": 32.005220361754624
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.08955223880597007,
+        "ci95_low": -0.2031939338235294,
+        "ci95_high": 0.02941176470588236,
+        "candidate_mean": 0.5074626865671642,
+        "reference_mean": 0.5970149253731343
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": -0.06310679611650494,
+        "ci95_low": -0.13727180527383373,
+        "ci95_high": 0.009708737864077669,
+        "candidate_mean": 0.6116504854368932,
+        "reference_mean": 0.6747572815533981
+      }
+    },
+    "R4-SELECTED-MU_minus_H2": {
+      "MAE_absolute_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_GS_anchored_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_delta_own_min_legacy_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "MAE_mu_mev_atom": {
+        "difference_mean_candidate_minus_reference": -137.68137147197154,
+        "ci95_low": -201.33118630585076,
+        "ci95_high": -79.60667301733305,
+        "candidate_mean": 213.611671860436,
+        "reference_mean": 351.29304333240754
+      },
+      "MAE_delta_centered_mev_atom": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_for_component_only_target"
+      },
+      "GS_accuracy": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_no_polymorph_discrimination"
+      },
+      "pairwise_accuracy": {
+        "difference_mean_candidate_minus_reference": null,
+        "ci95_low": null,
+        "ci95_high": null,
+        "candidate_mean": null,
+        "reference_mean": null,
+        "status": "not_applicable_no_polymorph_discrimination"
+      }
+    }
+  }
+}

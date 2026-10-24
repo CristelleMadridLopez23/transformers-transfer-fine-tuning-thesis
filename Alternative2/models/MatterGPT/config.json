@@ -1,0 +1,29 @@
+{
+    "model_type": "gpt",
+    "architectures": [
+      "GPT"
+    ],
+    "vocab_size": 132,
+    "block_size": 397,
+    "n_layer": 12,
+    "n_head": 12,
+    "n_embd": 768,
+    "num_props": 2,
+    "activation_function": "gelu_new",
+    "resid_pdrop": 0.1,
+    "embd_pdrop": 0.1,
+    "attn_pdrop": 0.1,
+    "layer_norm_epsilon": 1e-5,
+    "initializer_range": 0.02,
+    "summary_type": "cls_index",
+    "summary_use_proj": true,
+    "summary_activation": null,
+    "summary_proj_to_labels": true,
+    "summary_first_dropout": 0.1,
+    "scale_attn_weights": true,
+    "use_cache": true,
+    "bos_token_id": 130,
+    "eos_token_id": 131,
+    "lstm": false,
+    "lstm_layers": 0
+  }

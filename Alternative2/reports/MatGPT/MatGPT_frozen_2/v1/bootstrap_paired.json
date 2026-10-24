@@ -1,0 +1,135 @@
+{
+  "method": "paired bootstrap over development compositions; seeds averaged within composition",
+  "replicates": 2000,
+  "seed": 13072026,
+  "groups": 70,
+  "interpretation": "exploratory intervals; not proof of superiority",
+  "comparisons": {
+    "H1_minus_H0": {
+      "absolute_mae_mev_atom": {
+        "difference_mean_a_minus_b": -180.61484015146638,
+        "ci95_low": -275.4338406369622,
+        "ci95_high": -79.71798192192863
+      },
+      "delta_anchored_mae_mev_atom": {
+        "difference_mean_a_minus_b": 1.4663829892992828,
+        "ci95_low": -0.4459680714145083,
+        "ci95_high": 3.4939314643600454
+      },
+      "delta_own_mae_mev_atom": {
+        "difference_mean_a_minus_b": 1.8266937929768878,
+        "ci95_low": -0.02602533892534556,
+        "ci95_high": 3.786684991741492
+      },
+      "mae_mean_component_mev_atom": {
+        "difference_mean_a_minus_b": -180.97335388708146,
+        "ci95_low": -276.7336369759461,
+        "ci95_high": -78.96096558429501
+      },
+      "mae_centered_residual_mev_atom": {
+        "difference_mean_a_minus_b": 1.2256633017128356,
+        "ci95_low": -0.5441407681894272,
+        "ci95_high": 3.0625771354818427
+      },
+      "range_abs_error_mev_atom": {
+        "difference_mean_a_minus_b": 3.8335038699276605,
+        "ci95_low": -0.025359949280818812,
+        "ci95_high": 8.015591624010083
+      },
+      "gs_correct": {
+        "difference_mean_a_minus_b": 0.014285714285714285,
+        "ci95_low": -0.0461538461538461,
+        "ci95_high": 0.08823529411764708
+      },
+      "pairwise_accuracy": {
+        "difference_mean_a_minus_b": 0.002380952380952383,
+        "ci95_low": -0.038461538461538436,
+        "ci95_high": 0.05339805825242716
+      }
+    },
+    "H2_minus_H0": {
+      "absolute_mae_mev_atom": {
+        "difference_mean_a_minus_b": -376.55781644191353,
+        "ci95_low": -473.12641149973336,
+        "ci95_high": -278.4471168699789
+      },
+      "delta_anchored_mae_mev_atom": {
+        "difference_mean_a_minus_b": 1.2905777263145002,
+        "ci95_low": -1.6372245840424526,
+        "ci95_high": 3.9526407420458467
+      },
+      "delta_own_mae_mev_atom": {
+        "difference_mean_a_minus_b": 1.2417780134905023,
+        "ci95_low": -1.3584159705557226,
+        "ci95_high": 3.9473356137199427
+      },
+      "mae_mean_component_mev_atom": {
+        "difference_mean_a_minus_b": -377.7898048880886,
+        "ci95_low": -474.94306556400136,
+        "ci95_high": -282.90916922855627
+      },
+      "mae_centered_residual_mev_atom": {
+        "difference_mean_a_minus_b": 1.3797759385904749,
+        "ci95_low": -0.5840457862500417,
+        "ci95_high": 3.472118352610387
+      },
+      "range_abs_error_mev_atom": {
+        "difference_mean_a_minus_b": -1.0235324083125177,
+        "ci95_low": -6.637214196450319,
+        "ci95_high": 4.143703908137781
+      },
+      "gs_correct": {
+        "difference_mean_a_minus_b": 0.02857142857142857,
+        "ci95_low": -0.03252304147465433,
+        "ci95_high": 0.09539337474119998
+      },
+      "pairwise_accuracy": {
+        "difference_mean_a_minus_b": -0.0047619047619047615,
+        "ci95_low": -0.04807692307692302,
+        "ci95_high": 0.04807692307692302
+      }
+    },
+    "H2_minus_H1": {
+      "absolute_mae_mev_atom": {
+        "difference_mean_a_minus_b": -195.9429762904471,
+        "ci95_low": -271.0691989938325,
+        "ci95_high": -125.79794594739751
+      },
+      "delta_anchored_mae_mev_atom": {
+        "difference_mean_a_minus_b": -0.17580526298478227,
+        "ci95_low": -2.2154989868795703,
+        "ci95_high": 1.743881885050391
+      },
+      "delta_own_mae_mev_atom": {
+        "difference_mean_a_minus_b": -0.5849157794863844,
+        "ci95_low": -2.57869903369471,
+        "ci95_high": 1.4237855918242408
+      },
+      "mae_mean_component_mev_atom": {
+        "difference_mean_a_minus_b": -196.81645100100715,
+        "ci95_low": -269.7990511030481,
+        "ci95_high": -120.71343842803543
+      },
+      "mae_centered_residual_mev_atom": {
+        "difference_mean_a_minus_b": 0.15411263687763999,
+        "ci95_low": -1.6993942702030682,
+        "ci95_high": 1.8418106838267567
+      },
+      "range_abs_error_mev_atom": {
+        "difference_mean_a_minus_b": -4.8570362782401775,
+        "ci95_low": -9.65610393616119,
+        "ci95_high": -0.18329176998162783
+      },
+      "gs_correct": {
+        "difference_mean_a_minus_b": 0.014285714285714285,
+        "ci95_low": -0.045454545454545414,
+        "ci95_high": 0.078125
+      },
+      "pairwise_accuracy": {
+        "difference_mean_a_minus_b": -0.007142857142857144,
+        "ci95_low": -0.048309178743961345,
+        "ci95_high": 0.02898550724637683
+      }
+    }
+  }
+}

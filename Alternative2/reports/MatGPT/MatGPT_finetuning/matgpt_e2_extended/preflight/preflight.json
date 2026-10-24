@@ -1,0 +1,53 @@
+{
+  "status": "PASS_WITH_PROTOCOL_NOTE",
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "source_commit": "a2eaee254bc829f0cc19edce5cbf27bbc3d35d5e",
+  "source_files_sha256": {
+    "dataset.csv": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+    "fold_assignments.csv": "0b1b0c2c7584729377fb39c54b9ff14ae17ccf73b731c26cf267037b592519c9",
+    "model_info_property_0.json": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee"
+  },
+  "vocabulary_size": 172,
+  "block_size": 442,
+  "historical_sequences_tokenizable": true,
+  "strategy4_prefix_tokens_missing_from_vocab": [
+    "OOO",
+    "j",
+    "o",
+    "y"
+  ],
+  "audited_e2a_representation": "strategy3-like matgpt_slices, verified by the executable E2-A code",
+  "protocol_resolution": "New augmentation must use the E2-A-compatible strategy-3 representation; strategy 4 is not tokenizable by the pinned vocabulary and will not be silently remapped.",
+  "development_rows": 210,
+  "development_compositions": 70,
+  "historical_test_rows_excluded": 24,
+  "historical_test_compositions_excluded": 8,
+  "folds": [
+    {
+      "fold": 0,
+      "rows": 210,
+      "outer_validation": 42
+    },
+    {
+      "fold": 1,
+      "rows": 210,
+      "outer_validation": 42
+    },
+    {
+      "fold": 2,
+      "rows": 210,
+      "outer_validation": 42
+    },
+    {
+      "fold": 3,
+      "rows": 210,
+      "outer_validation": 42
+    },
+    {
+      "fold": 4,
+      "rows": 210,
+      "outer_validation": 42
+    }
+  ],
+  "device_probe": null
+}

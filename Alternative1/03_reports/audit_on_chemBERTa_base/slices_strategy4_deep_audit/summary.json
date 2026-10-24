@@ -1,0 +1,92 @@
+{
+  "input": "data/notebooks_processing/outputs/to_SLICES_output/figures/alexandria_clean_all.csv",
+  "columns": {
+    "id": "mat_id",
+    "prototype": "prototype_id",
+    "structure": null,
+    "slices": "slices"
+  },
+  "counts": {
+    "rows_total": 99998,
+    "eligible": 98394,
+    "over_512_lexical": 1675,
+    "excluded_full": 1604,
+    "tokenizer_collisions_rows": 5802
+  },
+  "unique_lexical_units": 320,
+  "lexical_length_plus_2_special_tokens": {
+    "min": 23,
+    "median": 114.0,
+    "p95": 351,
+    "p99": 611,
+    "max": 2861
+  },
+  "lexical_over_512_rate": 0.017023,
+  "atom_count_inferred": {
+    "min": 1,
+    "median": 8.0,
+    "p95": 24,
+    "p99": 56,
+    "max": 152
+  },
+  "edge_triplets_inferred": {
+    "min": 4,
+    "median": 32.0,
+    "p95": 107,
+    "p99": 185,
+    "max": 900
+  },
+  "unique_compositions_derived_from_species": 96260,
+  "unique_header_templates": 194,
+  "index_max_observed": 151,
+  "unique_jimage_vectors": 27,
+  "jimage_component_counts": [
+    {
+      "o": 2911450,
+      "-": 658440,
+      "+": 651888
+    },
+    {
+      "-": 631252,
+      "o": 3017122,
+      "+": 573404
+    },
+    {
+      "o": 3220266,
+      "-": 533790,
+      "+": 467722
+    }
+  ],
+  "duplicate_evidence": {
+    "slices_equal_after_normalize": 0,
+    "repeated_material_ids_rows": 0,
+    "identical_full_structure_json_rows": null,
+    "caveat": "Misma composición y prototipo NO prueban cristales equivalentes. SLICES distintos NO prueban estructuras distintas. Igualdad de JSON solo detecta idénticos literales normalizados."
+  },
+  "tokenizer": {
+    "path": "model-pretrained/chemberta-77m-mlm",
+    "vocab_size": 593,
+    "is_fast": true,
+    "pad_token_id": 0,
+    "isolated_units": 320,
+    "isolated_units_lossless": 168,
+    "isolated_units_in_vocab_exact": 24,
+    "isolated_units_single_piece": 81,
+    "context_samples": 1000,
+    "context_nonspace_roundtrip_ok": 0,
+    "context_exact_roundtrip_ok": 0,
+    "sample_collision_examples": 1,
+    "full_tokenization": true,
+    "full_tokenization_collision_rows": 5802,
+    "note": "No equiparar in_vocab_exact, offsets o roundtrip con cobertura semántica; validar colisiones explícitas."
+  },
+  "structure_matcher_subset": null,
+  "method_notes": [
+    "Parser de strategy=4 basado en tripletas finales (indice, indice, vector de tres caracteres o/+/−); no sustituye SLICES.check_SLICES.",
+    "La segmentación por espacios es exploratoria y no asegura compatibilidad posicional con ChemBERTa.",
+    "Vocabulario=conjunto de unidades completas, no cobertura real del tokenizer. La cobertura se evalúa por decodificación aislada y contexto.",
+    "Las pruebas de offsets indican qué caracteres se enlazaron a tokens; NO garantizan que se conserve su valor.",
+    "La prueba de colisiones completa no aplica truncamiento. La de contexto usa muestreo reproducible.",
+    "La comparación geométrica (si se solicita) es parcial y acotada; ausencia de matches no implica unicidad cristalográfica."
+  ]
+}

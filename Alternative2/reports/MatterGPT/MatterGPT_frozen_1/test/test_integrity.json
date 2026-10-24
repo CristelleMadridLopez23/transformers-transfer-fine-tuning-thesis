@@ -1,0 +1,9 @@
+{
+  "compositions": 8,
+  "dataset_source_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "lock_sha256": "fd84451af762328463b8c7b432616ed30b0de421d446d36a9e7e6b33e3cdb32e",
+  "m3a_ranking_same_as_m2": true,
+  "status": "PASS",
+  "test_ids": 24,
+  "test_labels_read_after_lock": true
+}
