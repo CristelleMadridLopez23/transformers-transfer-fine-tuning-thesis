@@ -1,0 +1,3 @@
+                condition  mae_energy_per_atom_mev  mae_delta_pairs_mev  ground_state_eligible_accuracy  pairwise_accuracy_gt5
+              slices_only               183.163716            58.596364                        0.547264               0.663283
+slices_plus_cell_geometry               182.385180            56.272896                        0.542289               0.686971

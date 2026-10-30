@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "figures": {
+    "01_energia_absoluta.png": "891b28c6fdd63426a55742237c60dfe1372cc351792e0e6c91dbfa9a3b8da0ea",
+    "02_residuos_intraformula.png": "9ca09bae272ab3b9b0972fe1975fa9729b92c07c40b7dbad2ab173cd7a501f59",
+    "03_diferencias_pares.png": "5c728799d4cebcd56f1947c7114d210d4ba0f1d393f5a615064a77368e76b7f3",
+    "04_resumen_controles.png": "f1e94c7b220ef2e5c696b65e9d1cee7c8146de1afccf2d08fcafe2722145e3f8",
+    "05_error_segun_gap.png": "6e321faa4846dfa68d73a21f5dd5374c2324623be797f6b6e5e64ccd11ae1e26",
+    "06_distancia_embeddings_gap.png": "f75de3346304f54734994519420862ee34a8ebc8d1321187b3cf2ef98c18c67c"
+  },
+  "historical_test_accessed": false
+}

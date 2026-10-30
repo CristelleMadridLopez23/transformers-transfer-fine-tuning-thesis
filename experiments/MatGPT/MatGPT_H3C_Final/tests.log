@@ -1,0 +1,25 @@
+test_architecture_exact (test_lock.H3CLockTests)
+Cambios de capas, ancho, activación o dropout invalidan el lock. ... ok
+test_checkpoint_and_tokenizer_hashes (test_lock.H3CLockTests)
+El backbone y vocabulario originales concuerdan con el lock. ... ok
+test_composition_identity_and_ties (test_lock.H3CLockTests)
+El control de fórmula no recibe pistas polimórficas ni adjudica empates. ... ok
+test_dataset_and_targets (test_lock.H3CLockTests)
+Cada ID conserva energía total y división exacta por número de átomos. ... ok
+test_energy_differences (test_lock.H3CLockTests)
+ΔE es antisimétrico y transitivo tras calcular E/N. ... ok
+test_feature_hash_and_shapes (test_lock.H3CLockTests)
+Ambas representaciones históricas tienen 210×768 y hash fijo. ... ok
+test_folds_and_no_leakage (test_lock.H3CLockTests)
+Se conservan los cinco pliegues históricos por composición. ... ok
+test_partner_context_is_not_independent (test_lock.H3CLockTests)
+El centrado residual depende del triplete; no se etiqueta Siamese independiente. ... ok
+test_random_control_hashes (test_lock.H3CLockTests)
+Tres inicializaciones congeladas poseen hashes distintos del checkpoint. ... ok
+test_replayed_predictions_match_historical (test_lock.H3CLockTests)
+Los 630 valores se reproducen al recargar checkpoints. ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.219s
+
+OK

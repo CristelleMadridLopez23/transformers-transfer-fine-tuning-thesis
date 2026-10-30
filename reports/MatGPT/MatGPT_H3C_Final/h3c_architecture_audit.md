@@ -1,0 +1,15 @@
+# Auditoría de arquitectura H3-C
+
+[HECHO VERIFICADO] La implementación histórica está en `Alternative2/scripts/MatGPT/MatGPT_frozen_3/hybrid_ridge_mlp8/`, principalmente `hybrid_predictor.py`, `run_cross_validation.py`, `common.py` y `config.yaml`. El modelo es **residual con dos ramas paralelas**. Ridge no alimenta a la MLP8.
+
+[HECHO VERIFICADO] El extractor es MatGPT incondicional preentrenado, 12 bloques, 12 cabezas, dimensión 768, vocabulario 172 y contexto 442. Checkpoint SHA-256: `4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414`. El cache de 210 estructuras lleva hash `2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62`. Se leen cadenas SLICES archivadas; `<start>`=155, `<end>`=156 y `<pad>`=157. No hubo truncamiento en el cache auditado; la posición de `<end>` y padding se validaron en su manifiesto. El Transformer se mantuvo congelado.
+
+[HECHO VERIFICADO] **Ridge:** `L03_MEAN` es el promedio de estados brutos del bloque 3 sobre tokens SLICES válidos, antes de `ln_f`, por estructura. Se promedian luego los tres embeddings de la fórmula. `StandardScaler` y `Ridge` (`lsqr`, tolerancia 1e−8, intercepto) predicen la media DFT por fórmula en eV/átomo. Alpha se eligió por error de validación interna de la media, entre `[0.01, 0.1, 1, 10, 100, 1000]`; selección por pliegue: `{'0': 100.0, '1': 10.0, '2': 10.0, '3': 10.0, '4': 0.01}`. Ridge se reajustó con las 56 fórmulas de entrenamiento externo. Tiene 768 coeficientes y un intercepto por pliegue.
+
+[HECHO VERIFICADO] **MLP8:** `FINAL_END` es el estado de `<end>` tras `ln_f`, antes de la cabeza generativa. Capas `Linear(768,8) → GELU → Dropout(0.1) → Linear(8,1)`, sin normalización entrenable; **6 161 parámetros**. La salida cruda de cada triplete se centra restando su media. La etiqueta es el residuo de **energía DFT por átomo** respecto a la media de su fórmula, en eV/átomo. SmoothL1 beta=1 recibe predicción y etiqueta divididas por la desviación residual de entrenamiento interno. AdamW: tasa 0.001, decay 0.0001, 8 fórmulas/lote, máximo 200 épocas, paciencia 20. La época minimiza SmoothL1 completa de validación interna; no se reajusta MLP8 después.
+
+[HECHO VERIFICADO] Predicción histórica: `e_i = μ_c^Ridge + [r_i − media_j(r_j)]` en eV/átomo. Energía total `E_i = N_i e_i` y diferencias `1000(e_B − e_A)` son conversiones posteriores. H3-C **no se entrenó con energía total ni con una pérdida pairwise**. Como las salidas se centran por triplete, la predicción estructural depende de los otros dos miembros; no se debe describir como inferencia independiente por estructura.
+
+[LIMITACIÓN] El código histórico conserva rutas internas anteriores a una reorganización del repositorio. La reproducción de solo lectura usa rutas actuales explícitas y recarga los checkpoints originales; no modifica el código ni los pesos históricos. Los resultados de desarrollo no son una validación externa ciega.
+
+Ver [diagrama auditado](figures/h3c_architecture.png), [fuente Mermaid](figures/h3c_architecture.mmd) y [bloqueo de configuración](../../../../scripts/MatGPT/MatGPT_H3C_Final/h3c_architecture_lock.yaml).

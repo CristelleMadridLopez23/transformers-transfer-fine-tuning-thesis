@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "entries": 210,
+  "source_counts": {
+    "gga-static_endpoint_cleaned": 210
+  },
+  "geometry_csv_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+  "descriptor_names": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "cell_reduction": "pymatgen primitive then Niggli reduction",
+  "shape": "a,b,c divided by cubic root of reduced primitive volume",
+  "volume": "original cell volume per atom",
+  "note": "Only metric lattice descriptors, not atomic local distances or forces"
+}

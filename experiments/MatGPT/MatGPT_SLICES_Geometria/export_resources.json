@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-10-28T23:44:31.540762+00:00",
+  "ended_at_utc": "2026-10-28T23:44:33.744120+00:00",
+  "wall_seconds": 2.2032719580456614,
+  "user_cpu_seconds": 1.348339,
+  "system_cpu_seconds": 0.28384,
+  "peak_rss_bytes": 317210624,
+  "exit_code": 0,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/exportar_geometria.py",
+    "--dataset",
+    "Alternative2/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+    "--structures-jsonl",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/structures_development.jsonl",
+    "--output",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv"
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/export.log"
+}

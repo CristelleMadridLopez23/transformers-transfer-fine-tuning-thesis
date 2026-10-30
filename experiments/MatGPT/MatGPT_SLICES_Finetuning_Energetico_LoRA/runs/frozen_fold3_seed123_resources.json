@@ -1,0 +1,21 @@
+{
+  "started_at_utc": "2026-10-29T02:41:03.284066+00:00",
+  "ended_at_utc": "2026-10-29T02:41:07.936649+00:00",
+  "wall_seconds": 4.6524453749880195,
+  "user_cpu_seconds": 3.052162,
+  "system_cpu_seconds": 0.712666,
+  "peak_rss_bytes": 1377894400,
+  "exit_code": 0,
+  "command": [
+    "/Users/cristellemadrid/miniforge3/envs/transformers-transfer-fine-tune-tesis/bin/python",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/experiment.py",
+    "train",
+    "--condition",
+    "frozen",
+    "--fold",
+    "3",
+    "--seed",
+    "123"
+  ],
+  "log": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123.log"
+}

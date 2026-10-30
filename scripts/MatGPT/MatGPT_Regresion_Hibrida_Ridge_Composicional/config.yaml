@@ -1,0 +1,23 @@
+experiment: ridge_composicional_mlp8_residual
+dataset: Alternative2/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+fold_manifest: Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv
+features:
+  kind: stoichiometric_element_fractions
+  ordered_elements: [Ba, Ca, Cd, Cu, Ge, Hf, Mg, Nb, Pb, S, Si, Sn, Sr, Ti, V, Zn, Zr]
+ridge:
+  alpha_candidates: [0.01, 0.1, 1, 10, 100, 1000]
+  scaler: StandardScaler
+  solver: lsqr
+  tolerance: 1.0e-8
+  fit_intercept: true
+split:
+  inner_train_compositions: 45
+  inner_validation_compositions: 11
+  outer_train_compositions: 56
+  outer_test_compositions: 14
+  outer_folds: 5
+residual_sources:
+  frozen: Alternative2/reports/MatGPT/MatGPT_SLICES_Finetuning_Energetico_LoRA/predicciones_outer_por_estructura.csv
+  lora: Alternative2/reports/MatGPT/MatGPT_SLICES_Finetuning_Energetico_LoRA/predicciones_outer_por_estructura.csv
+seeds: [42, 123, 2026]
+historical_test_accessed: false

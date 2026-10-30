@@ -1,0 +1,13 @@
+test_centered_and_permutation_equivariant (test_core.TestGeometryFusion) ... ok
+test_exact_same_initial_predictions (test_core.TestGeometryFusion) ... ok
+test_geometry_gradient (test_core.TestGeometryFusion) ... ok
+test_locked_dimensions (test_core.TestGeometryFusion) ... ok
+test_metric_truth (test_core.TestGeometryFusion) ... ok
+test_ridge_cancels_from_deltas (test_core.TestGeometryFusion) ... ok
+test_exact_ids_atoms_composition_and_source (test_real_geometry.RealGeometryTests)
+Cada ID de desarrollo aparece una vez con estructura original válida. ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.258s
+
+OK

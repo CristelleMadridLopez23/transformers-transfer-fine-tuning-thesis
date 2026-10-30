@@ -1,0 +1,61 @@
+status: LOCKED
+lock_basis: exact replay of 630 historical predictions from 15 MLP8 and five Ridge checkpoints
+dataset: 210 development structures; 70 formulas; three polymorphs each
+outer_folds: 5
+seeds: [42, 123, 2026]
+historical_test_access: forbidden
+extractor:
+  backbone: official unconditional MatGPT ModifiedTransformerDecoder
+  checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+  tokenizer_model_info_sha256: d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee
+  vocabulary: 172
+  context_tokens: 442
+  d_model: 768
+  decoder_blocks: 12
+  attention_heads: 12
+  frozen_parameters: 114026668
+  ridge_feature: L03_MEAN; raw block 3 states averaged over SLICES tokens, excluding start/end/pad
+  structural_feature: FINAL_END; post-ln_f state of actual end token, before language head
+  feature_cache_sha256: 2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62
+ridge:
+  topology: parallel compositional mean branch, not input to MLP8
+  input_dimensions: 768
+  output_dimensions: 1
+  output_target: mean DFT energy per atom for three polymorphs, eV/atom
+  scaler: sklearn StandardScaler fit on training formulas only
+  solver: lsqr
+  tolerance: 1.0e-8
+  intercept: true
+  alpha_candidates: [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0]
+  alpha_selection: minimum inner-validation composition-mean MAE
+  selected_alpha_by_fold: {0: 100.0, 1: 10.0, 2: 10.0, 3: 10.0, 4: 0.01}
+  refit: all 56 outer-training formulas after alpha selection
+  fitted_coefficients: 768 plus one intercept per fold
+structural_mlp8:
+  topology: parallel residual branch; shared per structure, centered over each three-polymorph formula
+  input_dimensions: 768
+  hidden_dimensions: [8]
+  output_dimensions: 1
+  linear_layers: 2
+  activation: GELU
+  dropout: 0.1
+  layer_norm: false
+  batch_norm: false
+  trainable_parameters: 6161
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  compositions_per_batch: 8
+  max_epochs: 200
+  early_stop_patience_epochs: 20
+  loss: SmoothL1 beta=1 on centered residuals divided by inner-train residual standard deviation
+  target: DFT energy per atom minus formula mean, eV/atom
+  selection: minimum full inner-validation normalized SmoothL1
+  after_selection_refit: false
+prediction:
+  energy_per_atom_ev: ridge_formula_mean + centered_mlp8_residual
+  energy_total_ev: atom_count times predicted_energy_per_atom_ev; derived, not historical training target
+  pair_difference_mev_atom: 1000 times difference of predicted per-atom energies within a formula
+  pair_loss_in_historical_training: false
+geometry_features: false
+architecture_search_after_lock: false

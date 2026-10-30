@@ -1,0 +1,19 @@
+flowchart LR
+  C[Composición química] --> V[17 fracciones estequiométricas]
+  V --> R[Ridge composicional fijo · μ_c]
+  A[SLICES_A + celda_A] --> M[Una instancia MatGPT adaptado + MLP8 · pesos compartidos]
+  B[SLICES_B + celda_B] --> M
+  D[SLICES_C + celda_C] --> M
+  M --> RA[Residuo centrado δ_A]
+  M --> RB[Residuo centrado δ_B]
+  M --> RC[Residuo centrado δ_C]
+  R --> EA[E/N_A = μ_c + δ_A]
+  R --> EB[E/N_B = μ_c + δ_B]
+  R --> EC[E/N_C = μ_c + δ_C]
+  RA --> EA
+  RB --> EB
+  RC --> EC
+  EA --> O[ΔE dentro de fórmula · argmin GS · ranking]
+  EB --> O
+  EC --> O
+  O --> ET[E_total = N · E/N]

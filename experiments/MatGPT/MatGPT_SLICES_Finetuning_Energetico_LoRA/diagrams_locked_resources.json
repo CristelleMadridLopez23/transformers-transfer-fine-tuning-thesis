@@ -1,0 +1,14 @@
+{
+  "started_at_utc": "2026-10-29T02:20:45.686260+00:00",
+  "ended_at_utc": "2026-10-29T02:20:47.183891+00:00",
+  "wall_seconds": 1.4975350410677493,
+  "user_cpu_seconds": 1.276011,
+  "system_cpu_seconds": 0.185777,
+  "peak_rss_bytes": 335822848,
+  "exit_code": 0,
+  "command": [
+    "/Users/cristellemadrid/miniforge3/envs/transformers-transfer-fine-tune-tesis/bin/python",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams.py"
+  ],
+  "log": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_locked.log"
+}

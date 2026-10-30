@@ -1,9 +1,0 @@
-target_kind,feature_variant,outer_folds_selected_inner_only
-absolute,L03_MEAN,5
-delta,L03_MEAN,1
-delta,L06_MEAN,1
-delta,L12_END,2
-delta,L12_MEAN,1
-mu,L03_MEAN,3
-mu,L06_MEAN,1
-mu,L12_MEAN,1

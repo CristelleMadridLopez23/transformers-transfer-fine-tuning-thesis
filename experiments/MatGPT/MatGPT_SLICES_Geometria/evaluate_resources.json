@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-28T23:51:50.904095+00:00",
+  "ended_at_utc": "2026-10-28T23:51:52.458681+00:00",
+  "wall_seconds": 1.554500250145793,
+  "user_cpu_seconds": 1.29833,
+  "system_cpu_seconds": 0.20332999999999998,
+  "peak_rss_bytes": 306053120,
+  "exit_code": 0,
+  "command": [
+    "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/.venv/bin/python",
+    "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/evaluar.py",
+    "--output",
+    "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/results"
+  ],
+  "log": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/evaluate.log"
+}

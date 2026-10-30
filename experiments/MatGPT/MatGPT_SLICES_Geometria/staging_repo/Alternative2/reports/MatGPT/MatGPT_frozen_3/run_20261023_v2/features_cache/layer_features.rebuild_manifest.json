@@ -1,0 +1,22 @@
+{
+  "status": "FAIL",
+  "rows": 210,
+  "features": [
+    "L03_END",
+    "L03_MEAN",
+    "L06_END",
+    "L06_MEAN",
+    "L09_END",
+    "L09_MEAN",
+    "L12_END",
+    "L12_MEAN",
+    "FINAL_END",
+    "FINAL_MEAN"
+  ],
+  "cache_sha256": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29",
+  "expected_sha256": "2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62",
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "historical_test_accessed": false,
+  "backbone_trainable_parameters": 0
+}

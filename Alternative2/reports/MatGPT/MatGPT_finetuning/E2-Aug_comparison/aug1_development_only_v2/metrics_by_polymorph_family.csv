@@ -1,7 +1,0 @@
-configuration,polymorph_family,n_oof_rows_structure_seed,absolute_mae_mev_atom,signed_bias_mev_atom
-E2-Aug1,dist_perovskite,210,726.9685689714287,-107.18712587142855
-E2-Aug1,hexagonal,210,725.736099142857,-101.11014912857138
-E2-Aug1,needle,210,726.6192365309524,-99.59470477857141
-E2-A-partial_ft,dist_perovskite,210,728.6274371904763,-110.72652491904762
-E2-A-partial_ft,hexagonal,210,729.628333738095,-102.53617341428567
-E2-A-partial_ft,needle,210,728.5891661452382,-102.2522328738095

@@ -1,0 +1,6 @@
+flowchart LR
+ S[SLICES] --> T[Tokenizer 172] --> B[Bloques 0-3 frozen]
+ B --> L[L03_MEAN 768] --> R[Scaler + Ridge frozen]
+ B --> U[Bloques 4-9 frozen; 10-11 LoRA Q/V] --> F[FINAL_END 768] --> H[MLP8 768-8-1]
+ H --> C[Residuo centrado] --> A[Sumar media Ridge]
+ R --> A --> E[E/N; E=N*e] --> D[Delta E y ranking]

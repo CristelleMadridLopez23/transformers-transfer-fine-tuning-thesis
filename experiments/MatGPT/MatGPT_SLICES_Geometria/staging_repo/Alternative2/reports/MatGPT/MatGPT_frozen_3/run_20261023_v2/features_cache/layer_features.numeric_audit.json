@@ -1,0 +1,23 @@
+{
+  "status": "PASS_NUMERIC",
+  "cache_sha256": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29",
+  "historical_cache_sha256": "2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62",
+  "bitwise_identical": false,
+  "max_pair_feature_differences": {
+    "L03_MEAN": {
+      "cosine": 6.034755473116604e-09,
+      "euclidean_raw": 1.3945812007420955e-06,
+      "euclidean_standardized": 1.2753547373733909e-06
+    },
+    "FINAL_END": {
+      "cosine": 4.455802706804235e-07,
+      "euclidean_raw": 7.222489778690999e-06,
+      "euclidean_standardized": 3.399578727680819e-05
+    }
+  },
+  "max_ridge_mean_difference_ev_atom": 4.76837158203125e-07,
+  "reference_pair_table_sha256": "476b16b8bb915e1aeb3b45eecc8c9d8a2077c9a66231b10295992149318a948e",
+  "reference_replayed_predictions_sha256": "56df6e54e00bc282515ff940844b4274941629a2ea65ce6c772f6c9449c48fbe",
+  "note": "Paridad numérica de distancias y rama Ridge; no equivalencia bit a bit del archivo NPZ.",
+  "historical_test_accessed": false
+}

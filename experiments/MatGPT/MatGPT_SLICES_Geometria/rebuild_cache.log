@@ -1,0 +1,70 @@
+/Users/cristellemadrid/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/b9/_45qj3r120309zcm5knw16k00000gn/T/matplotlib-4c22sr34 because there was an issue with the default path (/Users/cristellemadrid/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: Could not set the fontsize (invalid pixel size; error code 0x17)
+Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: Could not set the fontsize (invalid pixel size; error code 0x17)
+Failed to extract font properties from /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc: Can not load face (unknown file format; error code 0x2)
+Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
+generated new fontManager
+{"event": "embedding_progress", "processed": 4}
+{"event": "embedding_progress", "processed": 8}
+{"event": "embedding_progress", "processed": 12}
+{"event": "embedding_progress", "processed": 16}
+{"event": "embedding_progress", "processed": 20}
+{"event": "embedding_progress", "processed": 24}
+{"event": "embedding_progress", "processed": 28}
+{"event": "embedding_progress", "processed": 32}
+{"event": "embedding_progress", "processed": 36}
+{"event": "embedding_progress", "processed": 40}
+{"event": "embedding_progress", "processed": 44}
+{"event": "embedding_progress", "processed": 48}
+{"event": "embedding_progress", "processed": 52}
+{"event": "embedding_progress", "processed": 56}
+{"event": "embedding_progress", "processed": 60}
+{"event": "embedding_progress", "processed": 64}
+{"event": "embedding_progress", "processed": 68}
+{"event": "embedding_progress", "processed": 72}
+{"event": "embedding_progress", "processed": 76}
+{"event": "embedding_progress", "processed": 80}
+{"event": "embedding_progress", "processed": 84}
+{"event": "embedding_progress", "processed": 88}
+{"event": "embedding_progress", "processed": 92}
+{"event": "embedding_progress", "processed": 96}
+{"event": "embedding_progress", "processed": 100}
+{"event": "embedding_progress", "processed": 104}
+{"event": "embedding_progress", "processed": 108}
+{"event": "embedding_progress", "processed": 112}
+{"event": "embedding_progress", "processed": 116}
+{"event": "embedding_progress", "processed": 120}
+{"event": "embedding_progress", "processed": 124}
+{"event": "embedding_progress", "processed": 128}
+{"event": "embedding_progress", "processed": 132}
+{"event": "embedding_progress", "processed": 136}
+{"event": "embedding_progress", "processed": 140}
+{"event": "embedding_progress", "processed": 144}
+{"event": "embedding_progress", "processed": 148}
+{"event": "embedding_progress", "processed": 152}
+{"event": "embedding_progress", "processed": 156}
+{"event": "embedding_progress", "processed": 160}
+{"event": "embedding_progress", "processed": 164}
+{"event": "embedding_progress", "processed": 168}
+{"event": "embedding_progress", "processed": 172}
+{"event": "embedding_progress", "processed": 176}
+{"event": "embedding_progress", "processed": 180}
+{"event": "embedding_progress", "processed": 184}
+{"event": "embedding_progress", "processed": 188}
+{"event": "embedding_progress", "processed": 192}
+{"event": "embedding_progress", "processed": 196}
+{"event": "embedding_progress", "processed": 200}
+{"event": "embedding_progress", "processed": 204}
+{"event": "embedding_progress", "processed": 208}
+{"event": "embedding_progress", "processed": 210}
+{"event": "cache_rebuilt", "status": "FAIL", "sha256": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29"}
+Traceback (most recent call last):
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/rebuild_h3c_cache.py", line 132, in <module>
+    main()
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/rebuild_h3c_cache.py", line 128, in main
+    rebuild(args.repo_root, args.output)
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/rebuild_h3c_cache.py", line 117, in rebuild
+    raise ValueError("Cache reconstruido no coincide bit a bit con H3-C histórico")
+ValueError: Cache reconstruido no coincide bit a bit con H3-C histórico

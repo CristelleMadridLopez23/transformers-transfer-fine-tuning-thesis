@@ -1,0 +1,10 @@
+{
+  "comparacion_mae_residuos_ground_state_y_ranking.png": "2ff989cff092c9bf1b9a6c7e58f855917ad2918b5f6608f8b72964e4dded1962",
+  "diferencias_pareadas_con_intervalos_confianza.png": "f3e36289d990a2ebad632b712c5763fae5cca142357ffef5037098596d20ffb6",
+  "distribucion_descriptores_geometricos_de_celda.png": "3d37e6c8aeb776a4e3ecde8bf4f7c380ce0da69182722ac11e32b27fae3b59aa",
+  "error_diferencias_energeticas_por_magnitud_gap_dft.png": "ba0d59062bb291b83caa0b2e7f7835919e816ea8392c82da248509b5f8bd03ec",
+  "exactitud_ordenamiento_por_magnitud_gap_dft.png": "b34ca59b31ca2be5f02fdec648524531cac20d98920ce2b190578e58f17ed69d",
+  "paridad_diferencias_energeticas_entre_polimorfos.png": "6534f30987707416e25ff4084706973bbf9af78ea3974e38b103c484a45aa4ed",
+  "paridad_energia_por_atomo_slices_frente_a_geometria.png": "cdd7b60dac3e2c196f6525f3b5f5e2bf3ec8110e70acb2c6ed89cc6f4af5bd8b",
+  "paridad_residuos_energeticos_intraformula.png": "579ebf2cc14003da2ec6e7bff625b471079d1a7dfde73fbb19f35a729f643d96"
+}

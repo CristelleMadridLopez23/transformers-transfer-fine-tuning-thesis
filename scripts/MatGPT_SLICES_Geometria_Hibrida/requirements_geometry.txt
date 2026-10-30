@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+scikit-learn
+joblib
+torch
+matplotlib
+pymatgen
+tabulate

@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-10-28T23:47:54.841659+00:00",
+  "ended_at_utc": "2026-10-28T23:48:19.017483+00:00",
+  "wall_seconds": 24.17569545796141,
+  "user_cpu_seconds": 26.955316,
+  "system_cpu_seconds": 5.158804,
+  "peak_rss_bytes": 1398915072,
+  "exit_code": 1,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/rebuild_h3c_cache.py",
+    "--repo-root",
+    ".",
+    "--output",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_3/run_20261023_v2/features_cache/layer_features.npz"
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/rebuild_cache.log"
+}

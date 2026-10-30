@@ -1,0 +1,20 @@
+{
+  "started_at_utc": "2026-10-28T23:44:16.158499+00:00",
+  "ended_at_utc": "2026-10-28T23:44:16.896262+00:00",
+  "wall_seconds": 0.7376786670647562,
+  "user_cpu_seconds": 0.45094599999999996,
+  "system_cpu_seconds": 0.10471699999999999,
+  "peak_rss_bytes": 113328128,
+  "exit_code": 0,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/link_structures.py",
+    "--dataset",
+    "Alternative2/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+    "--source",
+    "Alternative2/01_data/abs3/only_hex_new/configurations_only_hex_new.extxyz",
+    "--output",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/structures_development.jsonl"
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/link.log"
+}

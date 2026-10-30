@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/preflight.py", line 48, in <module>
+    if __name__=='__main__':main()
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/preflight.py", line 47, in main
+    a=p.parse_args();inspect(a.repo_root,a.geometry_csv)
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/preflight.py", line 13, in inspect
+    if not paths[key].exists():raise FileNotFoundError(f'Archivo faltante {key}: {paths[key]}')
+FileNotFoundError: Archivo faltante folds: /Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv

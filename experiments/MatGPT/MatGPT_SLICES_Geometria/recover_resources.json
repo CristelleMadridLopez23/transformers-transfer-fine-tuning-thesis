@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-10-28T23:47:50.032871+00:00",
+  "ended_at_utc": "2026-10-28T23:47:50.279605+00:00",
+  "wall_seconds": 0.2466564578935504,
+  "user_cpu_seconds": 0.180675,
+  "system_cpu_seconds": 0.05946,
+  "peak_rss_bytes": 24625152,
+  "exit_code": 0,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/recover_inputs.py",
+    "--repo-root",
+    ".",
+    "--staging-root",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo"
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/recover.log"
+}

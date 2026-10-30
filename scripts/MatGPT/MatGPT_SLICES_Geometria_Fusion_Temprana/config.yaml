@@ -1,0 +1,63 @@
+experiment: MatGPT_SLICES_Geometria_Fusion_Temprana
+dataset:
+  path: reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+  geometry: experiments/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv
+  geometry_source: gga-static_endpoint_cleaned
+  structures: 210
+  compositions: 70
+  polymorphs_per_composition: 3
+  folds: 5
+  seeds: [42, 123, 2026]
+  historical_test_accessed: false
+geometry:
+  features:
+    - a_reduced_shape
+    - b_reduced_shape
+    - c_reduced_shape
+    - alpha_reduced_deg
+    - beta_reduced_deg
+    - gamma_reduced_deg
+    - volume_per_atom_ang3
+  scaler: StandardScaler
+  scaler_fit: 45 formulas in inner_train, separately per fold
+  projection: Linear(7, 768, bias=false)
+  projection_initialization: exact zeros
+  projection_trainable: true
+model:
+  checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+  tokenizer_sha256: d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee
+  hidden_size: 768
+  transformer_blocks: 12
+  pooling: contextualized <end> after ln_f
+  early_fusion: add projected cell vector to token_plus_position embeddings before transformer_decoder
+  late_fusion_control: add same projected cell vector after FINAL_END before MLP8
+  MLP8: Linear(768, 8) -> GELU -> Dropout(0.1) -> Linear(8, 1)
+  MLP8_parameters: 6161
+  ridge: reuse five historical compositional models, no refit
+conditions:
+  F0: []
+  F8: [4, 5, 6, 7, 8, 9, 10, 11]
+  fusion_modes: [early, late]
+  baseline_controls: [F0_SLICES, F8_SLICES]
+training:
+  device: cpu
+  num_threads: 2
+  optimizer: AdamW
+  transformer_learning_rate: 1.0e-5
+  mlp8_learning_rate: 1.0e-3
+  geometry_projection_learning_rate: 1.0e-3
+  transformer_weight_decay: 0.01
+  head_weight_decay: 0.0001
+  geometry_projection_weight_decay: 0.0001
+  batch_compositions: 8
+  max_epochs: 200
+  early_stopping_patience: 20
+  loss: SmoothL1(beta=1) on normalized centered residuals
+  target_scale: inner_train only
+  gradient_clipping: false
+  runs: 60
+statistics:
+  primary_estimand: A; seed runs averaged within formula
+  bootstrap_replicates: 10000
+  bootstrap_seed: 20261030
+  primary_contrast: F8_early minus F8_SLICES, MAE signed pairwise delta

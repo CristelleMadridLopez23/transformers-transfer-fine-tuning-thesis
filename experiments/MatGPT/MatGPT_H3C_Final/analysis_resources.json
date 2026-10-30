@@ -1,0 +1,22 @@
+{
+  "started_at_utc": "2026-10-28T19:52:06.081789+00:00",
+  "ended_at_utc": "2026-10-28T19:52:09.249647+00:00",
+  "wall_seconds": 3.16572720836848,
+  "user_cpu_seconds": 2.298861,
+  "system_cpu_seconds": 0.391244,
+  "peak_rss_bytes": 328499200,
+  "minor_page_faults": 40054,
+  "major_page_faults": 3925,
+  "voluntary_context_switches": 1962,
+  "involuntary_context_switches": 4396,
+  "exit_code": 0,
+  "launch_error": null,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT/MatGPT_H3C_Final/analyze.py"
+  ],
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.10.21 | packaged by conda-forge | (main, Aug 21 2026, 22:37:53) [Clang 19.1.7 ]",
+  "log_path": "Alternative2/reports/MatGPT/MatGPT_H3C_Final/analysis.log",
+  "resource_source": "resource.getrusage(RUSAGE_CHILDREN)"
+}

@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-10-29T02:24:51.211146+00:00",
+  "ended_at_utc": "2026-10-29T02:24:52.394660+00:00",
+  "wall_seconds": 1.1833959999494255,
+  "user_cpu_seconds": 0.89159,
+  "system_cpu_seconds": 0.160689,
+  "peak_rss_bytes": 263520256,
+  "exit_code": 1,
+  "command": [
+    "/Users/cristellemadrid/miniforge3/envs/transformers-transfer-fine-tune-tesis/bin/python",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/audit_invariance.py",
+    "--run",
+    "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42",
+    "--output",
+    "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_after_training.json"
+  ],
+  "log": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_corrected.log"
+}

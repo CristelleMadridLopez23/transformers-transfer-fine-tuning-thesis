@@ -1,0 +1,66 @@
+{
+  "status": "RUNNING",
+  "checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "geometry": {
+    "status": "PASS",
+    "entries": 210,
+    "source_counts": {
+      "gga-static_endpoint_cleaned": 210
+    },
+    "csv_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+    "manifest_sha256": "972ec31300f0aa54e9a34546aea2105e2e7ba7732bbf7052fdcc1b999840ac9a",
+    "structures_jsonl_sha256": "05d5a62658121741eebf60224f582ed1bce1fe0d0e033e6353bdddc91f042398"
+  },
+  "structures": 210,
+  "compositions": 70,
+  "folds": 5,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "tokenizer_sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+  "folds_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "conditions_requested": [
+    "F0_early",
+    "F8_early",
+    "F0_late",
+    "F8_late"
+  ],
+  "historical_test_accessed": false,
+  "ridge_retrained": false,
+  "geometry_parameters": 5376,
+  "mlp8_parameters": 6161,
+  "early_injection": "sum geometry_projection(scaled_cell) into token+position embeddings before transformer_decoder",
+  "late_injection": "sum same geometry_projection(scaled_cell) into FINAL_END before fixed MLP8",
+  "geometry_scaling": "StandardScaler fit per fold using only inner_train triplets",
+  "preflight_model_tests": {
+    "status": "PASS",
+    "zero_projection_equivalence": {
+      "F0_early_max_abs_error": 0.0,
+      "F0_early_projection_gradient_norm": 2312.873291015625,
+      "F0_late_max_abs_error": 0.0,
+      "F0_late_projection_gradient_norm": 7216.8583984375,
+      "F8_early_max_abs_error": 0.0,
+      "F8_early_projection_gradient_norm": 2312.873291015625,
+      "F8_late_max_abs_error": 0.0,
+      "F8_late_projection_gradient_norm": 7216.8583984375
+    }
+  },
+  "source_hashes": {
+    "dataset_csv": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+    "fold_assignments": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+    "geometry_csv": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+    "geometry_jsonl": "05d5a62658121741eebf60224f582ed1bce1fe0d0e033e6353bdddc91f042398",
+    "base_checkpoint": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+    "trainer_code": "42c3a1bf058add29090fa233d4e58ca09a73a691786b4c4c186e08eec65bb23b",
+    "analyzer_code": "e22b82ca5a4d0d1d8513d3969d19b1e2fc7108a15a80db1dd65e552419811996"
+  },
+  "ridge_sha256": {
+    "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+    "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+    "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+    "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+    "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+  }
+}

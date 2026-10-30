@@ -1,0 +1,21 @@
+flowchart TD
+    S["Tres SLICES originales de la misma fórmula"] --> T["MatGPT preentrenado · congelado · 12 bloques · d=768"]
+    T --> L["Bloque 3: L03_MEAN 768 × 3"]
+    T --> F["Token final: FINAL_END 768 × 3"]
+    L --> M["Promedio de 3 embeddings"]
+    M --> R["StandardScaler + Ridge histórico"]
+    R --> MU["Media de composición μc (eV/átomo)"]
+    C["Celda real: primitiva + Niggli"] --> G["7 descriptores globales de celda"]
+    G --> SC["StandardScaler SOLO train interno"]
+    SC --> J["Concatenación por estructura"]
+    F --> J
+    J --> N["MLP residual 775 → 8 → 1 · GELU · Dropout 0.1"]
+    N --> CENTER["Centrar tres residuos: δi = ri − media(r)"]
+    MU --> SUM["e_i = μc + δi (eV/átomo)"]
+    CENTER --> SUM
+    SUM --> RES["E_total,i = N_i · e_i · ΔE_AB, ΔE_AC, ΔE_BC · GS argmin"]
+    BASE["Control SLICES-only: FINAL_END 768 → 8 → 1"] --> CB["Mismos datos, Ridge, seeds y pérdidas"]
+    style T fill:#e6dffa,stroke:#7e68ac
+    style C fill:#d9efe5,stroke:#39916d
+    style R fill:#d9efe5,stroke:#39916d
+    style N fill:#f7e7ce,stroke:#c58b44

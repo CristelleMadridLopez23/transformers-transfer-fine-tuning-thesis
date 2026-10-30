@@ -1,0 +1,18 @@
+{
+  "started_at_utc": "2026-10-28T23:50:07.803342+00:00",
+  "ended_at_utc": "2026-10-28T23:50:09.954390+00:00",
+  "wall_seconds": 2.15095187490806,
+  "user_cpu_seconds": 1.394581,
+  "system_cpu_seconds": 0.35303,
+  "peak_rss_bytes": 310411264,
+  "exit_code": 0,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/preflight.py",
+    "--repo-root",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo",
+    "--geometry-csv",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv"
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/preflight_recovered.log"
+}

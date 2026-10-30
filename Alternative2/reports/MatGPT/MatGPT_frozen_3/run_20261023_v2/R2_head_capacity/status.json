@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "models": [
-    "R2-SMALL4",
-    "R2-REF8"
-  ],
-  "test_used": false
-}

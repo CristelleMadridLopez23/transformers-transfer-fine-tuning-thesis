@@ -1,7 +1,0 @@
-split_candidate,family,material_rows,unique_formula_keys,distinct_A_B_pairs
-train_candidate,ABS3,41,33,33
-train_candidate,ABSe3,48,32,32
-train_candidate,ABTe3,16,10,10
-validation,ABS3,7,7,7
-validation,ABSe3,8,8,8
-validation,ABTe3,1,1,1

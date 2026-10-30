@@ -1,0 +1,8 @@
+flowchart LR
+ A[SLICES A] --> M[MatGPT + LoRA compartidos]
+ B[SLICES B] --> M
+ C[SLICES C] --> M
+ M --> H[FINAL_END; MLP8 compartida]
+ H --> D[Residuos centrados]
+ R[Ridge media comun] --> E[e_A,e_B,e_C]
+ D --> E --> P[Delta E y argmin]

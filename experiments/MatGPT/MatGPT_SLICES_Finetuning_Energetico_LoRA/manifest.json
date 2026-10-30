@@ -1,0 +1,1629 @@
+{
+  "experiment_id": "MatGPT_SLICES_Finetuning_Energetico_LoRA",
+  "status": "COMPLETE",
+  "preflight_status": "PASS",
+  "protocol_config": "experiments/MatGPT_SLICES_Finetuning_Energetico_LoRA/config.yaml",
+  "source_hashes_sha256": {
+    "Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+    "Alternative2/models/MatGPT-source/mat-concat/mat-uncond/weights/model_info_property_0.json": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+    "Alternative2/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+    "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_3/run_20261023_v2/features_cache/layer_features.npz": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29",
+    "Alternative2/models/MatGPT-source/mat-concat/utils/models.py": "26590839b818a3996cc7f22b11fe060eb7dfc636c6e61fca001a368972ce2d90",
+    "Alternative2/models/MatGPT-source/mat-concat/config/uncond.yaml": "9eabe7a1d8e33636fcdfb2548d844aee16610edef8ea8312779375f6b7f1c5b1",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/write_manifest.py": "fa8b972457a031b8805090bdf155fe33ed4f8c5f7686e572f5d7111999d6274e",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/experiment.py": "322e746d66257a1db7e012220214e2af81fd8ba725c02aa487aab3113f923b76",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/lora_matgpt.py": "142ed5b1b7a37b0ac470e3c9b6601c562961f1e5e2f97f631954e7902f6dbd97",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/evaluate.py": "113798522366423d4423a553f652d8aa16020447c3c385f4f916df6041aff2ca",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures.py": "4b86cc64183561997fb50ea50bced46b8b897be1647a3aeab31ea187718d8d6a",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams.py": "c5681a6b0a44cf9431291570048705a60b7bb518b18c2415ab1aa002283f7216",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/write_reports.py": "efbb060d6e5418afbc81f15d6a0a8905719fe2c2467aab69732a961136486a6e",
+    "model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/tests/test_experiment.py": "ac92ef6c7c2071bea3fcfccfc37cfee9aed5f9812da9b808839e7d9416e0af81",
+    "sh_files/MatGPT_SLICES_Finetuning_Energetico_LoRA/run_all.sh": "92ff13ba95224d7aa50b8f90e27787748bb1b6d60cc43fec9c2c4d239ac75910",
+    "sh_files/MatGPT_SLICES_Finetuning_Energetico_LoRA/finalize_when_complete.sh": "5a5025dddf4133d7e1e51294070b77d5950deb35b9ece3909ead14df8268eeac",
+    "experiments/MatGPT_SLICES_Finetuning_Energetico_LoRA/config.yaml": "ac2c4f99211a676be194df74fa205c9869c59350fe3cf16354b5142378d33727"
+  },
+  "run_count": 30,
+  "expected_runs": 30,
+  "training_runs": [
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 0,
+      "seed": 123,
+      "best_epoch": 4,
+      "best_inner_loss": 0.16486671960658647,
+      "epochs": 24,
+      "optimizer_steps": 144,
+      "scale_ev_atom": 0.05259041488170624,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3857017089612782,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 0,
+      "seed": 2026,
+      "best_epoch": 4,
+      "best_inner_loss": 0.21642090210860426,
+      "epochs": 24,
+      "optimizer_steps": 144,
+      "scale_ev_atom": 0.05259041488170624,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.5092947501689196,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 0,
+      "seed": 42,
+      "best_epoch": 1,
+      "best_inner_loss": 0.18704409592530943,
+      "epochs": 21,
+      "optimizer_steps": 126,
+      "scale_ev_atom": 0.05259041488170624,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3126027910038829,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 1,
+      "seed": 123,
+      "best_epoch": 3,
+      "best_inner_loss": 0.1930831129535694,
+      "epochs": 23,
+      "optimizer_steps": 138,
+      "scale_ev_atom": 0.054165907204151154,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.37509029218927026,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 1,
+      "seed": 2026,
+      "best_epoch": 9,
+      "best_inner_loss": 0.14516884088516235,
+      "epochs": 29,
+      "optimizer_steps": 174,
+      "scale_ev_atom": 0.054165907204151154,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.43079391680657864,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 1,
+      "seed": 42,
+      "best_epoch": 12,
+      "best_inner_loss": 0.12545980157499964,
+      "epochs": 32,
+      "optimizer_steps": 192,
+      "scale_ev_atom": 0.054165907204151154,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.4681708747521043,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 2,
+      "seed": 123,
+      "best_epoch": 4,
+      "best_inner_loss": 0.22678097388283772,
+      "epochs": 24,
+      "optimizer_steps": 144,
+      "scale_ev_atom": 0.055687326937913895,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3742855410091579,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 2,
+      "seed": 2026,
+      "best_epoch": 5,
+      "best_inner_loss": 0.19235815962945874,
+      "epochs": 25,
+      "optimizer_steps": 150,
+      "scale_ev_atom": 0.055687326937913895,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3681457908824086,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 2,
+      "seed": 42,
+      "best_epoch": 9,
+      "best_inner_loss": 0.197226287627762,
+      "epochs": 29,
+      "optimizer_steps": 174,
+      "scale_ev_atom": 0.055687326937913895,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.4229223751462996,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 3,
+      "seed": 123,
+      "best_epoch": 3,
+      "best_inner_loss": 0.159272869117558,
+      "epochs": 23,
+      "optimizer_steps": 138,
+      "scale_ev_atom": 0.048704784363508224,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3594732922501862,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 3,
+      "seed": 2026,
+      "best_epoch": 3,
+      "best_inner_loss": 0.21314806213856421,
+      "epochs": 23,
+      "optimizer_steps": 138,
+      "scale_ev_atom": 0.048704784363508224,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3309885826893151,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 3,
+      "seed": 42,
+      "best_epoch": 6,
+      "best_inner_loss": 0.19092729315161705,
+      "epochs": 26,
+      "optimizer_steps": 156,
+      "scale_ev_atom": 0.048704784363508224,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.4057819996960461,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 4,
+      "seed": 123,
+      "best_epoch": 2,
+      "best_inner_loss": 0.3577320098464208,
+      "epochs": 22,
+      "optimizer_steps": 132,
+      "scale_ev_atom": 0.04977838322520256,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.3455460839904845,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 4,
+      "seed": 2026,
+      "best_epoch": 7,
+      "best_inner_loss": 0.2579715356908061,
+      "epochs": 27,
+      "optimizer_steps": 162,
+      "scale_ev_atom": 0.04977838322520256,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.4218210829421878,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "frozen",
+      "fold": 4,
+      "seed": 42,
+      "best_epoch": 12,
+      "best_inner_loss": 0.27603784474459564,
+      "epochs": 32,
+      "optimizer_steps": 192,
+      "scale_ev_atom": 0.04977838322520256,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 0.507679124828428,
+      "lora_parameters": 0,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 0,
+      "seed": 123,
+      "best_epoch": 2,
+      "best_inner_loss": 0.16609298835762523,
+      "epochs": 22,
+      "optimizer_steps": 132,
+      "scale_ev_atom": 0.05259041488170624,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 260.8211424583569,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 0,
+      "seed": 2026,
+      "best_epoch": 2,
+      "best_inner_loss": 0.20562777735970236,
+      "epochs": 22,
+      "optimizer_steps": 132,
+      "scale_ev_atom": 0.05259041488170624,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 288.05988412490115,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 0,
+      "seed": 42,
+      "best_epoch": 1,
+      "best_inner_loss": 0.18012213182042947,
+      "epochs": 21,
+      "optimizer_steps": 126,
+      "scale_ev_atom": 0.05259041488170624,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 208.3730836668983,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 1,
+      "seed": 123,
+      "best_epoch": 4,
+      "best_inner_loss": 0.1641120268455283,
+      "epochs": 24,
+      "optimizer_steps": 144,
+      "scale_ev_atom": 0.054165907204151154,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 249.86225883383304,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 1,
+      "seed": 2026,
+      "best_epoch": 4,
+      "best_inner_loss": 0.14042271902276712,
+      "epochs": 24,
+      "optimizer_steps": 144,
+      "scale_ev_atom": 0.054165907204151154,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 253.96036037476733,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 1,
+      "seed": 42,
+      "best_epoch": 2,
+      "best_inner_loss": 0.10571650076996196,
+      "epochs": 22,
+      "optimizer_steps": 132,
+      "scale_ev_atom": 0.054165907204151154,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 224.94014041684568,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 2,
+      "seed": 123,
+      "best_epoch": 3,
+      "best_inner_loss": 0.22953931606290015,
+      "epochs": 23,
+      "optimizer_steps": 138,
+      "scale_ev_atom": 0.055687326937913895,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 276.9115925412625,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 2,
+      "seed": 2026,
+      "best_epoch": 3,
+      "best_inner_loss": 0.1903046037663113,
+      "epochs": 23,
+      "optimizer_steps": 138,
+      "scale_ev_atom": 0.055687326937913895,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 246.73839191673324,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 2,
+      "seed": 42,
+      "best_epoch": 17,
+      "best_inner_loss": 0.1959297743371942,
+      "epochs": 37,
+      "optimizer_steps": 222,
+      "scale_ev_atom": 0.055687326937913895,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 374.09618624998257,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 3,
+      "seed": 123,
+      "best_epoch": 2,
+      "best_inner_loss": 0.19113717311781578,
+      "epochs": 22,
+      "optimizer_steps": 132,
+      "scale_ev_atom": 0.048704784363508224,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 229.74331666715443,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 3,
+      "seed": 2026,
+      "best_epoch": 3,
+      "best_inner_loss": 0.19577977285635742,
+      "epochs": 23,
+      "optimizer_steps": 138,
+      "scale_ev_atom": 0.048704784363508224,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 236.30413549998775,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 3,
+      "seed": 42,
+      "best_epoch": 5,
+      "best_inner_loss": 0.19490035995841026,
+      "epochs": 25,
+      "optimizer_steps": 150,
+      "scale_ev_atom": 0.048704784363508224,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 275.2847665422596,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 4,
+      "seed": 123,
+      "best_epoch": 2,
+      "best_inner_loss": 0.3405593923208388,
+      "epochs": 22,
+      "optimizer_steps": 132,
+      "scale_ev_atom": 0.04977838322520256,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 240.52209770912305,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 4,
+      "seed": 2026,
+      "best_epoch": 8,
+      "best_inner_loss": 0.26452393110164185,
+      "epochs": 28,
+      "optimizer_steps": 168,
+      "scale_ev_atom": 0.04977838322520256,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 275.5274084173143,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026/summary.json"
+    },
+    {
+      "status": "COMPLETE",
+      "condition": "lora",
+      "fold": 4,
+      "seed": 42,
+      "best_epoch": 5,
+      "best_inner_loss": 0.30817434716631065,
+      "epochs": 25,
+      "optimizer_steps": 150,
+      "scale_ev_atom": 0.04977838322520256,
+      "train_formulas": 45,
+      "inner_validation_formulas": 11,
+      "outer_formulas_held_out": 14,
+      "elapsed_seconds": 265.9860833338462,
+      "lora_parameters": 24576,
+      "head_parameters": 6161,
+      "summary_path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42/summary.json"
+    }
+  ],
+  "resources": {
+    "recorded_runs": 30,
+    "wall_seconds_total": 4021.8576175379567,
+    "peak_rss_bytes_max": 2017050624
+  },
+  "historical_test_used": false,
+  "ridge_updated": false,
+  "geometry_input_used": false,
+  "pretrained_checkpoint_modified": false,
+  "generated_outputs": [
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/analisis_diferencias_energeticas_intraformula.md",
+      "sha256": "f3abf85883c86bf805867336cc8f5cf2f3e85d99b15978254d25e3950cde8ed1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/analisis_efecto_lora_en_embeddings.md",
+      "sha256": "7a5b3007d8b49b06979f2c23d9be7cf0e510214ac55fb5084b022c34f3b7466a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/analisis_ranking_y_estado_fundamental.md",
+      "sha256": "07588a49f091d14be0306f45ab3e9b4cd7d5bf7509f9fb944c4443509c4aee45"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/auditoria_viabilidad_finetuning_lora.md",
+      "sha256": "5727e243d98d1074b0e85af5d4ae28b1a041e43ab2061c73d6f0e4bca744a025"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/bootstrap_apareado.csv",
+      "sha256": "05462369d54ce2a6a54db0a559cb288aafbefa69439737c5007171b6d15fc14b"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/cambio_embeddings_outer_semilla42.csv",
+      "sha256": "14015412ab0b28eae7130d4bc0c7b809111a07cf2e2092bb36b7b021b40927a7"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/comparacion_frozen_vs_finetuned.md",
+      "sha256": "861ffd6b7c3ade3401aac5f7c1e9e01a3babeb474f7c455f010d3ed031dd1a55"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/conclusiones_cientificas_finetuning.md",
+      "sha256": "3666561495d7a4c250dbbcf578806b84865d897d6014cb79e270bb398848d898"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams.log",
+      "sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_final2.log",
+      "sha256": "e6375e0a1899665f6005197dbb411e5c8b70b6519cb995039acb0e1ff4d2ce90"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_final2_resources.json",
+      "sha256": "8baf739a2cd8f49e6cf16e60d278f6afbe0057f263dc6270ea60303dbbc9320a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_final_resources.json",
+      "sha256": "4d9ffe973f88c152f0f582d20c8003804b1d67e90ee7376016ef6a7646515b80"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_locked.log",
+      "sha256": "e6375e0a1899665f6005197dbb411e5c8b70b6519cb995039acb0e1ff4d2ce90"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_locked_resources.json",
+      "sha256": "196a7ef257903bf56e59098c8be86bd7da913190e4df2076ad4bd9046c215087"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diagrams_resources.json",
+      "sha256": "090c324f57ecee5841fd053b0167a8bf36708431f51026c1e4d3dce2c871f000"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/diferencias_por_par.csv",
+      "sha256": "d69b001c4e63c419cd939ae39eddc177e64c0de0d0c1bfbe42e30baa19aa274f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/distancias_embeddings_intraformula_semilla42.csv",
+      "sha256": "cc906698fa47d4419baedd890b7a5a587594bdefdf388cd9d019da03ae57ead8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/evaluation.log",
+      "sha256": "88427a87a2a45859e3219441fa3a5e2dd76f198d56751006ed823b236cbd3fdc"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/evaluation_resources.json",
+      "sha256": "278a1351bea17a2065027af033f889390a22d9059afcf29a65bae75ffe6221e7"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/arquitectura_regresion_energetica_matgpt_finetuning_lora.mmd",
+      "sha256": "02e32ed174adaf05ac89e5234881f27a9cde9b178264e1e981d8de0d27dd9a58"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/arquitectura_regresion_energetica_matgpt_finetuning_lora.png",
+      "sha256": "57e4df8a543a9cd889e9d04557dc610a9252bee9c4802ee8d8de2c0a9b461f5f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/arquitectura_regresion_energetica_matgpt_finetuning_lora.svg",
+      "sha256": "b628f451a49b1daabd4561f05f9bdcd4072007f950cca147bcfc41f6c8f5ff91"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/bloques_transformer_congelados_y_adaptadores_lora.mmd",
+      "sha256": "ca1ec69ccdb7f98c6dde9106816059d7ebb7ba2860a42d36fc639f92c1c733f4"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/bloques_transformer_congelados_y_adaptadores_lora.png",
+      "sha256": "bd0fb0b63d598e19a7198e9f9a7c8d32bc69aef5ce16fff5fb6c2795d60d9c26"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/bloques_transformer_congelados_y_adaptadores_lora.svg",
+      "sha256": "609873e22ec42ae831a6f88e76f17aaaee1f0f8b6452fa48a648c17ff2922ba0"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/cambio_representaciones_finales_tras_finetuning.png",
+      "sha256": "574f3527a6361176dc4987ba9b77eaeecba31d8e9867d40e84fed788580f4767"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/comparacion_finetuning_vs_congelado_metricas_energeticas_y_ranking.png",
+      "sha256": "b6518a931b03d91966d00fff6b6cb5cb6735247d66cece55cbbb8fdf85bb70f3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/distribucion_errores_diferencias_energeticas_frozen_vs_lora.png",
+      "sha256": "e99762534db4dbd4567e8aa4f5f5197438ee2eab3c2a33836b4ee2c1526685eb"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/efecto_del_finetuning_intervalos_confianza_bootstrap.png",
+      "sha256": "822bae50cd283d0483861336c6a7960a8f91a9904982d5d646a40657e15f6a77"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/error_diferencias_energeticas_segun_gap_dft_frozen_vs_lora.png",
+      "sha256": "380216270e9c6a5dc275315fbe3402a86d7f7da2327af3fe5f56754db77f27ae"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/errores_y_ordenamiento_por_familia_estructural.png",
+      "sha256": "4c06d06fc7dcdfbd4d97411e08ef0fb3f00a728db41c5330d55232395f91db95"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/evolucion_perdida_residual_entrenamiento_y_validacion.png",
+      "sha256": "c1cb64288e9dcc486e048515c06f58c6f4ab331287a43427f78b36885b059dce"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/exactitud_ordenamiento_polimorfos_por_gap_frozen_vs_lora.png",
+      "sha256": "58ec14f5134e094eafb5ab3de4144b438072402cd1e8daab061c73726894c681"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/mejora_residual_y_ranking_por_composicion.png",
+      "sha256": "971028d3788c104fd2607adea84741873f59e81bfefef6b7f4568bc91424cf58"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/paridad_diferencias_energeticas_pares_frozen_vs_lora.png",
+      "sha256": "03d9e1674285f7dfef28fe079a3dc9415355e234c60c93bb502f4d33ae0536af"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/paridad_energia_dft_por_atomo_frozen_vs_lora.png",
+      "sha256": "6f2eb6d889bcecbd2aeb04d37c4bb3ec2135e5800d1843a2380e2e656d6ae9be"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/paridad_residuos_energeticos_intraformula_frozen_vs_lora.png",
+      "sha256": "f4cafc6621f0d456b71b11cd932d87e65e2e9986a1f1cb8ef37d878a61d4047b"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/procesamiento_tres_polimorfos_con_finetuning_compartido.mmd",
+      "sha256": "aad9b5a3739cd6e65650c22a428dd44f3b92dc93c3203b8a0b053dfea58d97c6"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/procesamiento_tres_polimorfos_con_finetuning_compartido.png",
+      "sha256": "98c7a21e1fe25e304d860410f9bd1727861aa09604bb26b26badbe7233951404"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures/procesamiento_tres_polimorfos_con_finetuning_compartido.svg",
+      "sha256": "af844d776d5068415be689eff422d3763aa20ca35b061ab8e128918deadce82f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures.log",
+      "sha256": "bfbf0034c87052cdf4686972583d230099fa0b5524c0313f04ad850f8cdafd63"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/figures_resources.json",
+      "sha256": "e1c853923169021c181ee37b65ee2972a8a7c5258af4a35c944b17dc902a7628"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/intervalos_gap_dft.csv",
+      "sha256": "8a4480393a6f9781801026791977a364e5d619a12e3d0276c4d8b99161ead30d"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/manifest.log",
+      "sha256": "d1fc3b671dc9d0645eaa1aa58f9a04027137103f8e7e6a654a193405a0076b3e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/manifest_resources.json",
+      "sha256": "aac8df86ccc54ecb0fc2a53227a4fe41b0f991edb3d33875d61de532fd9efb55"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/matplotlib_cache/fontlist-v390.json",
+      "sha256": "b0a4c09f37fd7dde6365470b2094d55257cf69f627a5eaa6ee2585739438f989"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/metricas_por_composicion.csv",
+      "sha256": "ab6893fa20ad1b58bc9bf9b19e5839ab09990dfba3429740b555bccbd3eb3791"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/metricas_por_semilla.csv",
+      "sha256": "e1b760d2a0032015e75ff64936177410e4a282214339d6f1e15f01a646359864"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/mplconfig/fontlist-v390.json",
+      "sha256": "8b53673c10ed0bdc50eb2d577942040731918918a85be6e301a55f4d215c3ad8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/predicciones_outer_por_estructura.csv",
+      "sha256": "8cc702dac3888b09f6369cea5df108c9b1220ce41c85f59dafacc18e0d13f344"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_after_training.json",
+      "sha256": "17c1e789718a40fc2508c2594f6cac1e595e0d3e5abba6fdf0d6662b25fd3ed8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_corrected.log",
+      "sha256": "db5d02d1fd3b8c23778a818740d942e33f32eaa262c4457ef108e35f8c18261e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_corrected_resources.json",
+      "sha256": "52a3097eb5c9eb35109eafb342bd96d5749704782cf69c538e046082039692e2"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_corrected_retry.log",
+      "sha256": "0bc4a75d0729bc67d17a690db5dccfee98a90ce2ad1d938d108cd86671492878"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/invariance_corrected_retry_resources.json",
+      "sha256": "3c34b8d0bfa3f09100ca87669d8ccc5e58989bd8a2ce7dffa1d0f97c748f4d94"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/preflight.json",
+      "sha256": "ad223d9cdee80bb2c893a6ea25547aa8bc92df4c86c425bf33c1f7a97aa3891a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/recheck.log",
+      "sha256": "c9e4f4e1df81bf60fb70168c3c27cb2daf14f91dee7d60fa3084000054095f77"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/recheck_resources.json",
+      "sha256": "04f66ca6f60e131e1855faae509b3ca0a2f8724ea9e7da9cc53dfde3c9fa9e60"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/resources.json",
+      "sha256": "702618effe7fbe7ac9fa6faceefcf4fa55f1ca94d7fc85936dc95c17060a5022"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/preflight/run.log",
+      "sha256": "231dc95c0f3803a1495b72cdcbd85bb3608fc7d4ba844763371e390ae647813d"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/protocolo_siguiente_experimento_con_geometria.md",
+      "sha256": "468d0e2450bcc6400d1fa3567bacf65aa27d627e105846071cfa9e0cb1c9c1ce"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/report.log",
+      "sha256": "a71cbe05534bd1f21229ebb388d687de74ddbd8100ed63e5e47d70bad585e107"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/report_resources.json",
+      "sha256": "709f5c94f8a9ace676ac07fa5ab3bee6e14e29441ae266d1e10370b379c2c939"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/reporte_entrenamiento_finetuning_energetico.md",
+      "sha256": "80277793bba2c69dae830fee41e79ef8d143204f138780f9953df9097ad66e94"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/reproduccion_control_congelado_h3c.csv",
+      "sha256": "1491eae7e9543177a01f217b970ea6c0aa897257c1053388a938fe8cf549b6dd"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/resumen_condiciones_media_desviacion_fold_semilla.csv",
+      "sha256": "8822fb6d87e6548f31d2e3aacb65196586caf992af2340343fbda51b3d2f29d3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/resumen_rango_y_varianza_embeddings_semilla42.json",
+      "sha256": "3ce96b42f7f82a70f99e91bd5caf22f45de1f2d7b9161ef3083216f0111b73aa"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123/best.pt",
+      "sha256": "9c243a60f9697ca8b8a1cd9e8ba101818ac06fa436e335e294be42f4013dda7b"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123/history.csv",
+      "sha256": "bd01e8bc737d3e141a2d9b264292a4a3ef21302403fb5eec0c955c55e6acf28f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123/last.pt",
+      "sha256": "2b34fb11ac49e7de997614132dd1d5ce1d6221e0b6413af8c952c351a79960f0"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123/summary.json",
+      "sha256": "69faac14fd4686b5ece5860d702bbb8a658ac2b1804f61fbdbc2608758d5c473"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123.log",
+      "sha256": "ae906d2af789b025450f2a20a65bbad954161dddd315bef6f29463a0b32b4744"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed123_resources.json",
+      "sha256": "e7ac289e9fb5980f7d28ca4d03b4dcb52ddd95135fa3d026acfc27e7d76d9d8c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026/best.pt",
+      "sha256": "7ff657d65d54c33421e3af792b337e5017519a4762f72ebe728516a3cc058c06"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026/history.csv",
+      "sha256": "d4717b8ab9d70a03c633f357773765b7dc938dafbccc638a76b017b7a91a1944"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026/last.pt",
+      "sha256": "dfee41f28239d739c9fd66476a74123c707c2c643a553597d189f5091b9c1b15"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026/summary.json",
+      "sha256": "afcb11dfa6b64b0b0c8804b99e789c283ba2321fa35398c14afcd75a4a58ab14"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026.log",
+      "sha256": "f418528a2d501264bac4c24ed3512040b556052e4d37e6bd8a4f2ceb0e38d3e4"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed2026_resources.json",
+      "sha256": "83bb950d9780781c73051ef8ac3fe112349f234c2e2a5828e7e3dba242eb9819"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42/best.pt",
+      "sha256": "311f40b1247056956444c8fcf51fb8079107f3933db3ed22a386a90c32280a2a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42/history.csv",
+      "sha256": "f08cd33abb9d53091463065c077cae2de39746a512d772939dfe58b5f75008d1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42/last.pt",
+      "sha256": "be77d2485b34bd3b9b0418ad69eb4d4497b3b30c48b167ea922cc884b8b90515"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42/summary.json",
+      "sha256": "1641c896e3041c834d47481b3a566ba97f33c5481a884d209b062858fc8450b2"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42.log",
+      "sha256": "4082d9c0a4c3face3ec05cdbff1afaf791fbce8f93396a4d033c52aceb5aa7de"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42_resources.json",
+      "sha256": "2ac24dfa187829fc0844cb41c02250ed81605b1ba66f48172e12b1ddf0d05f72"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42_smoke/best.pt",
+      "sha256": "92b493c3dab2859a6dda414643d000d168e9f2a6ffd66b4f5521b949cd09fb47"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42_smoke/history.csv",
+      "sha256": "d0d30d5bf491b11a1468e2da245da07f9fb44844767be0c3401f3f30cff8f3ec"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42_smoke/last.pt",
+      "sha256": "0abd56646e107bff50534fee47d27d38ea0ea8c23ce4b18e5001ffd647a805f0"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold0_seed42_smoke/summary.json",
+      "sha256": "f31268bda15b6cd93054aad2da002ae171013f8ede06b387f30b8d765a26c01e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123/best.pt",
+      "sha256": "938e1bbe384686480271ac04bcc64f9887bae566a062829ee4010aa980389282"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123/history.csv",
+      "sha256": "1552211534c48b62413b6d063320f309f9491192439eb7293fea058c48594f69"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123/last.pt",
+      "sha256": "670183330a269594f9c7b9685b63d65c58cbc22ca54b6009b240f82aee04806d"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123/summary.json",
+      "sha256": "6136b830ba7e5a6ce030c10cb5e94e79c82f3194d8abdc3a0e7256d3c872645a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123.log",
+      "sha256": "5a02d10d67655c6c0dd9e066a95c6c12afa252b1c22b47fdc4c3fd315ad21732"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed123_resources.json",
+      "sha256": "6bcbd07a10beba8172ff13a4a45f1952476c161199cf203125f2ddbc1129cb63"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026/best.pt",
+      "sha256": "fb49c1be9de308dee064cd7688c8940ab987330727d99c6110e680e8ce22099e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026/history.csv",
+      "sha256": "d64c8e4c1af78fb80a0d52a8ba24e336bacc70aed5d903b24e718a598d92b35f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026/last.pt",
+      "sha256": "c671600fc990a109be91daf9f73108ba036c356682aff0771cbf59ed8a7dceb1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026/summary.json",
+      "sha256": "85dcc003becdd306b01bda7fbba593d3eef0ddfee876aafa8e8741639d9a706c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026.log",
+      "sha256": "607436fced11432482e482bfa10d04a00ceb6848b55fbd8ce23bb7557839cc9f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed2026_resources.json",
+      "sha256": "d9a915ccd6fb6ceebcb19cd4d1234bcbcfcea134056a58185f97dab647289d10"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42/best.pt",
+      "sha256": "b1d5cd4a72412e77c5f4089c259365c65a502415cebb69da4d0ca0fc64acf786"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42/history.csv",
+      "sha256": "e25ad03cbc98558d392f106c5746d67037fac427296aa4b14d93247229f60984"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42/last.pt",
+      "sha256": "6e28ea7c88e9a46bdbbb6e805ad294f242327baf80672abba333270afaac0933"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42/summary.json",
+      "sha256": "caf45a23cfc75724f2854880361942d04876b0a3b16993e91eaf9514c10dee89"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42.log",
+      "sha256": "8a060d9949f13ced76aa50503ad2d901fa6ecabd2d8c8d1292613c84afad1f2e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold1_seed42_resources.json",
+      "sha256": "90f002fee14c4e25d32eadde904e251d656e4c908e23441a70f7ef3c6731cc0c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123/best.pt",
+      "sha256": "f34c7ac35da3178ea2f5e362f44d45b5432d8980a63405586d23465612684f44"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123/history.csv",
+      "sha256": "72b19b912ed25360da9f98821aa46c798321671c740042b7589e3b21a13aaf47"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123/last.pt",
+      "sha256": "1d41b60eb963431277ef245fd598eb210a64708ad03bd056433382ceebee3c8a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123/summary.json",
+      "sha256": "ff87dfb75ddecacf6cac257fa2964683c3706f8594c68c59236b27dbf416c1e9"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123.log",
+      "sha256": "82209c5e9c4d3b421c6145d27a59e503a20d048ddb6821f06ba8f4caec162f62"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed123_resources.json",
+      "sha256": "b1339592403dcb1e033bfef083a5c3322573e42a087a0ace425dde473db65132"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026/best.pt",
+      "sha256": "f9351c37f54fcb32a6ef69be66fa452d5cb30c6da36928b77040973cad3d5f02"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026/history.csv",
+      "sha256": "f72e9505755e32c9cee65607478e42b0241c8c21fccd753a5577ddfbf05d89ee"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026/last.pt",
+      "sha256": "8c76a298cc1399acb85e367e5650e957cd36825525d83fece53cd1de689ccbb1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026/summary.json",
+      "sha256": "3eca3c7ad9bf1ed04f4a0ad827c94f2cd48b69f6668c13a774137e72bab8b6e9"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026.log",
+      "sha256": "3b890858359babf2fe59f165a46256c8138bc0f6f63c0ab043644dfe705dc195"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed2026_resources.json",
+      "sha256": "40b88a5ec39f0638720b3f621e49d03223ec81ad834b14bb03569c73dcca9a41"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42/best.pt",
+      "sha256": "1aedd00027f23beda5d11f576145dc76059bf6254f83d7960890b085e84c0a94"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42/history.csv",
+      "sha256": "7537fdb00e3bbb7e1d6cce745f7d4dab63c2cdab3089c16ed35512e5d34e5be5"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42/last.pt",
+      "sha256": "dbe12d550841321c5f921ad9a1941e4b832a165fe813d68945b35b8a447d6cce"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42/summary.json",
+      "sha256": "9bd4fa732c5fe5df1a5f491bb1221c112cb4492bf407e7bbcd0d381d66e8a749"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42.log",
+      "sha256": "fc53e66fcd3c89fc2116b0be97f9f570d8a166618725ab592839a4b192355a63"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold2_seed42_resources.json",
+      "sha256": "803347b8d2b8f65580012e99f8c2a523264a68272a8d6c01ef3fe9ec6e50e421"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123/best.pt",
+      "sha256": "3153db8bf7c7ebb7f3787a93f503b4097598121cc9787ca175251d396a88e495"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123/history.csv",
+      "sha256": "fcbb953459b2adf29415581d9adbffafadbd86967b7d9a2ca1d6596f15b4030d"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123/last.pt",
+      "sha256": "cb8106b02a2b983900956b62bd0b05338e96deb8d5c7fffdb8d0217657d86cba"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123/summary.json",
+      "sha256": "233538b8ba70baf1c26906fbe40f59f445b35d8e17f375f8b9693e8d758bdafb"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123.log",
+      "sha256": "8af8757bbb3b2284149d856aefe4848022db11d0ec0072bb2e83c7742685e27e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed123_resources.json",
+      "sha256": "b1e15eb62c80f95e40bdf79133e8f8569064fc0847e78f591af4cb82ffe65ec3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026/best.pt",
+      "sha256": "9909b8f35ab1ab20f73f5c293a416c79f8301997d472487ce0c8bf0cc6bba3c0"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026/history.csv",
+      "sha256": "4a8189765d89f9790411786995cd10ad44ab7f78abb903412102a99dbfc4ba59"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026/last.pt",
+      "sha256": "6d75861b9e4668d4859bbe8acb0b1c708df8c5ba7d60fe9f9301f51d0ffa4ff1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026/summary.json",
+      "sha256": "b81c0a81c1be6c081a5314789fde016c38d332edc51505719bac37fa9a88d646"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026.log",
+      "sha256": "038f47e2a2e19d236fbbf370bec76cd64bbe83690fe7f8a5cbe1d547c369a9f9"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed2026_resources.json",
+      "sha256": "e899e2b811e46b505ad73de6095b2dc5eabdbb47c6cf57366bb8e5a1b8371e99"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42/best.pt",
+      "sha256": "7efab6206ccda089b8e22b3a2930bdef269e852ecd05543f7895e77b1d798e9e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42/history.csv",
+      "sha256": "5b49e3565e74a4ddbc1d419851fc52bd0d8233d920fce911cfb11d2458a2ce6d"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42/last.pt",
+      "sha256": "7565efcd755c0563b0a8d1632ebd7fb4cd96227aba05bc0f213a838401ea8430"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42/summary.json",
+      "sha256": "61d84ae77ca2166af0584e136e4300f3c62417d27d90d913cfde986c7a2fd8c2"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42.log",
+      "sha256": "e6db89e943c76fb558624c2635d7d944288c5639cbc1b9847648f6b7b8f5c05c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold3_seed42_resources.json",
+      "sha256": "e9ca6fa4432110f4c4e6ab97526fc35a61c7632d5f883d1138d17be0b14da831"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123/best.pt",
+      "sha256": "2c9a46ff1600112d746d67bd51abd34cb935e0d3facef83742e2ed59b54432cd"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123/history.csv",
+      "sha256": "c85c9979f7f56eecca315a11a039b5de538f1de28a4b6963b1f9834a6ce1b522"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123/last.pt",
+      "sha256": "0163447cc83c3213306779a28863c85152227c9fd922d5a8418a2eec31635178"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123/summary.json",
+      "sha256": "a9366a467cef331db5fa19178fc0254919ceb9e1ab2a43e2d8836e231aa59a02"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123.log",
+      "sha256": "3fc3b38490503928f9f9208d671409c9b956266b14f080c9dc8b3643f3a937f6"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed123_resources.json",
+      "sha256": "ec217ddcdd5f1c67c6dee39e0c0001569efa2e1e0298314e610e5d08f76a6de1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026/best.pt",
+      "sha256": "67612f69eeb99958b742c302919077cc2e4362e9df7476ff1073a6f006d48a48"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026/history.csv",
+      "sha256": "977fa2a18a247fcc1476d31912141e87f13b413f04c0fd2f63ed40ccd60ef30c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026/last.pt",
+      "sha256": "6228f93ba5d999bb65ef36d9d170e6b724f9167ff25b92a099963aea1bf94eee"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026/summary.json",
+      "sha256": "c7f487809064c8fb87f4f51697e5eeee755e3041d8805051dc419d4cc9cd700c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026.log",
+      "sha256": "53e45ac3785fde65c7a59b7a13465d48b84278102c36da5af80c05d7f5b23148"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed2026_resources.json",
+      "sha256": "eaaf702b4b20d3ac00123601d5cb6b0412e0a0323ff5daaf414d8fb6beea6a84"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42/best.pt",
+      "sha256": "26e7d5ee0d56da4cd3de74b79f64aacaa909065fac306a3376d7ef313a48136e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42/history.csv",
+      "sha256": "580223bf950c2cd94cc020f5aea55dc39d0dca9527cb346c7960d33efb026534"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42/last.pt",
+      "sha256": "5df6078435908c47a435d5516b32f42c2c5c4e5d0b491c55c5d2208540c87a43"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42/summary.json",
+      "sha256": "3742255d15375312e41b654a4c6c1a4a6323dcc7521939feef19b39085243b3a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42.log",
+      "sha256": "eeaadd4f1b6b24d97aaee63c1f6548df791cd6503caa6244d0f3e7c07ffccc3f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/frozen_fold4_seed42_resources.json",
+      "sha256": "0e3aae8d4b182bb17aacaf27b2d8e51573a27b92913a9dd54fd273653729901b"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123/best.pt",
+      "sha256": "473d467bebb91d2f60d4d6159c96d6eba449977159d693e0401c6aeafff221da"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123/history.csv",
+      "sha256": "17290e1d507b50a3fcb4195580a2b9a30b1528a283cd6149fe2de60e817de9e4"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123/last.pt",
+      "sha256": "a6842937e43b616012d9b4d488e2d9a08813fe90e9135c73dfa59e40ec9d82c2"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123/summary.json",
+      "sha256": "5f3a65cdce263e6ace36238d7a9b43ea03dca2538afdbe5c7428b87655b4332c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123.log",
+      "sha256": "04b401f2b4e3aed0a26a613e0a3c69b7806b5cd5b6dd08dc11708c2b0d965e24"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed123_resources.json",
+      "sha256": "b90cd770c2f98cd533b1c495e8b65d3efdc7ecd98c6fd507f9631e2379b0be96"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026/best.pt",
+      "sha256": "486a5fef309f17fe7795d403b04303c6ab8fce4207c797f432a492a8780f879c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026/history.csv",
+      "sha256": "70651e1bf3f7b54e8eba7400f51d37b2e8f42b2a7004ba55df22c774d48935b8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026/last.pt",
+      "sha256": "bc490df4fb987505fd6d149f7ddca8247ba6d635aafd87ccac0cbf299f218f46"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026/summary.json",
+      "sha256": "3d99a552068ba2a00ea9afe3e9e404001f692ca63dda73bb59c051d802e72bf8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026.log",
+      "sha256": "c7eb6ef1898cb246452fa9367bacc8f2d38dbb54cec9cb7a150a6469ad58de32"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed2026_resources.json",
+      "sha256": "e2ce6d1a1a61a0bba06a2d534f3989a8d2936b83f7bd003c098a9baa64ab9ea9"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42/best.pt",
+      "sha256": "e08f750f4a9afa654ba8754646b911576a88338926f76f3afd98974610e8e6e5"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42/history.csv",
+      "sha256": "410fd81d6cecd56b4b2c10767508a7aecec150a102e083228c48d8acce6c83a8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42/last.pt",
+      "sha256": "4d8ed67b5efd0c616d08484fac602781be071431198d20329d57d91dd8f44241"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42/summary.json",
+      "sha256": "67c303e9ca1b5a54c1a672b592934bf57db760f8092da0f150dd2ac84c10d642"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42.log",
+      "sha256": "e9bf68999b82beb7c630b85bde5add93226482220639b31a9e805796a6c8bea5"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42_resources.json",
+      "sha256": "5b1078dd2e895ee82d3b2c106b849b6c5299b26899f00572556b669a6e7afdc3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42_smoke/best.pt",
+      "sha256": "f9f68a5fb5a9614dd0568cb28c3b647d2598fd566fef4b9853c86df26ae0d391"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42_smoke/history.csv",
+      "sha256": "84ea545508578d51136a3a0cb6ef4af5b6c86169f95405db514924b22ef0d523"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42_smoke/last.pt",
+      "sha256": "57cb5ccd56ee3708069997b5353ec37be11df700ca7c325e49aee6f2badc3600"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42_smoke/summary.json",
+      "sha256": "d38f624a14b1d9680d34e3ed3c87b3ff8ceb4409e0172af4360853d75758e487"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123/best.pt",
+      "sha256": "d216c45ce7660de3f17b4662d465bf14fb443b1287e09c6a2dfd2f3d7f8bc0ba"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123/history.csv",
+      "sha256": "8271a7f5b55177f2f0b1b13773d9b1c1d1755afeb1f4f51c1dbff46f2077cccb"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123/last.pt",
+      "sha256": "1c30945d8e43ac76b7db3358fb796fbc58102fadfc6a25aa80d9bff9e1a1211e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123/summary.json",
+      "sha256": "9ada9361cf8e58664c23535dd3f3cf025c53dc9a283288e5af2b6cb887e5d040"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123.log",
+      "sha256": "8bebe7158890d03c20c4eebc569c53f23a1b88d898a02069d2bc75f13bdcb9ee"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed123_resources.json",
+      "sha256": "34e6298672d0b684a3d8621e2448c635286546883cc09ce7b6862155951fa20f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026/best.pt",
+      "sha256": "c59ab97ca1716209a34e041dfbd072ea181f763bbf7800768e5322148cb901d0"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026/history.csv",
+      "sha256": "ffa470705a2c220c61207983939f2017cf34aed68733334f0c4d8e43fd673a2e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026/last.pt",
+      "sha256": "dc8de42ac088649aad02cae1220c179a3629b84ac96d83fcc52e4f6a5b1aa791"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026/summary.json",
+      "sha256": "6c39487549d2e831fb21299d59c78f6377622c0d48ad2042efba19c3dd72a752"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026.log",
+      "sha256": "44c1ea4c1a4d974d1c23aa6ee296d0467c2fbaebab29fbdab7c1a3813079a99c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed2026_resources.json",
+      "sha256": "4340311d0217ca1e32fff325411b67c8a621d05d83bb13944cf59a61717ec70c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42/best.pt",
+      "sha256": "c1a033e0e036f26639a1200db9755b862cb8536d631931bc85d66ff8cc404e8c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42/history.csv",
+      "sha256": "ee27cfb87ed7b16885beb4064a8840b7ae62b1543037d7395e37ce25ac88a226"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42/last.pt",
+      "sha256": "b878a586aea67082b638e56a2f3381642c1982ddced3aab105cd2652ad21c26f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42/summary.json",
+      "sha256": "139ea5e54db086e0079f59ff65ff7d1892a75424ee0cf9bda5d8ffec937f89b4"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42.log",
+      "sha256": "82bd7f18e320ef17d23435e873fa3f8c55e50aa151e9207ebd956c1d7cb5f840"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold1_seed42_resources.json",
+      "sha256": "e8cfb45eeb43877ea4995ac0879f3e7077810f3be5d6533f2f466ad45f83b5e3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123/best.pt",
+      "sha256": "152efdd460484ab8e116911e3669da939f519be49eb2760c25bdf031cb410847"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123/history.csv",
+      "sha256": "592667c6007955311153c7cc9c8e32462efa6bb1f8b3acab2ff4b4574e210caa"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123/last.pt",
+      "sha256": "5146970c50cfe7337fda776b9ce009a9b89ca1c907c3fe7bb495b4dfbe935cfc"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123/summary.json",
+      "sha256": "08cac66b6bfcf160260e0027bfc897356f3d1ea1479f8fe06d0728f54765d91e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123.log",
+      "sha256": "bd1349e646c85e31547f4923caa5e57cb051f3f5452e0b9c7a18016ce3e4cc58"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed123_resources.json",
+      "sha256": "cb9c139b05e1f59da89d0480474dc4081c566c9c260cb29bc1d61ebafccb94df"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026/best.pt",
+      "sha256": "77ded636e931b4144a704aad85f3c9724914fcfabb5d08ed4316c41985ae27c8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026/history.csv",
+      "sha256": "acb337c43fcf7ec731988e28e3e7a9d2addffbee67d7d327e31083c186e60cf0"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026/last.pt",
+      "sha256": "d1114b0133a862531adf3d7b15bd8efdbba654b65b72a2fc90c648067bbdde67"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026/summary.json",
+      "sha256": "c8501bb56a30c617d608be9ed95510a072fc4ba5b3f372f25ac816ada2f3682f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026.log",
+      "sha256": "61d5298dd8baddaf6174b00f929c843312d9cf2c16abdbe459211e8c95ee2bfa"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed2026_resources.json",
+      "sha256": "1b652643db48b23dd9155273f6eca898551dd7d8e23dc4e048c6aee92313db2f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42/best.pt",
+      "sha256": "2c97d7c0d0fc6c1f80086cb65bdda6c872161098dcb4ab47585e05d78d74b703"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42/history.csv",
+      "sha256": "96c16972640febe462309fcb972db87460432427fdf396c5707bf638510ec1ca"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42/last.pt",
+      "sha256": "735d5ee2a8f2718bd8d55bc5b3aaf88350fa0f35bdb284a35c41a1866a895a89"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42/summary.json",
+      "sha256": "abb04c23cbd66c384b44bbdbc8405834913a8fc3f62e025a78441325bc0b80d5"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42.log",
+      "sha256": "7c5a18492812895a9a1ca94fd9eca11455b23254e380c02a1d817041fcfcdb37"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold2_seed42_resources.json",
+      "sha256": "18c8c05d7668bc2ec8fab61ce1d78000394235c51e68d1777f05fbee86762f38"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123/best.pt",
+      "sha256": "54d9768e92fce8c2d14427ec1858f8e1f8b8b9e60c0d58fb0939b2a0523e12e8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123/history.csv",
+      "sha256": "56c52b34d42950249968bc6e13129a02a3e4ace1db51c5ccae1a0ea908628d2e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123/last.pt",
+      "sha256": "be0a3b003015bab9d33241256d1b93cc91a38d813ba2561a7a279926c21d3da4"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123/summary.json",
+      "sha256": "81fb7e87696700b989a4bbfdd62dbaf249f9fc877c57a10b6a844657e005a344"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123.log",
+      "sha256": "8b69a6c3cf8af6cd08450e642033d5185fc5af0fbafbe8ee0fceedb7fceb939f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed123_resources.json",
+      "sha256": "0ff27d17488ec13514e22ed6860701dcad2414b2ef4dcc2fb30cfe091f187708"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026/best.pt",
+      "sha256": "186944c71c767869295e5c5bf56927afafd01e79d96d251211c5fc8b8f3f107e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026/history.csv",
+      "sha256": "ab15820c6b74284a3e7f28a947603cfd0521ba2d2e973c8e42cb98b2056daf5f"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026/last.pt",
+      "sha256": "f603298e31ceb8708381694ef31722071d7b8a5f46af85ec839100865ac43515"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026/summary.json",
+      "sha256": "eac9133849519f9de7fe6fe484daa8121710928c172013391e1ffdc8e1b2545e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026.log",
+      "sha256": "8aad773a46bb83c1a9fba04ab72437d9fb4bc4cd76ee6f3562c45d0918a37f40"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed2026_resources.json",
+      "sha256": "7b376afc26b9523fd909343ecd7424a838238c21892531fe7133e255ffe48371"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42/best.pt",
+      "sha256": "317f5cdbfc1a34e4954090d81b27118146b30ca9d9026e19546bdf6d7d4821f1"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42/history.csv",
+      "sha256": "8c78da87b1d1da1c713dc92080c2d9b0b565ed02895a481e676e739ed6b05a27"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42/last.pt",
+      "sha256": "b085a2067f5a316da6abc39dff8a70b742dc7ba64f1f17d7d4605831175e6363"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42/summary.json",
+      "sha256": "369922a27b2dca19d05e124dce0bb050296d1e547fabe618db20c443a5cfd2fa"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42.log",
+      "sha256": "d8fd24d012c2847b07969b757a11f5e1bf26ded88ab614adbfec7e3df4c9b4c8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold3_seed42_resources.json",
+      "sha256": "8911afcbb71362110723bbdd40ff4a867738bdf86ddb886607251339bbedfde7"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123/best.pt",
+      "sha256": "89ccfe94879adf007076d4219eb3c4530cf4d48067102add10f0b240b6c93e63"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123/history.csv",
+      "sha256": "bc52abdde321b0b0ba3f25780ec49df65eeba48263c00e264b21843505d52b30"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123/last.pt",
+      "sha256": "4994af835822ee5e656a80b5399858ce6b4ab9bf3de3385d5dd1264d90c12963"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123/summary.json",
+      "sha256": "f80cbcbf379689e2bf5dcd826ac821b07821d803b371667ea58f6c2923a5ffa3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123.log",
+      "sha256": "1ec8608df13c86e7d6f73f966a1362c14fb64e978ff21823c975db6b751a9e2b"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed123_resources.json",
+      "sha256": "97e81c2fe69209fcfdbbc1acb028a7b1b5bf0472bb3e44dfb7c86cb6d2e26eb8"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026/best.pt",
+      "sha256": "f3bbb6cc6d2326d3d6add831e56b7bffc09e7714698af47c016989d0443f1809"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026/history.csv",
+      "sha256": "198712ea01bc5eb01dfa0589504bea955a5f629a618bfd639283ef59756adbc5"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026/last.pt",
+      "sha256": "3ada4e136ce27ee73b852dd96122ee36e930e40fd3f127347c5995c1e827f2e7"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026/summary.json",
+      "sha256": "b9f301efcc6ef2052046634aae6551a8e76c2ea16198a1445e1c3b9071376490"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026.log",
+      "sha256": "0491cb22ac26a36de3bd43603460545d89411763ba03b5dc3fb8f044261756e7"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed2026_resources.json",
+      "sha256": "9dd110d8ee2b2e58035f86366b1ecbedc5e5bd2322608353ebf4a06ca1ee30f3"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42/best.pt",
+      "sha256": "28c5b57b4d5c9168424e9d500d0e79f47096938a5c2d1be8b22aff57588e5c67"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42/history.csv",
+      "sha256": "746c03a327d555a96003f92a5093a0b6232650694bd64580eff90f924ec0a92d"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42/last.pt",
+      "sha256": "7ff899d7bf079cbb3d86d2a4948a4fe3ae7ffc70ad3498c8a25e38fedc877151"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42/summary.json",
+      "sha256": "991495eb27b9641cc67d0ffe8e9ffd0a1f413297ad7b6bcd9c5c983271b6221c"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42.log",
+      "sha256": "faaaad8f908979d546df141731fcbc92ea10b1e63626ae730260aaf123ef4eab"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold4_seed42_resources.json",
+      "sha256": "6c8148e080b81508a0592bc1510f0a27af4dbd4e3c666cc9bbf65e7f01c2e59e"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/smoke_frozen.log",
+      "sha256": "c6926af740b310f6f19f62c789980ef90f41fcc092436d5b37dce730caab8ad2"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/smoke_frozen_resources.json",
+      "sha256": "0ce3deb70c1d90293e6b10bda1c4a7ee08201399bb21240e061502c864cb988a"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/smoke_lora.log",
+      "sha256": "8aef2529a609c69c45936ef2cd7071ebd5f5e9e3c863e07f184a9a6a05508f6b"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/smoke_lora_resources.json",
+      "sha256": "337c8744e2847a3f01d83143fcd27d9a9b519a3716b4c4b20c02be29b8246124"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/tests_verified.log",
+      "sha256": "c8a75ff7d2f81dad43b57bec71c5c8fe8d9c27f2b90a9614ccac6321b6125ddb"
+    },
+    {
+      "path": "reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/tests_verified_resources.json",
+      "sha256": "133d4932d913d0facadde43586cf5e53a7bba038b7ce8d076cdbc3864fc0cf66"
+    }
+  ]
+}

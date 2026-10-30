@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "kind": "random",
+  "seed": 2026,
+  "rows": 210,
+  "compositions": 70,
+  "features": "L03_MEAN and FINAL_END random",
+  "input_dimension_ridge": 768,
+  "elements": null,
+  "structural_trainable_parameters": 6161,
+  "identical_polymorph_input": false,
+  "predictions_sha256": "a6608849239d77e60335241dc7171854439bb54e3f61121613c4b76b4f902ac1",
+  "historical_test_accessed": false
+}

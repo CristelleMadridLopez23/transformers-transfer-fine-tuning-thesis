@@ -2,8 +2,9 @@
 
 - Respetar la estructura de carpetas. No reorganizar, mover ni borrar datos sin autorización.
 - Organizar cada experimento mediante un identificador único.
-- Guardar scripts Python en `model-pretrained/scripts/<experimento>/` y archivos `.sh`/`.sbatch` en `sh_files/<experimento>/`.
-- Guardar gráficos PNG y reportes científicos en `reports/<experimento>/`.
+- Organizar el proyecto en `data/`, `embeddings/`, `models/`, `reports/`, `scripts/`, `images/` y `experiments/`.
+- Guardar scripts Python en `scripts/<familia>/<experimento>/`. El proyecto corre localmente: no crear ni conservar lanzadores `.sh` o `.sbatch`.
+- Guardar figuras PNG en `images/<experimento>/`, informes científicos en `reports/<familia>/<experimento>/` y tablas, manifiestos, métricas, logs y checkpoints generados en `experiments/<experimento>/`.
 - Mantener checkpoints originales separados de artefactos entrenados; nunca modificar estructuras ni valores DFT originales.
 - No ejecutar procesos pesados ni entrenamientos GPU en nodos de login.
 - Documentar versiones, semillas, configuraciones, procedencia y resultados reales.
@@ -12,6 +13,12 @@
 - Nunca reemplazar resultados reales con datos sintéticos sin identificarlos explícitamente. Nunca inventar métricas, archivos de datos, configuraciones usadas ni resultados.
 - Cada script Python debe incluir docstring de módulo, funciones documentadas con entradas/tipos/salidas, type hints, validación de argumentos, logging estructurado, `main()` protegido y rutas configurables relativas al proyecto. Registrar errores descriptivos y comentar transformaciones científicas.
 - Preservar cambios del usuario; no usar `git reset`, `git clean` ni operaciones destructivas.
+
+## Corrección de artefactos del mismo experimento
+
+- Mantener una sola versión canónica de los resultados por experimento. No crear una carpeta de versión nueva solo para corregir errores de código, formato, análisis o renderizado dentro del mismo experimento.
+- Si durante el trabajo se generan artefactos incompletos o erróneos y luego se corrigen, actualizar la salida canónica y retirar las versiones fallidas creadas por el agente en ese mismo trabajo. Esta regla autoriza borrar esos artefactos propios fallidos, aunque la norma general prohíba borrar datos sin autorización.
+- Conservar resultados previos válidos, históricos o creados por el usuario. Crear una nueva versión únicamente cuando cambie intencionalmente el protocolo, los datos, el checkpoint o la pregunta experimental, o cuando el usuario solicite conservar revisiones.
 
 # Presentación de figuras científicas
 
@@ -120,5 +127,11 @@ cuando sean estándar y define las que puedan resultar ambiguas.
 - Inspecciona visualmente los PNG renderizados antes de entregar la figura y
   corrige texto cortado, solapamientos, símbolos ilegibles, contraste pobre o
   elementos que cubran los datos.
-- Preserva las figuras históricas y escribe revisiones en un directorio de
-  versión nuevo. Exporta solo PNG; no generes PDF ni archivos comprimidos.
+- Preserva las figuras históricas de experimentos anteriores. Para revisiones
+  científicas intencionales de resultados válidos, usa un directorio de versión
+  nuevo; para corregir errores del mismo experimento, conserva una salida
+  canónica según la regla anterior. Exporta solo PNG; no generes PDF ni archivos
+  comprimidos.
+
+## Tiempo y recursos
+- Incluir un manifest o resources .json con el tiempo que duro en terminar y cantidad recursos utilizados por el tiempo de corrido. 

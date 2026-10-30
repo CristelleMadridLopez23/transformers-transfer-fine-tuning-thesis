@@ -1,0 +1,14 @@
+{
+  "n_structures": 210,
+  "n_formulas": 70,
+  "seed": 42,
+  "folds": 5,
+  "variance_across_structures_original": 0.036548685282468796,
+  "variance_across_structures_lora": 0.03647654503583908,
+  "effective_rank_original": 40.989523658642675,
+  "effective_rank_lora": 40.99500633084896,
+  "mean_intraformula_cosine_distance_original": 0.19578398863474528,
+  "mean_intraformula_cosine_distance_lora": 0.19552307299205232,
+  "mean_intraformula_normalized_euclidean_original": 0.6222343041783287,
+  "mean_intraformula_normalized_euclidean_lora": 0.6218101399285452
+}

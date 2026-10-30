@@ -1,0 +1,14 @@
+flowchart LR
+ S[SLICES IDs originales] --> E[Embedding token + posición 768]
+ G[7 descriptores de celda] --> Z[StandardScaler fit inner-train]
+ Z --> P[Linear 7 a 768, sin sesgo, cero init]
+ E --> I[Suma por posición antes del bloque 0]
+ P --> I
+ I --> T[MatGPT causal 12 bloques]
+ T --> L[ln_f congelada]
+ L --> H[FINAL_END 768]
+ H --> M[MLP8 768 a 8 a 1]
+ M --> R[Residuo intrafórmula centrado]
+ H --> Q[Fusión tardía equiparada: suma P a FINAL_END]
+ Q --> M
+ 

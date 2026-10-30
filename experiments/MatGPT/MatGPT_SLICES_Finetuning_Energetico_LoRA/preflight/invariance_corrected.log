@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/audit_invariance.py", line 82, in <module>
+    main()
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/audit_invariance.py", line 78, in main
+    print(json.dumps(audit(args.run.resolve(), args.output.resolve()), ensure_ascii=False))
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/audit_invariance.py", line 22, in audit
+    model, stoi, block_size = ex.model_and_tokens()
+  File "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/model-pretrained/scripts/MatGPT_SLICES_Finetuning_Energetico_LoRA/experiment.py", line 134, in model_and_tokens
+    from Alternative2.scripts.MatGPT.MatGPT_frozen.matgpt_e1.extract_embeddings import load_model
+ModuleNotFoundError: No module named 'Alternative2'

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "rows": 1680,
+  "source_feature_hashes": {
+    "Alternative2/reports/MatGPT/MatGPT_frozen_3/run_20261023_v2/features_cache/layer_features.npz": "2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62",
+    "Alternative2/reports/MatGPT/MatGPT_H3C_Final/controls/random_seed_42/features.npz": "9f7c3ecc28b04431c51f5c49da8c6d05b0307d69fd4ee9779fbf229d1add0e43",
+    "Alternative2/reports/MatGPT/MatGPT_H3C_Final/controls/random_seed_123/features.npz": "60ca4526c0961c11217326f0d9de21f32d7efea6906cdcfc7a902afde7ba8fb8",
+    "Alternative2/reports/MatGPT/MatGPT_H3C_Final/controls/random_seed_2026/features.npz": "656474a834e0da3c6c839efd97ff517832588a042bb33fc71390227fda5ca745"
+  },
+  "tables": {
+    "embedding_pairs.csv": "476b16b8bb915e1aeb3b45eecc8c9d8a2077c9a66231b10295992149318a948e",
+    "embedding_summary.csv": "55c10b71cec125a32893dd6d400127efafcf8af1badad27b853ce4d9fcef3b91",
+    "embedding_examples.csv": "2af3df10c8e0e4c93eba34f30e8e626851f0d2869877263188096a37d9d97c33"
+  },
+  "interpretation": "descriptive, not causal",
+  "historical_test_accessed": false
+}

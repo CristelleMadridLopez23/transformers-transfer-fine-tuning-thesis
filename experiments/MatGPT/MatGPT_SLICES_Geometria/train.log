@@ -1,0 +1,47 @@
+fold=0 seed=42 terminado: baseline + fusión
+fold=0 seed=123 terminado: baseline + fusión
+fold=0 seed=2026 terminado: baseline + fusión
+fold=1 seed=42 terminado: baseline + fusión
+fold=1 seed=123 terminado: baseline + fusión
+fold=1 seed=2026 terminado: baseline + fusión
+fold=2 seed=42 terminado: baseline + fusión
+fold=2 seed=123 terminado: baseline + fusión
+fold=2 seed=2026 terminado: baseline + fusión
+fold=3 seed=42 terminado: baseline + fusión
+fold=3 seed=123 terminado: baseline + fusión
+fold=3 seed=2026 terminado: baseline + fusión
+fold=4 seed=42 terminado: baseline + fusión
+fold=4 seed=123 terminado: baseline + fusión
+fold=4 seed=2026 terminado: baseline + fusión
+{
+  "status": "PASS",
+  "conditions": [
+    "slices_only",
+    "slices_plus_cell_geometry"
+  ],
+  "physical_structures": 210,
+  "physical_compositions": 70,
+  "folds": 5,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "geometry_columns": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "geometry_source_file": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv",
+  "geometry_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+  "code_strategy": "Matched head initialization + zero initialized geometry weights",
+  "baseline_same_ridge": "Historical five frozen fitted Ridge; no Ridge retraining",
+  "geometry_scaling": "StandardScaler fit only on 45 inner train compositions, per fold",
+  "output_prediction_sha256": "68c6b2616608cc323c8c5d27cc1ba8f9d3f32f090a761b0cdbcebbc24d42bccf",
+  "historical_test_accessed": false,
+  "note": "Solo una adición de descriptores de celda a la rama residual, sin fuerza ni tensión."
+}

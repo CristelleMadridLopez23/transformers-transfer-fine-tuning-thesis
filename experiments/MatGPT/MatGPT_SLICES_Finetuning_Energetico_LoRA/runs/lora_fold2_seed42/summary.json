@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "condition": "lora",
+  "fold": 2,
+  "seed": 42,
+  "best_epoch": 17,
+  "best_inner_loss": 0.1959297743371942,
+  "epochs": 37,
+  "optimizer_steps": 222,
+  "scale_ev_atom": 0.055687326937913895,
+  "train_formulas": 45,
+  "inner_validation_formulas": 11,
+  "outer_formulas_held_out": 14,
+  "elapsed_seconds": 374.09618624998257,
+  "lora_parameters": 24576,
+  "head_parameters": 6161
+}

@@ -130,3 +130,15 @@ La evidencia D1 muestra que la composición basta para predecir bien el nivel ab
 Referencias metodológicas: MatGPT [repo](https://github.com/devalab/matgpt), commit local fijado; SLICES, Xiao et al. (2023), [doi:10.1038/s41467-023-42870-7](https://doi.org/10.1038/s41467-023-42870-7); MatFold, Witman & Schindler (2025), [doi:10.1039/D4DD00250D](https://doi.org/10.1039/D4DD00250D); SOAP [DScribe](https://singroup.github.io/dscribe/latest/tutorials/descriptors/soap.html) como descriptor publicado que no se usó; [MPtrj](https://docs.materialsproject.org/services/ml-and-ai-applications/mptrj)/CHGNet, [doi:10.1038/s42256-023-00716-3](https://doi.org/10.1038/s42256-023-00716-3), como contexto de potenciales geométricos; y [Autograd de PyTorch](https://docs.pytorch.org/docs/stable/notes/autograd) para distinguir inferencia y entrenamiento.
 
 
+
+## Estructura del proyecto
+
+- `data/`: datasets fuente y procesados.
+- `embeddings/`: representaciones extraídas.
+- `models/`: implementaciones y checkpoints base originales.
+- `scripts/`: código Python organizado por familia y experimento.
+- `reports/`: informes científicos y documentación de auditoría.
+- `images/<experimento>/`: todas las figuras PNG, agrupadas por experimento.
+- `experiments/<experimento>/`: CSV, JSON, logs, checkpoints derivados y configuración usada.
+
+Las carpetas históricas `Alternative2/01_data`, `Alternative2/embeddings`, `Alternative2/models`, `Alternative2/reports` y `Alternative2/scripts` son enlaces de compatibilidad. El código nuevo debe usar las rutas raíz. Los experimentos se ejecutan localmente con Python; no se conservan lanzadores shell ni configuraciones Slurm.

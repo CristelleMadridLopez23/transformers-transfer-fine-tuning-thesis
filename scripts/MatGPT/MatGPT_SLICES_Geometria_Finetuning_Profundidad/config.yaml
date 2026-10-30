@@ -1,0 +1,58 @@
+experiment: MatGPT_Experimento_D_SLICES_Geometria_Finetuning_Profundidad
+data:
+  dataset: reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+  folds: reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv
+  geometry: experiments/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv
+  geometry_manifest: experiments/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.manifest.json
+  geometry_source: gga-static_endpoint_cleaned
+  structures: 210
+  compositions: 70
+  polymorphs_per_composition: 3
+  folds: 5
+  seeds: [42, 123, 2026]
+geometry_features:
+  - a_reduced_shape
+  - b_reduced_shape
+  - c_reduced_shape
+  - alpha_reduced_deg
+  - beta_reduced_deg
+  - gamma_reduced_deg
+  - volume_per_atom_ang3
+geometry_scaling: StandardScaler ajustado en 45 composiciones inner-train por pliegue
+conditions:
+  reused_slices_controls: [F2, F4, F8]
+  reused_frozen_geometry_control: F0
+  train_geometry: [F2, F4, F8]
+  blocks:
+    F2: [10, 11]
+    F4: [8, 9, 10, 11]
+    F8: [4, 5, 6, 7, 8, 9, 10, 11]
+model:
+  base_checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+  hidden_dimension: 768
+  transformer_blocks: 12
+  slices_head: Linear(768,8)-GELU-Dropout(0.1)-Linear(8,1)
+  geometry_head: Linear(775,8)-GELU-Dropout(0.1)-Linear(8,1)
+  slices_head_parameters: 6161
+  geometry_head_parameters: 6217
+  geometry_weights_initialization: siete columnas geométricas en cero; restantes copiadas de MLP8 con semilla idéntica
+  ridge: cinco pipelines composicionales históricos, congelados y sin reentrenar
+training:
+  optimizer: AdamW
+  learning_rate_transformer: 0.00001
+  learning_rate_head: 0.001
+  weight_decay_transformer: 0.01
+  weight_decay_head: 0.0001
+  batch_compositions: 8
+  max_epochs: 200
+  early_stopping_patience: 20
+  loss: SmoothL1 beta=1 sobre residuos normalizados por desviación inner-train
+  gradient_clipping: false
+  device: cpu
+  num_threads: 2
+  no_test_access: true
+statistical_analysis:
+  primary_estimand: A (metric per seed, then average seeds within each composition)
+  secondary_estimand: B (average three seed predictions per physical structure, then calculate metric)
+  bootstrap_replicates: 10000
+  bootstrap_seed: 20261030

@@ -1,0 +1,21 @@
+{
+  "started_at_utc": "2026-10-28T23:54:14.204000+00:00",
+  "ended_at_utc": "2026-10-28T23:54:17.164576+00:00",
+  "wall_seconds": 2.9604485002346337,
+  "user_cpu_seconds": 1.761286,
+  "system_cpu_seconds": 0.431502,
+  "peak_rss_bytes": 324976640,
+  "exit_code": 0,
+  "command": [
+    ".venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/tests",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/tests_final.log"
+}

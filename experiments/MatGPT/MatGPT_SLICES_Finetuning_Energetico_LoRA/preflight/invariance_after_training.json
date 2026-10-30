@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "run": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/reports/MatGPT_SLICES_Finetuning_Energetico_LoRA/runs/lora_fold0_seed42",
+  "structure_ids": [
+    "Ba1Nb1S3--Ba1Nb1S3_dist_perovskite--fm--gga-static::static",
+    "Ba1Nb1S3--Ba1Nb1S3_hexagonal--fm--gga-static::static",
+    "Ba1Nb1S3--Ba1Nb1S3_needle--fm--gga-static::static"
+  ],
+  "l03_max_abs_difference": 0.0,
+  "base_in_proj_max_abs_difference": 0.0,
+  "final_end_max_abs_drift": 0.0007643699645996094,
+  "repeat_max_abs_difference": 0.0,
+  "trained_lora_b_norm": 0.03141322942657055,
+  "ridge_prediction_invariant_by_identical_l03": true,
+  "original_checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414"
+}

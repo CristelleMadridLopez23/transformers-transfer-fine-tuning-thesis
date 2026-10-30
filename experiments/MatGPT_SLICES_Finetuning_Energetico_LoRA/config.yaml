@@ -1,0 +1,51 @@
+experiment_id: MatGPT_SLICES_Finetuning_Energetico_LoRA
+status: RUNNING_EXPLORATORY
+data:
+  source: Alternative2/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv
+  eligible_splits: [train, val]
+  structures: 210
+  formulas: 70
+  polymorphs_per_formula: 3
+  outer_folds: 5
+  inner_train_formulas: 45
+  inner_validation_formulas: 11
+  outer_validation_formulas: 14
+  seeds: [42, 123, 2026]
+  historical_test_used: false
+model:
+  backbone: MatGPT official unconditional ModifiedTransformerDecoder
+  checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+  tokenizer_sha256: d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee
+  vocab_size: 172
+  context_length: 442
+  width: 768
+  decoder_blocks: 12
+  ridge_feature: L03_MEAN_original_block_3_average_of_SLICES_tokens
+  residual_feature: FINAL_END_post_ln_f_before_lm_head
+lora:
+  blocks_zero_based: [10, 11]
+  projections: [query, value]
+  rank: 4
+  alpha: 8
+  dropout: 0.05
+  trainable_parameters: 24576
+head:
+  architecture: Linear(768,8)-GELU-Dropout(0.1)-Linear(8,1)
+  parameters: 6161
+  residual_centering: per_formula_triplet
+training:
+  conditions: [frozen, lora]
+  optimizer: AdamW
+  learning_rate_head: 0.001
+  weight_decay_head: 0.0001
+  learning_rate_lora: 0.0001
+  weight_decay_lora: 0.01
+  formulas_per_update: 8
+  max_epochs: 200
+  early_stopping_patience: 20
+  gradient_clipping: null
+  loss: SmoothL1_beta1_of_residuals_scaled_by_inner_train_std
+  selection: minimum_inner_validation_residual_loss
+device: cpu
+threads: 2
+protocol_note: All 70 development formulas were previously observed in research; outer evaluation remains exploratory, historical test closed.

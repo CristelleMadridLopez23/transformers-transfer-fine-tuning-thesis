@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "seed": 42,
+  "n_structures": 210,
+  "dimension": 768,
+  "random_weight_sha256": "4874cb19cbd733c0e8d809a5c9a04fa7968a2b1268f393d804ff43e77956e915",
+  "feature_sha256": "9f7c3ecc28b04431c51f5c49da8c6d05b0307d69fd4ee9779fbf229d1add0e43",
+  "pretrained_checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "tokenizer_sha256": "d0948d7ba6fe010c23b99755d71dc9546558b950509b02a7cccef73eb2f15dee",
+  "max_abs_difference_final_end_vs_prior": 0.0,
+  "backbone_trainable_parameters": 0,
+  "historical_test_accessed": false
+}

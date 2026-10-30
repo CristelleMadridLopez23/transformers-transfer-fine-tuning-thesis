@@ -1,0 +1,17 @@
+{
+  "status": "SMOKE",
+  "condition": "frozen",
+  "fold": 0,
+  "seed": 42,
+  "best_epoch": 2,
+  "best_inner_loss": 0.03347388654947281,
+  "epochs": 3,
+  "optimizer_steps": 3,
+  "scale_ev_atom": 0.06949901580810547,
+  "train_formulas": 2,
+  "inner_validation_formulas": 1,
+  "outer_formulas_held_out": 14,
+  "elapsed_seconds": 0.019902499858289957,
+  "lora_parameters": 0,
+  "head_parameters": 6161
+}

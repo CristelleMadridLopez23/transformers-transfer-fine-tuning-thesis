@@ -1,0 +1,11 @@
+{
+  "initialization": "official ModifiedTransformerDecoder PyTorch default initialization",
+  "seed_formula": "seed + 500000",
+  "torch_version": "2.8.0",
+  "parameter_count": 114026668,
+  "state_tensor_sha256": {
+    "42": "1a51c6f527f8dde4d9ab5967a6739f7b9ed97c6939bf88e1971b6158dd5bcf28",
+    "123": "05e7b792903f565eea895b20a42847d3ef47ee223bf37ec859757c360881a0a7",
+    "2026": "0df0909bf98535a3e02630b3bc07001ee9a06d9c2f3d57a55772b9f90c5b2738"
+  }
+}

@@ -1,0 +1,9 @@
+flowchart LR
+ C[Composición, 17 fracciones] --> R[Ridge fijo] --> U[Media energética mu_c]
+ A[SLICES A + geometría A] --> T[MatGPT compartido] --> H[MLP8] --> D[Centrar residuos A/B/C]
+ B[SLICES B + geometría B] --> T
+ X[SLICES C + geometría C] --> T
+ U --> E[E/N por polimorfo]
+ D --> E
+ E --> DE[Delta E, ranking, estado fundamental]
+ 

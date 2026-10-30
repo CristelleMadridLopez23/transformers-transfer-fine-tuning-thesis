@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "physical_structures": 210,
+  "compositions": 70,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "models": [
+    "pretrained",
+    "random",
+    "composition"
+  ],
+  "historical_test_accessed": false,
+  "tables": {
+    "composition_metrics.csv": "8a361343d049899ad23de080ca29d7e407c67adc10b5c148e5334e6ae9812988",
+    "embedding_summary.csv": "55c10b71cec125a32893dd6d400127efafcf8af1badad27b853ce4d9fcef3b91",
+    "pairs_historical_1mev.csv": "3fb7c8e8d626b31da47353fc5d1b8e51267581f6689a992980584ff618794ffc",
+    "embedding_pairs.csv": "476b16b8bb915e1aeb3b45eecc8c9d8a2077c9a66231b10295992149318a948e",
+    "delta_bins.csv": "92f02d98962f5c62e20faffb6ce9808033421a54aebe36ba7b777abc7f4d3de8",
+    "summary_by_seed.csv": "aeeda9c9299dab3c2cbb14e40dea77b2eb899cdfab01992f25cb3ba49e9b235f",
+    "composition_metrics_historical_1mev.csv": "8d94dfaafeb7d8bdb6c29921592a0c615b78cc7d07b8cd00ab59501a0b86fb47",
+    "paired_bootstrap.csv": "6652ed7645bc04848fa19d94ec431948f2ea160e08090ff87947ad12f9597a71",
+    "fold_seed_metrics_historical_1mev.csv": "45293b74834eff2d8624c463f327a6ac02192b922557e17a8b230d7dd9f2501b",
+    "pairs_gt5.csv": "47b6d98ed43119e1af2945cf6dfbd69b3e1825595e723a38f947ea9b5494bd54",
+    "embedding_examples.csv": "2af3df10c8e0e4c93eba34f30e8e626851f0d2869877263188096a37d9d97c33",
+    "predictions_by_structure.csv": "e95b4ea3683f8d08d61340452357f76a5b0fb38b37575bc8d36cd59cf294b329"
+  }
+}

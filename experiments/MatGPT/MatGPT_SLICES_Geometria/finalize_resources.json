@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-28T23:55:26.024908+00:00",
+  "ended_at_utc": "2026-10-28T23:55:28.115366+00:00",
+  "wall_seconds": 2.0902203330770135,
+  "user_cpu_seconds": 1.238697,
+  "system_cpu_seconds": 0.292419,
+  "peak_rss_bytes": 302186496,
+  "exit_code": 0,
+  "command": [
+    ".venv/bin/python",
+    "Alternative2/scripts/MatGPT_SLICES_Geometria_Hibrida/finalize_real_experiment.py",
+    "--repo-root",
+    "."
+  ],
+  "log": "Alternative2/reports/MatGPT/MatGPT_SLICES_Geometria/finalize.log"
+}
