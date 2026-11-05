@@ -1,0 +1,45 @@
+{
+  "experiment": "abs3_original_supervised_ft_f0_f1_f2",
+  "figures": [
+    "bootstrap_apareado_deltaE_f1_f2_vs_f0.png",
+    "curva_validacion_mae_deltaE_por_epoca.png",
+    "curvas_train_validation_smoothl1.png",
+    "error_deltaE_por_magnitud_gap.png",
+    "error_energia_por_polimorfo.png",
+    "metricas_energeticas_oof.png",
+    "paridad_deltaE_firmada_slices_geometry_oof.png",
+    "paridad_deltaE_firmada_slices_oof.png",
+    "paridad_energia_absoluta_slices_geometry_oof.png",
+    "paridad_energia_absoluta_slices_oof.png",
+    "ranking_y_groundstate_oof.png"
+  ],
+  "source_predictions": "predictions/{structures,pairs}/*.csv",
+  "source_training_history": "training_history_full.csv",
+  "conditions": [
+    "MatGPT_SLICES_F0",
+    "MatGPT_SLICES_F1",
+    "MatGPT_SLICES_F2",
+    "MatGPT_SLICES_GEOMETRY_F0",
+    "MatGPT_SLICES_GEOMETRY_F1",
+    "MatGPT_SLICES_GEOMETRY_F2",
+    "MatterGPT_SLICES_F0",
+    "MatterGPT_SLICES_F1",
+    "MatterGPT_SLICES_F2",
+    "MatterGPT_SLICES_GEOMETRY_F0",
+    "MatterGPT_SLICES_GEOMETRY_F1",
+    "MatterGPT_SLICES_GEOMETRY_F2"
+  ],
+  "oof": {
+    "formulas": 70,
+    "structures": 210,
+    "outer_folds": 5,
+    "seeds": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "test_accessed": false,
+  "models_modified": false,
+  "note": "F0=backbone congelado; F1=último bloque; F2=dos bloques finales. Sin Alexandria."
+}

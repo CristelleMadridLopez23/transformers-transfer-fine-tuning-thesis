@@ -1,0 +1,23 @@
+{
+  "wall_seconds": 4.0464353752322495,
+  "cpu_seconds": 4.200044,
+  "peak_rss_platform_units": 480706560,
+  "cpu_count": 12,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.10.21",
+  "torch": "2.8.0",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "device": "CPU",
+  "trainable_model": "MLP8 only",
+  "models_trained": 30,
+  "historical_test_accessed": false,
+  "full_training_attempts": 3,
+  "mlp8_fit_executions_total": 90,
+  "final_checkpoints_retained": 30,
+  "superseded_deterministic_attempts": 60,
+  "script_failures_before_complete_artifacts": 2,
+  "note": "Dos ejecuciones de entrenamiento completas se repitieron por correcciones de agregación y configuración del script; los checkpoints finales son de la tercera ejecución determinista. Las métricas/figuras finales se regeneraron desde esas predicciones OOF sin nuevos entrenamientos."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "dataset_sha256": "afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e",
+  "rows": 210,
+  "structure_ids": 210,
+  "compositions": 70,
+  "targets_column": "energy_dft_ev_atom",
+  "slices_column": "SLICES",
+  "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "splits_per_fold": {
+    "inner_train": 45,
+    "inner_validation": 11,
+    "outer_evaluation": 14
+  },
+  "historical_test_accessed": false
+}

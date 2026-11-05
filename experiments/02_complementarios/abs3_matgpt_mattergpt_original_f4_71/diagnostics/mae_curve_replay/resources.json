@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "stage": "mae_curves",
+  "wall_seconds": 13758.897242125124,
+  "process_cpu_seconds": 25780.288769,
+  "peak_rss_bytes": 6252052480,
+  "device": "cpu",
+  "cpu_threads": 3,
+  "mps": false,
+  "cuda": false,
+  "fold_seed_pairs": 30,
+  "runs": 60,
+  "epochs_recorded": 1261,
+  "historical_test_accessed": false,
+  "python_version": "3.10.21",
+  "torch_version": "2.8.0",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3"
+}

@@ -1,0 +1,31 @@
+{
+  "dataset": "data/abs3/abs3_development_f4_geometry/dataset.csv",
+  "sha256": "afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e",
+  "structures": 210,
+  "compositions": 70,
+  "polymorphs_per_composition": 3,
+  "geometry_source": "gga-static_endpoint_cleaned",
+  "geometry_features": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "fold_manifest": "experiments/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv",
+  "fold_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "folds": 5,
+  "inner_train_validation_outer": [
+    45,
+    11,
+    14
+  ],
+  "pair_orientation": [
+    "dist_perovskite→hexagonal",
+    "dist_perovskite→needle",
+    "hexagonal→needle"
+  ],
+  "historical_test_accessed": false
+}

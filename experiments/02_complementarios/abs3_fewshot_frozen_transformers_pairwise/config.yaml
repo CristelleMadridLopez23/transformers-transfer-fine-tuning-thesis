@@ -1,0 +1,12 @@
+experiment: abs3_fewshot_frozen_transformers_pairwise
+status: BLOCKED_PRECHECK
+objective: Few-shot pairwise DeltaE transfer with frozen MatGPT and MatterGPT extractors
+methods: [pairwise_ridge, siamese_deltaE, siamese_deltaE_plus_ranking]
+extractors: [MatGPT_original, MatGPT_Alexandria_F4_100, MatterGPT_original, MatterGPT_Alexandria_F4_71]
+dataset: ABS3, 70 compositions, 210 structures, three polymorphs per formula
+folds: 5
+seeds: [42, 123, 2026]
+geometry_features: [a_reduced_shape, b_reduced_shape, c_reduced_shape, alpha_reduced_deg, beta_reduced_deg, gamma_reduced_deg, volume_per_atom_ang3]
+training_started: false
+blocking_reason: Required Alexandria F4 checkpoints are missing from disk and Git objects.
+historical_test_accessed: false

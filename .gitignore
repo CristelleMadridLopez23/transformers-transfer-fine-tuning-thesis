@@ -42,6 +42,12 @@ checkpoint-*/
 *.arrow
 *.pkl
 *.pickle
+*.aselmdb
+*.aselmdb-lock
+*.extxyz
+
+# Bundle local de despliegue; se transfiere directamente a MSI, no al remoto Git.
+experiments/matgpt_alexandria_energy_transfer_20k/msi_bundle/
 
 # Tablas de resultados y datos CSV locales.
 *.csv

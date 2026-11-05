@@ -1,0 +1,172 @@
+{
+  "experiment": "mattergpt_abs3_frozen_ridge_mlp8",
+  "property_vector": [
+    1.0,
+    2.0
+  ],
+  "model": {
+    "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+    "config": {
+      "activation_function": "gelu_new",
+      "architectures": [
+        "GPT"
+      ],
+      "attn_pdrop": 0.1,
+      "block_size": 397,
+      "bos_token_id": 130,
+      "embd_pdrop": 0.1,
+      "eos_token_id": 131,
+      "initializer_range": 0.02,
+      "layer_norm_epsilon": 1e-05,
+      "lstm": false,
+      "lstm_layers": 0,
+      "model_type": "gpt",
+      "n_embd": 768,
+      "n_head": 12,
+      "n_layer": 12,
+      "num_props": 2,
+      "resid_pdrop": 0.1,
+      "scale_attn_weights": true,
+      "summary_activation": null,
+      "summary_first_dropout": 0.1,
+      "summary_proj_to_labels": true,
+      "summary_type": "cls_index",
+      "summary_use_proj": true,
+      "use_cache": true,
+      "vocab_size": 132
+    },
+    "config_sha256": "d2d1e9a0bdcf6a8769afa263dc1cde56407a357616514cb9030b2405a1f240ad",
+    "missing_keys": [],
+    "model_py_sha256": "eb32aa1721c24ac4b09f9b55028c8eb82c809aa2010ec67fd664afacba09ed8e",
+    "source_url": "https://huggingface.co/xiaohang07/MatterGPT",
+    "tokenizer_implementation": "copia semánticamente idéntica de SimpleTokenizer; wrapper importa transformers no disponible; su clase GPT fue cargada directamente",
+    "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+    "trainable_backbone_parameters": 0,
+    "unexpected_keys": [],
+    "vocab_size_reconstructed": 132,
+    "wrapper_sha256": "7e50a733509740c346b1478576ff5dfba2c71b99acbde2eda82f1c1de7872c81"
+  },
+  "input_audit": {
+    "all_slices_byte_identical_to_original": true,
+    "atoms_over_20": 0,
+    "backbone_frozen_no_grad_and_unchanged": true,
+    "batch_size_invariance": true,
+    "compositions": 70,
+    "conditioning_max_abs_sensitivity_diagnostic": 0.8387229442596436,
+    "conditioning_shape_dtype": "[batch,1,2]/float32",
+    "config_bos_eos_ids_used_for_serialization": false,
+    "config_special_token_ids_metadata": {
+      "bos_token_id": 130,
+      "eos_token_id": 131
+    },
+    "context_limit": 397,
+    "graph_equivalence_missing": 0,
+    "graph_equivalence_true": 207,
+    "logits_equal_original_forward_without_hook": true,
+    "logits_identical_with_read_hook": true,
+    "max_sequence_tokens": 256,
+    "mlp8_smoke": {
+      "backbone_parameters_in_optimizer": false,
+      "composition_id": "BaNbS3",
+      "finite_smoothl1": true,
+      "fold": 0,
+      "group_role": "inner_train",
+      "mlp8_gradients_finite": true,
+      "residual_centered_per_formula": true,
+      "ridge_plus_residual_reconstruction": true,
+      "seed": 42,
+      "status": "PASS"
+    },
+    "oov_structures": 0,
+    "padding_invariance": true,
+    "post_ln_f_terminal_hidden": true,
+    "pre_transformer_embed_used": false,
+    "pretraining_teacher_forcing_loader_verified": false,
+    "property_vector": [
+      1.0,
+      2.0
+    ],
+    "simple_tokenizer_special_token_ids_used": {
+      "start_gt": 39,
+      "terminal_lt": 38
+    },
+    "space_group_num_serialized_in_slices": false,
+    "start_token": ">",
+    "start_token_id": 39,
+    "status": "PASS",
+    "structure_max_abs_sensitivity_diagnostic": 0.6218796372413635,
+    "structures": 210,
+    "terminal_token": "<",
+    "terminal_token_id": 38,
+    "topology_hash_missing": 0,
+    "truncations": 0
+  },
+  "ridge": {
+    "source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/MatGPT/MatGPT_Regresion_Hibrida_Ridge_Composicional",
+    "models_reused_without_fit": true,
+    "features_order": [
+      "Ba",
+      "Ca",
+      "Cd",
+      "Cu",
+      "Ge",
+      "Hf",
+      "Mg",
+      "Nb",
+      "Pb",
+      "S",
+      "Si",
+      "Sn",
+      "Sr",
+      "Ti",
+      "V",
+      "Zn",
+      "Zr"
+    ],
+    "feature_count": 17,
+    "fold_model_sha256": {
+      "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+      "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+      "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+      "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+      "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+    },
+    "selected_alpha_by_fold": {
+      "0": 0.01,
+      "1": 0.1,
+      "2": 0.1,
+      "3": 0.1,
+      "4": 0.1
+    }
+  },
+  "dataset_source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+  "fold_manifest_source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv",
+  "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "matgpt_f0_oof_source_sha256": "35d716bd360507899a4e2ab54683ba36a7712ee2c08d6fd0a5d0af8c89f504ba",
+  "historical_test_labels_parsed": false,
+  "head": {
+    "architecture": "768-8-1",
+    "activation": "GELU",
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_compositions": 8,
+    "max_epochs": 200,
+    "patience": 20,
+    "smoothl1_beta": 1.0
+  },
+  "splits": {
+    "folds": 5,
+    "inner_train": 45,
+    "inner_validation": 11,
+    "outer_evaluation": 14,
+    "seeds": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "bootstrap_replicates": 10000,
+  "historical_test_accessed": false
+}

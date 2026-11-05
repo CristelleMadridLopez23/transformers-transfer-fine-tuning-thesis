@@ -1,0 +1,39 @@
+{
+  "phase": "full_training_in_progress",
+  "wall_seconds": 68.88660704204813,
+  "cpu_count_logical": 12,
+  "device_training_available": "CPU only; MPS unavailable",
+  "process_table": "not readable in this environment; ps denied by OS permission",
+  "heavy_training_started": true,
+  "test_independent_accessed": false,
+  "process_cpu_seconds": null,
+  "peak_rss_bytes": null,
+  "torch_threads": 3,
+  "device": "CPU",
+  "mps_available": false,
+  "training_started": true,
+  "active_process_table_readable": false,
+  "resource_measurement_note": "Wall time and configured CPU threads recorded; peak RSS and process CPU time were not captured by the completed initial run.",
+  "active_full_phase": {
+    "status": "RUNNING",
+    "started_unix": 1793729022.0620055,
+    "device": "CPU",
+    "logical_cpu_count": 12,
+    "configured_torch_threads": 3,
+    "mps_available": false,
+    "completed_final_runs": 1,
+    "expected_final_runs": 180,
+    "process_cpu_seconds": null,
+    "peak_rss_bytes": null,
+    "resource_measurement_note": "CPU time y RSS máximos se escribirán al finalizar; el estado incremental incluye época y corridas completadas."
+  },
+  "pilot": {
+    "status": "COMPLETE_TECHNICAL_ONLY",
+    "wall_seconds": 394.225,
+    "process_cpu_seconds": 708.507,
+    "peak_rss_bytes": 3553148928,
+    "device": "CPU",
+    "torch_threads": 3,
+    "outer_evaluation_accessed": false
+  }
+}

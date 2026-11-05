@@ -1,0 +1,21 @@
+{
+  "status": "COMPLETE",
+  "model": "MatGPT",
+  "condition": "F4",
+  "fold": 2,
+  "seed": 2026,
+  "warmup_shared_head_sha256": "d8a8b15aa6f7da985014033322967ed743a13480c37768aaeec3554b46edb411",
+  "best_epoch": 1,
+  "best_checkpoint_phase": "F4",
+  "warmup_inner_validation_smoothl1": 0.21780481934547424,
+  "epochs_run": 13,
+  "best_inner_validation_smoothl1": 0.21588467061519623,
+  "trainable_backbone_parameters": 37807104,
+  "head_parameters": 6217,
+  "optimizer_steps": 78,
+  "elapsed_seconds": 265.19158054189757,
+  "process_cpu_seconds": 4647.978774,
+  "peak_rss_bytes": 6252052480,
+  "device": "cpu",
+  "parameter_update_norm": null
+}

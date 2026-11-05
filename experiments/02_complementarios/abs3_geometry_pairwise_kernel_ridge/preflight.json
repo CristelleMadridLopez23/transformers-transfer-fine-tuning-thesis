@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "dataset_sha256": "afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e",
+  "folds_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "historical_geo_preflight": "PASS",
+  "historical_geo_predictions": "PASS",
+  "ridge_m2_fold_hashes": {
+    "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+    "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+    "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+    "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+    "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+  },
+  "ridge_m2_retrained": false,
+  "outer_used_for_selection": false,
+  "historical_test_accessed": false,
+  "geometry_dimensions": 7,
+  "linear_kernel_reduction_test": {
+    "passed": true,
+    "max_abs_prediction_difference": 2.494116024820414e-13,
+    "lambda": 0.1
+  },
+  "kernel_invariant_tests": {
+    "passed": true,
+    "kernel_symmetry_max_abs": 0.0,
+    "kernel_min_eigenvalue": 0.36666179793475473,
+    "antisymmetry_error": 0.0,
+    "triplet_cycle_error": 4.440892098500626e-16,
+    "energy_reconstruction_max_error_mev_atom": 8.881784197001252e-14
+  },
+  "pair_orientation": [
+    "dist_perovskite→hexagonal",
+    "dist_perovskite→needle",
+    "hexagonal→needle"
+  ],
+  "conditions_available": [
+    "C0_GEO_LINEAR",
+    "C1_KRR_RBF",
+    "C2_KRR_RBF_CALIBRATED"
+  ]
+}

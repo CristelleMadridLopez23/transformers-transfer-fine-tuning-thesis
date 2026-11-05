@@ -1,0 +1,287 @@
+{
+  "checkpoint_reload_checks": [
+    {
+      "bytes": 27747,
+      "fold": 0,
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27757,
+      "fold": 0,
+      "seed": 123,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27767,
+      "fold": 0,
+      "seed": 2026,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27747,
+      "fold": 1,
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27757,
+      "fold": 1,
+      "seed": 123,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27767,
+      "fold": 1,
+      "seed": 2026,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27747,
+      "fold": 2,
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27757,
+      "fold": 2,
+      "seed": 123,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27767,
+      "fold": 2,
+      "seed": 2026,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27747,
+      "fold": 3,
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27757,
+      "fold": 3,
+      "seed": 123,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27767,
+      "fold": 3,
+      "seed": 2026,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27747,
+      "fold": 4,
+      "seed": 42,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27757,
+      "fold": 4,
+      "seed": 123,
+      "status": "PASS"
+    },
+    {
+      "bytes": 27767,
+      "fold": 4,
+      "seed": 2026,
+      "status": "PASS"
+    }
+  ],
+  "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+  "checks": {
+    "IDs_formula_familia_slices_cache_coinciden": true,
+    "backbone_sin_forward_durante_entrenamiento": true,
+    "checkpoint_reload_verificado_al_final": true,
+    "checkpoint_y_tokenizador_SHA256_correctos": true,
+    "embeddings_210_por_768_posteriores_a_ln_f": true,
+    "equivalencia_paso_cero": true,
+    "geometria_210_por_7_fuente_estatica_final": true,
+    "gradientes_solo_en_mlp8": true,
+    "mlp8_775_entradas": true,
+    "pesos_geometricos_iniciales_cero": true,
+    "policy_terminal_y_ultimo_token_especial_validada": true,
+    "property_vector_1_0_2_0": true,
+    "ridge_17_fracciones_sin_reentrenar": true,
+    "scaler_inner_train_45_formulas_por_fold": true,
+    "sin_nan_ni_inf": true,
+    "splits_agrupados_por_formula_45_11_14": true,
+    "targets_residuales_y_smoothl1_historicos": true,
+    "test_historico_cerrado": true
+  },
+  "compositions": 70,
+  "embedding_cache_sha256": "c11bdbc0da5e6fb0d8dc8deec1f4869854368513c823f7e5bc9f7d42490a99d7",
+  "embedding_dim": 768,
+  "embedding_rows": 210,
+  "geometry_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+  "geometry_source_counts": {
+    "gga-static_endpoint_cleaned": 210
+  },
+  "geometry_source_manifest_sha256": "972ec31300f0aa54e9a34546aea2105e2e7ba7732bbf7052fdcc1b999840ac9a",
+  "historical_test_labels_parsed": false,
+  "initial_equivalence": {
+    "fold_seed_checks": 15,
+    "geometry_first_layer_weights_exactly_zero": true,
+    "max_abs_error": 0.0,
+    "slice_weights_and_bias_identical_to_c1_initialization": true,
+    "status": "PASS",
+    "tolerance": 1e-07,
+    "vectors_compared": 3150
+  },
+  "mattergpt_f0_preflight": {
+    "checks": {
+      "all_slices_byte_identical_to_original": true,
+      "atoms_over_20": 0,
+      "backbone_frozen_no_grad_and_unchanged": true,
+      "batch_size_invariance": true,
+      "compositions": 70,
+      "conditioning_max_abs_sensitivity_diagnostic": 0.8387229442596436,
+      "conditioning_shape_dtype": "[batch,1,2]/float32",
+      "config_bos_eos_ids_used_for_serialization": false,
+      "config_special_token_ids_metadata": {
+        "bos_token_id": 130,
+        "eos_token_id": 131
+      },
+      "context_limit": 397,
+      "graph_equivalence_missing": 0,
+      "graph_equivalence_true": 207,
+      "logits_equal_original_forward_without_hook": true,
+      "logits_identical_with_read_hook": true,
+      "max_sequence_tokens": 256,
+      "mlp8_smoke": {
+        "backbone_parameters_in_optimizer": false,
+        "composition_id": "BaNbS3",
+        "finite_smoothl1": true,
+        "fold": 0,
+        "group_role": "inner_train",
+        "mlp8_gradients_finite": true,
+        "residual_centered_per_formula": true,
+        "ridge_plus_residual_reconstruction": true,
+        "seed": 42,
+        "status": "PASS"
+      },
+      "oov_structures": 0,
+      "padding_invariance": true,
+      "post_ln_f_terminal_hidden": true,
+      "pre_transformer_embed_used": false,
+      "pretraining_teacher_forcing_loader_verified": false,
+      "property_vector": [
+        1.0,
+        2.0
+      ],
+      "simple_tokenizer_special_token_ids_used": {
+        "start_gt": 39,
+        "terminal_lt": 38
+      },
+      "space_group_num_serialized_in_slices": false,
+      "start_token": ">",
+      "start_token_id": 39,
+      "status": "PASS",
+      "structure_max_abs_sensitivity_diagnostic": 0.6218796372413635,
+      "structures": 210,
+      "terminal_token": "<",
+      "terminal_token_id": 38,
+      "topology_hash_missing": 0,
+      "truncations": 0
+    },
+    "model": {
+      "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+      "config": {
+        "activation_function": "gelu_new",
+        "architectures": [
+          "GPT"
+        ],
+        "attn_pdrop": 0.1,
+        "block_size": 397,
+        "bos_token_id": 130,
+        "embd_pdrop": 0.1,
+        "eos_token_id": 131,
+        "initializer_range": 0.02,
+        "layer_norm_epsilon": 1e-05,
+        "lstm": false,
+        "lstm_layers": 0,
+        "model_type": "gpt",
+        "n_embd": 768,
+        "n_head": 12,
+        "n_layer": 12,
+        "num_props": 2,
+        "resid_pdrop": 0.1,
+        "scale_attn_weights": true,
+        "summary_activation": null,
+        "summary_first_dropout": 0.1,
+        "summary_proj_to_labels": true,
+        "summary_type": "cls_index",
+        "summary_use_proj": true,
+        "use_cache": true,
+        "vocab_size": 132
+      },
+      "config_sha256": "d2d1e9a0bdcf6a8769afa263dc1cde56407a357616514cb9030b2405a1f240ad",
+      "missing_keys": [],
+      "model_py_sha256": "eb32aa1721c24ac4b09f9b55028c8eb82c809aa2010ec67fd664afacba09ed8e",
+      "source_url": "https://huggingface.co/xiaohang07/MatterGPT",
+      "tokenizer_implementation": "copia semánticamente idéntica de SimpleTokenizer; wrapper importa transformers no disponible; su clase GPT fue cargada directamente",
+      "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+      "trainable_backbone_parameters": 0,
+      "unexpected_keys": [],
+      "vocab_size_reconstructed": 132,
+      "wrapper_sha256": "7e50a733509740c346b1478576ff5dfba2c71b99acbde2eda82f1c1de7872c81"
+    },
+    "slices_teacher_forcing_caveat": "La secuencia pública `> SLICES <` se aplica según uso de generación, pero no se encontró el dataloader original de teacher-forcing para confirmar el token final del preentrenamiento.",
+    "status": "PASS"
+  },
+  "mlp8_geometry_smoke": {
+    "all_gradients_finite": true,
+    "geometry_gradients_nonzero_at_initialization": true,
+    "geometry_init_zero": true,
+    "head_parameters": 6217,
+    "loss_finite": true,
+    "output_centered_by_triplet": true,
+    "status": "PASS"
+  },
+  "post_ln_f_and_terminal_policy_confirmed_by": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/mattergpt_abs3_frozen_ridge_mlp8/preflight.json",
+  "property_vector": [
+    1.0,
+    2.0
+  ],
+  "ridge_sha256": {
+    "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+    "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+    "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+    "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+    "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+  },
+  "split_counts": {
+    "0": {
+      "inner_train": 45,
+      "inner_validation": 11,
+      "outer_evaluation": 14
+    },
+    "1": {
+      "inner_train": 45,
+      "inner_validation": 11,
+      "outer_evaluation": 14
+    },
+    "2": {
+      "inner_train": 45,
+      "inner_validation": 11,
+      "outer_evaluation": 14
+    },
+    "3": {
+      "inner_train": 45,
+      "inner_validation": 11,
+      "outer_evaluation": 14
+    },
+    "4": {
+      "inner_train": 45,
+      "inner_validation": 11,
+      "outer_evaluation": 14
+    }
+  },
+  "status": "PASS",
+  "structures": 210,
+  "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+  "topology_hash_missing_entries_in_historical_source": 3
+}

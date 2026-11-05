@@ -14,6 +14,7 @@ import logging
 import os
 import random
 import resource
+import shutil
 import sys
 import time
 from pathlib import Path
@@ -31,9 +32,10 @@ if str(ROOT) not in sys.path:
 MODEL_ROOT = ROOT / "models/MatGPT-source/mat-concat"
 CHECKPOINT = MODEL_ROOT / "mat-uncond/weights/transformer_property_0.pth"
 MODEL_INFO = MODEL_ROOT / "mat-uncond/weights/model_info_property_0.json"
-EXPERIMENT = ROOT / "experiments/matgpt_alexandria_energy_transfer_20k"
-TRAIN_CSV = EXPERIMENT / "alexandria_20k_train.csv"
-VALID_CSV = EXPERIMENT / "alexandria_2k_validation.csv"
+DATA_EXPERIMENT = ROOT / "experiments/matgpt_alexandria_energy_transfer_20k"
+EXPERIMENT = DATA_EXPERIMENT
+TRAIN_CSV = DATA_EXPERIMENT / "alexandria_20k_train.csv"
+VALID_CSV = DATA_EXPERIMENT / "alexandria_2k_validation.csv"
 LOG = logging.getLogger("matgpt_alexandria_training")
 BASE_SHA = "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414"
 
@@ -55,6 +57,69 @@ class EnergyHead(nn.Module):
             Energías normalizadas con forma [lote].
         """
         return self.network(embedding).squeeze(-1)
+
+
+class _CpuLayerNormFunction(torch.autograd.Function):
+    """Evaluate LayerNorm on CPU while preserving gradients to original-device parameters."""
+
+    @staticmethod
+    def forward(ctx: Any, inputs: Tensor, weight: Tensor, bias: Tensor,
+                normalized_shape: tuple[int, ...], eps: float) -> Tensor:
+        """Run the standard LayerNorm equation and save CPU copies for its backward pass."""
+        ctx.input_device = inputs.device
+        ctx.weight_device = weight.device
+        ctx.bias_device = bias.device
+        ctx.normalized_shape = normalized_shape
+        ctx.eps = eps
+        inputs_cpu, weight_cpu, bias_cpu = inputs.detach().cpu(), weight.detach().cpu(), bias.detach().cpu()
+        ctx.save_for_backward(inputs_cpu, weight_cpu, bias_cpu)
+        return F.layer_norm(inputs_cpu, normalized_shape, weight_cpu, bias_cpu, eps).to(inputs.device)
+
+    @staticmethod
+    def backward(ctx: Any, grad_output: Tensor) -> tuple[Tensor, Tensor, Tensor, None, None]:
+        """Use PyTorch's CPU LayerNorm backward, then return gradients to source devices."""
+        inputs_cpu, weight_cpu, bias_cpu = ctx.saved_tensors
+        with torch.enable_grad():
+            inputs_var = inputs_cpu.detach().requires_grad_(True)
+            weight_var = weight_cpu.detach().requires_grad_(True)
+            bias_var = bias_cpu.detach().requires_grad_(True)
+            outputs = F.layer_norm(inputs_var, ctx.normalized_shape, weight_var, bias_var, ctx.eps)
+            grad_inputs, grad_weight, grad_bias = torch.autograd.grad(
+                outputs, (inputs_var, weight_var, bias_var), grad_output.detach().cpu(),
+                retain_graph=False, create_graph=False
+            )
+        return (grad_inputs.to(ctx.input_device), grad_weight.to(ctx.weight_device),
+                grad_bias.to(ctx.bias_device), None, None)
+
+
+class CpuBackwardLayerNorm(nn.Module):
+    """LayerNorm with unchanged parameters and equation, using CPU forward/backward kernels."""
+
+    def __init__(self, original: nn.LayerNorm) -> None:
+        """Wrap an existing affine LayerNorm without changing its learned parameters."""
+        super().__init__()
+        if original.weight is None or original.bias is None:
+            raise ValueError("F4 CPU LayerNorm fallback requires affine weight and bias")
+        self.weight = original.weight
+        self.bias = original.bias
+        self.normalized_shape = tuple(original.normalized_shape)
+        self.eps = float(original.eps)
+
+    def forward(self, inputs: Tensor) -> Tensor:
+        """Apply the mathematically identical normalization through the CPU autograd function."""
+        return _CpuLayerNormFunction.apply(inputs, self.weight, self.bias, self.normalized_shape, self.eps)
+
+
+def install_mps_layernorm_fallback(model: Any) -> None:
+    """Move only final-block norm1 computation to CPU to avoid the observed MPS dbias NaN.
+
+    Args:
+        model: Loaded MatGPT backbone already moved to MPS.
+    Returns:
+        None.
+    """
+    for block in model.transformer_decoder.layers[8:12]:
+        block.norm1 = CpuBackwardLayerNorm(block.norm1)
 
 
 def sha256(path: Path) -> str:
@@ -254,6 +319,8 @@ def train(args: argparse.Namespace) -> None:
     random.seed(args.seed)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
+    if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+        torch.mps.manual_seed(args.seed)
     train_frame, val_frame = pd.read_csv(TRAIN_CSV), pd.read_csv(VALID_CSV)
     if len(train_frame) != 20000 or len(val_frame) != 2000:
         raise ValueError("Los tamaños de los manifests no son 20k/2k")
@@ -276,20 +343,38 @@ def train(args: argparse.Namespace) -> None:
     model, stoi, context, torch_module = load_matgpt()
     if context != 442 or torch_module is not torch:
         raise ValueError("Checkpoint/tokenizer MatGPT no coincide con preflight")
-    device = torch.device("cpu")
+    if args.device == "auto":
+        if torch.cuda.is_available():
+            device = torch.device("cuda")
+        elif hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+            device = torch.device("mps")
+        else:
+            device = torch.device("cpu")
+    else:
+        device = torch.device(args.device)
+    if device.type == "cuda" and not torch.cuda.is_available():
+        raise RuntimeError("Se solicitó CUDA pero no hay una GPU visible para PyTorch")
+    if device.type == "mps" and not torch.backends.mps.is_available():
+        raise RuntimeError("Se solicitó MPS pero Metal no está disponible para PyTorch")
+    if device.type == "cuda":
+        torch.cuda.reset_peak_memory_stats(device)
     smoke = {"batch_size": 8, "padded_length": 230, "lengths": [61, 66, 82, 90, 113, 135, 173, 230],
              "threads_2_wall_seconds": 2.0841486249119043, "threads_2_cpu_seconds": 3.080585,
              "threads_2_peak_rss_bytes": 2332229632, "threads_8_wall_seconds": 1.9585209162905812,
              "threads_8_cpu_seconds": 4.066702, "threads_8_peak_rss_bytes": 2319810560,
              "blocks_8_11_gradient_nonzero": True, "loss_finite": True,
              "rough_finetune_train_only_days_at_100_epochs_threads2": 5.7}
-    atomic_json(EXPERIMENT / "resources.json", {"status": "RUNNING", "device": "cpu",
+    atomic_json(EXPERIMENT / "resources.json", {"status": "RUNNING", "device": str(device),
         "cpu_count": os.cpu_count(), "threads": args.threads, "batch_size": args.batch_size,
         "validation_batch_size": args.validation_batch_size, "seed": args.seed,
         "base_checkpoint_sha256": BASE_SHA, "started_wall_time_unix": time.time(),
         "training_epochs_max": {"warmup": 20, "fine_tune": args.max_epochs},
         "preparation_run": prior_resources, "smoke_benchmark": smoke,
         "peak_rss_bytes_so_far": peak_rss_bytes()})
+    initial_summary = json.loads((EXPERIMENT / "summary.json").read_text(encoding="utf-8"))
+    initial_summary.update({"status": "TRAINING", "training_executed": True,
+                            "execution_device": str(device), "current_attempt_started_unix": time.time()})
+    atomic_json(EXPERIMENT / "summary.json", initial_summary)
     model.to(device)
     train_sequences = encode_rows(train_frame, stoi, context)
     val_sequences = encode_rows(val_frame, stoi, context)
@@ -332,7 +417,7 @@ def train(args: argparse.Namespace) -> None:
             losses.append(float(loss.detach().item()))
         head.eval()
         with torch.inference_mode():
-            warm_val_pred = head(torch.from_numpy(val_embeddings)).cpu().numpy()
+            warm_val_pred = head(torch.from_numpy(val_embeddings).to(device)).cpu().numpy()
         val_loss = float(F.smooth_l1_loss(torch.from_numpy(warm_val_pred.astype(np.float32)),
                                           torch.from_numpy(y_val), beta=1.0).item())
         epoch_seconds = time.monotonic() - epoch_start
@@ -345,6 +430,11 @@ def train(args: argparse.Namespace) -> None:
                              "epoch_wall_seconds": epoch_seconds,
                              "optimizer_steps": int(np.ceil(len(order) / args.batch_size))}, sort_keys=True))
     del train_embeddings, val_embeddings
+
+    if device.type == "mps":
+        # Preserve the original LayerNorm weights and equation, but avoid the MPS
+        # backward kernel that produced a non-finite norm1.bias gradient in F4.
+        install_mps_layernorm_fallback(model)
 
     # Stage B: unfreeze only original blocks 8–11; embeddings 0–7, ln_f and LM head stay fixed.
     for parameter in model.parameters():
@@ -372,11 +462,12 @@ def train(args: argparse.Namespace) -> None:
     summary = json.loads((EXPERIMENT / "summary.json").read_text(encoding="utf-8"))
     summary.update({"status": "TRAINING", "training_executed": True, "training_config": {"warmup_epochs": 20,
         "fine_tuning_epochs_max": args.max_epochs, "patience": args.patience, "batch_size": args.batch_size,
-        "threads": args.threads, "unfrozen_blocks": [8, 9, 10, 11], "device": "cpu"}})
+        "threads": args.threads, "unfrozen_blocks": [8, 9, 10, 11], "device": str(device)}})
     atomic_json(EXPERIMENT / "summary.json", summary)
-    resource_record: dict[str, Any] = {"status": "RUNNING", "device": "cpu", "threads": args.threads,
+    resource_record: dict[str, Any] = {"status": "RUNNING", "device": str(device), "threads": args.threads,
         "batch_size": args.batch_size, "warmup_epochs": 20, "finetune_epochs_max": 100,
         "base_checkpoint_sha256": BASE_SHA, "warmup_feature_extraction_seconds": warm_feature_seconds,
+        "mps_layernorm_cpu_fallback_blocks": [8, 9, 10, 11] if device.type == "mps" else [],
         "preparation_run": prior_resources, "smoke_benchmark": smoke,
         "parameters_trainable": {"head": trainable_params_head,
         "blocks_8_11": int(sum(parameter.numel() for parameter in transformer_params))}}
@@ -384,7 +475,8 @@ def train(args: argparse.Namespace) -> None:
     LOG.info(json.dumps({"event": "finetune_f4_started", "unfrozen_blocks": [8, 9, 10, 11],
                          "trainable_head_parameters": trainable_params_head,
                          "trainable_backbone_parameters": resource_record["parameters_trainable"]["blocks_8_11"],
-                         "maximum_epochs": args.max_epochs, "patience": args.patience}, sort_keys=True))
+                         "maximum_epochs": args.max_epochs, "patience": args.patience,
+                         "mps_layernorm_cpu_fallback_blocks": resource_record["mps_layernorm_cpu_fallback_blocks"]}, sort_keys=True))
     try:
         for epoch in range(1, args.max_epochs + 1):
             epoch_start = time.monotonic()
@@ -403,11 +495,29 @@ def train(args: argparse.Namespace) -> None:
                 if not torch.isfinite(loss):
                     raise FloatingPointError(f"Fine-tune loss no finita en época {epoch}")
                 loss.backward()
-                grad_tensors = [parameter.grad.detach() for parameter in transformer_params + list(head.parameters())
-                                if parameter.grad is not None]
-                grad_norm = torch.sqrt(sum(tensor.norm().square() for tensor in grad_tensors))
-                if not torch.isfinite(grad_norm):
-                    raise FloatingPointError(f"Gradiente no finito en época {epoch}")
+                named_trainable = [(name, parameter) for name, parameter in model.named_parameters()
+                                   if parameter.requires_grad]
+                named_trainable.extend((f"head.{name}", parameter) for name, parameter in head.named_parameters()
+                                       if parameter.requires_grad)
+                named_gradients = [(name, parameter.grad.detach()) for name, parameter in named_trainable
+                                   if parameter.grad is not None]
+                finite_flags = torch.stack([torch.isfinite(gradient).all()
+                                            for _, gradient in named_gradients])
+                if not bool(finite_flags.all()):
+                    bad_names = [name for name, gradient in named_gradients
+                                 if not bool(torch.isfinite(gradient).all())]
+                    raise FloatingPointError(
+                        f"Gradientes no finitos en época {epoch}, lote {begin // args.batch_size}: {bad_names}"
+                    )
+                # Compute the diagnostic norm over one contiguous vector. This avoids
+                # backend-specific accumulation behavior when summing dozens of MPS norms.
+                flat_gradient = torch.cat([gradient.reshape(-1) for _, gradient in named_gradients])
+                grad_norm = torch.linalg.vector_norm(flat_gradient)
+                if not bool(torch.isfinite(grad_norm)):
+                    raise FloatingPointError(
+                        f"Norma global no finita aunque cada gradiente es finito; época {epoch}, "
+                        f"lote {begin // args.batch_size}"
+                    )
                 grad_sum += float(grad_norm.detach().item())
                 optimizer.step()
                 batch_size = len(indices)
@@ -442,6 +552,7 @@ def train(args: argparse.Namespace) -> None:
                                     "total_wall_seconds": time.monotonic() - start_wall,
                                     "total_cpu_seconds": time.process_time() - start_cpu,
                                     "peak_rss_bytes": peak_rss_bytes(),
+                                    "peak_cuda_allocated_bytes": int(torch.cuda.max_memory_allocated(device)) if device.type == "cuda" else 0,
                                     "optimizer_steps": int(np.ceil(len(train_sequences) / args.batch_size) * (20 + epoch))})
             atomic_json(EXPERIMENT / "resources.json", resource_record)
             LOG.info(json.dumps({"event": "epoch_completed", "stage": "finetune_f4", "epoch": epoch,
@@ -454,11 +565,26 @@ def train(args: argparse.Namespace) -> None:
                 break
     except KeyboardInterrupt:
         resource_record.update({"status": "PARTIAL_INTERRUPTED", "total_wall_seconds": time.monotonic() - start_wall,
-                                "total_cpu_seconds": time.process_time() - start_cpu, "peak_rss_bytes": peak_rss_bytes()})
+                                "total_cpu_seconds": time.process_time() - start_cpu, "peak_rss_bytes": peak_rss_bytes(),
+                                "peak_cuda_allocated_bytes": int(torch.cuda.max_memory_allocated(device)) if device.type == "cuda" else 0})
         atomic_json(EXPERIMENT / "resources.json", resource_record)
         summary = json.loads((EXPERIMENT / "summary.json").read_text(encoding="utf-8"))
         summary.update({"status": "PARTIAL_INTERRUPTED", "training_executed": True,
                         "best_epoch": best_epoch, "best_validation_smoothl1": best_val})
+        atomic_json(EXPERIMENT / "summary.json", summary)
+        raise
+    except Exception as exc:
+        resource_record.update({"status": "FAILED", "failure_type": type(exc).__name__,
+                                "failure_message": str(exc), "failed_epoch": locals().get("epoch"),
+                                "failed_batch_start": locals().get("begin"),
+                                "total_wall_seconds": time.monotonic() - start_wall,
+                                "total_cpu_seconds": time.process_time() - start_cpu,
+                                "peak_rss_bytes": peak_rss_bytes()})
+        atomic_json(EXPERIMENT / "resources.json", resource_record)
+        summary = json.loads((EXPERIMENT / "summary.json").read_text(encoding="utf-8"))
+        summary.update({"status": "FAILED", "failure_type": type(exc).__name__,
+                        "failure_message": str(exc), "failed_epoch": locals().get("epoch"),
+                        "failed_batch_start": locals().get("begin")})
         atomic_json(EXPERIMENT / "summary.json", summary)
         raise
 
@@ -509,7 +635,9 @@ def train(args: argparse.Namespace) -> None:
     resource_record.update({"status": "COMPLETED", "best_epoch": best_epoch,
                             "total_wall_seconds": time.monotonic() - start_wall,
                             "total_cpu_seconds": time.process_time() - start_cpu,
-                            "peak_rss_bytes": peak_rss_bytes(), "completed_finetune_epochs": len([x for x in history if x["stage"] == "finetune_f4"]),
+                            "peak_rss_bytes": peak_rss_bytes(),
+                            "peak_cuda_allocated_bytes": int(torch.cuda.max_memory_allocated(device)) if device.type == "cuda" else 0,
+                            "completed_finetune_epochs": len([x for x in history if x["stage"] == "finetune_f4"]),
                             "optimizer_steps": sum(int(row.get("optimizer_steps", 0)) for row in history),
                             "checkpoint_sha256": sha256(best_path)})
     atomic_json(EXPERIMENT / "resources.json", resource_record)
@@ -527,10 +655,28 @@ def main() -> None:
     parser.add_argument("--threads", type=int, default=2)
     parser.add_argument("--max-epochs", type=int, default=100)
     parser.add_argument("--patience", type=int, default=15)
+    parser.add_argument("--device", choices=("auto", "cpu", "cuda", "mps"), default="auto",
+                        help="Dispositivo de entrenamiento; auto prioriza CUDA, luego Metal y CPU")
+    parser.add_argument("--data-dir", type=Path, default=DATA_EXPERIMENT,
+                        help="Directorio con manifiestos de entrenamiento y validación")
+    parser.add_argument("--output-dir", type=Path, default=DATA_EXPERIMENT,
+                        help="Directorio de resultados; permite preservar corridas previas")
     args = parser.parse_args()
     if min(args.batch_size, args.validation_batch_size, args.threads, args.max_epochs, args.patience) <= 0:
         parser.error("Todos los tamaños y límites deben ser positivos")
+    global EXPERIMENT, TRAIN_CSV, VALID_CSV
+    data_dir = args.data_dir.resolve()
+    EXPERIMENT = args.output_dir.resolve()
+    TRAIN_CSV = data_dir / "alexandria_20k_train.csv"
+    VALID_CSV = data_dir / "alexandria_2k_validation.csv"
+    if not TRAIN_CSV.is_file() or not VALID_CSV.is_file():
+        parser.error(f"No encuentro los manifiestos train/validation en {data_dir}")
     EXPERIMENT.mkdir(parents=True, exist_ok=True)
+    if EXPERIMENT != data_dir:
+        for filename in ("config.yaml", "metrics.json", "summary.json", "resources.json"):
+            source, destination = data_dir / filename, EXPERIMENT / filename
+            if source.is_file() and not destination.exists():
+                shutil.copy2(source, destination)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s",
                         handlers=[logging.StreamHandler(), logging.FileHandler(EXPERIMENT / "training.log", encoding="utf-8")])
     train(args)

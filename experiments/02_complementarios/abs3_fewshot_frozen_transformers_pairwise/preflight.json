@@ -1,0 +1,123 @@
+{
+  "status": "BLOCKED_PRECHECK",
+  "reason": "Faltan los dos checkpoints Alexandria F4 exigidos. No se inició entrenamiento ni se generaron resultados.",
+  "historical_test_accessed": false,
+  "sources": {
+    "dataset": {
+      "path": "reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+      "exists": false,
+      "sha256": null
+    },
+    "folds": {
+      "path": "reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv",
+      "exists": true,
+      "sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627"
+    },
+    "geometry": {
+      "path": "experiments/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv",
+      "exists": true,
+      "sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8"
+    },
+    "matgpt_original": {
+      "path": "models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth",
+      "exists": true,
+      "sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414"
+    },
+    "mattergpt_original": {
+      "path": "models/MatterGPT/pytorch_model.pt",
+      "exists": true,
+      "sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21"
+    },
+    "matgpt_original_embeddings": {
+      "path": "experiments/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_3/run_20261023_v2/features_cache/layer_features.npz",
+      "exists": true,
+      "sha256": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29"
+    },
+    "mattergpt_original_embeddings": {
+      "path": "experiments/mattergpt_abs3_frozen_ridge_mlp8/embeddings_mattergpt.npz",
+      "exists": true,
+      "sha256": "c11bdbc0da5e6fb0d8dc8deec1f4869854368513c823f7e5bc9f7d42490a99d7"
+    },
+    "mattergpt_geometry": {
+      "path": "experiments/mattergpt_abs3_geometry_late_fusion/geometry_manifest.csv",
+      "exists": true,
+      "sha256": "c00526b1ce04818c1fd1782e3f771bdaedbe1a1842f55638b50164c9b98875ae"
+    }
+  },
+  "extractors": {
+    "MatGPT_original": {
+      "path": "models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth",
+      "expected_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+      "exists": true,
+      "actual_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+      "sha_match": true,
+      "git_recoverable": null
+    },
+    "MatGPT_Alexandria_F4_100": {
+      "path": "experiments/matgpt_alexandria_energy_transfer_20k_f4_local_mps/checkpoints/matgpt_alexandria_f4_energy_best.pt",
+      "expected_sha256": "15ba8a05c6e55d5154b7ce7f4ecd8764e8bac250b71802c88eb1e0d6631d657f",
+      "exists": false,
+      "actual_sha256": null,
+      "sha_match": false,
+      "git_recoverable": false
+    },
+    "MatterGPT_original": {
+      "path": "models/MatterGPT/pytorch_model.pt",
+      "expected_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+      "exists": true,
+      "actual_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+      "sha_match": true,
+      "git_recoverable": null
+    },
+    "MatterGPT_Alexandria_F4_71": {
+      "path": "experiments/mattergpt_alexandria_energy_transfer_20k_f4_compatible_subset/checkpoints/mattergpt_alexandria_f4_energy_best.pt",
+      "expected_sha256": "99da365ea1df8091dc6c16cbf370085409883ff0d72b568d531d78276d926ef3",
+      "exists": false,
+      "actual_sha256": null,
+      "sha_match": false,
+      "git_recoverable": false
+    }
+  },
+  "ridge_m2": {
+    "0": {
+      "expected_sha256": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+      "git_object_sha256": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+      "match": true,
+      "path_in_git": "experiments/MatGPT/MatGPT_Regresion_Hibrida_Ridge_Composicional/models/ridge_composicional_fold_0.joblib"
+    },
+    "1": {
+      "expected_sha256": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+      "git_object_sha256": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+      "match": true,
+      "path_in_git": "experiments/MatGPT/MatGPT_Regresion_Hibrida_Ridge_Composicional/models/ridge_composicional_fold_1.joblib"
+    },
+    "2": {
+      "expected_sha256": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+      "git_object_sha256": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+      "match": true,
+      "path_in_git": "experiments/MatGPT/MatGPT_Regresion_Hibrida_Ridge_Composicional/models/ridge_composicional_fold_2.joblib"
+    },
+    "3": {
+      "expected_sha256": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+      "git_object_sha256": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+      "match": true,
+      "path_in_git": "experiments/MatGPT/MatGPT_Regresion_Hibrida_Ridge_Composicional/models/ridge_composicional_fold_3.joblib"
+    },
+    "4": {
+      "expected_sha256": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d",
+      "git_object_sha256": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d",
+      "match": true,
+      "path_in_git": "experiments/MatGPT/MatGPT_Regresion_Hibrida_Ridge_Composicional/models/ridge_composicional_fold_4.joblib"
+    }
+  },
+  "ridge_m2_all_folds_recoverable": true,
+  "historical_baselines": {
+    "MatGPT_M2_C0_C1": "experiments/matgpt_f0_stoichiometric_ridge_m2_comparison",
+    "MatterGPT_F0_SLICES": "experiments/mattergpt_abs3_frozen_ridge_mlp8",
+    "MatterGPT_F0_geometry": "experiments/mattergpt_abs3_geometry_late_fusion"
+  },
+  "training_started": false,
+  "figures_generated": false,
+  "metrics_generated": false,
+  "layer_mixing_started": false
+}

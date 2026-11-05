@@ -1,0 +1,17 @@
+flowchart LR
+  C[ABS₃] --> F[17 fracciones estequiométricas]
+  F --> R[Ridge histórico congelado · scaler y α originales]
+  R --> MU[μ_c]
+  S[SLICES] --> M[MatterGPT congelado · prop = 1.0, 2.0]
+  M --> H[FINAL_END tras ln_f · 768]
+  G[Celda DFT estática final] --> GD[siete descriptores históricos]
+  GD --> GS[StandardScaler · ajuste solo inner-train]
+  H --> CAT[concat · 775]
+  GS --> CAT
+  CAT --> N[MLP8 · 775 → 8 → 1 · entrenable]
+  N --> D[δ_c,i centrado por fórmula]
+  MU --> ADD[μ_c + δ_c,i]
+  D --> ADD
+  ADD --> E[E_pred]
+  E --> DE[ΔE con referencia DFT común]
+  DE --> ST[Estabilidad polimórfica]

@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "structures": 210,
+  "compositions": 70,
+  "polymorphs_per_formula": 3,
+  "folds": 5,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "inner_train": 45,
+  "inner_validation": 11,
+  "outer_evaluation": 14,
+  "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "geometry_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+  "geometry_rows": 210,
+  "geometry_columns": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "matgpt_checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "matgpt_expected_checkpoint_sha256": "4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414",
+  "embedding_cache_sha256": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29",
+  "embedding_historical_expected_sha256": "2f790a30ba0fa3cd961c12de82b65febf0ae651b1f217efd5df49c8c5a9cfb62",
+  "embedding_cache_status": "PASS_NUMERIC",
+  "embedding_final_end_shape": [
+    210,
+    768
+  ],
+  "embedding_numeric_max_pair_difference": 7.222489778690999e-06,
+  "embedding_bitwise_identical_to_original": false,
+  "ridge_m2_sha256": {
+    "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+    "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+    "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+    "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+    "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+  },
+  "ridge_features": [
+    "Ba",
+    "Ca",
+    "Cd",
+    "Cu",
+    "Ge",
+    "Hf",
+    "Mg",
+    "Nb",
+    "Pb",
+    "S",
+    "Si",
+    "Sn",
+    "Sr",
+    "Ti",
+    "V",
+    "Zn",
+    "Zr"
+  ],
+  "ridge_alphas": [
+    0.01,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "ridge_fit_called": false,
+  "ridge_mattergpt_comparison": [
+    {
+      "source": "MatterGPT M2 C0",
+      "rows": 630,
+      "max_abs_difference_ev_atom": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source": "MatterGPT M2 C1",
+      "rows": 630,
+      "max_abs_difference_ev_atom": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "ridge_output_mean_spread_within_triplet": 0.0,
+  "historical_test_accessed": false,
+  "initialization_equivalence": {
+    "status": "PASS",
+    "fold_seed_pairs": 15,
+    "max_abs_prediction_difference": 0.0,
+    "max_abs_geometry_weight": 0.0,
+    "tolerance": 1e-07
+  },
+  "geometry_scaler": {
+    "0": {
+      "mean": [
+        0.729299685477585,
+        0.9814849698481405,
+        1.5427657723243993,
+        89.16741743861824,
+        89.0163719934066,
+        85.8301109261544,
+        22.949340988697585
+      ],
+      "scale": [
+        0.17705519756797436,
+        0.1505068580307539,
+        0.26605583116403975,
+        3.182059643843714,
+        3.3511093343826754,
+        14.742317669658322,
+        3.1510835947740405
+      ],
+      "fit_compositions": 45,
+      "fit_structures": 135
+    },
+    "1": {
+      "mean": [
+        0.7260796198121289,
+        0.9836906568101159,
+        1.5450392288912451,
+        89.31249737831253,
+        89.40750859290225,
+        86.630740221956,
+        22.897671594670406
+      ],
+      "scale": [
+        0.17973149679313283,
+        0.14881413238531419,
+        0.2563073847378783,
+        2.6181621237548174,
+        2.325525713175496,
+        14.924788120466385,
+        3.0490445947597724
+      ],
+      "fit_compositions": 45,
+      "fit_structures": 135
+    },
+    "2": {
+      "mean": [
+        0.730056664635806,
+        0.9748303659759442,
+        1.5516093202407057,
+        89.3031160753809,
+        89.38273669401404,
+        87.05965455224458,
+        23.265036756008033
+      ],
+      "scale": [
+        0.17734868218150684,
+        0.13781428321977168,
+        0.2721789477830553,
+        3.014557548584555,
+        3.177982360280171,
+        15.212223364816174,
+        3.1802632001097817
+      ],
+      "fit_compositions": 45,
+      "fit_structures": 135
+    },
+    "3": {
+      "mean": [
+        0.729462371024233,
+        0.9785055832262961,
+        1.5466157510453806,
+        89.41928749628856,
+        89.49060478994042,
+        87.71359214261611,
+        23.094950133211306
+      ],
+      "scale": [
+        0.17843615855340697,
+        0.14264438183303282,
+        0.2596822524173975,
+        2.761451102477452,
+        2.475755948396685,
+        15.48529568309902,
+        3.10217765668407
+      ],
+      "fit_compositions": 45,
+      "fit_structures": 135
+    },
+    "4": {
+      "mean": [
+        0.72664560240715,
+        0.9814164593284709,
+        1.5496279949206633,
+        89.41348191159099,
+        89.21527362615205,
+        88.04920665914432,
+        22.643496647608835
+      ],
+      "scale": [
+        0.17957357432059615,
+        0.14649798862736446,
+        0.261505856908422,
+        2.7503012981386656,
+        3.309960921243188,
+        15.362094303139807,
+        3.0293974922104807
+      ],
+      "fit_compositions": 45,
+      "fit_structures": 135
+    }
+  }
+}

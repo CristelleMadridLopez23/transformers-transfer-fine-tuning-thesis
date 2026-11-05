@@ -2,7 +2,7 @@
 
 ## Dictamen
 
-**Preflight de datos y compatibilidad: PASS con límites de procedencia documentados. Fine-tuning F4: iniciado en CPU local; la selección usará únicamente SmoothL1 de validation Alexandria y early stopping.** Se prepararon 20,000 estructuras de entrenamiento y 2,000 de validación; cada partición tiene una fórmula reducida única por fila y no comparten fórmulas.
+**Preflight de datos y compatibilidad: PASS con límites de procedencia documentados. Fine-tuning F4 local: interrumpido por el usuario después de 1 época; se conserva el checkpoint parcial (época seleccionada 1, SmoothL1 normalizada de validation 0.1578288). El estado del optimizador no se guardó; el bundle de MSI reinicia el protocolo completo en una corrida independiente y solicita CUDA explícitamente.** Se prepararon 20,000 estructuras de entrenamiento y 2,000 de validación; cada partición tiene una fórmula reducida única por fila y no comparten fórmulas.
 
 ## Reutilización del pipeline MatGPT
 
@@ -33,7 +33,7 @@ El subconjunto tiene una estructura por fórmula para evitar que composiciones m
 
 Checkpoint/hash, tokenizer/hash, vinculación con el release PBE, energía cruda de los registros seleccionados, compatibilidad del vocabulario, contexto sin truncamiento, round-trip estrategia 4, exclusiones de ID/SLICES/fórmula ABS₃, división por fórmula y smoke forward/backward: **PASS**. Parámetros POTCAR/U completos por registro: **PARTIAL**. Equivalencia cristalográfica Alex‑20: **NOT VERIFIABLE**. El entrenamiento F4 está **RUNNING**, no tiene todavía una métrica final.
 
-El smoke de datos devolvió vector `FINAL_END` de 768 dimensiones, pérdida finita y norma de gradiente de cabeza `7.60277`; el smoke F4 separado devolvió gradiente no nulo en bloques 8–11 (`0.547` en la prueba de 8 estructuras) y mantuvo congelados embeddings y bloques 0–7. Un minibatch F4 de 8 tomó 2.08 s con 2 hilos; extrapolar linealmente da cerca de 5.7 días de pasos de entrenamiento para 100 épocas, antes de validation y preparación. La corrida real usa early stopping y permanece en curso. Los conteos, hashes, salidas y recursos están en `experiments/matgpt_alexandria_energy_transfer_20k/metrics.json`, `summary.json` y `resources.json`.
+El smoke de datos devolvió vector `FINAL_END` de 768 dimensiones, pérdida finita y norma de gradiente de cabeza `7.60277`; el smoke F4 separado devolvió gradiente no nulo en bloques 8–11 (`0.547` en la prueba de 8 estructuras) y mantuvo congelados embeddings y bloques 0–7. Un minibatch F4 de 8 tomó 2.08 s con 2 hilos; extrapolar linealmente da cerca de 5.7 días de pasos de entrenamiento para 100 épocas, antes de validation y preparación. La corrida local se interrumpió tras la primera época F4. El tiempo de MSI no se predice con la estimación CPU. El bundle desplegable está en `experiments/matgpt_alexandria_energy_transfer_20k/msi_bundle/`; su `bundle_manifest.json` registra hashes y recursos medidos del parcial local.
 
 ## Archivos preparados
 

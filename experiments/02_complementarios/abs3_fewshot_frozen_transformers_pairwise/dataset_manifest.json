@@ -1,0 +1,15 @@
+{
+  "status": "historical_sources_available",
+  "dataset": {
+    "path": "reports/MatGPT/MatGPT_frozen/matgpt_e1_v2/dataset.csv",
+    "exists": false,
+    "sha256": null
+  },
+  "expected_development_cohort": {
+    "compositions": 70,
+    "structures": 210,
+    "polymorphs_per_composition": 3
+  },
+  "targets": "DFT GGA energy per atom, eV/atom",
+  "historical_test_accessed": false
+}

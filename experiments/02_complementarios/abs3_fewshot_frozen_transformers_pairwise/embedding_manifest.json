@@ -1,0 +1,24 @@
+{
+  "status": "PARTIAL",
+  "available_original_caches": {
+    "MatGPT_original": {
+      "path": "experiments/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_3/run_20261023_v2/features_cache/layer_features.npz",
+      "exists": true,
+      "sha256": "1437da10fa95eb4d2ebb92ad154da5374ead5aad919a462b2729e420b5feca29"
+    },
+    "MatterGPT_original": {
+      "path": "experiments/mattergpt_abs3_frozen_ridge_mlp8/embeddings_mattergpt.npz",
+      "exists": true,
+      "sha256": "c11bdbc0da5e6fb0d8dc8deec1f4869854368513c823f7e5bc9f7d42490a99d7"
+    }
+  },
+  "adapted_caches": {
+    "MatGPT_Alexandria_F4_100": {
+      "status": "missing; regenerate only after exact checkpoint is restored"
+    },
+    "MatterGPT_Alexandria_F4_71": {
+      "status": "missing; regenerate only after exact checkpoint is restored"
+    }
+  },
+  "extractors_frozen": true
+}

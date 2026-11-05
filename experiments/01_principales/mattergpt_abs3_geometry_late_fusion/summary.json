@@ -1,0 +1,1083 @@
+{
+  "status": "COMPLETE",
+  "experiment": "mattergpt_abs3_geometry_late_fusion",
+  "structures": 210,
+  "compositions": 70,
+  "runs": 15,
+  "preflight": "PASS",
+  "metrics": {
+    "MatGPT_F0": {
+      "n_compositions_seed": 210,
+      "n_compositions": 70,
+      "mae_delta_pairs_mev_atom": 58.59636371175982,
+      "rmse_delta_pairs_mev_atom": 79.33846042825517,
+      "mae_delta_dft_anchored_mev_atom": 40.998003321395814,
+      "mae_energy_ev_atom": 0.1831637160004321,
+      "rmse_energy_ev_atom": 0.1895471565354683,
+      "mae_residual_mev_atom": 33.48555371308737,
+      "ground_state_accuracy_exact": 0.5472636815920398,
+      "ground_state_denominator_cases": 201,
+      "ground_state_unresolved_cases": 5,
+      "pairwise_accuracy_eligible_including_unresolved": 0.6632825719120136,
+      "pairwise_accuracy_resolved_only": 0.6746987951807228,
+      "unresolved_fraction_eligible_pairs": 0.01692047377326565,
+      "eligible_pairs": 591,
+      "spearman_mean_by_composition": 0.4119047619047619,
+      "kendall_mean_by_composition": 0.34603174603174597
+    },
+    "MatGPT_F0_geometry": {
+      "n_compositions_seed": 210,
+      "n_compositions": 70,
+      "mae_delta_pairs_mev_atom": 56.27289552111933,
+      "rmse_delta_pairs_mev_atom": 75.12571890687666,
+      "mae_delta_dft_anchored_mev_atom": 39.759697032488724,
+      "mae_energy_ev_atom": 0.18238518039965884,
+      "rmse_energy_ev_atom": 0.18873564258147882,
+      "mae_residual_mev_atom": 32.60334981648532,
+      "ground_state_accuracy_exact": 0.5422885572139303,
+      "ground_state_denominator_cases": 201,
+      "ground_state_unresolved_cases": 6,
+      "pairwise_accuracy_eligible_including_unresolved": 0.6869712351945855,
+      "pairwise_accuracy_resolved_only": 0.6963979416809606,
+      "unresolved_fraction_eligible_pairs": 0.01353637901861252,
+      "eligible_pairs": 591,
+      "spearman_mean_by_composition": 0.4261904761904762,
+      "kendall_mean_by_composition": 0.37142857142857144
+    },
+    "MatterGPT_F0": {
+      "n_compositions_seed": 210,
+      "n_compositions": 70,
+      "mae_delta_pairs_mev_atom": 55.728945465927396,
+      "rmse_delta_pairs_mev_atom": 80.48409902959864,
+      "mae_delta_dft_anchored_mev_atom": 38.6809763430465,
+      "mae_energy_ev_atom": 0.0506157804247574,
+      "rmse_energy_ev_atom": 0.058747315732738496,
+      "mae_residual_mev_atom": 32.26409193382251,
+      "ground_state_accuracy_exact": 0.5621890547263682,
+      "ground_state_denominator_cases": 201,
+      "ground_state_unresolved_cases": 6,
+      "pairwise_accuracy_eligible_including_unresolved": 0.6480541455160744,
+      "pairwise_accuracy_resolved_only": 0.670753064798599,
+      "unresolved_fraction_eligible_pairs": 0.0338409475465313,
+      "eligible_pairs": 591,
+      "spearman_mean_by_composition": 0.3476190476190476,
+      "kendall_mean_by_composition": 0.3142857142857143
+    },
+    "MatterGPT_F0_geometry": {
+      "n_compositions_seed": 210,
+      "n_compositions": 70,
+      "mae_delta_pairs_mev_atom": 53.398524303467795,
+      "rmse_delta_pairs_mev_atom": 77.75281307550698,
+      "mae_delta_dft_anchored_mev_atom": 37.28979068759583,
+      "mae_energy_ev_atom": 0.04964446310912345,
+      "rmse_energy_ev_atom": 0.05772158153469887,
+      "mae_residual_mev_atom": 31.05533513950036,
+      "ground_state_accuracy_exact": 0.5870646766169154,
+      "ground_state_denominator_cases": 201,
+      "ground_state_unresolved_cases": 9,
+      "pairwise_accuracy_eligible_including_unresolved": 0.6565143824027073,
+      "pairwise_accuracy_resolved_only": 0.6903914590747331,
+      "unresolved_fraction_eligible_pairs": 0.049069373942470386,
+      "eligible_pairs": 591,
+      "spearman_mean_by_composition": 0.37857142857142856,
+      "kendall_mean_by_composition": 0.3523809523809524
+    },
+    "Ridge_only": {
+      "n_compositions_seed": 210,
+      "n_compositions": 70,
+      "mae_delta_pairs_mev_atom": 60.470423123809546,
+      "rmse_delta_pairs_mev_atom": 87.8493928597401,
+      "mae_delta_dft_anchored_mev_atom": 44.202423171428556,
+      "mae_energy_ev_atom": 0.05202613944519876,
+      "rmse_energy_ev_atom": 0.06037952027632223,
+      "mae_residual_mev_atom": 35.07243775238103,
+      "ground_state_accuracy_exact": 0.0,
+      "ground_state_denominator_cases": 201,
+      "ground_state_unresolved_cases": 210,
+      "pairwise_accuracy_eligible_including_unresolved": 0.0,
+      "pairwise_accuracy_resolved_only": null,
+      "unresolved_fraction_eligible_pairs": 1.0,
+      "eligible_pairs": 591,
+      "spearman_mean_by_composition": null,
+      "kendall_mean_by_composition": null
+    },
+    "by_polymorph": [
+      {
+        "model": "MatGPT_F0",
+        "family_report": "Hexagonal",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 193.14484245368945,
+        "mae_residual_mev_atom": 31.40243938180243
+      },
+      {
+        "model": "MatGPT_F0",
+        "family_report": "Needle-like",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 169.53650728143256,
+        "mae_residual_mev_atom": 29.344100612860515
+      },
+      {
+        "model": "MatGPT_F0",
+        "family_report": "Perovskite",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 185.6126649789091,
+        "mae_residual_mev_atom": 35.27129260007395
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "family_report": "Hexagonal",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 192.06557086818208,
+        "mae_residual_mev_atom": 29.971773180929514
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "family_report": "Needle-like",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 169.889127359693,
+        "mae_residual_mev_atom": 29.120160152381214
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "family_report": "Perovskite",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 184.06081593455454,
+        "mae_residual_mev_atom": 34.00700254121415
+      },
+      {
+        "model": "MatterGPT_F0",
+        "family_report": "Hexagonal",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 50.890336173251825,
+        "mae_residual_mev_atom": 30.58342887664894
+      },
+      {
+        "model": "MatterGPT_F0",
+        "family_report": "Needle-like",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 39.5634976878456,
+        "mae_residual_mev_atom": 27.715485362809964
+      },
+      {
+        "model": "MatterGPT_F0",
+        "family_report": "Perovskite",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 57.92137821495227,
+        "mae_residual_mev_atom": 33.89346951772734
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "family_report": "Hexagonal",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 49.34661754175136,
+        "mae_residual_mev_atom": 29.46325607235569
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "family_report": "Needle-like",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 39.63178400312102,
+        "mae_residual_mev_atom": 26.308069804566912
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "family_report": "Perovskite",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 57.158394634845436,
+        "mae_residual_mev_atom": 32.518192102109246
+      },
+      {
+        "model": "Ridge_only",
+        "family_report": "Hexagonal",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 53.200195061000535,
+        "mae_residual_mev_atom": 35.2390637928572
+      },
+      {
+        "model": "Ridge_only",
+        "family_report": "Needle-like",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 43.439043184938434,
+        "mae_residual_mev_atom": 36.2790713190476
+      },
+      {
+        "model": "Ridge_only",
+        "family_report": "Perovskite",
+        "n_structures": 70,
+        "mae_energy_mev_atom": 59.43918008965729,
+        "mae_residual_mev_atom": 33.69917814523813
+      }
+    ],
+    "ols_regression": {
+      "MatGPT_F0": {
+        "delta_energy_dft_anchored": {
+          "N": 210,
+          "slope": 0.24816661368484375,
+          "intercept": 3.981569945120377,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.14218228436467384,
+          "mae_vs_dft": 39.58409996617662,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i−E_g, con g = mínimo DFT de la misma fórmula en ambos ejes"
+        },
+        "intraformula_residual": {
+          "N": 210,
+          "slope": 0.2914127974871198,
+          "intercept": 2.7169030878173248e-14,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.2474679412775388,
+          "mae_vs_dft": 32.005944198245636,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i menos media del triplete de su fórmula"
+        },
+        "absolute_energy": {
+          "N": 210,
+          "slope": 0.9546013998952045,
+          "intercept": -0.23221641305755902,
+          "intercept_units": "eV/átomo",
+          "r2_ols": 0.903698128769163,
+          "mae_vs_dft": 0.1827646715713437,
+          "mae_units": "eV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura"
+        }
+      },
+      "MatGPT_F0_geometry": {
+        "delta_energy_dft_anchored": {
+          "N": 210,
+          "slope": 0.32822758534054386,
+          "intercept": 3.204826084311877,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.20482765226012223,
+          "mae_vs_dft": 38.283130679362536,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i−E_g, con g = mínimo DFT de la misma fórmula en ambos ejes"
+        },
+        "intraformula_residual": {
+          "N": 210,
+          "slope": 0.3777872076069914,
+          "intercept": 2.2528858820446214e-14,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.33135392583952994,
+          "mae_vs_dft": 31.032978624841626,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i menos media del triplete de su fórmula"
+        },
+        "absolute_energy": {
+          "N": 210,
+          "slope": 0.9549310046668473,
+          "intercept": -0.23048638918780462,
+          "intercept_units": "eV/átomo",
+          "r2_ols": 0.9040227275247519,
+          "mae_vs_dft": 0.18200517138747654,
+          "mae_units": "eV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura"
+        }
+      },
+      "MatterGPT_F0": {
+        "delta_energy_dft_anchored": {
+          "N": 210,
+          "slope": 0.1723829706604317,
+          "intercept": 4.2689610953340535,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.13352065652393408,
+          "mae_vs_dft": 36.854815227100076,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i−E_g, con g = mínimo DFT de la misma fórmula en ambos ejes"
+        },
+        "intraformula_residual": {
+          "N": 210,
+          "slope": 0.18123013208777428,
+          "intercept": -6.812681133492127e-14,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.20726053456405946,
+          "mae_vs_dft": 30.73079458572875,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i menos media del triplete de su fórmula"
+        },
+        "absolute_energy": {
+          "N": 210,
+          "slope": 0.9939345313170939,
+          "intercept": -0.030208145514829532,
+          "intercept_units": "eV/átomo",
+          "r2_ols": 0.9930751137598305,
+          "mae_vs_dft": 0.04945840402534989,
+          "mae_units": "eV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura"
+        }
+      },
+      "MatterGPT_F0_geometry": {
+        "delta_energy_dft_anchored": {
+          "N": 210,
+          "slope": 0.2013919641120231,
+          "intercept": 3.5123633888178496,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.19011233233084635,
+          "mae_vs_dft": 35.313413563231414,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i−E_g, con g = mínimo DFT de la misma fórmula en ambos ejes"
+        },
+        "intraformula_residual": {
+          "N": 210,
+          "slope": 0.20748818620520593,
+          "intercept": 7.499021123464882e-14,
+          "intercept_units": "meV/átomo",
+          "r2_ols": 0.2722417701457157,
+          "mae_vs_dft": 29.429839326343952,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i menos media del triplete de su fórmula"
+        },
+        "absolute_energy": {
+          "N": 210,
+          "slope": 0.9940347342994733,
+          "intercept": -0.02968220493578233,
+          "intercept_units": "eV/átomo",
+          "r2_ols": 0.9932766241091955,
+          "mae_vs_dft": 0.04871226539323927,
+          "mae_units": "eV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura"
+        }
+      },
+      "Ridge_only": {
+        "delta_energy_dft_anchored": {
+          "N": 210,
+          "slope": -0.0,
+          "intercept": 0.0,
+          "intercept_units": "meV/átomo",
+          "r2_ols": null,
+          "mae_vs_dft": 44.202423171428556,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i−E_g, con g = mínimo DFT de la misma fórmula en ambos ejes"
+        },
+        "intraformula_residual": {
+          "N": 210,
+          "slope": 0.0,
+          "intercept": 0.0,
+          "intercept_units": "meV/átomo",
+          "r2_ols": null,
+          "mae_vs_dft": 35.07243775238097,
+          "mae_units": "meV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura",
+          "definition": "E_i menos media del triplete de su fórmula"
+        },
+        "absolute_energy": {
+          "N": 210,
+          "slope": 0.9932429408963328,
+          "intercept": -0.03383813162730487,
+          "intercept_units": "eV/átomo",
+          "r2_ols": 0.9922968220422794,
+          "mae_vs_dft": 0.05202613944519875,
+          "mae_units": "eV/átomo",
+          "population": "210 estructuras OOF, media de 3 semillas por estructura"
+        }
+      }
+    },
+    "gap_bins": [
+      {
+        "model": "MatGPT_F0",
+        "gap_bin": "0–5",
+        "n_pairs": 13,
+        "mae_delta_mev_atom": 32.51272810486781
+      },
+      {
+        "model": "MatGPT_F0",
+        "gap_bin": "5–10",
+        "n_pairs": 17,
+        "mae_delta_mev_atom": 27.31580404676727
+      },
+      {
+        "model": "MatGPT_F0",
+        "gap_bin": "10–25",
+        "n_pairs": 41,
+        "mae_delta_mev_atom": 40.72769937156416
+      },
+      {
+        "model": "MatGPT_F0",
+        "gap_bin": "25–50",
+        "n_pairs": 46,
+        "mae_delta_mev_atom": 39.91070133759077
+      },
+      {
+        "model": "MatGPT_F0",
+        "gap_bin": "50–100",
+        "n_pairs": 56,
+        "mae_delta_mev_atom": 50.706569049229905
+      },
+      {
+        "model": "MatGPT_F0",
+        "gap_bin": ">100",
+        "n_pairs": 37,
+        "mae_delta_mev_atom": 120.72110397449391
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "gap_bin": "0–5",
+        "n_pairs": 13,
+        "mae_delta_mev_atom": 30.270762518993
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "gap_bin": "5–10",
+        "n_pairs": 17,
+        "mae_delta_mev_atom": 33.781287088819205
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "gap_bin": "10–25",
+        "n_pairs": 41,
+        "mae_delta_mev_atom": 39.929809305432805
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "gap_bin": "25–50",
+        "n_pairs": 46,
+        "mae_delta_mev_atom": 38.95022168377252
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "gap_bin": "50–100",
+        "n_pairs": 56,
+        "mae_delta_mev_atom": 51.21900127055358
+      },
+      {
+        "model": "MatGPT_F0_geometry",
+        "gap_bin": ">100",
+        "n_pairs": 37,
+        "mae_delta_mev_atom": 106.20360897422889
+      },
+      {
+        "model": "MatterGPT_F0",
+        "gap_bin": "0–5",
+        "n_pairs": 13,
+        "mae_delta_mev_atom": 19.56653392551457
+      },
+      {
+        "model": "MatterGPT_F0",
+        "gap_bin": "5–10",
+        "n_pairs": 17,
+        "mae_delta_mev_atom": 18.47906083453996
+      },
+      {
+        "model": "MatterGPT_F0",
+        "gap_bin": "10–25",
+        "n_pairs": 41,
+        "mae_delta_mev_atom": 19.690694143340362
+      },
+      {
+        "model": "MatterGPT_F0",
+        "gap_bin": "25–50",
+        "n_pairs": 46,
+        "mae_delta_mev_atom": 35.07571208159711
+      },
+      {
+        "model": "MatterGPT_F0",
+        "gap_bin": "50–100",
+        "n_pairs": 56,
+        "mae_delta_mev_atom": 53.65747634466294
+      },
+      {
+        "model": "MatterGPT_F0",
+        "gap_bin": ">100",
+        "n_pairs": 37,
+        "mae_delta_mev_atom": 138.79014060953014
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "gap_bin": "0–5",
+        "n_pairs": 13,
+        "mae_delta_mev_atom": 18.908152793461344
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "gap_bin": "5–10",
+        "n_pairs": 17,
+        "mae_delta_mev_atom": 18.248826228021567
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "gap_bin": "10–25",
+        "n_pairs": 41,
+        "mae_delta_mev_atom": 17.959437664123485
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "gap_bin": "25–50",
+        "n_pairs": 46,
+        "mae_delta_mev_atom": 31.71637024990701
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "gap_bin": "50–100",
+        "n_pairs": 56,
+        "mae_delta_mev_atom": 52.807207033703826
+      },
+      {
+        "model": "MatterGPT_F0_geometry",
+        "gap_bin": ">100",
+        "n_pairs": 37,
+        "mae_delta_mev_atom": 132.70977967321033
+      },
+      {
+        "model": "Ridge_only",
+        "gap_bin": "0–5",
+        "n_pairs": 13,
+        "mae_delta_mev_atom": 2.0009899230770336
+      },
+      {
+        "model": "Ridge_only",
+        "gap_bin": "5–10",
+        "n_pairs": 17,
+        "mae_delta_mev_atom": 7.846509147058742
+      },
+      {
+        "model": "Ridge_only",
+        "gap_bin": "10–25",
+        "n_pairs": 41,
+        "mae_delta_mev_atom": 16.803634914634223
+      },
+      {
+        "model": "Ridge_only",
+        "gap_bin": "25–50",
+        "n_pairs": 46,
+        "mae_delta_mev_atom": 35.75529688043479
+      },
+      {
+        "model": "Ridge_only",
+        "gap_bin": "50–100",
+        "n_pairs": 56,
+        "mae_delta_mev_atom": 72.26724684821431
+      },
+      {
+        "model": "Ridge_only",
+        "gap_bin": ">100",
+        "n_pairs": 37,
+        "mae_delta_mev_atom": 166.45207621621623
+      }
+    ],
+    "definitions": {
+      "primary": "MAE de los errores absolutos de ΔE firmado en los tres pares por fórmula; semillas promediadas dentro de fórmula antes de bootstrap",
+      "delta_ground_state": "ΔE_i = E_i − E_g, g = menor energía DFT de la misma fórmula; ancla común en referencia y predicción; negativo = inversión",
+      "energy": "eV/átomo; residuo centrado por triplete; no se ajusta el Ridge",
+      "pair_eligibility": "|ΔE_DFT| > 5 meV/átomo; predicciones con |ΔE_pred| ≤ 1 cuentan incorrectas en denominador elegible",
+      "ground_state_eligibility": "DFT gap al segundo menor > 1 meV/átomo; empate predicho ≤1 meV/átomo no exacto",
+      "sample_unit": "210 estructuras, 70 fórmulas, 3 polimorfos; 15 corridas; métricas por fórmula y semillas",
+      "outer": "OOF histórico; no se abrió el test histórico"
+    },
+    "bootstrap_primary": [
+      {
+        "estimand": "A: MAE de error absoluto de diferencias firmadas ΔE entre los 3 pares",
+        "contrast": "MatterGPT_F0_geometry − MatterGPT_F0",
+        "estimate_mev_atom": -2.330421162459594,
+        "ci95_low_mev_atom": -3.8034945975771204,
+        "ci95_high_mev_atom": -0.9606689568602259,
+        "n_compositions": 70,
+        "bootstrap_replicates": 10000,
+        "seed": 20261030,
+        "negative_favors": "MatterGPT_F0_geometry"
+      },
+      {
+        "estimand": "A: MAE de error absoluto de diferencias firmadas ΔE entre los 3 pares",
+        "contrast": "MatterGPT_F0_geometry − Ridge_only",
+        "estimate_mev_atom": -7.071898820341755,
+        "ci95_low_mev_atom": -12.013282131579786,
+        "ci95_high_mev_atom": -2.2173731220949597,
+        "n_compositions": 70,
+        "bootstrap_replicates": 10000,
+        "seed": 20261030,
+        "negative_favors": "MatterGPT_F0_geometry"
+      },
+      {
+        "estimand": "A: MAE de error absoluto de diferencias firmadas ΔE entre los 3 pares",
+        "contrast": "MatterGPT_F0_geometry − MatGPT_F0_geometry",
+        "estimate_mev_atom": -2.8743712176515386,
+        "ci95_low_mev_atom": -8.54427101022547,
+        "ci95_high_mev_atom": 3.0547031221979277,
+        "n_compositions": 70,
+        "bootstrap_replicates": 10000,
+        "seed": 20261030,
+        "negative_favors": "MatterGPT_F0_geometry"
+      }
+    ],
+    "geometry_ablation": {
+      "cero": {
+        "mae_delta_mev_atom": 55.31326089955593,
+        "n_formula_seed": 210,
+        "interpretation": "diagnóstico secundario, no causal"
+      },
+      "original": {
+        "mae_delta_mev_atom": 53.398524303467795,
+        "n_formula_seed": 210,
+        "interpretation": "diagnóstico secundario, no causal"
+      },
+      "permutada": {
+        "mae_delta_mev_atom": 55.46750109884671,
+        "n_formula_seed": 210,
+        "interpretation": "diagnóstico secundario, no causal"
+      }
+    },
+    "matched_initialization": {
+      "status": "PASS",
+      "fold_seed_checks": 15,
+      "vectors_compared": 3150,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-07,
+      "geometry_first_layer_weights_exactly_zero": true,
+      "slice_weights_and_bias_identical_to_c1_initialization": true
+    },
+    "audits": {
+      "preflight": {
+        "status": "PASS",
+        "structures": 210,
+        "compositions": 70,
+        "geometry_source_counts": {
+          "gga-static_endpoint_cleaned": 210
+        },
+        "geometry_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+        "geometry_source_manifest_sha256": "972ec31300f0aa54e9a34546aea2105e2e7ba7732bbf7052fdcc1b999840ac9a",
+        "embedding_cache_sha256": "c11bdbc0da5e6fb0d8dc8deec1f4869854368513c823f7e5bc9f7d42490a99d7",
+        "embedding_rows": 210,
+        "embedding_dim": 768,
+        "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+        "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+        "property_vector": [
+          1.0,
+          2.0
+        ],
+        "topology_hash_missing_entries_in_historical_source": 3,
+        "post_ln_f_and_terminal_policy_confirmed_by": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/mattergpt_abs3_frozen_ridge_mlp8/preflight.json",
+        "mattergpt_f0_preflight": {
+          "checks": {
+            "all_slices_byte_identical_to_original": true,
+            "atoms_over_20": 0,
+            "backbone_frozen_no_grad_and_unchanged": true,
+            "batch_size_invariance": true,
+            "compositions": 70,
+            "conditioning_max_abs_sensitivity_diagnostic": 0.8387229442596436,
+            "conditioning_shape_dtype": "[batch,1,2]/float32",
+            "config_bos_eos_ids_used_for_serialization": false,
+            "config_special_token_ids_metadata": {
+              "bos_token_id": 130,
+              "eos_token_id": 131
+            },
+            "context_limit": 397,
+            "graph_equivalence_missing": 0,
+            "graph_equivalence_true": 207,
+            "logits_equal_original_forward_without_hook": true,
+            "logits_identical_with_read_hook": true,
+            "max_sequence_tokens": 256,
+            "mlp8_smoke": {
+              "backbone_parameters_in_optimizer": false,
+              "composition_id": "BaNbS3",
+              "finite_smoothl1": true,
+              "fold": 0,
+              "group_role": "inner_train",
+              "mlp8_gradients_finite": true,
+              "residual_centered_per_formula": true,
+              "ridge_plus_residual_reconstruction": true,
+              "seed": 42,
+              "status": "PASS"
+            },
+            "oov_structures": 0,
+            "padding_invariance": true,
+            "post_ln_f_terminal_hidden": true,
+            "pre_transformer_embed_used": false,
+            "pretraining_teacher_forcing_loader_verified": false,
+            "property_vector": [
+              1.0,
+              2.0
+            ],
+            "simple_tokenizer_special_token_ids_used": {
+              "start_gt": 39,
+              "terminal_lt": 38
+            },
+            "space_group_num_serialized_in_slices": false,
+            "start_token": ">",
+            "start_token_id": 39,
+            "status": "PASS",
+            "structure_max_abs_sensitivity_diagnostic": 0.6218796372413635,
+            "structures": 210,
+            "terminal_token": "<",
+            "terminal_token_id": 38,
+            "topology_hash_missing": 0,
+            "truncations": 0
+          },
+          "model": {
+            "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+            "config": {
+              "activation_function": "gelu_new",
+              "architectures": [
+                "GPT"
+              ],
+              "attn_pdrop": 0.1,
+              "block_size": 397,
+              "bos_token_id": 130,
+              "embd_pdrop": 0.1,
+              "eos_token_id": 131,
+              "initializer_range": 0.02,
+              "layer_norm_epsilon": 1e-05,
+              "lstm": false,
+              "lstm_layers": 0,
+              "model_type": "gpt",
+              "n_embd": 768,
+              "n_head": 12,
+              "n_layer": 12,
+              "num_props": 2,
+              "resid_pdrop": 0.1,
+              "scale_attn_weights": true,
+              "summary_activation": null,
+              "summary_first_dropout": 0.1,
+              "summary_proj_to_labels": true,
+              "summary_type": "cls_index",
+              "summary_use_proj": true,
+              "use_cache": true,
+              "vocab_size": 132
+            },
+            "config_sha256": "d2d1e9a0bdcf6a8769afa263dc1cde56407a357616514cb9030b2405a1f240ad",
+            "missing_keys": [],
+            "model_py_sha256": "eb32aa1721c24ac4b09f9b55028c8eb82c809aa2010ec67fd664afacba09ed8e",
+            "source_url": "https://huggingface.co/xiaohang07/MatterGPT",
+            "tokenizer_implementation": "copia semánticamente idéntica de SimpleTokenizer; wrapper importa transformers no disponible; su clase GPT fue cargada directamente",
+            "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+            "trainable_backbone_parameters": 0,
+            "unexpected_keys": [],
+            "vocab_size_reconstructed": 132,
+            "wrapper_sha256": "7e50a733509740c346b1478576ff5dfba2c71b99acbde2eda82f1c1de7872c81"
+          },
+          "slices_teacher_forcing_caveat": "La secuencia pública `> SLICES <` se aplica según uso de generación, pero no se encontró el dataloader original de teacher-forcing para confirmar el token final del preentrenamiento.",
+          "status": "PASS"
+        },
+        "historical_test_labels_parsed": false,
+        "initial_equivalence": {
+          "status": "PASS",
+          "fold_seed_checks": 15,
+          "vectors_compared": 3150,
+          "max_abs_error": 0.0,
+          "tolerance": 1e-07,
+          "geometry_first_layer_weights_exactly_zero": true,
+          "slice_weights_and_bias_identical_to_c1_initialization": true
+        },
+        "ridge_sha256": {
+          "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+          "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+          "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+          "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+          "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+        },
+        "split_counts": {
+          "0": {
+            "inner_train": 45,
+            "inner_validation": 11,
+            "outer_evaluation": 14
+          },
+          "1": {
+            "inner_train": 45,
+            "inner_validation": 11,
+            "outer_evaluation": 14
+          },
+          "2": {
+            "inner_train": 45,
+            "inner_validation": 11,
+            "outer_evaluation": 14
+          },
+          "3": {
+            "inner_train": 45,
+            "inner_validation": 11,
+            "outer_evaluation": 14
+          },
+          "4": {
+            "inner_train": 45,
+            "inner_validation": 11,
+            "outer_evaluation": 14
+          }
+        },
+        "mlp8_geometry_smoke": {
+          "status": "PASS",
+          "loss_finite": true,
+          "all_gradients_finite": true,
+          "geometry_gradients_nonzero_at_initialization": true,
+          "geometry_init_zero": true,
+          "head_parameters": 6217,
+          "output_centered_by_triplet": true
+        },
+        "checks": {
+          "checkpoint_y_tokenizador_SHA256_correctos": true,
+          "property_vector_1_0_2_0": true,
+          "embeddings_210_por_768_posteriores_a_ln_f": true,
+          "policy_terminal_y_ultimo_token_especial_validada": true,
+          "IDs_formula_familia_slices_cache_coinciden": true,
+          "geometria_210_por_7_fuente_estatica_final": true,
+          "sin_nan_ni_inf": true,
+          "scaler_inner_train_45_formulas_por_fold": true,
+          "ridge_17_fracciones_sin_reentrenar": true,
+          "mlp8_775_entradas": true,
+          "pesos_geometricos_iniciales_cero": true,
+          "equivalencia_paso_cero": true,
+          "gradientes_solo_en_mlp8": true,
+          "backbone_sin_forward_durante_entrenamiento": true,
+          "targets_residuales_y_smoothl1_historicos": true,
+          "splits_agrupados_por_formula_45_11_14": true,
+          "test_historico_cerrado": true,
+          "checkpoint_reload_verificado_al_final": true
+        },
+        "checkpoint_reload_checks": [
+          {
+            "fold": 0,
+            "seed": 42,
+            "status": "PASS",
+            "bytes": 27747
+          },
+          {
+            "fold": 0,
+            "seed": 123,
+            "status": "PASS",
+            "bytes": 27757
+          },
+          {
+            "fold": 0,
+            "seed": 2026,
+            "status": "PASS",
+            "bytes": 27767
+          },
+          {
+            "fold": 1,
+            "seed": 42,
+            "status": "PASS",
+            "bytes": 27747
+          },
+          {
+            "fold": 1,
+            "seed": 123,
+            "status": "PASS",
+            "bytes": 27757
+          },
+          {
+            "fold": 1,
+            "seed": 2026,
+            "status": "PASS",
+            "bytes": 27767
+          },
+          {
+            "fold": 2,
+            "seed": 42,
+            "status": "PASS",
+            "bytes": 27747
+          },
+          {
+            "fold": 2,
+            "seed": 123,
+            "status": "PASS",
+            "bytes": 27757
+          },
+          {
+            "fold": 2,
+            "seed": 2026,
+            "status": "PASS",
+            "bytes": 27767
+          },
+          {
+            "fold": 3,
+            "seed": 42,
+            "status": "PASS",
+            "bytes": 27747
+          },
+          {
+            "fold": 3,
+            "seed": 123,
+            "status": "PASS",
+            "bytes": 27757
+          },
+          {
+            "fold": 3,
+            "seed": 2026,
+            "status": "PASS",
+            "bytes": 27767
+          },
+          {
+            "fold": 4,
+            "seed": 42,
+            "status": "PASS",
+            "bytes": 27747
+          },
+          {
+            "fold": 4,
+            "seed": 123,
+            "status": "PASS",
+            "bytes": 27757
+          },
+          {
+            "fold": 4,
+            "seed": 2026,
+            "status": "PASS",
+            "bytes": 27767
+          }
+        ]
+      },
+      "C1_source_sha256": "1e89ceb131010705c50fcd05deb886e7a3e2dc8d7aff80510a8dfcc8366f7a0a",
+      "MatGPT_historical_prediction_sha256": "68c6b2616608cc323c8c5d27cc1ba8f9d3f32f090a761b0cdbcebbc24d42bccf",
+      "geometry_source_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+      "dataset_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+      "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+      "test_historico_abierto": false
+    },
+    "checkpoint_reload_checks": [
+      {
+        "fold": 0,
+        "seed": 42,
+        "status": "PASS",
+        "bytes": 27747
+      },
+      {
+        "fold": 0,
+        "seed": 123,
+        "status": "PASS",
+        "bytes": 27757
+      },
+      {
+        "fold": 0,
+        "seed": 2026,
+        "status": "PASS",
+        "bytes": 27767
+      },
+      {
+        "fold": 1,
+        "seed": 42,
+        "status": "PASS",
+        "bytes": 27747
+      },
+      {
+        "fold": 1,
+        "seed": 123,
+        "status": "PASS",
+        "bytes": 27757
+      },
+      {
+        "fold": 1,
+        "seed": 2026,
+        "status": "PASS",
+        "bytes": 27767
+      },
+      {
+        "fold": 2,
+        "seed": 42,
+        "status": "PASS",
+        "bytes": 27747
+      },
+      {
+        "fold": 2,
+        "seed": 123,
+        "status": "PASS",
+        "bytes": 27757
+      },
+      {
+        "fold": 2,
+        "seed": 2026,
+        "status": "PASS",
+        "bytes": 27767
+      },
+      {
+        "fold": 3,
+        "seed": 42,
+        "status": "PASS",
+        "bytes": 27747
+      },
+      {
+        "fold": 3,
+        "seed": 123,
+        "status": "PASS",
+        "bytes": 27757
+      },
+      {
+        "fold": 3,
+        "seed": 2026,
+        "status": "PASS",
+        "bytes": 27767
+      },
+      {
+        "fold": 4,
+        "seed": 42,
+        "status": "PASS",
+        "bytes": 27747
+      },
+      {
+        "fold": 4,
+        "seed": 123,
+        "status": "PASS",
+        "bytes": 27757
+      },
+      {
+        "fold": 4,
+        "seed": 2026,
+        "status": "PASS",
+        "bytes": 27767
+      }
+    ]
+  },
+  "resources": {
+    "wall_seconds": 5.35598758328706,
+    "mlp_training_seconds": 1.9478117092512548,
+    "per_run_seconds": {
+      "fold_0_seed_42": 0.4845422082580626,
+      "fold_0_seed_123": 0.12017079209908843,
+      "fold_0_seed_2026": 0.18690270837396383,
+      "fold_1_seed_42": 0.07489350019022822,
+      "fold_1_seed_123": 0.06041879206895828,
+      "fold_1_seed_2026": 0.06839425023645163,
+      "fold_2_seed_42": 0.04953300021588802,
+      "fold_2_seed_123": 0.0893528750166297,
+      "fold_2_seed_2026": 0.1261738338507712,
+      "fold_3_seed_42": 0.04887879220768809,
+      "fold_3_seed_123": 0.06005941703915596,
+      "fold_3_seed_2026": 0.06529766693711281,
+      "fold_4_seed_42": 0.057676666881889105,
+      "fold_4_seed_123": 0.18806304084137082,
+      "fold_4_seed_2026": 0.1057544588111341
+    },
+    "process_user_cpu_seconds": 4.508625,
+    "process_system_cpu_seconds": 0.714684,
+    "peak_rss_bytes": 623230976,
+    "peak_rss_mib": 594.359375,
+    "device": "CPU",
+    "cpu_count": 12,
+    "torch_threads": 8,
+    "head_trainable_parameters": 6217,
+    "mattergpt_trainable_parameters": 0,
+    "runs": 15,
+    "python_version": "3.10.21",
+    "torch_version": "2.8.0",
+    "numpy_version": "2.2.6",
+    "pandas_version": "2.3.3",
+    "scipy_version": "1.15.2",
+    "scikit_learn_version": "1.7.2",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "condition_resources": {
+      "C2_MatterGPT_SLICES_plus_geometry": {
+        "runs": 15,
+        "training_seconds": 1.9478117092512548,
+        "measured_this_run": true,
+        "device": "CPU"
+      },
+      "C1_MatterGPT_SLICES_only": {
+        "runs": 15,
+        "training_seconds_historical_full_experiment": 1.8331719134002924,
+        "measured_this_run": false,
+        "source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/mattergpt_abs3_frozen_ridge_mlp8/resources.json"
+      },
+      "MatGPT_F0_controls_combined": {
+        "runs": 30,
+        "training_seconds_historical_both_conditions": 4.4926127078942955,
+        "measured_this_run": false,
+        "allocation_per_condition": "not separately recorded in historical resources manifest",
+        "source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/MatGPT/MatGPT_SLICES_Geometria/resources_summary.csv"
+      }
+    }
+  },
+  "test_historico_abierto": false
+}

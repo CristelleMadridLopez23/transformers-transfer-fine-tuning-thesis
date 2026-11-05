@@ -1,0 +1,9 @@
+{
+  "wall_seconds": 4.225123624783009,
+  "process_cpu_seconds": 4.125763,
+  "peak_rss_bytes": 426377216,
+  "device": "cpu",
+  "threads": 1,
+  "outputs": 8,
+  "test_accessed": false
+}

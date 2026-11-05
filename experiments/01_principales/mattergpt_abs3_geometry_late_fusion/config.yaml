@@ -1,0 +1,65 @@
+{
+  "experiment": "mattergpt_abs3_geometry_late_fusion",
+  "question": "¿La geometría global mejora la predicción de diferencias energéticas sobre MatterGPT SLICES-only?",
+  "property_vector": [
+    1.0,
+    2.0
+  ],
+  "frozen_checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+  "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+  "embedding_cache_sha256": "c11bdbc0da5e6fb0d8dc8deec1f4869854368513c823f7e5bc9f7d42490a99d7",
+  "embedding_extraction": "FINAL_END posterior a blocks y ln_f; caché congelada",
+  "geometry_source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/MatGPT/MatGPT_SLICES_Geometria/geometry_cell_development.csv",
+  "geometry_source_sha256": "5be78f0e6282f0b5df4aeff8f54950e2f07750bd290a72444fb09b44aeec6eb8",
+  "geometry_descriptors": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "geometry_definition": "a,b,c divided by cubic root of reduced primitive volume; pymatgen primitive then Niggli reduction; angles reduced Niggli; original volume per atom",
+  "ridge_models_reused_without_fit": true,
+  "ridge_feature_count": 17,
+  "ridge_model_sha256": {
+    "0": "99d5114f567450f46322cd39e021405bc4ba9fd396fadeb07ecb62f7a204f3d9",
+    "1": "48bc05a164936d4c2ef104baa60086a95388121eb95624003aad07388ddcfde1",
+    "2": "664fc440ce0a699fa5ac5e62f9167e3359682ada5bb63838323cb7a5a1efcf0a",
+    "3": "e26bae8b47c98b86731c283bcbd69732f6395dea7e66491bad82f08e53005e49",
+    "4": "680e1266483f838fbc962bed8b0d5458c3e7f1e059cf30a83dafdbf76c56408d"
+  },
+  "head": {
+    "architecture": "775-8-1",
+    "activation": "GELU",
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_compositions": 8,
+    "max_epochs": 200,
+    "early_stopping_patience": 20,
+    "loss": "SmoothL1 beta=1 on centered residual / inner-train residual scale",
+    "initialization": "C1 768-input MLP8 identical; 7 geometric columns exactly zero; RNG state restored after baseline head creation"
+  },
+  "folds": 5,
+  "inner_train_compositions": 45,
+  "inner_validation_compositions": 11,
+  "outer_evaluation_compositions": 14,
+  "seeds": [
+    42,
+    123,
+    2026
+  ],
+  "bootstrap": {
+    "replicates": 10000,
+    "unit": "composition",
+    "seed": 20261030,
+    "primary_contrast": "C2 − C1"
+  },
+  "historical_test_accessed": false,
+  "script_sha256": "2b5bd01566b79ab3fa59ad85912467c0d4366302117fa851de0e185c3295514d",
+  "data_sha256": "0719f496c96297761ede3a7e2e7ef57aa7b62400fb0004e679a66430a70c31e8",
+  "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "COMPLETE",
+  "scope": "one fold, seed 42, inner validation only",
+  "models": [
+    "MatGPT",
+    "MatterGPT"
+  ],
+  "modalities": [
+    "SLICES",
+    "SLICES_GEOMETRY"
+  ],
+  "outer_evaluation_accessed": false,
+  "resources": {
+    "phase": "pilot",
+    "wall_seconds": 394.22541412478313,
+    "process_cpu_seconds": 708.507071,
+    "peak_rss_bytes": 3553148928,
+    "cpu_count_logical": 12,
+    "torch_threads": 3,
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.10.21",
+    "torch": "2.8.0",
+    "device": "cpu",
+    "mps_available": false,
+    "historical_test_accessed": false
+  }
+}

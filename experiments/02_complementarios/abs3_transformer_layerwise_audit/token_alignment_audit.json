@@ -1,0 +1,24 @@
+{
+  "MAT": {
+    "shape_match": true,
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "max_relative_diff": 0.0,
+    "min_cosine": 0.9999999999999898,
+    "mean_cosine": 0.9999999999999916,
+    "max_norm_abs_diff": 0.0,
+    "tolerance_max_abs": 0.0001,
+    "tolerance_cosine_min": 0.999999
+  },
+  "MATTER": {
+    "shape_match": true,
+    "max_abs_diff": 0.0,
+    "mean_abs_diff": 0.0,
+    "max_relative_diff": 0.0,
+    "min_cosine": 0.9999999999999994,
+    "mean_cosine": 0.9999999999999998,
+    "max_norm_abs_diff": 0.0,
+    "tolerance_max_abs": 0.0001,
+    "tolerance_cosine_min": 0.999999
+  }
+}

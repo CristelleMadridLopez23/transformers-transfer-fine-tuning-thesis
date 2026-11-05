@@ -1,0 +1,46 @@
+{
+  "MAT": {
+    "extraction_points": [
+      "L0_INPUT",
+      "L1_BLOCK_0",
+      "L2_BLOCK_1",
+      "L3_BLOCK_2",
+      "L4_BLOCK_3",
+      "L5_BLOCK_4",
+      "L6_BLOCK_5",
+      "L7_BLOCK_6",
+      "L8_BLOCK_7",
+      "L9_BLOCK_8",
+      "L10_BLOCK_9",
+      "L11_BLOCK_10",
+      "L12_BLOCK_11",
+      "L12_PRE_LN_F",
+      "FINAL_POST_LN_F"
+    ],
+    "terminal_positions": "último token válido; MatterGPT suma prefijo de propiedad al índice contextualizado",
+    "padding": "derecho; estados extraídos en posición del terminal real",
+    "batch_size": 4
+  },
+  "MATTER": {
+    "extraction_points": [
+      "L0_INPUT",
+      "L1_BLOCK_0",
+      "L2_BLOCK_1",
+      "L3_BLOCK_2",
+      "L4_BLOCK_3",
+      "L5_BLOCK_4",
+      "L6_BLOCK_5",
+      "L7_BLOCK_6",
+      "L8_BLOCK_7",
+      "L9_BLOCK_8",
+      "L10_BLOCK_9",
+      "L11_BLOCK_10",
+      "L12_BLOCK_11",
+      "L12_PRE_LN_F",
+      "FINAL_POST_LN_F"
+    ],
+    "terminal_positions": "último token válido; MatterGPT suma prefijo de propiedad al índice contextualizado",
+    "padding": "derecho; estados extraídos en posición del terminal real",
+    "batch_size": 4
+  }
+}

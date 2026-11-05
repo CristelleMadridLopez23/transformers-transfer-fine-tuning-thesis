@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "dataset_sha256": "afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e",
+  "fold_manifest_sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627",
+  "embedding_manifest_sha256": "0ab459e3b72cf911fb3f58a2eb9155520e6378fe043ef5c51f99875bfea75a9d",
+  "embedding_shapes": {
+    "MAT": [
+      210,
+      768
+    ],
+    "MATTER": [
+      210,
+      768
+    ]
+  },
+  "dataset": {
+    "structures": 210,
+    "compositions": 70,
+    "triplets_complete": true
+  },
+  "geometry_source": "gga-static_endpoint_cleaned",
+  "geometry_features": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "folds": 5,
+  "partition_sizes": [
+    45,
+    11,
+    14
+  ],
+  "test_accessed": false,
+  "backbones_modified": false
+}

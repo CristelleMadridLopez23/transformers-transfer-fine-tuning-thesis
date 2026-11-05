@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source": "gga-static_endpoint_cleaned",
+  "rows": 210,
+  "structure_id_join": "exact dataset structure_id; no positional join",
+  "columns": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "all_finite": true,
+  "scaler": "StandardScaler fit per fold on inner-train for alpha selection; refit on inner-train+validation for final OOF fit"
+}

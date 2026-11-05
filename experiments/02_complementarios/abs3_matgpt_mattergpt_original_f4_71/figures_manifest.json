@@ -1,0 +1,31 @@
+{
+  "experiment": "abs3_matgpt_mattergpt_original_f4_71",
+  "figures": [
+    "bootstrap_apareado_deltaE_f4_vs_f0.png",
+    "curvas_entrenamiento_f0_f4.png",
+    "curvas_perdida_f0_f4.png",
+    "error_deltaE_por_magnitud_gap.png",
+    "metricas_energia_f0_f4.png",
+    "paridad_deltaE_firmada_oof.png",
+    "paridad_energia_absoluta_oof.png",
+    "ranking_groundstate_f0_f4.png"
+  ],
+  "metric_sources": [
+    "metrics.json",
+    "predicciones_oof_por_estructura.csv",
+    "predicciones_oof_por_par.csv",
+    "train_history.csv"
+  ],
+  "oof": {
+    "compositions": 70,
+    "structures": 210,
+    "folds": 5,
+    "seeds": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "test_accessed": false,
+  "models_modified": false
+}

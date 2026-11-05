@@ -1,0 +1,12 @@
+{
+  "backbone_parameters_in_optimizer": false,
+  "composition_id": "BaNbS3",
+  "finite_smoothl1": true,
+  "fold": 0,
+  "group_role": "inner_train",
+  "mlp8_gradients_finite": true,
+  "residual_centered_per_formula": true,
+  "ridge_plus_residual_reconstruction": true,
+  "seed": 42,
+  "status": "PASS"
+}

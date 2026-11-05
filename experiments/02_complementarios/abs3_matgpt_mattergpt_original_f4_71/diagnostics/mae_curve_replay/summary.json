@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETE",
+  "purpose": "Replay de train/validation para medir MAE energético por época; no cambia los resultados OOF canónicos.",
+  "dataset_sha256": "afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e",
+  "conditions": [
+    "MatGPT_F0",
+    "MatGPT_F4",
+    "MatterGPT_F0",
+    "MatterGPT_F4"
+  ],
+  "historical_test_accessed": false
+}

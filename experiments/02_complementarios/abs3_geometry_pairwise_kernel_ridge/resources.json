@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE",
+  "wall_seconds": 3.6953765000216663,
+  "process_cpu_seconds": 3.569349,
+  "peak_rss_bytes": 438288384,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "mps": false,
+  "cuda": false,
+  "solver": "numpy.linalg.solve(K_pair + lambda I, y); no explicit matrix inverse",
+  "train_kernel_matrix_shape": [
+    135,
+    135
+  ],
+  "outer_structures": 210,
+  "outer_pairs": 210,
+  "bootstrap_replicates": 10000,
+  "historical_test_accessed": false,
+  "python_version": "3.10.21",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3"
+}

@@ -8,7 +8,7 @@
 
 The generated manifests, individual preflight checks, source hashes, logs, and resource measurements are in `experiments/matgpt_alexandria_energy_transfer_20k/`. The scientific report is in `reports/MatGPT/MatGPT_Alexandria_Energy_Transfer_20k/`.
 
-The F4 training run is local. `training.log` contains process messages; `training_trace.jsonl` is the append-only progress trace, including observed phases/epochs, validation losses, timing, resource status, and hashes of the manifests/configuration. Follow the trace with:
+The local F4 training run was interrupted after one fine-tuning epoch. Its best partial checkpoint and history are retained for provenance; the optimizer state was not saved, so this checkpoint is not an exact resume state. A transfer bundle that restarts the full protocol on an allocated MSI GPU node is in `experiments/matgpt_alexandria_energy_transfer_20k/msi_bundle/README_MSI.md`. The local `training.log` contains process messages; `training_trace.jsonl` is the append-only progress trace, including observed phases/epochs, validation losses, timing, resource status, and hashes of the manifests/configuration. Follow the trace with:
 
 ```bash
 tail -f experiments/matgpt_alexandria_energy_transfer_20k/training_trace.jsonl

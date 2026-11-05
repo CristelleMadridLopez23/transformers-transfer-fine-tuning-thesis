@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED_PRECHECK",
+  "metrics_available": false,
+  "reason": "No new pairwise training or OOF evaluation was run; required adapted checkpoint files are missing.",
+  "historical_reference_values_not_recomputed": {
+    "G1-G_mae_delta_mev_atom": 48.0401
+  }
+}

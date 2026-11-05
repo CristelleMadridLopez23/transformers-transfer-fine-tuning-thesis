@@ -134,4 +134,5 @@ cuando sean estándar y define las que puedan resultar ambiguas.
   comprimidos.
 
 ## Tiempo y recursos
-- Incluir un manifest o resources .json con el tiempo que duro en terminar y cantidad recursos utilizados por el tiempo de corrido. 
+- Para todos los experimentos, guardar en `resources.json` o un manifiesto equivalente el tiempo real transcurrido hasta terminar y los recursos realmente utilizados durante la corrida: dispositivo, tiempo de CPU, número de hilos, memoria máxima y uso de GPU/MPS cuando esté disponible. No estimar ni inventar valores; registrar como no disponible lo que no pueda medirse.
+- Para todos los experimentos, registrar las métricas de evaluación utilizadas junto con su definición operativa, unidades, partición, denominador, nivel de agregación, umbrales y método de selección del checkpoint/hiperparámetros. Mantener estas definiciones en `config.yaml`, `metrics.json`, el manifiesto o el reporte del experimento, y asegurar que las figuras las identifiquen claramente.

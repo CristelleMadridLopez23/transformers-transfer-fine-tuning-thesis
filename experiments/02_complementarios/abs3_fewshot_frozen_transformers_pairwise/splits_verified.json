@@ -1,0 +1,21 @@
+{
+  "status": "historical_manifest_available_not_recomputed",
+  "fold_manifest": {
+    "path": "reports/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv",
+    "exists": true,
+    "sha256": "a5f00a89a41e4645a68d1463f26f9eca10a09bdfd1208193a87e541ff7cd5627"
+  },
+  "expected_protocol": {
+    "outer_folds": 5,
+    "inner_train_compositions": 45,
+    "inner_validation_compositions": 11,
+    "outer_evaluation_compositions": 14,
+    "seeds": [
+      42,
+      123,
+      2026
+    ]
+  },
+  "source": "retained historical preflight/configuration; no split regeneration",
+  "historical_test_accessed": false
+}

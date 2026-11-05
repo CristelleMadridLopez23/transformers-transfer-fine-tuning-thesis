@@ -1,0 +1,8 @@
+{
+  "wall_seconds": 98.91295820940286,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "torch_threads": 1,
+  "test_accessed": false,
+  "backbones_modified": false
+}

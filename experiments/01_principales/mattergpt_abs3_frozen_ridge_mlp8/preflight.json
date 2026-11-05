@@ -1,0 +1,101 @@
+{
+  "checks": {
+    "all_slices_byte_identical_to_original": true,
+    "atoms_over_20": 0,
+    "backbone_frozen_no_grad_and_unchanged": true,
+    "batch_size_invariance": true,
+    "compositions": 70,
+    "conditioning_max_abs_sensitivity_diagnostic": 0.8387229442596436,
+    "conditioning_shape_dtype": "[batch,1,2]/float32",
+    "config_bos_eos_ids_used_for_serialization": false,
+    "config_special_token_ids_metadata": {
+      "bos_token_id": 130,
+      "eos_token_id": 131
+    },
+    "context_limit": 397,
+    "graph_equivalence_missing": 0,
+    "graph_equivalence_true": 207,
+    "logits_equal_original_forward_without_hook": true,
+    "logits_identical_with_read_hook": true,
+    "max_sequence_tokens": 256,
+    "mlp8_smoke": {
+      "backbone_parameters_in_optimizer": false,
+      "composition_id": "BaNbS3",
+      "finite_smoothl1": true,
+      "fold": 0,
+      "group_role": "inner_train",
+      "mlp8_gradients_finite": true,
+      "residual_centered_per_formula": true,
+      "ridge_plus_residual_reconstruction": true,
+      "seed": 42,
+      "status": "PASS"
+    },
+    "oov_structures": 0,
+    "padding_invariance": true,
+    "post_ln_f_terminal_hidden": true,
+    "pre_transformer_embed_used": false,
+    "pretraining_teacher_forcing_loader_verified": false,
+    "property_vector": [
+      1.0,
+      2.0
+    ],
+    "simple_tokenizer_special_token_ids_used": {
+      "start_gt": 39,
+      "terminal_lt": 38
+    },
+    "space_group_num_serialized_in_slices": false,
+    "start_token": ">",
+    "start_token_id": 39,
+    "status": "PASS",
+    "structure_max_abs_sensitivity_diagnostic": 0.6218796372413635,
+    "structures": 210,
+    "terminal_token": "<",
+    "terminal_token_id": 38,
+    "topology_hash_missing": 0,
+    "truncations": 0
+  },
+  "model": {
+    "checkpoint_sha256": "8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21",
+    "config": {
+      "activation_function": "gelu_new",
+      "architectures": [
+        "GPT"
+      ],
+      "attn_pdrop": 0.1,
+      "block_size": 397,
+      "bos_token_id": 130,
+      "embd_pdrop": 0.1,
+      "eos_token_id": 131,
+      "initializer_range": 0.02,
+      "layer_norm_epsilon": 1e-05,
+      "lstm": false,
+      "lstm_layers": 0,
+      "model_type": "gpt",
+      "n_embd": 768,
+      "n_head": 12,
+      "n_layer": 12,
+      "num_props": 2,
+      "resid_pdrop": 0.1,
+      "scale_attn_weights": true,
+      "summary_activation": null,
+      "summary_first_dropout": 0.1,
+      "summary_proj_to_labels": true,
+      "summary_type": "cls_index",
+      "summary_use_proj": true,
+      "use_cache": true,
+      "vocab_size": 132
+    },
+    "config_sha256": "d2d1e9a0bdcf6a8769afa263dc1cde56407a357616514cb9030b2405a1f240ad",
+    "missing_keys": [],
+    "model_py_sha256": "eb32aa1721c24ac4b09f9b55028c8eb82c809aa2010ec67fd664afacba09ed8e",
+    "source_url": "https://huggingface.co/xiaohang07/MatterGPT",
+    "tokenizer_implementation": "copia sem\u00e1nticamente id\u00e9ntica de SimpleTokenizer; wrapper importa transformers no disponible; su clase GPT fue cargada directamente",
+    "tokenizer_sha256": "b6a3fb7514383c3637a52447db76197d677e7089487bf49bc995fbc256e668e9",
+    "trainable_backbone_parameters": 0,
+    "unexpected_keys": [],
+    "vocab_size_reconstructed": 132,
+    "wrapper_sha256": "7e50a733509740c346b1478576ff5dfba2c71b99acbde2eda82f1c1de7872c81"
+  },
+  "slices_teacher_forcing_caveat": "La secuencia p\u00fablica `> SLICES <` se aplica seg\u00fan uso de generaci\u00f3n, pero no se encontr\u00f3 el dataloader original de teacher-forcing para confirmar el token final del preentrenamiento.",
+  "status": "PASS"
+}

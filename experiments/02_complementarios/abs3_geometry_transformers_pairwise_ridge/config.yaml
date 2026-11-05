@@ -1,0 +1,14 @@
+experiment: abs3_geometry_transformers_pairwise_ridge
+dataset: data/abs3/abs3_development_f4_geometry/dataset.csv
+dataset_sha256: afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e
+cohort: {structures: 210, compositions: 70, polymorphs_per_composition: 3}
+splits: {folds: 5, inner_train_compositions: 45, inner_validation_compositions: 11, outer_evaluation_compositions: 14}
+conditions: [GEO, MAT, MAT-G, MATTER, MATTER-G]
+ridge_pairwise: {type: Ridge, fit_intercept: false, solver: lsqr, tol: 1.0e-10, alphas: [0.01, 0.1, 1, 10, 100, 1000]}
+alpha_selection: inner_validation_deltaE_MAE_then_pairwise_accuracy
+final_fit: inner_train_plus_validation_after_alpha_selection
+M2: fixed_historical_17_fraction_models; no_fit; outer_mu_reused_from_verified_M2_OOF
+rank_thresholds: {eligible_abs_dft_delta_gt_meV_atom: 5, prediction_unresolved_if_abs_delta_le_meV_atom: 1}
+full_triplet: exclude_formula_if_any_dft_pair_gap_le_1_meV_atom; predicted_tie_le_1_counts_incorrect
+random_seeds: none; pairwise_Ridge_is_deterministic
+historical_test_accessed: false

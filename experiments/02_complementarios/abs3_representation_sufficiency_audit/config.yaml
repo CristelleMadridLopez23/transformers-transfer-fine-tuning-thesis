@@ -1,0 +1,48 @@
+{
+  "dataset": "data/abs3/abs3_development_f4_geometry/dataset.csv",
+  "folds": "experiments/MatGPT/MatGPT_SLICES_Geometria/staging_repo/Alternative2/reports/MatGPT/MatGPT_frozen_2/v1/fold_assignments.csv",
+  "extractors": "original frozen FINAL_END 768d",
+  "geometry": [
+    "a_reduced_shape",
+    "b_reduced_shape",
+    "c_reduced_shape",
+    "alpha_reduced_deg",
+    "beta_reduced_deg",
+    "gamma_reduced_deg",
+    "volume_per_atom_ang3"
+  ],
+  "pair_sign": "E_j-E_i, meV/atom",
+  "pairwise_thresholds": {
+    "eligible_gt": 5,
+    "unresolved_le": 1
+  },
+  "regressors": {
+    "ridge_alpha": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "pls_components": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "krr_gamma_multipliers": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "krr_lambda": [
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ]
+  },
+  "test_accessed": false,
+  "outer_used_for_selection": false
+}

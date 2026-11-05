@@ -1,0 +1,22 @@
+{
+  "cpu_count": 12,
+  "device": "CPU",
+  "extraction_seconds": 44.14484400022775,
+  "fold_seed_runs": 15,
+  "mattergpt_trainable_parameters": 0,
+  "mlp_trainable_parameters": 6161,
+  "mlp_training_seconds": 1.8331719134002924,
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "peak_rss_bytes": 1165180928,
+  "peak_rss_mib": 1111.203125,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "process_system_cpu_seconds": 28.313627,
+  "process_user_cpu_seconds": 65.741716,
+  "python_version": "3.10.21",
+  "scikit_learn_version": "1.7.2",
+  "scipy_version": "1.15.2",
+  "torch_threads": 8,
+  "torch_version": "2.8.0",
+  "wall_seconds": 46.46911345887929
+}

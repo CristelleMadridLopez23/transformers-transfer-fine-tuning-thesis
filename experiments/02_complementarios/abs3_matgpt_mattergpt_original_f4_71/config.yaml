@@ -1,0 +1,37 @@
+experiment: abs3_matgpt_mattergpt_original_f4_71
+status: PILOT_PASS_FULL_RUNNING
+dataset: data/abs3/abs3_development_f4_geometry/dataset.csv
+dataset_sha256: afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e
+cohort:
+  structures: 210
+  compositions: 70
+  polymorphs_per_composition: 3
+  folds: 5
+  seeds: [42, 123, 2026]
+  fold_counts: {inner_train: 45, inner_validation: 11, outer_evaluation: 14}
+geometry:
+  source: gga-static_endpoint_cleaned
+  columns: [a_reduced_shape, b_reduced_shape, c_reduced_shape, alpha_reduced_deg, beta_reduced_deg, gamma_reduced_deg, volume_per_atom_ang3]
+  scaler_fit: inner_train_only_135_structures_per_fold
+ridge: M2
+ridge_fit: false
+conditions: [MatGPT_F0, MatGPT_F4, MatterGPT_F0, MatterGPT_F4]
+backbones:
+  MatGPT:
+    checkpoint: models/MatGPT-source/mat-concat/mat-uncond/weights/transformer_property_0.pth
+    sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414
+    trainable_blocks_F4: [8, 9, 10, 11]
+  MatterGPT:
+    checkpoint: models/MatterGPT/pytorch_model.pt
+    sha256: 8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21
+    property_vector: [1.0, 2.0]
+    trainable_blocks_F4: [8, 9, 10, 11]
+head:
+  architecture: 775-8-GELU-Dropout0.1-1
+  warmup: {max_epochs: 20, patience: 8, lr: 0.001, weight_decay: 0.0001}
+  later: {max_epochs: 71, patience: 12, lr: 0.0001, weight_decay: 0.0001}
+optimizer_backbone_F4: {type: AdamW, lr: 0.000001, weight_decay: 0.01}
+loss: SmoothL1_beta_1_centered_residual_divided_by_inner_train_std
+batch_compositions: 8
+primary_metric: MAE_signed_intracomposition_deltaE_estimand_A_meV_per_atom
+historical_test_accessed: false

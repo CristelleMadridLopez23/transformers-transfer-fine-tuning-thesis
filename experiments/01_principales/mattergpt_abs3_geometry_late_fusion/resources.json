@@ -1,0 +1,59 @@
+{
+  "condition_resources": {
+    "C1_MatterGPT_SLICES_only": {
+      "measured_this_run": false,
+      "runs": 15,
+      "source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/mattergpt_abs3_frozen_ridge_mlp8/resources.json",
+      "training_seconds_historical_full_experiment": 1.8331719134002924
+    },
+    "C2_MatterGPT_SLICES_plus_geometry": {
+      "device": "CPU",
+      "measured_this_run": true,
+      "runs": 15,
+      "training_seconds": 1.9478117092512548
+    },
+    "MatGPT_F0_controls_combined": {
+      "allocation_per_condition": "not separately recorded in historical resources manifest",
+      "measured_this_run": false,
+      "runs": 30,
+      "source": "/Users/cristellemadrid/Desktop/Transformers/transformers-transfer-fine-tuning-thesis/experiments/MatGPT/MatGPT_SLICES_Geometria/resources_summary.csv",
+      "training_seconds_historical_both_conditions": 4.4926127078942955
+    }
+  },
+  "cpu_count": 12,
+  "device": "CPU",
+  "head_trainable_parameters": 6217,
+  "mattergpt_trainable_parameters": 0,
+  "mlp_training_seconds": 1.9478117092512548,
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "peak_rss_bytes": 623230976,
+  "peak_rss_mib": 594.359375,
+  "per_run_seconds": {
+    "fold_0_seed_123": 0.12017079209908843,
+    "fold_0_seed_2026": 0.18690270837396383,
+    "fold_0_seed_42": 0.4845422082580626,
+    "fold_1_seed_123": 0.06041879206895828,
+    "fold_1_seed_2026": 0.06839425023645163,
+    "fold_1_seed_42": 0.07489350019022822,
+    "fold_2_seed_123": 0.0893528750166297,
+    "fold_2_seed_2026": 0.1261738338507712,
+    "fold_2_seed_42": 0.04953300021588802,
+    "fold_3_seed_123": 0.06005941703915596,
+    "fold_3_seed_2026": 0.06529766693711281,
+    "fold_3_seed_42": 0.04887879220768809,
+    "fold_4_seed_123": 0.18806304084137082,
+    "fold_4_seed_2026": 0.1057544588111341,
+    "fold_4_seed_42": 0.057676666881889105
+  },
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "process_system_cpu_seconds": 0.714684,
+  "process_user_cpu_seconds": 4.508625,
+  "python_version": "3.10.21",
+  "runs": 15,
+  "scikit_learn_version": "1.7.2",
+  "scipy_version": "1.15.2",
+  "torch_threads": 8,
+  "torch_version": "2.8.0",
+  "wall_seconds": 5.35598758328706
+}

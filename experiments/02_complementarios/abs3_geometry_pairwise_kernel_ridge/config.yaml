@@ -1,0 +1,21 @@
+# Configuración científica serializada en YAML-like con definiciones en README.
+experiment: "abs3_geometry_pairwise_kernel_ridge"
+dataset: "data/abs3/abs3_development_f4_geometry/dataset.csv"
+dataset_sha256: "afdec9430cde046d5a850cc95432cf90759194f882880496388dc3a65c27eb8e"
+cohort: {"compositions": 70, "structures": 210, "polymorphs_per_composition": 3}
+folds: {"count": 5, "inner_train_compositions": 45, "inner_validation_compositions": 11, "outer_compositions": 14}
+features: ["a_reduced_shape", "b_reduced_shape", "c_reduced_shape", "alpha_reduced_deg", "beta_reduced_deg", "gamma_reduced_deg", "volume_per_atom_ang3"]
+scaler: "StandardScaler fitted on 135 inner-train structures per fold; applied unchanged to validation/outer; retained for refit"
+kernel: "RBF on structures; pair kernel K(j,l)-K(j,k)-K(i,l)+K(i,k)"
+gamma_reference: "inverse median positive squared distance among inner-train structures after scaler"
+gamma_multipliers: [0.25, 1.0, 4.0]
+lambdas: [0.001, 0.01, 0.1, 1.0]
+selection: "inner-validation macro DeltaE MAE; tie: higher pairwise accuracy, higher lambda, lower gamma"
+refit: "selected model refit using inner-train + inner-validation pairs, retaining inner-train scaler/gamma"
+calibration: "C2 positive no-intercept scalar fit on selected-model inner-validation pair predictions; secondary/exploratory"
+ridge_M2: "historical fixed 17-fraction models; no fit; same M2 means as GEO baseline"
+units: {"target": "signed meV/atom", "M2_energy": "eV/atom", "reconstruction": "mu_M2 + centered_score/1000"}
+thresholds: {"pair_eligible_abs_dft_gt_mev_atom": 5, "predicted_unresolved_abs_le_mev_atom": 1, "groundstate_gap_gt_mev_atom": 1, "full_triplet_tie_gap_le_mev_atom": 1}
+metrics: {"primary": "OOF macro MAE of 3 signed pair errors per composition", "rmse": "global sqrt(mean(error^2)) over structures/pairs", "ranking": "eligible pair correct / eligible pairs; unresolved incorrect", "bootstrap": "10,000 paired composition resamples, percentile IC95%, seed 20261103"}
+historical_test_accessed: false
+outer_used_for_selection: false

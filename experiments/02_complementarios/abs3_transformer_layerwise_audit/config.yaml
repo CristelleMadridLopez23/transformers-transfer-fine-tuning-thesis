@@ -1,0 +1,53 @@
+# Protocolo fijado — auditoría de representaciones por capa ABS₃
+experiment: abs3_transformer_layerwise_audit
+cohort:
+  compositions: 70
+  structures: 210
+  polymorphs_per_composition: 3
+  outer_folds: 5
+  inner_train_formulas: 45
+  inner_validation_formulas: 11
+  outer_formulas_per_fold: 14
+  split_unit: composition_id
+extractors:
+  MatGPT: {checkpoint_sha256: 4318e5fa88a5b177606c792c518251588edf446fa5edb13c35faa08e34d0e414, frozen: true, hidden_dimension: 768}
+  MatterGPT: {checkpoint_sha256: 8d0071fa7c05449273bfaf60357e2c4f9525c8b8f47e6d313856160312a72b21, frozen: true, hidden_dimension: 768, property_vector: [1.0, 2.0]}
+extraction:
+  states: [L0_INPUT, L1_BLOCK_0, L2_BLOCK_1, L3_BLOCK_2, L4_BLOCK_3, L5_BLOCK_4, L6_BLOCK_5, L7_BLOCK_6, L8_BLOCK_7, L9_BLOCK_8, L10_BLOCK_9, L11_BLOCK_10, L12_BLOCK_11, L12_PRE_LN_F, FINAL_POST_LN_F]
+  token_policy: last_valid_structural_terminal_token
+  dtype: float32_cache
+  final_cache_match: exact_numeric_match_against_historical
+probes:
+  pairwise_ridge:
+    intercept: false
+    alpha_grid: [0.01, 0.1, 1, 10, 100, 1000]
+  pairwise_rbf_kernel_ridge:
+    gamma_multipliers: [0.25, 1, 4]
+    lambda_grid: [0.001, 0.01, 0.1, 1]
+  geometry_additive_kernel:
+    eta_grid: [0, 0.1, 1, 10]
+  selection: minimum_inner_validation_signed_pair_deltaE_MAE
+  tie_break: [higher_validation_pairwise_accuracy, greater_regularization, shallower_layer]
+  final_refit: inner_train_only_45_formulas
+geometry:
+  source: gga-static_endpoint_cleaned
+  descriptors: [a_reduced_shape, b_reduced_shape, c_reduced_shape, alpha_reduced_deg, beta_reduced_deg, gamma_reduced_deg, volume_per_atom_ang3]
+  scaler_fit: inner_train_only
+targets:
+  pair_delta: signed_1000_times_Ej_minus_Ei_eV_per_atom
+  primary_estimand: macro_average_formula_mean_of_three_absolute_pair_errors_then_mean_over_70_formulas
+  pairwise_eligible_threshold_meV_atom: 5
+  unresolved_prediction_threshold_meV_atom: 1
+  ground_state_dft_gap_threshold_meV_atom: 1
+ridge_m2:
+  frozen: true
+  source: experiments/mattergpt_abs3_frozen_ridge_mlp8/predicciones_oof_por_estructura.csv
+  role: absolute_energy_composition_anchor_only
+statistics:
+  bootstrap_replicates: 10000
+  bootstrap_seed: 20261103
+  permutation_replicates_per_model_probe_fold_layer_role: 100
+  permutation_seed: 20261103
+safety:
+  test_accessed: false
+  transformer_weights_modified: false

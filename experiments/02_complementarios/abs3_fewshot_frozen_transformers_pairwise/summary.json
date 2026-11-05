@@ -1,0 +1,10 @@
+{
+  "status": "BLOCKED_PRECHECK",
+  "training_runs_completed": 0,
+  "outer_evaluation_accessed": false,
+  "historical_test_accessed": false,
+  "missing_extractors": [
+    "MatGPT_Alexandria_F4_100",
+    "MatterGPT_Alexandria_F4_71"
+  ]
+}

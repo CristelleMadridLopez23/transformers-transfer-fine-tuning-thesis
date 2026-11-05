@@ -1,0 +1,11 @@
+{
+  "wall_seconds": 142.5531828328967,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "permutations": 100,
+  "learning_curve_subsets": 10,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20261103,
+  "historical_test_accessed": false,
+  "backbones_modified": false
+}

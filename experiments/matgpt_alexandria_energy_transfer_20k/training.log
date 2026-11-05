@@ -1,9 +1,0 @@
-2026-10-30 12:05:21,315 WARNING /Users/cristellemadrid/.matplotlib is not a writable directory
-2026-10-30 12:05:21,316 WARNING Matplotlib created a temporary cache directory at /var/folders/b9/_45qj3r120309zcm5knw16k00000gn/T/matplotlib-z8swd62s because there was an issue with the default path (/Users/cristellemadrid/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
-2026-10-30 12:05:26,333 WARNING Matplotlib is building the font cache; this may take a moment.
-2026-10-30 12:05:31,261 INFO Failed to extract font properties from /System/Library/Fonts/Apple Color Emoji.ttc: Could not set the fontsize (invalid pixel size; error code 0x17)
-2026-10-30 12:05:31,286 INFO Failed to extract font properties from /System/Library/Fonts/LastResort.otf: tuple indices must be integers or slices, not str
-2026-10-30 12:05:31,310 INFO Failed to extract font properties from /System/Library/Fonts/Supplemental/NISC18030.ttf: Could not set the fontsize (invalid pixel size; error code 0x17)
-2026-10-30 12:05:31,315 INFO Failed to extract font properties from /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc: Can not load face (unknown file format; error code 0x2)
-2026-10-30 12:05:31,343 INFO generated new fontManager
-2026-10-30 14:15:27,134 INFO {'event': 'epoch', 'epoch': 1, 'train_smoothl1': 0.2221244838040322, 'validation_smoothl1': 0.1578287812070928, 'best_epoch': 1, 'epoch_seconds': 5910.440986624919, 'stale_epochs': 0}

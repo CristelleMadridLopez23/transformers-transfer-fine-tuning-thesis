@@ -1,0 +1,39 @@
+{
+  "status": "COMPLETE",
+  "wall_seconds": 3.513332291971892,
+  "process_cpu_seconds": 3.3792999999999997,
+  "peak_rss_bytes": 545030144,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "mps": false,
+  "cuda": false,
+  "solver": "scikit-learn Ridge LSQR, tol=1e-10, max_iter=10000",
+  "matrices": {
+    "feature_dimensions": {
+      "GEO": 7,
+      "MAT": 768,
+      "MAT-G": 775,
+      "MATTER": 768,
+      "MATTER-G": 775
+    },
+    "outer_structure_rows": 1050,
+    "outer_pair_rows": 1050
+  },
+  "bootstrap_replicates": 10000,
+  "historical_test_accessed": false,
+  "python_version": "3.10.21",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.3",
+  "scikit_learn_version": "1.7.2",
+  "slices_only_mat_vs_matter_postanalysis": {
+    "wall_seconds": 0.058078874833881855,
+    "process_cpu_seconds": 0.05254200000000003,
+    "peak_rss_bytes": 127500288,
+    "device": "cpu",
+    "cpu_threads": 1,
+    "bootstrap_replicates": 10000,
+    "bootstrap_unit": "composition_id",
+    "bootstrap_seed": 20261103,
+    "test_split_accessed": false
+  }
+}

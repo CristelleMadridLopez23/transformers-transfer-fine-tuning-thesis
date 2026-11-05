@@ -1,0 +1,17 @@
+{
+  "status": "analysis_outputs_present_finalization_completed",
+  "device": "cpu",
+  "cpu_threads": 1,
+  "test_accessed": false,
+  "backbones_modified": false,
+  "extraction_wall_seconds": 98.91295820940286,
+  "finalization_wall_seconds": 4.540477749891579,
+  "layerwise_analysis_wall_seconds": null,
+  "layerwise_analysis_elapsed_lower_bound_seconds": 298.64999175071716,
+  "layerwise_analysis_wall_note": "El proceso principal no dejó resources.json. El intervalo entre el primer artefacto de fase analítica y el CSV final de permutaciones es una cota inferior basada en mtime, no el tiempo exacto del proceso.",
+  "peak_rss_bytes_finalizer": 636731392,
+  "permutations_per_model_probe_fold_layer": 100,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20261103,
+  "extraction_cpu_threads": 1
+}

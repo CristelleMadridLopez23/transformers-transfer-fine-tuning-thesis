@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETE",
+  "phase": "full",
+  "finished_unix": 1793851713.6815412,
+  "resources": {
+    "phase": "full",
+    "wall_seconds": 75255.44568233425,
+    "process_cpu_seconds": 143468.086479,
+    "peak_rss_bytes": 3937320960,
+    "cpu_count_logical": 12,
+    "torch_threads": 3,
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.10.21",
+    "torch": "2.8.0",
+    "device": "cpu",
+    "mps_available": false,
+    "historical_test_accessed": false
+  }
+}

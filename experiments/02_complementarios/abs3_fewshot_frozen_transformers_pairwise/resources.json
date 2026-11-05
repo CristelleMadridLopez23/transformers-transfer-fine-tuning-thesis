@@ -1,0 +1,9 @@
+{
+  "status": "PREFLIGHT_ONLY",
+  "training_started": false,
+  "training_elapsed_seconds": 0,
+  "training_cpu_seconds": 0,
+  "training_peak_memory_bytes": 0,
+  "preflight_duration_instrumented": false,
+  "historical_test_accessed": false
+}

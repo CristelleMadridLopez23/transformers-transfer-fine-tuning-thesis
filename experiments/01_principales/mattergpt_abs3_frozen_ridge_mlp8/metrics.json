@@ -1,0 +1,190 @@
+{
+  "MatGPT_F0": {
+    "eligible_pairs": 591,
+    "ground_state_accuracy_denominator": 201,
+    "ground_state_eligible_composition_seed_cases": 201,
+    "ground_state_exact": 0.5323383084577115,
+    "ground_state_unresolved_predictions": 4,
+    "kendall": 0.33968253968253975,
+    "mae_delta_anchored_all3_mev_atom": 41.526206958961396,
+    "mae_delta_mev_atom": 58.84414806760221,
+    "mae_delta_zero_baseline_mev_atom": 60.470423123809546,
+    "mae_energy_ev_atom": 0.05201920035659507,
+    "mae_residual_mev_atom": 33.7538029514481,
+    "pairwise_accuracy_including_unresolved_in_denominator": 0.6683587140439933,
+    "rmse_energy_ev_atom": 0.06021980228201344,
+    "spearman": 0.38095238095238093,
+    "unresolved_fraction_eligible_pairs": 0.011844331641285956
+  },
+  "MatterGPT_F0": {
+    "eligible_pairs": 591,
+    "ground_state_accuracy_denominator": 201,
+    "ground_state_eligible_composition_seed_cases": 201,
+    "ground_state_exact": 0.5621890547263682,
+    "ground_state_unresolved_predictions": 6,
+    "kendall": 0.3142857142857143,
+    "mae_delta_anchored_all3_mev_atom": 38.6809763430465,
+    "mae_delta_mev_atom": 55.728945465927396,
+    "mae_delta_zero_baseline_mev_atom": 60.470423123809546,
+    "mae_energy_ev_atom": 0.0506157804247574,
+    "mae_residual_mev_atom": 32.26409193382251,
+    "pairwise_accuracy_including_unresolved_in_denominator": 0.6480541455160744,
+    "rmse_energy_ev_atom": 0.058747315732738496,
+    "spearman": 0.3476190476190476,
+    "unresolved_fraction_eligible_pairs": 0.0338409475465313
+  },
+  "Ridge_only": {
+    "eligible_pairs": 591,
+    "ground_state_accuracy_denominator": 201,
+    "ground_state_eligible_composition_seed_cases": 201,
+    "ground_state_exact": 0.0,
+    "ground_state_unresolved_predictions": 210,
+    "kendall": null,
+    "mae_delta_anchored_all3_mev_atom": 44.202423171428556,
+    "mae_delta_mev_atom": 60.470423123809546,
+    "mae_delta_zero_baseline_mev_atom": 60.470423123809546,
+    "mae_energy_ev_atom": 0.05202613944519876,
+    "mae_residual_mev_atom": 35.07243775238103,
+    "pairwise_accuracy_including_unresolved_in_denominator": 0.0,
+    "rmse_energy_ev_atom": 0.06037952027632223,
+    "spearman": null,
+    "unresolved_fraction_eligible_pairs": 1.0
+  },
+  "bootstrap_paired_composition_ci95": [
+    {
+      "bootstrap_replicates": 10000,
+      "ci95_high": 66.65203056862269,
+      "ci95_low": 45.95067120290876,
+      "contrast": "MatterGPT_F0",
+      "estimand": "A",
+      "estimate": 55.72894546592739,
+      "n_compositions": 70
+    },
+    {
+      "bootstrap_replicates": 10000,
+      "ci95_high": 68.61790238572048,
+      "ci95_low": 50.12085396276402,
+      "contrast": "MatGPT_F0",
+      "estimand": "A",
+      "estimate": 58.84414806760223,
+      "n_compositions": 70
+    },
+    {
+      "bootstrap_replicates": 10000,
+      "ci95_high": 72.94996497988095,
+      "ci95_low": 49.43520640571427,
+      "contrast": "Ridge_only",
+      "estimand": "A",
+      "estimate": 60.47042312380954,
+      "n_compositions": 70
+    },
+    {
+      "bootstrap_replicates": 10000,
+      "ci95_high": 1.99198013612644,
+      "ci95_low": -8.037594934824266,
+      "contrast": "MatterGPT_F0 \u2212 MatGPT_F0",
+      "estimand": "A",
+      "estimate": -3.11520260167482,
+      "n_compositions": 70
+    },
+    {
+      "bootstrap_replicates": 10000,
+      "ci95_high": -0.23981344167725885,
+      "ci95_low": -9.263842563271472,
+      "contrast": "MatterGPT_F0 \u2212 Ridge_only",
+      "estimand": "A",
+      "estimate": -4.741477657882162,
+      "n_compositions": 70
+    }
+  ],
+  "definitions": {
+    "bootstrap": "10 000 remuestreos apareados por 70 composiciones; semillas no cuentan como materiales",
+    "delta_dft": "E_i - E_DFT del polimorfo de menor energ\u00eda DFT de la misma f\u00f3rmula",
+    "delta_prediction": "Epred_i - Epred del mismo polimorfo de m\u00ednimo DFT (ancla com\u00fan); los valores negativos son inversiones",
+    "ground_state_tie": "DFT gap m\u00ednimo \u22641 meV/\u00e1tomo excluido; empate predicho \u22641 meV/\u00e1tomo es fallo no resuelto",
+    "pair_eligibility": "|\u0394E_DFT| > 5 meV/\u00e1tomo",
+    "predicted_unresolved": "|\u0394E_pred| \u2264 1 meV/\u00e1tomo cuenta incorrecto en el denominador elegible",
+    "primary_metric": "Estimando A: MAE de diferencias de energ\u00eda firmadas entre los tres pares intraf\u00f3rmula, promedio de pares por f\u00f3rmula/semilla, semillas promediadas dentro de f\u00f3rmula antes del bootstrap",
+    "ridge_only": "\u0394E_pred=0 para todos los pares; su MAE \u0394E es el promedio de |\u0394E_DFT|"
+  },
+  "ols_parity": {
+    "MatGPT_F0": {
+      "absolute_energy_e_per_n": {
+        "N": 210,
+        "intercept_ev_atom": -0.027674631306900288,
+        "mae_ev_atom": 0.050479245785905506,
+        "r2_ols": 0.9932578032539076,
+        "slope": 0.9944172201963909
+      },
+      "delta_energy": {
+        "N": 210,
+        "definition": "ambos ejes anclados a la misma estructura de m\u00ednimo DFT por f\u00f3rmula",
+        "intercept_mev_atom": 2.4113758996861048,
+        "mae_mev_atom": 39.15811248078804,
+        "r2_ols": 0.1574438972409834,
+        "slope": 0.26571488756916545
+      },
+      "intraformula_residual": {
+        "N": 210,
+        "definition": "cada energ\u00eda centrada restando la media del triplete de su f\u00f3rmula",
+        "intercept_mev_atom": 9.611222184072077e-15,
+        "mae_mev_atom": 31.20960769900034,
+        "r2_ols": 0.26033063330557693,
+        "slope": 0.30771758311302877
+      },
+      "population": "210 estructuras OOF; promedio de tres semillas por estructura"
+    },
+    "MatterGPT_F0": {
+      "absolute_energy_e_per_n": {
+        "N": 210,
+        "intercept_ev_atom": -0.030208145514829532,
+        "mae_ev_atom": 0.04945840402534989,
+        "r2_ols": 0.9930751137598305,
+        "slope": 0.9939345313170939
+      },
+      "delta_energy": {
+        "N": 210,
+        "definition": "ambos ejes anclados a la misma estructura de m\u00ednimo DFT por f\u00f3rmula",
+        "intercept_mev_atom": 4.2689610953340535,
+        "mae_mev_atom": 36.854815227100076,
+        "r2_ols": 0.13352065652393408,
+        "slope": 0.1723829706604317
+      },
+      "intraformula_residual": {
+        "N": 210,
+        "definition": "cada energ\u00eda centrada restando la media del triplete de su f\u00f3rmula",
+        "intercept_mev_atom": -6.812681133492127e-14,
+        "mae_mev_atom": 30.73079458572875,
+        "r2_ols": 0.20726053456405946,
+        "slope": 0.18123013208777428
+      },
+      "population": "210 estructuras OOF; promedio de tres semillas por estructura"
+    },
+    "Ridge_only": {
+      "absolute_energy_e_per_n": {
+        "N": 210,
+        "intercept_ev_atom": -0.03383813162730487,
+        "mae_ev_atom": 0.05202613944519875,
+        "r2_ols": 0.9922968220422794,
+        "slope": 0.9932429408963328
+      },
+      "delta_energy": {
+        "N": 210,
+        "definition": "ambos ejes anclados a la misma estructura de m\u00ednimo DFT por f\u00f3rmula",
+        "intercept_mev_atom": 0.0,
+        "mae_mev_atom": 44.202423171428556,
+        "r2_ols": null,
+        "slope": -0.0
+      },
+      "intraformula_residual": {
+        "N": 210,
+        "definition": "cada energ\u00eda centrada restando la media del triplete de su f\u00f3rmula",
+        "intercept_mev_atom": 0.0,
+        "mae_mev_atom": 35.07243775238097,
+        "r2_ols": null,
+        "slope": 0.0
+      },
+      "population": "210 estructuras OOF; promedio de tres semillas por estructura"
+    }
+  }
+}
